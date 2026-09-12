@@ -36,10 +36,10 @@ const WILD = [                // 미디안 광야
   'D{32}',
   'S{32}'
 ];
-const WELL = [                // 미디안의 우물 (벽 20·23, 물 21-22)
-  '.{20}C..C.{8}',
-  '.{20}CWWC.{8}',
-  's{20}CCCCs{8}',
+const WELL = [                // 미디안의 우물 (벽 14·17, 물 15-16) — 양쪽에 설 자리를 둔다
+  '.{14}C..C.{14}',
+  '.{14}CWWC.{14}',
+  's{14}CCCCs{14}',
   's{32}',
   'D{32}',
   'S{32}'
@@ -164,10 +164,10 @@ PB.start({
     {
       caption: '미디안의 우물', sky: 'day', bg: 'desert', map: WELL,
       objects: [
-        ['jar', 17],
-        { s: 'man', x: 15, label: '모세', shirt: '#c9b48a' },
-        { s: 'girl', x: 26, label: '미디안의 딸', shirt: '#c98a6a', flip: true },
-        { s: 'girl', x: 28, shirt: '#9ab8c9', flip: true },
+        ['jar', 9],
+        { s: 'man', x: 11, label: '모세', shirt: '#c9b48a' },
+        { s: 'girl', x: 25, label: '미디안의 딸', shirt: '#c98a6a', flip: true },
+        { s: 'girl', x: 27, shirt: '#9ab8c9', flip: true },
         { s: 'sheep', x: 30, anim: 'bob' }
       ],
       lines: [
@@ -179,7 +179,7 @@ PB.start({
     {
       caption: '쫓겨나는 사람들', keep: true,
       add: [
-        { s: 'shepherd', x: 23, label: '목자들', shirt: '#8a7b5a' },
+        { s: 'shepherd', x: 19, label: '목자들', shirt: '#8a7b5a' },
         { s: 'shepherd', x: 21, shirt: '#7a6b4a' }
       ],
       lines: [
@@ -191,14 +191,14 @@ PB.start({
     {
       caption: '그래도 일어서다', keep: true,
       walk: {
-        player: 'man', name: '모세', shirt: '#c9b48a', from: 3, goal: 17, tol: 1.5,
+        player: 'man', name: '모세', shirt: '#c9b48a', from: 3, goal: 12, tol: 1.5,
         q: '모세가 되어 우물까지 나아가십시오. 여기서 물러설 수도 있습니다.',
         say: '모세가 일어나 그들을 돕고, 양 떼에게 물을 먹였습니다.'
       }
     },
     {
       caption: '되풀이되는 사람', keep: true,
-      add: [{ s: 'man', x: 18, label: '모세', shirt: '#c9b48a' }],
+      add: [{ s: 'man', x: 12, label: '모세', shirt: '#c9b48a' }],
       lines: [
         '이집트에서도, 미디안에서도 모세는 약한 편에 섰습니다.',
         '달라진 것은 방법이었습니다. 이번에는 숨지 않았습니다.',

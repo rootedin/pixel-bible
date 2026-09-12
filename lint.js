@@ -126,6 +126,19 @@ function checkLesson(PB, L, add) {
         add('E', at, `'${o.s}' 의 anim '${o.anim}' 은 없는 값입니다`);
     });
 
+    /* 사람·땅짐승·병거가 물이나 용암 위에 서 있지 않은가.
+       y 를 생략하면 그 열의 맨 위 단단한 블록 위에 서는데, 물도 단단한 블록으로 쳐서
+       물 위를 걷는 것처럼 보이게 된다. (배·바구니·갈대·물고기는 정상이므로 제외) */
+    const LAND_ONLY = new Set([...Object.keys(PEOPLE), 'person', 'sheep', 'cow', 'lion', 'chariot']);
+    (w.objects || []).forEach(o => {
+      if (o.y != null || !LAND_ONLY.has(o.s)) return;
+      const gy = PB.groundY(w.grid, o.x);
+      if (gy >= ROWS) return;
+      const ch = w.grid[gy][Math.floor(o.x)];
+      if (ch === 'W' || ch === 'A')
+        add('W', at, `'${o.label || o.s}' 가 ${ch === 'W' ? '물' : '용암'} 위에 서 있습니다 (x=${o.x})`);
+    });
+
     /* remove 대상이 실제로 있는가 — 오타가 조용히 통과하던 지점 */
     const prev = i > 0 ? worlds[i - 1] : null;
     (sc.remove || []).forEach(name => {
