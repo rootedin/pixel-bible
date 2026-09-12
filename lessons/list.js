@@ -45,5 +45,9 @@ window.PB_LESSONS = [
   {
     week: 42, file: "lessons/42-plagues-1-3.html", title: "하나님께서 애굽에 첫째·둘째·셋째 재앙을 보내시다", ref: "출애굽기 7:14 - 8:19",
     cover: {"sky":"dusk","map":["G{8}R{14}s{10}","D{8}R{14}s{10}","D{8}R{14}s{10}","D{8}R{14}s{10}","S{8}R{14}s{10}","S{8}R{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"man","x":24,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a","flip":true},{"s":"man","x":26,"label":"아론","beard":"#3b2414","shirt":"#b89a6a","flip":true},{"s":"king","x":30,"label":"파라오","flip":true},{"s":"fish","x":12,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"}},{"s":"fish","x":16,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"},"flip":true},{"s":"fish","x":19,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"}}],"bg":"desert"}
+  },
+  {
+    week: 43, file: "lessons/43-plagues-4-6.html", title: "하나님께서 애굽에 넷째·다섯째·여섯째 재앙을 보내시다", ref: "출애굽기 8:20 - 9:12",
+    cover: {"sky":"dusk","map":["G{16}s{16}","D{16}s{16}","D{32}","D{32}","S{32}"],"objects":[{"s":"cow","x":7,"label":"이스라엘의 가축","anim":"bob"},{"s":"sheep","x":11,"anim":"walk","range":1},{"s":"cow","x":20,"label":"이집트의 가축","pal":{"w":"#8a8a8a","k":"#4a4a4a","p":"#9a8a8a","h":"#7a7a7a"}},{"s":"cow","x":27,"pal":{"w":"#8a8a8a","k":"#4a4a4a","p":"#9a8a8a","h":"#7a7a7a"},"flip":true}],"bg":"desert"}
   }
 ];

@@ -1,0 +1,217 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 43강 — 하나님께서 애굽에 넷째·다섯째·여섯째 재앙을 보내시다 (출애굽기 8:20 - 9:12) */
+const DIVIDE = [              // 왼쪽 고센(0-15, 풀밭) · 오른쪽 이집트(16-31, 모래)
+  'G{16}s{16}',
+  'D{16}s{16}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+const PALACE = [              // 기둥 5·12·19·26
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  'X{32}',
+  'm{32}',
+  'C{32}',
+  'S{32}'
+];
+
+PB.start({
+  week: 43,
+  title: '하나님께서 애굽에 넷째·다섯째·여섯째 재앙을 보내시다',
+  ref: '출애굽기 8:20 - 9:12',
+  cover: 5,
+  splash: '내가 구분을 두리니!',
+  intro: '재앙이 이어집니다. 그런데 이번에는 새로운 일이 시작됩니다.',
+  memory: {
+    text: '내가 내 백성과 네 백성 사이에 구분을 두리니',
+    ref: '출애굽기 8:23'
+  },
+  achievement: { title: '구분을 본 사람', icon: 'cow' },
+  scenes: [
+    {
+      caption: '넷째 재앙 · 파리', sky: 'day', bg: 'desert', map: DIVIDE,
+      objects: [
+        { s: 'man', x: 4, label: '이스라엘 사람', shirt: '#9a7b52' },
+        { s: 'man', x: 23, label: '이집트 사람', shirt: '#c9b48a', flip: true },
+        /* 파리는 이집트 쪽(16열 오른쪽)에만 머물러야 한다.
+           anim:'fly' 는 화면 전체를 가로질러 고센까지 날아가므로 쓰지 않는다. */
+        { s: 'fly', x: 17.5, y: 7, anim: 'float', scale: 2 },
+        { s: 'fly', x: 19, y: 11, anim: 'float', scale: 2 },
+        { s: 'fly', x: 21, y: 5, anim: 'float', scale: 2 },
+        { s: 'fly', x: 22.5, y: 9, anim: 'float', scale: 2 },
+        { s: 'fly', x: 25, y: 6, anim: 'float', scale: 2 },
+        { s: 'fly', x: 26.5, y: 12, anim: 'float', scale: 2 },
+        { s: 'fly', x: 28.5, y: 8, anim: 'float', scale: 2 },
+        { s: 'fly', x: 30, y: 4, anim: 'float', scale: 2 }
+      ],
+      lines: [
+        '네 번째로 파리 떼가 이집트를 뒤덮었습니다.',
+        '집도, 땅도 파리로 상했습니다.',
+        '그런데 이번 재앙에는 지금까지 없던 것이 하나 있었습니다.'
+      ]
+    },
+    {
+      caption: '고센에는 없었다', keep: true,
+      lines: [
+        '하나님의 백성이 사는 **고센 땅**에는 파리가 한 마리도 없었습니다.',
+        '같은 하늘 아래, 같은 나라 안인데 한쪽만 멀쩡했습니다.',
+        '우연으로 볼 수 없는 일이었습니다.'
+      ],
+      verse: {
+        text: '내가 내 백성이 거하는 고센 땅을 분리하여 거기에는 파리 떼가 없게 하리니',
+        ref: '출애굽기 8:22'
+      }
+    },
+    {
+      caption: '구분을 두리니', keep: true,
+      lines: [
+        '하나님께서 왜 그렇게 하셨는지 직접 말씀하십니다.',
+        { who: '하나님', text: '내가 내 백성과 네 백성 사이에 **구분을 두리니**.' },
+        '재앙은 벌이기만 한 것이 아니라, 누가 누구의 것인지 보여 주는 표적이었습니다.'
+      ],
+      verse: {
+        text: '내가 내 백성과 네 백성 사이에 구분을 두리니',
+        ref: '출애굽기 8:23'
+      }
+    },
+    {
+      caption: '다섯째 재앙 · 가축', sky: 'dusk', bg: 'desert', map: DIVIDE, fx: 'dark',
+      remove: ['fly'],
+      add: [
+        { s: 'cow', x: 7, label: '이스라엘의 가축', anim: 'bob' },
+        { s: 'sheep', x: 11, anim: 'walk', range: 1 },
+        { s: 'cow', x: 20, label: '이집트의 가축', pal: { w: '#8a8a8a', k: '#4a4a4a', p: '#9a8a8a', h: '#7a7a7a' } },
+        { s: 'cow', x: 27, pal: { w: '#8a8a8a', k: '#4a4a4a', p: '#9a8a8a', h: '#7a7a7a' }, flip: true }
+      ],
+      lines: [
+        '다섯 번째로 들에 있는 가축에게 매우 심한 전염병이 임했습니다.',
+        '말과 나귀와 낙타와 소와 양이 쓰러졌습니다.',
+        '이번에도 하나님께서는 미리 나누겠다고 말씀하셨습니다.'
+      ],
+      verse: {
+        text: '주가 이스라엘의 가축과 이집트의 가축을 분리하리니 이스라엘 자손에게 속한 모든 것 중에서는 하나도 죽지 아니하리라',
+        ref: '출애굽기 9:4'
+      }
+    },
+    {
+      caption: '어느 쪽이 남았습니까', keep: true,
+      find: {
+        q: '주께서 두 편의 가축을 나누셨습니다. 하나도 죽지 않은 쪽을 클릭하십시오.',
+        target: '이스라엘의 가축',
+        hint: '풀밭 쪽을 보십시오. 색이 살아 있습니다.',
+        explain: '이스라엘의 가축입니다. 이스라엘에게 속한 것 중에서는 하나도 죽지 않았습니다. (출 9:4)'
+      }
+    },
+    {
+      caption: '여섯째 재앙 · 종기', sky: 'day', bg: 'none', map: PALACE, fx: null,
+      objects: [
+        ['torch', 3], ['torch', 29],
+        { s: 'man', x: 9, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 11, label: '아론', beard: '#3b2414', shirt: '#b89a6a' },
+        { s: 'king', x: 24, label: '파라오', flip: true },
+        { s: 'man', x: 21, label: '마술사', robe: true, shirt: '#6b5a8e', skin: '#c07a66', flip: true },
+        { s: 'man', x: 27, label: '마술사', robe: true, shirt: '#5a4a7e', skin: '#c07a66', flip: true }
+      ],
+      lines: [
+        '여섯 번째로 모세가 가마의 재를 하늘로 뿌렸습니다.',
+        '그 재가 티끌이 되어 사람과 짐승에게 **악성 종기**가 생겼습니다.',
+        '이번에는 재앙이 사람의 몸에 직접 닿았습니다.'
+      ]
+    },
+    {
+      caption: '설 수조차 없었다', keep: true, sky: 'dusk',
+      lines: [
+        '첫 재앙 때 마술사들은 모세 앞에서 같은 일을 해 보였습니다.',
+        '셋째 재앙 때는 흉내조차 내지 못했습니다.',
+        '이제는 모세 앞에 **설 수도** 없었습니다.'
+      ],
+      verse: {
+        text: '마술사들이 그 종기로 인해 모세 앞에 설 수 없었으니',
+        ref: '출애굽기 9:11'
+      }
+    },
+    {
+      caption: '이제는 어떻게 될까요', keep: true,
+      choose: {
+        q: '자기 마술사들까지 쓰러졌습니다. 파라오가 이제 굽힐 것 같습니까?',
+        options: [
+          { text: '여기까지 왔으면 굽힐 것이다', goto: 9 },
+          { text: '그래도 굽히지 않을 것이다', goto: 10 }
+        ]
+      }
+    },
+    {
+      caption: '굽힐 것이라 보았다면', keep: true,
+      lines: [
+        '상식으로는 그렇습니다. 증거는 넘칠 만큼 쌓였습니다.',
+        '그런데 본문은 정반대를 기록합니다.'
+      ]
+    },
+    {
+      caption: '그래도 듣지 않았다', keep: true, fx: 'dark',
+      lines: [
+        '파라오의 마음은 오히려 더 굳어졌습니다.',
+        '문제는 증거가 모자란 것이 아니었습니다.',
+        '보고도 **굽히지 않겠다**고 정한 마음이었습니다.'
+      ],
+      quiz: {
+        q: '재앙이 거듭될수록 마술사들은 어떻게 되었습니까?',
+        options: [
+          '점점 더 강해졌다',
+          '흉내 → 못 함 → 서 있지도 못함 순으로 무너졌다',
+          '처음부터 아무것도 못 했다',
+          '파라오를 떠났다'
+        ],
+        answer: 1,
+        explain: '첫 재앙은 흉내 냈고(7:22), 셋째는 못 했고(8:18), 여섯째는 서지도 못했습니다(9:11).'
+      }
+    },
+    {
+      caption: '왜 구분하셨을까', keep: true, sky: 'glory', fx: 'light',
+      lines: [
+        '넷째 재앙부터 하나님께서는 자기 백성을 따로 지키셨습니다.',
+        '재앙 한가운데서도 안전한 자리가 있다는 것을 보이신 것입니다.',
+        '그 자리는 힘이 센 곳이 아니라 **하나님께 속한** 곳이었습니다.'
+      ],
+      quiz: {
+        q: '고센 땅에 파리가 없었던 까닭은 무엇입니까?',
+        options: [
+          '이스라엘 사람들이 더 깨끗했기 때문에',
+          '하나님께서 자기 백성과 이집트 사이에 구분을 두셨기 때문에',
+          '고센이 멀리 떨어져 있었기 때문에',
+          '파리가 풀밭을 싫어했기 때문에'
+        ],
+        answer: 1,
+        explain: '"내가 구분을 두리니" — 지켜 주신 분이 계셨기 때문입니다. (출 8:22-23)'
+      }
+    },
+    {
+      caption: '암송', keep: true, fx: 'sparkle',
+      blank: {
+        text: '내가 내 백성이 거하는 ___ 땅을 분리하여 거기에는 ___ 떼가 없게 하리니',
+        answers: ['고센', '파리'],
+        extra: ['이집트', '개구리'],
+        ref: '출애굽기 8:22'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '하나님께 속했다는 것이 내 삶에서 어떻게 **드러나고** 있습니까?' },
+        { who: '생각해 보기', text: '알면서도 굽히지 않고 버티는 부분이 내게도 있습니까?' }
+      ]
+    }
+  ]
+});
+</script>
