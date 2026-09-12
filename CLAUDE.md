@@ -88,7 +88,7 @@ light(빛 번짐), rain, snow, sparkle, rainbow, flash(장면 시작 번쩍), li
 
 ### 맵 `map` — 가로 32칸 x 세로 최대 18칸, **아래쪽 정렬**
 - 한 글자 = 블록 하나. `G{32}` 처럼 반복 표기 가능. 짧으면 오른쪽을 공기로 채움.
-- 블록: `.`공기 G잔디 D흙 S돌 C돌벽돌 B벽돌 m대리석 s모래 W물 A용암 L나뭇잎 T통나무 P나무판자
+- 블록: `.`공기 G잔디 D흙 S돌 C돌벽돌 B벽돌 m대리석 s모래 W물 A용암 R피 L나뭇잎 T통나무 P나무판자
   g유리 X금 O흑요석 N눈 w흰양털 r빨간양털 b파란양털 p보라양털 y건초 K검정 #기반암 c구름
 - 나무 = T 세로 3칸 + 위에 L 덩어리. 방주/성전/제단은 P, C, m, X 로 쌓기.
 - 캐릭터는 x열에서 가장 위의 단단한 블록 위에 자동으로 섬 (L, T, g, c 는 통과)
@@ -103,7 +103,7 @@ light(빛 번짐), rain, snow, sparkle, rainbow, flash(장면 시작 번쩍), li
   옵션으로 덮어쓰기: skin hair shirt pants sash beard long robe hood crown halo wings staff
   예) `{ s: 'shepherd', x: 8, label: '다윗', beard: false, hair: '#8a4b1c' }`
 - 동물/사물: sheep cow lion snake fish bird dove sun moon star heart cross fire tablets
-  scroll bread fruit flower flower2 tuft torch stone jar coin basket(갈대 궤+아기) reed(부들/갈대)
+  scroll bread fruit flower flower2 tuft torch stone jar coin basket reed frog brick basket(갈대 궤+아기) reed(부들/갈대)
   - `pal: { 글자: '#색' }` 으로 색 변경 (예: 물고기 색)
 
 ## 새 스프라이트/블록 추가

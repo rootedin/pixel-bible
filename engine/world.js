@@ -27,6 +27,7 @@ window.PB = window.PB || {};
     m: { name: '대리석', f: (x, y, r) => (r() < 0.08 ? '#b9b6ae' : pick(r, ['#eeebe4', '#e4e1d9', '#f5f3ee'])) },
     s: { name: '모래', f: (x, y, r) => pick(r, ['#e2d59b', '#d8ca8c', '#ebdfa8', '#d2c283']) },
     W: { name: '물', frames: 3, f: (x, y, r, t) => ['#2f5fd0', '#3a6be0', '#2a55bd', '#4a7bef'][(x + y * 2 + t + ((r() * 2) | 0)) % 4] },
+    R: { name: '피', frames: 3, f: (x, y, r, t) => ['#8b1a1a', '#a02020', '#731414', '#b52a2a'][(x + y * 2 + t + ((r() * 2) | 0)) % 4] },
     A: { name: '용암', frames: 3, f: (x, y, r, t) => ['#e8641c', '#f28a1e', '#d9480f', '#ffb13b'][(x * 3 + y + t * 2 + ((r() * 2) | 0)) % 4] },
     L: { name: '나뭇잎', f: (x, y, r) => (r() < 0.12 ? '#1d5215' : pick(r, ['#2f7a22', '#3b8f2a', '#25661b', '#44992f'])) },
     T: { name: '통나무', f: (x, y, r) => (x === 0 || x === 7 || r() < 0.15 ? '#4a321c' : pick(r, ['#6b4a2a', '#5a3d22', '#7a5632'])) },
