@@ -65,5 +65,9 @@ window.PB_LESSONS = [
   {
     week: 47, file: "lessons/47-wilderness.html", title: "이스라엘이 광야를 지나다", ref: "출애굽기 15-16장",
     cover: {"sky":"dawn","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"manna","x":14,"scale":2},{"s":"manna","x":16.5,"scale":2},{"s":"manna","x":19,"scale":2},{"s":"manna","x":21.5,"scale":2},{"s":"manna","x":24,"scale":2},{"s":"manna","x":26.5,"scale":2},{"s":"manna","x":29,"scale":2}],"bg":"desert"}
+  },
+  {
+    week: 48, file: "lessons/48-water-from-rock.html", title: "하나님께서 바위에서 물이 나게 하시다", ref: "출애굽기 17장",
+    cover: {"sky":"day","map":[".{24}S{8}",".{22}S{10}","s{22}S{10}","s{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7},{"s":"soldier","x":10},{"s":"soldier","x":16,"label":"아말렉","shirt":"#7a5a4a","flip":true},{"s":"soldier","x":19,"shirt":"#6a4a3a","flip":true}],"bg":"mountains"}
   }
 ];
