@@ -1,0 +1,129 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>스프라이트 도감 · 픽셀 성경</title>
+<link rel="stylesheet" href="engine/style.css">
+<style>
+  .pb-sec { margin: 26px 0 10px; color: var(--mc-yellow); font-size: 20px; text-shadow: 2px 2px 0 #3f3f00; }
+  .pb-sec small { color: #bbb; font-size: 13px; text-shadow: none; margin-left: 8px; }
+  .dex { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; }
+  .cell { background: #3a3a3a; border: 3px solid #000; box-shadow: inset 3px 3px 0 #5e5e5e, inset -3px -3px 0 #222;
+    padding: 8px 6px; text-align: center; }
+  .cell canvas { display: block; margin: 0 auto 6px; image-rendering: pixelated; }
+  .cell .nm { font-size: 12px; color: #fff; word-break: break-all; }
+  .cell .sz { font-size: 10px; color: #999; }
+  .pb-search { font-family: var(--font); font-size: 14px; color: #fff; background: #1b1b1b;
+    border: 3px solid #000; box-shadow: inset 2px 2px 0 #444; padding: 7px 10px; width: 260px; }
+  .pb-search::placeholder { color: #888; }
+  .bar { display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 6px; flex-wrap: wrap; }
+  .hint { color: #bbb; font-size: 13px; text-align: center; margin-bottom: 14px; }
+</style>
+<div class="pb-app">
+  <div class="pb-titlescreen" style="position:relative;padding:26px 0 6px;background:none">
+    <div class="pb-logo" style="font-size:clamp(24px,4.4vw,48px)">스프라이트 도감</div>
+    <div class="pb-sub">레슨을 만들기 전에 여기서 먼저 찾아보십시오</div>
+  </div>
+  <div class="bar">
+    <input id="q" class="pb-search" type="search" placeholder="이름 검색 (예: sheep, king)" autocomplete="off">
+    <span class="pb-sub" id="count"></span>
+    <a class="pb-btn sm" href="index.html" style="text-decoration:none">☰ 목록</a>
+  </div>
+  <div class="hint">이름을 누르면 복사됩니다. 없는 그림은 <code>engine/sprites/</code> 에 팩을 추가한 뒤 <code>npm run sprites</code>.</div>
+  <div id="out"></div>
+</div>
+<script src="engine/world.js"></script>
+<script src="engine/sprites.js"></script>
+<script src="engine/engine.js"></script>
+<script>
+(function () {
+  /* 흙 배경 */
+  const bg = document.createElement('canvas'); bg.width = bg.height = 32;
+  const bgc = bg.getContext('2d'), br = PB.rng(9);
+  for (let y = 0; y < 32; y++) for (let x = 0; x < 32; x++) { bgc.fillStyle = PB.TILES.D.f(x, y, br); bgc.fillRect(x, y, 1, 1); }
+  bgc.fillStyle = 'rgba(0,0,0,0.62)'; bgc.fillRect(0, 0, 32, 32);
+  document.body.style.backgroundImage = `url(${bg.toDataURL()})`;
+
+  const out = document.getElementById('out');
+  const people = Object.keys(PB.PEOPLE);
+  const things = Object.keys(PB.SPR);
+  const blocks = Object.keys(PB.TILES);
+  document.getElementById('count').textContent =
+    `사람 ${people.length} · 동물/사물 ${things.length} · 블록 ${blocks.length}`;
+
+  function cell(name, draw, sz) {
+    const el = document.createElement('div'); el.className = 'cell'; el.dataset.name = name;
+    const c = document.createElement('canvas');
+    draw(c);
+    el.appendChild(c);
+    const nm = document.createElement('div'); nm.className = 'nm'; nm.textContent = name;
+    const s = document.createElement('div'); s.className = 'sz'; s.textContent = sz;
+    el.appendChild(nm); el.appendChild(s);
+    el.style.cursor = 'pointer';
+    el.onclick = () => {
+      navigator.clipboard && navigator.clipboard.writeText(name);
+      const old = nm.textContent; nm.textContent = '복사됨'; setTimeout(() => (nm.textContent = old), 700);
+    };
+    return el;
+  }
+
+  /* 스프라이트 하나를 3배로 그린다 */
+  function drawSprite(name) {
+    return c => {
+      const sp = PB.getSprite(name);
+      if (!sp) { c.width = c.height = 1; return; }
+      const k = Math.max(1, Math.min(4, Math.floor(56 / Math.max(sp.w, sp.h))));
+      c.width = sp.w * k; c.height = sp.h * k;
+      const g = c.getContext('2d');
+      g.imageSmoothingEnabled = false;
+      g.drawImage(sp.frames[0], 0, 0, c.width, c.height);
+    };
+  }
+  function drawBlock(ch) {
+    return c => {
+      c.width = c.height = 48;
+      const g = c.getContext('2d'), r = PB.rng(ch.charCodeAt(0) * 97 + 1), f = PB.TILES[ch].f;
+      g.imageSmoothingEnabled = false;
+      for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) {
+        const col = f(x, y, r, 0);
+        if (col) { g.fillStyle = col; g.fillRect(x * 6, y * 6, 6, 6); }
+      }
+    };
+  }
+
+  function section(title, sub, items) {
+    const h = document.createElement('div'); h.className = 'pb-sec';
+    h.innerHTML = `${title}<small>${sub}</small>`;
+    const grid = document.createElement('div'); grid.className = 'dex';
+    items.forEach(el => grid.appendChild(el));
+    out.appendChild(h); out.appendChild(grid);
+    return { h, grid };
+  }
+
+  const secs = [];
+  secs.push(section('사람 프리셋', 'objects 의 s 값 · skin/hair/shirt/robe 등으로 덮어쓰기 가능',
+    people.map(n => {
+      const sp = PB.getSprite(n);
+      return cell(n, drawSprite(n), sp ? `${sp.w}×${sp.h}` : '');
+    })));
+  secs.push(section('동물 · 사물', 'pal 로 색을 바꿀 수 있습니다',
+    things.map(n => {
+      const sp = PB.getSprite(n);
+      return cell(n, drawSprite(n), sp ? `${sp.w}×${sp.h}` : '');
+    })));
+  secs.push(section('블록', 'map 문자열에 쓰는 글자',
+    blocks.map(ch => cell(ch, drawBlock(ch), PB.TILES[ch].name || ''))));
+
+  /* 검색 */
+  document.getElementById('q').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    secs.forEach(s => {
+      let shown = 0;
+      s.grid.querySelectorAll('.cell').forEach(el => {
+        const hit = !q || el.dataset.name.toLowerCase().includes(q) ||
+          (el.querySelector('.sz').textContent || '').toLowerCase().includes(q);
+        el.hidden = !hit; if (hit) shown++;
+      });
+      s.h.hidden = shown === 0;
+    });
+  });
+})();
+</script>

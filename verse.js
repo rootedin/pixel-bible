@@ -18,18 +18,36 @@ function bookIndex(s) {
 const clean = t => t.replace(/<[^>]*>/g, '').replace(/¶/g, '').replace(/[⁠-⁯]/g, '')
   .replace(/（/g, '(').replace(/）/g, ')').replace(/，/g, ',').replace(/？/g, '?').replace(/\s+/g, ' ').trim();
 
-const db = new DatabaseSync(DB, { readOnly: true });
-const args = process.argv.slice(2);
-if (!args.length) { console.log('사용법: node verse.js 창1:1 창1:27-28 요3:16 시23'); process.exit(0); }
-for (const a of args) {
-  const m = /^(\D+?)\s*(\d+)(?::(\d+)(?:-(\d+))?)?$/.exec(a.trim());
+let _db = null;
+const open = () => (_db = _db || new DatabaseSync(DB, { readOnly: true }));
+
+/* '창1:27-28' → { ref, verses: [{ verse, text }] } / 못 찾으면 null */
+function lookup(spec) {
+  const m = /^(\D+?)\s*(\d+)(?::(\d+)(?:-(\d+))?)?$/.exec(String(spec).trim());
   const b = m ? bookIndex(m[1]) : -1;
-  if (b < 0) { console.log(`✘ 알 수 없는 구절: ${a}`); continue; }
+  if (b < 0) return null;
   const ch = +m[2], v1 = m[3] ? +m[3] : 1, v2 = m[4] ? +m[4] : m[3] ? v1 : 999;
-  const rows = db.prepare('SELECT verse, btext FROM Bible WHERE book=? AND chapter=? AND verse BETWEEN ? AND ? ORDER BY verse').all(b + 1, ch, v1, v2);
-  if (!rows.length) { console.log(`✘ 없음: ${a}`); continue; }
+  const rows = open().prepare('SELECT verse, btext FROM Bible WHERE book=? AND chapter=? AND verse BETWEEN ? AND ? ORDER BY verse').all(b + 1, ch, v1, v2);
+  if (!rows.length) return null;
   const last = rows[rows.length - 1].verse;
-  const ref = `${NAME[b]} ${ch}:${rows[0].verse}${last !== rows[0].verse ? '-' + last : ''}`;
-  if (rows.length === 1) console.log(`${ref}\n${clean(rows[0].btext)}\n`);
-  else console.log(`${ref}\n${rows.map(r => `${r.verse} ${clean(r.btext)}`).join('\n')}\n`);
+  return {
+    ref: `${NAME[b]} ${ch}:${rows[0].verse}${last !== rows[0].verse ? '-' + last : ''}`,
+    verses: rows.map(r => ({ verse: r.verse, text: clean(r.btext) }))
+  };
 }
+/* 구절 범위를 한 줄로 이어 붙인 본문 (레슨 verse/memory 대조용) */
+const flat = spec => { const r = lookup(spec); return r && r.verses.map(v => v.text).join(' '); };
+
+module.exports = { lookup, flat, clean, DB };
+
+function cli() {
+  const args = process.argv.slice(2);
+  if (!args.length) { console.log('사용법: node verse.js 창1:1 창1:27-28 요3:16 시23'); process.exit(0); }
+  for (const a of args) {
+    const r = lookup(a);
+    if (!r) { console.log(`✘ 알 수 없거나 없는 구절: ${a}`); continue; }
+    if (r.verses.length === 1) console.log(`${r.ref}\n${r.verses[0].text}\n`);
+    else console.log(`${r.ref}\n${r.verses.map(v => `${v.verse} ${v.text}`).join('\n')}\n`);
+  }
+}
+if (require.main === module) cli();

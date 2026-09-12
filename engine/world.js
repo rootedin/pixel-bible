@@ -143,6 +143,7 @@ window.PB = window.PB || {};
     city: { color: '#c7a978', dark: '#3d3548', city: true },
     sea: { color: '#2952b8', dark: '#122050', flat: 22 }
   };
+  PB.BG = BG;
   PB.drawBg = function (g, bg, sky, t) {
     const d = BG[bg]; if (!d) return;
     const col = DARK_SKY.has(sky) ? d.dark : d.color, base = H - 8 * 3;
