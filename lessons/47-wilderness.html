@@ -1,0 +1,243 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 47강 — 이스라엘이 광야를 지나다 (출애굽기 15-16장) */
+const WILD = [                // 광야
+  's{32}',
+  's{32}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+const MARA = [                // 마라 — 사막 한가운데의 샘(10-17), 물이 쓰다
+  's{10}W{8}s{14}',
+  's{10}W{8}s{14}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+
+PB.start({
+  week: 47,
+  title: '이스라엘이 광야를 지나다',
+  ref: '출애굽기 15-16장',
+  cover: 10,
+  splash: '하늘로부터 빵을 비같이!',
+  intro: '바다를 건너며 노래를 불렀습니다. 그리고 사흘이 지났습니다.',
+  memory: {
+    text: '내가 너희를 위해 하늘로부터 빵을 비같이 내리리니',
+    ref: '출애굽기 16:4'
+  },
+  achievement: { title: '만나를 거둔 사람', icon: 'manna' },
+  scenes: [
+    {
+      caption: '노래가 끝나고', sky: 'day', bg: 'desert', map: WILD,
+      objects: [
+        { s: 'man', x: 5, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'woman', x: 8, hood: '#8a6b4a' },
+        { s: 'man', x: 11, shirt: '#9a7b52' },
+        { s: 'boy', x: 14, shirt: '#a98a5e', anim: 'bob' },
+        ['tuft', 24]
+      ],
+      lines: [
+        '바다가 갈라지는 것을 두 눈으로 본 사람들입니다.',
+        '건너편에서 노래하고 춤추며 하나님을 찬양했습니다.',
+        '그리고 **사흘**이 지났습니다.'
+      ]
+    },
+    {
+      caption: '마라의 물', sky: 'day', bg: 'desert', map: MARA,
+      objects: [
+        { s: 'man', x: 5, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 20, shirt: '#9a7b52', flip: true },
+        { s: 'woman', x: 23, hood: '#8a6b4a', flip: true },
+        { s: 'boy', x: 26, shirt: '#a98a5e', anim: 'bob', flip: true }
+      ],
+      lines: [
+        '사흘 동안 물을 찾지 못했습니다. 그러다 마침내 샘을 발견했습니다.',
+        '달려가 마셔 보니 **쓴 물**이었습니다. 마실 수 없었습니다.',
+        '그래서 그곳 이름을 "마라", 곧 쓰다는 뜻으로 불렀습니다.'
+      ],
+      verse: {
+        text: '마라의 물들이 써서 마실 수 없었으므로 그곳의 이름을 마라라 하였더라.',
+        ref: '출애굽기 15:23'
+      }
+    },
+    {
+      caption: '우리가 무엇을 마실까', keep: true, sky: 'dusk',
+      lines: [
+        '사흘 전에 바다를 건넌 사람들이 모세에게 불평했습니다.',
+        { who: '이스라엘 사람', text: '우리가 무엇을 마실까?' },
+        '기적을 본 것과 오늘 목이 마른 것은 다른 문제였습니다.'
+      ],
+      verse: {
+        text: '백성이 모세에게 불평하며 이르되, 우리가 무엇을 마실까?',
+        ref: '출애굽기 15:24'
+      }
+    },
+    {
+      caption: '한 나무를 던지매', keep: true, sky: 'day', fx: 'sparkle',
+      lines: [
+        '모세는 백성과 다투지 않고 주께 부르짖었습니다.',
+        '주께서 한 **나무**를 보여 주셨고, 모세가 그것을 물에 던졌습니다.',
+        '쓴 물이 단물이 되었습니다.'
+      ],
+      verse: {
+        text: '주께서 그에게 한 나무를 보여 주시므로 그가 그것을 물들에 던지매 물들이 달게 되었더라.',
+        ref: '출애굽기 15:25'
+      }
+    },
+    {
+      caption: '한 달 뒤', sky: 'dusk', bg: 'desert', map: WILD, fx: null,
+      objects: [
+        { s: 'man', x: 6, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 9, label: '아론', beard: '#3b2414', shirt: '#b89a6a' },
+        { s: 'man', x: 18, shirt: '#9a7b52', flip: true },
+        { s: 'woman', x: 21, hood: '#8a6b4a', flip: true },
+        { s: 'boy', x: 24, shirt: '#a98a5e', flip: true },
+        ['tuft', 29]
+      ],
+      lines: [
+        '이집트를 떠난 지 한 달 반이 지났습니다.',
+        '가져온 양식이 바닥났습니다. 광야에는 밭도 시장도 없습니다.',
+        '이번에는 물이 아니라 **먹을 것**이 문제였습니다.'
+      ]
+    },
+    {
+      caption: '어떻게 하겠습니까', keep: true,
+      choose: {
+        q: '광야 한가운데서 먹을 것이 떨어졌습니다. 당신이라면 무엇이라 하겠습니까?',
+        options: [
+          { text: '차라리 이집트가 나았다고 한다', goto: 7 },
+          { text: '하나님께 구한다', goto: 8 }
+        ]
+      }
+    },
+    {
+      caption: '이집트가 나았다고 한다면', keep: true, fx: 'dark',
+      lines: [
+        '배가 고프면 그런 말이 나옵니다. 이상한 일이 아닙니다.',
+        '실제로 백성이 한 말이 바로 그것이었습니다.',
+        '그런데 그 말에는 무서운 부분이 하나 있었습니다.'
+      ]
+    },
+    {
+      caption: '고기 솥 옆에 앉았던 때', keep: true, sky: 'dusk', fx: 'dark',
+      lines: [
+        { who: '이스라엘 사람', text: '이집트에서 **고기 솥 옆에** 앉았던 때에 죽었더라면 좋았을 것을.' },
+        '노예로 살던 날을 "고기 솥 옆"으로 기억하고 있습니다.',
+        '배가 고프면 기억까지 바뀝니다.'
+      ],
+      verse: {
+        text: '우리가 이집트 땅에서 고기 솥 옆에 앉았던 때와 빵을 배불리 먹던 때에 주의 손에 죽었더라면 좋았을 터인데',
+        ref: '출애굽기 16:3'
+      }
+    },
+    {
+      caption: '하늘로부터 빵을', keep: true, sky: 'glory', fx: ['light', 'sparkle'],
+      lines: [
+        '하나님께서는 그 불평에 벌을 내리지 않으셨습니다.',
+        { who: '하나님', text: '내가 너희를 위해 하늘로부터 **빵을 비같이** 내리리니.' },
+        '다만 조건이 하나 있었습니다. **날마다** 그날 몫만 거두는 것이었습니다.'
+      ],
+      verse: {
+        text: '내가 너희를 위해 하늘로부터 빵을 비같이 내리리니 백성이 날마다 나가서 정한 양을 거둘지니라',
+        ref: '출애굽기 16:4'
+      }
+    },
+    {
+      caption: '아침에 깔린 것', sky: 'dawn', bg: 'desert', map: WILD, fx: null,
+      objects: [
+        { s: 'man', x: 5, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 9, shirt: '#9a7b52' },
+        { s: 'manna', x: 14, scale: 2 }, { s: 'manna', x: 16.5, scale: 2 },
+        { s: 'manna', x: 19, scale: 2 }, { s: 'manna', x: 21.5, scale: 2 },
+        { s: 'manna', x: 24, scale: 2 }, { s: 'manna', x: 26.5, scale: 2 },
+        { s: 'manna', x: 29, scale: 2 }
+      ],
+      lines: [
+        '이튿날 아침, 이슬이 걷히자 광야 표면에 무언가가 깔려 있었습니다.',
+        '작고 둥근 것이, 땅에 내린 **흰 서리**처럼 온 땅에 깔렸습니다.',
+        '아무도 그것이 무엇인지 몰랐습니다.'
+      ],
+      verse: {
+        text: '광야의 표면에 작고 둥근 것 즉 땅바닥에 내리는 흰 서리같이 작은 것이 깔려 있었으므로',
+        ref: '출애굽기 16:14'
+      }
+    },
+    {
+      caption: '그것이 무엇이냐', keep: true,
+      find: {
+        q: '백성이 이름조차 몰라 "이것이 무엇이냐" 했던 것을 클릭하십시오.',
+        target: 'manna',
+        hint: '땅에 깔린 작고 둥근 것입니다.',
+        explain: '만나입니다. "만나"라는 말 자체가 "이것이 무엇이냐"라는 뜻입니다. (출 16:15)'
+      }
+    },
+    {
+      caption: '주께서 주신 빵', keep: true, sky: 'day',
+      lines: [
+        { who: '모세', text: '이것은 주께서 너희에게 주어 먹게 하신 **빵**이라.' },
+        '이름도 모르던 것이 사십 년 동안 그들의 양식이 되었습니다.',
+        '밭을 갈지 않고, 씨를 뿌리지 않고, 날마다 받아서 먹었습니다.'
+      ],
+      verse: {
+        text: '이것은 주께서 너희에게 주어 먹게 하신 빵이라.',
+        ref: '출애굽기 16:15'
+      },
+      quiz: {
+        q: '"만나"라는 이름은 어떻게 생긴 것입니까?',
+        options: [
+          '모세가 지어 준 이름',
+          '"이것이 무엇이냐"라는 말에서 나온 이름',
+          '이집트 말로 빵이라는 뜻',
+          '천사가 알려 준 이름'
+        ],
+        answer: 1,
+        explain: '그것이 무엇인지 몰라 서로 물었던 말이 그대로 이름이 되었습니다. (출 16:15)'
+      }
+    },
+    {
+      caption: '시험이었습니다', keep: true, sky: 'glory', fx: 'light',
+      lines: [
+        '하나님께서는 이 일을 **시험**이라고 하셨습니다.',
+        '하루치만 주신 것은 인색해서가 아니라, 날마다 찾아오게 하시려는 것이었습니다.',
+        '창고가 가득하면 아침마다 나갈 이유가 없어집니다.'
+      ],
+      quiz: {
+        q: '하나님께서 만나를 하루치씩만 주신 까닭은 무엇입니까?',
+        options: [
+          '양이 부족해서',
+          '날마다 하나님을 의지하게 하시려고',
+          '보관할 그릇이 없어서',
+          '벌을 주시려고'
+        ],
+        answer: 1,
+        explain: '"내 법 안에서 걸으려 하는지 내가 그들을 시험하리라." (출 16:4)'
+      }
+    },
+    {
+      caption: '암송', keep: true, fx: 'sparkle',
+      blank: {
+        text: '내가 너희를 위해 하늘로부터 ___을 ___같이 내리리니',
+        answers: ['빵', '비'],
+        extra: ['만나', '눈'],
+        ref: '출애굽기 16:4'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'dawn', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '기적을 보고도 사흘 만에 불평했습니다. 나는 어떻습니까?' },
+        { who: '생각해 보기', text: '하나님께서 **날마다** 주시는 것을 나는 무엇이라고 부르겠습니까?' }
+      ]
+    }
+  ]
+});
+</script>
