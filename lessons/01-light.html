@@ -1,0 +1,139 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 1강 — 하나님께서 빛을 만드시다 (창세기 1:1-5) */
+const DEEP = ['W{32}', 'W{32}', 'W{32}', 'W{32}', 'W{32}', 'W{32}', 's{32}'];
+
+PB.start({
+  week: 1,
+  title: '하나님께서 빛을 만드시다',
+  ref: '창세기 1:1-5',
+  cover: 3,
+  splash: '말씀하시니 그대로 되니라!',
+  intro: '블록 하나 없는 빈 월드. 모든 이야기가 여기서 시작됩니다.',
+  memory: { text: '처음에 하나님께서 하늘과 땅을 창조하시니라.', ref: '창세기 1:1' },
+  achievement: { title: '첫째 날의 증인', icon: 'star' },
+  scenes: [
+    {
+      caption: '처음에', sky: 'dark', map: [],
+      lines: [
+        '새 월드를 생성하면 땅과 하늘은 이미 거기 있습니다.',
+        '우리는 만들어진 세계에 들어갈 뿐입니다.',
+        '그러나 **아무것도 없던** 때가 있었습니다. 블록도, 빛도, 시간도.'
+      ],
+      verse: { text: '처음에 하나님께서 하늘과 땅을 창조하시니라.', ref: '창세기 1:1' }
+    },
+    {
+      caption: '형태가 없고 비어 있었다', sky: 'dark', map: DEEP, fx: 'dark',
+      lines: [
+        '땅은 형태가 없고 비어 있었습니다. 깊음의 표면 위에는 어둠뿐이었습니다.',
+        '그런데 그 어둠 속에서 이미 일하고 계신 분이 있었습니다.',
+        '물들의 표면 위에서 **하나님의 영**이 움직이셨습니다.'
+      ],
+      verse: {
+        text: '어둠은 깊음의 표면 위에 있고 하나님의 영은 물들의 표면 위에서 움직이셨더라.',
+        ref: '창세기 1:2'
+      }
+    },
+    {
+      caption: 'DAY 1 · 빛이 있으라', sky: 'glory', map: DEEP, fx: ['flash', 'light'], clouds: false,
+      lines: [
+        { who: '하나님', text: '**빛이 있으라.**' },
+        '그러자 빛이 있었습니다. 말씀과 동시에 그대로 되었습니다.',
+        '게임의 명령어는 이미 있는 블록을 불러올 뿐입니다.',
+        '하나님께서는 **없는 것에서** 만드셨습니다. 이것이 창조입니다.'
+      ],
+      verse: { text: '하나님께서 이르시되, 빛이 있으라, 하시매 빛이 있었고', ref: '창세기 1:3' }
+    },
+    {
+      caption: '보시니 좋았더라', keep: true, fx: 'light',
+      lines: [
+        '하나님께서 그 빛을 보시고 좋다고 하셨습니다.',
+        '만드신 분이 직접 값을 매기셨습니다. 좋은 것이라고.'
+      ],
+      verse: { text: '하나님께서 그 빛을 보시니 좋았더라.', ref: '창세기 1:4' }
+    },
+    {
+      caption: '질문', keep: true,
+      choose: {
+        q: '첫째 날의 이 빛은 무엇이었겠습니까?',
+        options: [
+          { text: '해에서 온 빛이었다', goto: 6 },
+          { text: '해가 아닌 다른 빛이었다', goto: 7 }
+        ]
+      }
+    },
+    {
+      caption: '해는 아직 없었습니다', keep: true, sky: 'day',
+      add: [{ s: 'sun', x: 24, y: 5, anim: 'float' }],
+      lines: [
+        '많이들 그렇게 생각합니다. 그런데 본문을 따라가 보십시오.',
+        '해와 달과 별은 **넷째 날**에 만들어집니다. 아직 사흘이 남았습니다.'
+      ]
+    },
+    {
+      caption: '빛이 해보다 먼저', keep: true, sky: 'glory', remove: ['sun'], fx: 'light',
+      lines: [
+        '빛은 해보다 먼저 있었습니다. 빛은 해에게서 나오지 않습니다.',
+        '해가 없어도 빛을 두실 수 있는 분이 빛을 만드셨습니다.'
+      ]
+    },
+    {
+      caption: '낮과 밤', keep: true, sky: 'day', clouds: true,
+      lines: [
+        '하나님께서 어둠에서 빛을 나누셨습니다.',
+        '빛은 **낮**이라, 어둠은 밤이라 부르셨습니다.'
+      ]
+    },
+    {
+      caption: '첫째 날', keep: true, sky: 'night',
+      lines: [
+        '저녁이 되고 아침이 되니, 첫째 날이었습니다.',
+        '세상에 시간이 흐르기 시작했습니다.'
+      ],
+      verse: {
+        text: '하나님께서 빛을 낮이라 부르시며 어둠을 밤이라 부르시니라. 그 저녁과 아침이 첫째 날이니라.',
+        ref: '창세기 1:5'
+      },
+      quiz: {
+        q: '첫째 날에 하나님께서 만드신 것은 무엇입니까?',
+        options: ['해와 달', '빛', '땅과 바다', '식물'],
+        answer: 1,
+        explain: '"빛이 있으라" 하시매 빛이 있었습니다. 해는 넷째 날입니다. (창 1:3)'
+      }
+    },
+    {
+      keep: true, sky: 'dawn',
+      quiz: {
+        q: '하나님께서 세상을 창조하신 수단은 무엇입니까?',
+        options: ['이미 있던 재료', '말씀', '도구와 블록', '오랜 우연'],
+        answer: 1,
+        explain: '말씀하시니 그대로 되었습니다. 없는 것에서 만드시는 일이 창조입니다.'
+      }
+    },
+    {
+      caption: '암송', keep: true, sky: 'glory', fx: 'sparkle',
+      blank: {
+        text: '처음에 하나님께서 ___과 ___을 창조하시니라.',
+        answers: ['하늘', '땅'],
+        extra: ['바다', '빛'],
+        ref: '창세기 1:1'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day',
+      lines: [
+        { who: '생각해 보기', text: '이 세상이 **저절로** 생긴 것과 누군가 만든 것은 무엇이 다릅니까?' },
+        { who: '생각해 보기', text: '내 삶에서 지금 가장 어두운 자리는 어디입니까?' },
+        '어둠 위에서 이미 움직이고 계셨던 분은, 지금도 그렇게 일하십니다.'
+      ]
+    }
+  ]
+});
+</script>

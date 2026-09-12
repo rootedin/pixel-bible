@@ -124,5 +124,6 @@ canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: bloc
 
 /* 걷기: 무대 위 방향 버튼 (터치 대응) */
 .pb-dpad[hidden] { display: none; }
-.pb-dpad { position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 16px; pointer-events: none; }
-.pb-dpad .pb-btn { pointer-events: auto; font-size: clamp(18px, 2.6vw, 30px); padding: 10px 28px; opacity: .93; touch-action: none; }
+/* 화면 한가운데(목표 화살표·인물)를 가리지 않도록 양쪽 끝에 붙인다 */
+.pb-dpad { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; justify-content: space-between; padding: 0 8px; pointer-events: none; }
+.pb-dpad .pb-btn { pointer-events: auto; font-size: clamp(15px, 2.2vw, 28px); padding: clamp(5px, 1vw, 11px) clamp(12px, 2.6vw, 28px); opacity: .9; touch-action: none; }
