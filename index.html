@@ -1,0 +1,94 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="engine/style.css">
+<style>
+  .pb-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; margin: 0 0 18px; }
+  .pb-bar .pb-btn.on { background: #5a6a3a; box-shadow: inset 3px 3px 0 #8fae5e, inset -3px -4px 0 #3a4a22; color: var(--mc-yellow); }
+  .pb-sec { margin: 26px 0 10px; color: var(--mc-yellow); font-size: 20px; text-shadow: 2px 2px 0 #3f3f00; }
+  .pb-sec small { color: #bbb; font-size: 13px; text-shadow: none; margin-left: 8px; }
+  .pb-card.locked { background: #2b2b2b; box-shadow: inset 3px 3px 0 #444, inset -3px -3px 0 #1b1b1b; cursor: default; opacity: .72; }
+  .pb-card.locked:hover { background: #2b2b2b; }
+  .pb-card.locked .t { color: #cfcfcf; }
+  .pb-thumb { aspect-ratio: 16 / 9; border: 2px solid #000; margin-bottom: 8px; display: grid; place-items: center;
+    background: repeating-linear-gradient(45deg, #3a3a3a 0 8px, #333 8px 16px); color: #9a9a9a; font-size: 13px; }
+  .pb-tagx { float: right; font-size: 11px; padding: 1px 6px; border: 2px solid #000; }
+  .pb-tagx.open { background: #4f9530; color: #fff; }
+  .pb-tagx.soon { background: #5a5a5a; color: #ddd; }
+</style>
+<div class="pb-app">
+  <div class="pb-titlescreen" style="position:relative;padding:30px 0 10px;background:none">
+    <div class="pb-logo">픽셀 성경</div>
+    <div class="pb-sub">블록으로 만나는 말씀 · 중등부</div>
+    <div class="pb-splash" style="right:8%;top:40%">매주 업데이트!</div>
+  </div>
+  <div class="pb-bar">
+    <button class="pb-btn sm on" data-f="all">전체</button>
+    <button class="pb-btn sm" data-f="open">열린 강의만</button>
+    <button class="pb-btn sm" data-f="ot">구약</button>
+    <button class="pb-btn sm" data-f="nt">신약</button>
+    <span class="pb-sub" id="count" style="margin-left:10px"></span>
+  </div>
+  <div id="list"></div>
+</div>
+<script src="engine/world.js"></script>
+<script src="engine/sprites.js"></script>
+<script src="engine/engine.js"></script>
+<script src="lessons/curriculum.js"></script>
+<script src="lessons/list.js"></script>
+<script>
+(function () {
+  // 흙 배경
+  const cv = document.createElement('canvas'); cv.width = cv.height = 32;
+  const g = cv.getContext('2d'), r = PB.rng(9);
+  for (let y = 0; y < 32; y++) for (let x = 0; x < 32; x++) { g.fillStyle = PB.TILES.D.f(x, y, r); g.fillRect(x, y, 1, 1); }
+  g.fillStyle = 'rgba(0,0,0,0.62)'; g.fillRect(0, 0, 32, 32);
+  document.body.style.backgroundImage = `url(${cv.toDataURL()})`;
+
+  const OT = window.PB_OT_COUNT || 143;
+  const made = {}; (window.PB_LESSONS || []).forEach(L => (made[L.week] = L));
+  const all = (window.PB_CURRICULUM || []).map((c, i) => {
+    const n = i + 1, L = made[n];
+    return { n, title: (L && L.title) || c[0], ref: (L && L.ref) || c[1], file: L && L.file, cover: L && L.cover, ot: n <= OT };
+  });
+  document.getElementById('count').textContent =
+    `공개 ${Object.keys(made).length}강 / 전체 ${all.length}강 (구약 ${OT} · 신약 ${all.length - OT})`;
+
+  const listEl = document.getElementById('list');
+  function card(L) {
+    const el = document.createElement(L.file ? 'a' : 'div');
+    el.className = 'pb-card' + (L.file ? '' : ' locked');
+    if (L.file) el.href = L.file;
+    if (L.cover) { const c = document.createElement('canvas'); PB.renderStill(c, L.cover); el.appendChild(c); }
+    else el.insertAdjacentHTML('beforeend', '<div class="pb-thumb">오픈 예정</div>');
+    el.insertAdjacentHTML('beforeend',
+      `<div class="n">${L.ot ? '구약' : '신약'} ${String(L.n).padStart(3, '0')}강` +
+      `<span class="pb-tagx ${L.file ? 'open' : 'soon'}">${L.file ? '열림' : '오픈 예정'}</span></div>` +
+      '<div class="t"></div><div class="r"></div>');
+    el.querySelector('.t').textContent = L.title;
+    el.querySelector('.r').textContent = L.ref || '';
+    return el;
+  }
+  function section(title, sub, rows) {
+    if (!rows.length) return;
+    listEl.insertAdjacentHTML('beforeend', `<div class="pb-sec">${title}<small>${sub}</small></div>`);
+    const grid = document.createElement('div'); grid.className = 'pb-grid';
+    rows.forEach(L => grid.appendChild(card(L)));
+    listEl.appendChild(grid);
+  }
+  function draw(filter) {
+    listEl.innerHTML = '';
+    const rows = all.filter(L => (filter === 'open' ? L.file : filter === 'ot' ? L.ot : filter === 'nt' ? !L.ot : true));
+    const ot = rows.filter(L => L.ot), nt = rows.filter(L => !L.ot);
+    section('구약', `${ot.length}강 · 공개 ${ot.filter(L => L.file).length}강`, ot);
+    section('신약', `${nt.length}강 · 공개 ${nt.filter(L => L.file).length}강`, nt);
+  }
+  document.querySelectorAll('[data-f]').forEach(b => {
+    b.onclick = () => {
+      document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b));
+      draw(b.dataset.f);
+    };
+  });
+  draw('all');
+})();
+</script>

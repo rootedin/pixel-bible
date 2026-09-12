@@ -1,0 +1,15 @@
+{
+  "name": "pixel-bible",
+  "version": "1.0.0",
+  "private": true,
+  "description": "마인크래프트풍 도트 그래픽 주간 말씀 레슨 (중·고등부)",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "serve": "node serve.js",
+    "build": "node build.js",
+    "lint": "node lint.js",
+    "verse": "node verse.js"
+  }
+}

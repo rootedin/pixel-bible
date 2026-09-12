@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경 — 상호작용 스모크 테스트</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 엔진 상호작용 4종 점검용. build.js 대상이 아님(_ 로 시작). */
+const GROUND = ['G{32}', 'D{32}', 'D{32}', 'S{32}'];
+
+PB.start({
+  week: 0, title: '상호작용 점검', ref: '테스트',
+  splash: '엔진 테스트!', intro: 'find / choose / blank / walk 를 차례로 점검합니다.',
+  memory: { text: '처음에 하나님께서 하늘과 땅을 창조하시니라.', ref: '창세기 1:1' },
+  achievement: { title: '엔진 점검 완료', icon: 'star' },
+  scenes: [
+    {
+      caption: '1. 찾기', sky: 'day', bg: 'hills', map: GROUND,
+      objects: [['sheep', 6], ['cow', 12], { s: 'sun', x: 26, y: 4 }, ['lion', 19]],
+      lines: ['첫 번째 점검: 화면의 오브젝트를 직접 클릭합니다.'],
+      find: { q: '하늘에 있는 것을 클릭하십시오.', target: 'sun', hint: '위쪽을 보십시오.', explain: '해입니다. 클릭 판정이 정상입니다.' }
+    },
+    {
+      caption: '2. 걷기', keep: true, remove: ['lion'],
+      walk: { player: 'boy', name: '탐험가', from: 2, goal: 27, tol: 1,
+        q: '방향키 또는 ◀ ▶ 버튼으로 노란 화살표까지 이동하십시오.',
+        say: '도착했습니다. 걷기 판정이 정상입니다.' }
+    },
+    {
+      caption: '3. 선택', keep: true,
+      choose: { q: '어느 장면으로 이동하시겠습니까?',
+        options: [{ text: '4번 빈칸으로', goto: 4 }, { text: '5번 마지막으로', goto: 5 }] }
+    },
+    {
+      caption: '4. 빈칸', keep: true, sky: 'glory',
+      blank: { text: '처음에 하나님께서 ___과 ___을 창조하시니라.',
+        answers: ['하늘', '땅'], extra: ['바다', '빛'], ref: '창세기 1:1' }
+    },
+    {
+      caption: '5. 끝', keep: true, sky: 'dusk',
+      lines: ['모든 점검이 끝났습니다.'],
+      quiz: { q: '기존 퀴즈도 정상입니까?', options: ['정상', '비정상'], answer: 0, explain: '기존 기능이 유지되었습니다.' }
+    }
+  ]
+});
+</script>
