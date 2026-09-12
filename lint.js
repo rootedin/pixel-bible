@@ -212,9 +212,22 @@ function checkLesson(PB, L, add) {
       if (wk.player && !spriteNames.has(wk.player)) add('E', at, `walk.player '${wk.player}' 는 없는 스프라이트입니다`);
       if (wk.from != null && wk.goal != null && Math.abs(wk.from - wk.goal) < 3)
         add('W', at, '출발점과 목표가 너무 가까워 이동할 것이 없습니다');
-      /* 목표 지점에 설 땅이 있는가 */
-      if (wk.goal != null && PB.groundY(w.grid, wk.goal) >= ROWS)
-        add('E', at, `walk.goal=${wk.goal} 열에 바닥이 없습니다 (캐릭터가 화면 밖으로 떨어짐)`);
+      /* 출발점부터 목표까지 전 구간을 실제로 걸을 수 있는가.
+         바닥이 없으면 캐릭터가 화면 밖으로 떨어지고,
+         물/용암 위를 지나면 물 위를 걷는 것처럼 보인다. */
+      if (wk.goal != null) {
+        const from = wk.from == null ? 2 : wk.from;
+        const lo = Math.floor(Math.min(from, wk.goal)), hi = Math.ceil(Math.max(from, wk.goal));
+        const noFloor = [], onLiquid = [];
+        for (let x = Math.max(0, lo); x <= Math.min(COLS - 1, hi); x++) {
+          const gy = PB.groundY(w.grid, x);
+          if (gy >= ROWS) { noFloor.push(x); continue; }
+          const ch = w.grid[gy][x];
+          if (ch === 'W' || ch === 'A') onLiquid.push(x + (ch === 'W' ? '(물)' : '(용암)'));
+        }
+        if (noFloor.length) add('E', at, `walk 경로에 바닥이 없는 열: ${noFloor.join(', ')} (캐릭터가 떨어짐)`);
+        if (onLiquid.length) add('E', at, `walk 경로가 액체 위를 지납니다: ${onLiquid.join(', ')}`);
+      }
     }
   });
 
