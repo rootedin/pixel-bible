@@ -194,6 +194,11 @@ window.PB = window.PB || {};
     setSnd();
 
     const dpad = q('.pb-dpad');
+    /* 이동 키 판별: ← → 와 A/D.
+       A/D 는 e.code 로 판별해야 한글 입력 상태에서도 동작한다. */
+    const moveKey = e =>
+      (e.key === 'ArrowLeft' || e.code === 'KeyA') ? 'left' :
+      (e.key === 'ArrowRight' || e.code === 'KeyD') ? 'right' : null;
     const st = { mode: 'title', step: 0, si: 0, sceneT0: performance.now(), typing: null, shown: 0,
       find: null, blank: null, walk: null, miss: null, hits: [], keys: { left: false, right: false } };
     let world = worlds[0];
@@ -388,7 +393,7 @@ window.PB = window.PB || {};
           }
         };
         dpad.hidden = false;
-        textEl.innerHTML = segHtml(segs(s.q || '방향키 또는 화면의 ◀ ▶ 버튼으로 이동하십시오.'), 1e9);
+        textEl.innerHTML = segHtml(segs(s.q || '방향키(또는 A·D), 화면의 ◀ ▶ 버튼으로 이동하십시오.'), 1e9);
       }
       const pct = (st.step + 1) / steps.length * 100;
       q('.pb-xpfill').style.width = pct + '%';
@@ -492,16 +497,24 @@ window.PB = window.PB || {};
     q('[data-a="full"]').onclick = full;
     document.addEventListener('keydown', e => {
       if (e.target.closest && e.target.closest('input,textarea')) return;
-      if (st.walk && !st.walk.done && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
-        e.preventDefault(); st.keys[e.key === 'ArrowLeft' ? 'left' : 'right'] = true; return;
+      const mv = moveKey(e);
+      /* 걷기 단계에서는 좌우 키가 '이동' 전용이다.
+         도착한 뒤에도 장면을 넘기지 않는다 — 계속 누르고 있다가 장면이 줄줄이
+         넘어가 버리는 일을 막는다. 넘어갈 때는 Space·Enter·PageDown·'다음 ▶'. */
+      if (st.walk && mv) {
+        e.preventDefault();
+        if (!st.walk.done) st.keys[mv] = true;
+        return;
       }
+      /* 키를 누르고 있을 때 자동 반복으로 장면이 연달아 넘어가지 않게 한다 */
+      if (e.repeat) return;
       if (['ArrowRight', ' ', 'Enter', 'PageDown'].includes(e.key)) { e.preventDefault(); next(); }
       else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
       else if (e.key === 'f' || e.key === 'F') full();
     });
     document.addEventListener('keyup', e => {
-      if (e.key === 'ArrowLeft') st.keys.left = false;
-      if (e.key === 'ArrowRight') st.keys.right = false;
+      const mv = moveKey(e);
+      if (mv) st.keys[mv] = false;
     });
 
     showCaption(null);
