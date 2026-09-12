@@ -29,5 +29,9 @@ window.PB_LESSONS = [
   {
     week: 38, file: "lessons/38-moses-flees.html", title: "모세가 광야로 도망치다", ref: "출애굽기 2:11-22",
     cover: {"sky":"day","map":[".{20}C..C.{8}",".{20}CWWC.{8}","s{20}CCCCs{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"jar","x":17},{"s":"man","x":15,"label":"모세","shirt":"#c9b48a"},{"s":"girl","x":26,"label":"미디안의 딸","shirt":"#c98a6a","flip":true},{"s":"girl","x":28,"shirt":"#9ab8c9","flip":true},{"s":"sheep","x":30,"anim":"bob"}],"bg":"desert"}
+  },
+  {
+    week: 39, file: "lessons/39-burning-bush.html", title: "하나님께서 불타는 떨기나무에서 모세를 찾아오시다", ref: "출애굽기 3장",
+    cover: {"sky":"day","map":[".{26}S{6}",".{24}S{8}",".{22}S{10}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"shepherd","x":4,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a"},{"s":"sheep","x":9,"anim":"bob"},{"s":"sheep","x":13,"anim":"walk","range":1},{"s":"tuft","x":17},{"s":"stone","x":11},{"s":"tuft","x":21},{"s":"fire","x":23,"label":"떨기나무"},{"s":"tuft","x":22},{"s":"tuft","x":24.5}],"bg":"mountains"}
   }
 ];

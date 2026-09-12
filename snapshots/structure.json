@@ -1713,5 +1713,330 @@
     ]
    }
   ]
+ },
+ "lessons/39-burning-bush.html": {
+  "title": "하나님께서 불타는 떨기나무에서 모세를 찾아오시다",
+  "week": 39,
+  "scenes": 14,
+  "hash": "8f06ce773065",
+  "detail": [
+   {
+    "caption": "사십 년 뒤",
+    "sky": "dawn",
+    "bg": "desert",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@8,13#모세",
+     "sheep@14,13:walk",
+     "sheep@19,13:bob",
+     "sheep@24,13:walk",
+     "tuft@28,13"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "하나님의 산 호렙",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "무언가 이상하다",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12"
+    ],
+    "steps": [
+     "lines",
+     "find",
+     "verse"
+    ]
+   },
+   {
+    "caption": "옆으로 돌아서",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12"
+    ],
+    "steps": [
+     "lines",
+     "walk",
+     "verse"
+    ]
+   },
+   {
+    "caption": "모세야, 모세야",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": "light",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "신을 벗으라",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "나는 네 아버지의 하나님",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "보았고, 들었고, 안다",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "내가 너를 보내리니",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": [
+     "light",
+     "sparkle"
+    ],
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "내가 누구이기에",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": "light",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "내가 너와 함께하리라",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "그분의 이름",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": [
+     "light",
+     "sparkle"
+    ],
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "암송",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": "sparkle",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "blank"
+    ]
+   },
+   {
+    "caption": "나눔",
+    "sky": "dawn",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|..........................SSSSSS|........................SSSSSSSS|......................SSSSSSSSSS|ssssssssssssssssssssSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "shepherd@4,14#모세",
+     "sheep@9,14:bob",
+     "sheep@13,14:walk",
+     "tuft@17,14",
+     "stone@11,14",
+     "tuft@21,14",
+     "fire@23,13#떨기나무",
+     "tuft@22,13",
+     "tuft@24.5,12",
+     "shepherd@19,14#모세"
+    ],
+    "steps": [
+     "lines"
+    ]
+   }
+  ]
  }
 }
