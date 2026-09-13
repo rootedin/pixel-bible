@@ -305,6 +305,16 @@ window.PB = window.PB || {};
         'yyyyyyy',
         'ydydydy',
         '.yyyyy.']
+    },
+    /* 하프 — 다윗이 손으로 타던 것(삼상 16장) */
+    harp: {
+      pal: { w: '#c8a04a', s: '#f2ecdc', d: '#8a6a22' }, px: [
+        'w.....w',
+        'w.sss.w',
+        'w.sss.w',
+        'w.sss.w',
+        'dd...dd',
+        '.ddddd.']
     }
   });
 })(window.PB);
