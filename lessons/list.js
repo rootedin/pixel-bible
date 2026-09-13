@@ -117,5 +117,9 @@ window.PB_LESSONS = [
   {
     week: 60, file: "lessons/60-balaam.html", title: "발람이 저주 대신 축복하다", ref: "민수기 22:22 - 24:25",
     cover: {"sky":"dusk","map":[".{8}C.{14}C.{8}",".{8}C.{14}C.{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"발람","beard":"#5a4a3a","robe":true,"shirt":"#6b5a8e"},{"s":"donkey","x":7,"label":"나귀"},{"s":"man","x":2,"label":"종","shirt":"#8a6b45"}],"bg":"hills"}
+  },
+  {
+    week: 61, file: "lessons/61-two-spies.html", title: "두 정탐꾼이 여리고에 들어가다", ref: "여호수아 1-2장",
+    cover: {"sky":"night","map":[".{12}C{20}",".{12}C{4}ggC{14}",".{12}C{20}",".{12}C{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"정탐꾼","shirt":"#8a6b45"},{"s":"man","x":7,"shirt":"#a08a6a"},{"s":"woman","x":10,"label":"라합","hood":"#b9765a","flip":true}],"bg":"desert"}
   }
 ];
