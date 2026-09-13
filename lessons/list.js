@@ -228,6 +228,10 @@ window.PB_LESSONS = [
   },
   {
     week: 88, file: "lessons/88-david-anointed.html", title: "사무엘이 다윗에게 기름을 붓다", ref: "사무엘상 16장",
-    cover: {"sky":"day","map":[".{4}T{12}.{16}",".{4}P.{10}P.{16}",".{4}P.{10}P.{16}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":7,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":11,"label":"이새"},{"s":"soldier","x":15,"label":"엘리압","shirt":"#9a7b52","flip":true},{"s":"man","x":18,"shirt":"#8a7a5a","flip":true},{"s":"man","x":21,"shirt":"#8a9a6a","flip":true},{"s":"sheep","x":28,"scale":2,"label":"양 떼"}],"bg":"hills"}
+    cover: {"sky":"day","map":[".{4}T{12}.{16}",".{4}P.{10}P.{16}",".{4}P.{10}P.{16}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":7,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":11,"label":"이새"},{"s":"soldier","x":17,"label":"엘리압","shirt":"#9a7b52","flip":true},{"s":"man","x":20,"shirt":"#8a7a5a","flip":true},{"s":"man","x":23,"shirt":"#8a9a6a","flip":true},{"s":"sheep","x":28,"scale":2,"label":"양 떼"}],"bg":"hills"}
+  },
+  {
+    week: 89, file: "lessons/89-david-goliath.html", title: "다윗이 골리앗을 쓰러뜨리다", ref: "사무엘상 17장",
+    cover: {"sky":"day","map":["S{6}.{26}","S{9}.{23}","S{12}.{20}","S{12}G{14}S{6}","D{32}","S{32}"],"objects":[{"s":"giant","x":24,"label":"골리앗","flip":true},{"s":"soldier","x":3,"shirt":"#9a7b52"},{"s":"king","x":1,"label":"사울"},{"s":"boy","x":18,"label":"다윗","shirt":"#b8724a"}],"bg":"mountains"}
   }
 ];
