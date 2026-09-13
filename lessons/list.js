@@ -185,5 +185,9 @@ window.PB_LESSONS = [
   {
     week: 77, file: "lessons/77-ruth-returns.html", title: "나오미와 룻이 베들레헴으로 돌아오다", ref: "룻기 1-2장",
     cover: {"sky":"day","map":[".{26}S{6}",".{22}S{10}","G{18}S{14}","D{32}","S{32}"],"objects":[{"s":"woman","x":26,"label":"나오미","hood":"#8a6b4a","flip":true},{"s":"tuft","x":10}],"bg":"mountains"}
+  },
+  {
+    week: 78, file: "lessons/78-ruth-boaz.html", title: "룻과 보아스가 결혼하다", ref: "룻기 3-4장",
+    cover: {"sky":"night","map":["y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"룻","hood":"#b9765a"},{"s":"man","x":16,"label":"보아스","shirt":"#8a7a5a","flip":true},{"s":"sheaf","x":21,"scale":3,"label":"곡식 더미"},{"s":"sheaf","x":26,"scale":2}],"bg":"hills"}
   }
 ];
