@@ -249,5 +249,9 @@ window.PB_LESSONS = [
   {
     week: 93, file: "lessons/93-saul-pursues.html", title: "사울이 다윗을 뒤쫓다", ref: "사무엘상 23-24장",
     cover: {"sky":"cave","map":["S{7}.{18}S{7}","S{6}.{20}S{6}","S{5}.{22}S{5}","S{5}.{22}S{5}","S{32}","S{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"사울","flip":true},{"s":"man","x":11,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":8,"shirt":"#9a7b52"},{"s":"sword","x":13.5,"y":14,"scale":2,"label":"다윗의 칼"}]}
+  },
+  {
+    week: 94, file: "lessons/94-nabal.html", title: "어리석은 나발이 죽다", ref: "사무엘상 25장",
+    cover: {"sky":"dusk","map":["s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":12,"shirt":"#9a7b52"},{"s":"soldier","x":15,"shirt":"#9a7b52"},{"s":"sword","x":19,"y":13,"scale":2,"label":"칼"}],"bg":"desert"}
   }
 ];
