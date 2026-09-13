@@ -261,5 +261,9 @@ window.PB_LESSONS = [
   {
     week: 96, file: "lessons/96-endor.html", title: "사울이 엔돌의 무당을 찾아가다", ref: "사무엘상 28장",
     cover: {"sky":"night","map":[".{20}S{12}",".{16}S{16}","G{14}S{18}","D{32}","S{32}"],"objects":[{"s":"king","x":6,"label":"사울"},{"s":"soldier","x":9,"shirt":"#8a7a9a"},{"s":"stone","x":2,"scale":2,"label":"사무엘의 무덤"},{"s":"soldier","x":24,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":28,"shirt":"#5a7a8a","flip":true},{"s":"chariot","x":21,"scale":2,"flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 97, file: "lessons/97-saul-dies.html", title: "사울이 블레셋 전투에서 전사하다", ref: "사무엘상 31장",
+    cover: {"sky":"night","map":[".{14}C{18}",".{14}C{18}",".{14}C{18}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":6,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":10,"shirt":"#5a7a8a","flip":true},{"s":"woman","x":2,"label":"아스다롯","skin":"#f0d264","hood":"#d8aa2c","robe":"#c2941c"}],"bg":"city"}
   }
 ];
