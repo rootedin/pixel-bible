@@ -152,6 +152,10 @@ window.PB_LESSONS = [
   },
   {
     week: 69, file: "lessons/69-ehud.html", title: "왼손잡이 에훗이 사사가 되다", ref: "사사기 3:12-30",
-    cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"shirt":"#9a7b52"},{"s":"woman","x":11,"hood":"#8a6b4a"},{"s":"boy","x":14,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":24},{"s":"man","x":20,"label":"에훗","shirt":"#7a6a8a","flip":true},{"s":"sword","x":14,"y":12,"scale":2,"label":"칼"}],"bg":"hills"}
+    cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"shirt":"#9a7b52"},{"s":"woman","x":11,"hood":"#8a6b4a"},{"s":"boy","x":14,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":24},{"s":"man","x":20,"label":"에훗","shirt":"#7a6a8a","flip":true},{"s":"sword","x":16.5,"y":12,"scale":3,"label":"칼"}],"bg":"hills"}
+  },
+  {
+    week: 70, file: "lessons/70-deborah.html", title: "드보라와 바락이 이스라엘을 다스리다", ref: "사사기 4-5장",
+    cover: {"sky":"storm","map":["S{8}.{24}","S{12}.{20}","S{16}.{16}","S{18}G{4}W{4}G{6}","D{22}W{4}D{6}","S{32}"],"objects":[{"s":"woman","x":5,"label":"드보라","hood":"#c2a24a","robe":"#7a5a9a"},{"s":"chariot","x":27,"scale":2,"flip":true},{"s":"chariot","x":30.5,"scale":2,"flip":true},{"s":"chariot","x":20,"scale":2,"label":"철 병거","flip":true},{"s":"soldier","x":30,"label":"시스라","shirt":"#6a5a7a","flip":true}],"bg":"mountains"}
   }
 ];
