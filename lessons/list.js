@@ -205,5 +205,13 @@ window.PB_LESSONS = [
   {
     week: 82, file: "lessons/82-mizpah.html", title: "이스라엘이 미스바에 모여 회개하다", ref: "사무엘상 6:13-7:12",
     cover: {"sky":"storm","map":["G{32}","D{32}","S{32}","S{32}"],"objects":[{"s":"man","x":14,"label":"사무엘","shirt":"#e0d8c0"},{"s":"jar","x":17,"scale":2,"label":"물"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"woman","x":21,"hood":"#8a6b4a","flip":true},{"s":"man","x":25,"shirt":"#8a7a5a","flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 83, file: "lessons/83-israel-wants-king.html", title: "이스라엘이 왕을 원하다", ref: "사무엘상 8-9장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":9,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":14,"label":"아들","shirt":"#9a7b52"},{"s":"man","x":17,"shirt":"#8a7a5a"},{"s":"coin","x":20},{"s":"elder","x":24,"label":"장로","flip":true},{"s":"man","x":27,"shirt":"#8a7a5a","flip":true},{"s":"chariot","x":20,"scale":2,"label":"병거"}],"bg":"hills"}
+  },
+  {
+    week: 84, file: "lessons/84-saul-made-king.html", title: "하나님께서 이스라엘에게 왕을 주시다", ref: "사무엘상 10장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":7,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":14,"hood":"#8a6b4a"},{"s":"jar","x":22},{"s":"basket","x":24},{"s":"sheaf","x":26,"scale":2},{"s":"man","x":25,"label":"사울","shirt":"#8a7a9a"}],"bg":"hills"}
   }
 ];
