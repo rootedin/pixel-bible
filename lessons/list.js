@@ -237,5 +237,9 @@ window.PB_LESSONS = [
   {
     week: 90, file: "lessons/90-david-jonathan.html", title: "다윗과 요나단이 친구가 되다", ref: "사무엘상 18장",
     cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":10,"label":"사울"},{"s":"boy","x":15,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":19,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"torch","x":21.5,"scale":2},{"s":"sword","x":17,"y":14,"scale":2,"label":"요나단의 칼"}],"bg":"city"}
+  },
+  {
+    week: 91, file: "lessons/91-saul-hunts-david.html", title: "사울이 다윗을 죽이려 하다", ref: "사무엘상 19장",
+    cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"사울"},{"s":"soldier","x":16,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"man","x":20,"label":"신하","shirt":"#9a7b52","flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
   }
 ];
