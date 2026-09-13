@@ -149,5 +149,9 @@ window.PB_LESSONS = [
   {
     week: 68, file: "lessons/68-joshua-dies.html", title: "여호수아가 죽다", ref: "여호수아 24장, 사사기 1:1-15",
     cover: {"sky":"glory","map":[".{6}L{3}.{23}",".{5}L{5}.{22}",".{6}LTL.{23}",".{7}T.{24}",".{7}T.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":11,"label":"여호수아","shirt":"#b8a06a"},{"s":"man","x":17,"shirt":"#9a7b52","flip":true},{"s":"woman","x":20,"hood":"#8a6b4a","flip":true},{"s":"boy","x":22.5,"shirt":"#a98a5e","anim":"bob","flip":true},{"s":"tuft","x":27}],"bg":"hills"}
+  },
+  {
+    week: 69, file: "lessons/69-ehud.html", title: "왼손잡이 에훗이 사사가 되다", ref: "사사기 3:12-30",
+    cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"shirt":"#9a7b52"},{"s":"woman","x":11,"hood":"#8a6b4a"},{"s":"boy","x":14,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":24},{"s":"man","x":20,"label":"에훗","shirt":"#7a6a8a","flip":true},{"s":"sword","x":14,"y":12,"scale":2,"label":"칼"}],"bg":"hills"}
   }
 ];
