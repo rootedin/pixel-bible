@@ -105,7 +105,9 @@ window.PB = window.PB || {};
         '...wvwwww...', '.wwwwwwwwwff', 'wwvwwwwwwfef', 'wwwwwwvwwfff', 'wwwwwwwwww..', '.wwvwwwwww..', '.ll....ll...', '.ll....ll...'] },
       cow: { pal: { w: '#eeeeee', k: '#3a2a22', p: '#e8a0a0', e: '#111', h: '#cfc7b8' }, px: [
         'h.........h.', 'kkwwkkkkwkkk', 'kwwkkkkwwkek', 'kkkkwwkkkkpp', 'kwwkkkkwwkpp', 'kkkkkkkkkk..', '.kk....kk...', '.kk....kk...'] },
-      lion: { pal: { m: '#8a4b1c', y: '#d9a23c', e: '#222', n: '#5a3212' }, px: [
+      donkey: { pal: { g: '#9a9088', d: '#6a625c', e: '#222', m: '#d8d2cc' }, px: [
+      'g.........g.', 'ggddggggdggg', 'gddggggddgeg', 'ggggddggggmm', 'gddggggddgmm', 'gggggggggg..', '.dd....dd...', '.dd....dd...'] },
+    lion: { pal: { m: '#8a4b1c', y: '#d9a23c', e: '#222', n: '#5a3212' }, px: [
         '........mmm.', '.......mmyym', 'y......mmyey', 'yyyyyyymmyyn', 'yyyyyyyymyy.', 'yyyyyyyyy...', '.yy....yy...', '.yy....yy...'] },
       snake: { pal: { g: '#4f9e2c', d: '#2f6a18', e: '#ff3', t: '#d33' }, px: [
         '........ggg.', '.......ggegt', 'gdg...gdg...', '.gdgggdg....', '..ggg.......'] },

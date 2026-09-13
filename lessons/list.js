@@ -113,5 +113,9 @@ window.PB_LESSONS = [
   {
     week: 59, file: "lessons/59-balak.html", title: "모압 왕 발락이 이스라엘을 저주하려 하다", ref: "민수기 21:21 - 22:21",
     cover: {"sky":"dusk","map":[".{22}G{10}",".{22}D{10}","G{10}.{12}D{10}","D{10}.{12}D{10}","D{10}.{12}S{10}","S{32}","S{32}"],"objects":[{"s":"soldier","x":3,"label":"이스라엘","shirt":"#b8a06a"},{"s":"soldier","x":6},{"s":"man","x":26,"label":"발락","beard":"#3b2414","shirt":"#7b2fbe","crown":true,"flip":true},{"s":"soldier","x":29,"flip":true}],"bg":"hills"}
+  },
+  {
+    week: 60, file: "lessons/60-balaam.html", title: "발람이 저주 대신 축복하다", ref: "민수기 22:22 - 24:25",
+    cover: {"sky":"dusk","map":[".{8}C.{14}C.{8}",".{8}C.{14}C.{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"발람","beard":"#5a4a3a","robe":true,"shirt":"#6b5a8e"},{"s":"donkey","x":7,"label":"나귀"},{"s":"man","x":2,"label":"종","shirt":"#8a6b45"}],"bg":"hills"}
   }
 ];

@@ -102,7 +102,7 @@ light(빛 번짐), rain, snow, sparkle, rainbow, flash(장면 시작 번쩍), li
 - 사람 프리셋: boy girl man woman elder shepherd king priest soldier giant jesus angel
   옵션으로 덮어쓰기: skin hair shirt pants sash beard long robe hood crown halo wings staff
   예) `{ s: 'shepherd', x: 8, label: '다윗', beard: false, hair: '#8a4b1c' }`
-- 동물/사물: sheep cow lion snake fish bird dove sun moon star heart cross fire tablets
+- 동물/사물: sheep cow donkey lion snake fish bird dove sun moon star heart cross fire tablets
   scroll bread fruit flower flower2 tuft torch stone jar coin basket reed frog brick fly locust chariot manna ark censer basket(갈대 궤+아기) reed(부들/갈대)
   - `pal: { 글자: '#색' }` 으로 색 변경 (예: 물고기 색)
 
