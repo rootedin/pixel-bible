@@ -73,5 +73,9 @@ window.PB_LESSONS = [
   {
     week: 49, file: "lessons/49-mount-sinai.html", title: "이스라엘이 시내 산에 이르다", ref: "출애굽기 19-20장",
     cover: {"sky":"storm","map":[".{20}S{12}",".{18}S{14}",".{16}S{16}","s{14}S{18}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":7,"shirt":"#9a7b52"},{"s":"woman","x":9.5,"hood":"#8a6b4a"},{"s":"boy","x":12,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":2},{"s":"fire","x":24,"y":11,"scale":2},{"s":"man","x":12,"label":"이스라엘 사람","shirt":"#9a7b52"}],"bg":"mountains"}
+  },
+  {
+    week: 50, file: "lessons/50-golden-calf.html", title: "이스라엘이 금송아지를 섬기다", ref: "출애굽기 32장",
+    cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"cow","x":16,"label":"금송아지","pal":{"w":"#ffe25a","k":"#c8961a","p":"#f5b82e","h":"#e0b030","e":"#6a4a10"},"scale":2},{"s":"man","x":10,"label":"아론","beard":"#3b2414","shirt":"#b89a6a"},{"s":"man","x":6,"shirt":"#9a7b52","anim":"jump"},{"s":"woman","x":22,"hood":"#8a6b4a","anim":"jump","flip":true},{"s":"boy","x":26,"shirt":"#a98a5e","anim":"jump","flip":true},{"s":"jar","x":29}],"bg":"mountains"}
   }
 ];

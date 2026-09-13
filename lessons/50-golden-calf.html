@@ -1,0 +1,222 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 50강 — 이스라엘이 금송아지를 섬기다 (출애굽기 32장) */
+const SINAI = [               // 시내 산 — 오른쪽으로 솟은 산, 왼쪽(0-13)이 진영
+  '.{20}S{12}',
+  '.{18}S{14}',
+  '.{16}S{16}',
+  's{14}S{18}',
+  's{32}',
+  'D{32}',
+  'S{32}'
+];
+const CAMP = [                // 산 아래 진영 — 트인 벌판
+  's{32}',
+  's{32}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+/* 금송아지 — cow 스프라이트를 금빛으로 칠해 쓴다 */
+const GOLD = { w: '#ffe25a', k: '#c8961a', p: '#f5b82e', h: '#e0b030', e: '#6a4a10' };
+
+PB.start({
+  week: 50,
+  title: '이스라엘이 금송아지를 섬기다',
+  ref: '출애굽기 32장',
+  cover: 5,
+  splash: '누가 주의 편에 속하느냐?',
+  intro: '모세가 산에 올라간 지 사십 일. 산 아래에서는 기다림이 길어집니다.',
+  memory: {
+    text: '누가 주의 편에 속하느냐? 그는 내게로 오라',
+    ref: '출애굽기 32:26'
+  },
+  achievement: { title: '주의 편에 선 사람', icon: 'tablets' },
+  scenes: [
+    {
+      caption: '사십 일째', sky: 'storm', bg: 'mountains', map: SINAI, fx: 'dark',
+      objects: [
+        { s: 'man', x: 4, shirt: '#9a7b52' },
+        { s: 'woman', x: 7, hood: '#8a6b4a' },
+        { s: 'man', x: 10, label: '아론', beard: '#3b2414', shirt: '#b89a6a' },
+        ['jar', 2]
+      ],
+      lines: [
+        '모세는 십계명을 받으러 산에 올라갔습니다. 그리고 내려오지 않았습니다.',
+        '사십 일이 지났습니다. 산 위는 구름과 불로 덮여 있어 보이지 않습니다.',
+        '기다림이 길어지자 백성이 술렁이기 시작했습니다.'
+      ]
+    },
+    {
+      caption: '우리 앞에 갈 신들을', keep: true,
+      lines: [
+        '백성이 아론에게 몰려갔습니다.',
+        { who: '이스라엘 사람', text: '일어나 우리 앞에 갈 **신들을 만들라**.' },
+        '"모세가 어찌 되었는지 우리가 알지 못한다"는 것이 이유였습니다.'
+      ],
+      verse: {
+        text: '일어나 우리를 위해 우리 앞에 갈 신들을 만들라.',
+        ref: '출애굽기 32:1'
+      }
+    },
+    {
+      caption: '당신이라면', keep: true,
+      choose: {
+        q: '지도자는 보이지 않고, 하나님도 보이지 않습니다. 사십 일째입니다. 어떻게 하겠습니까?',
+        options: [
+          { text: '보이지 않아도 그대로 기다린다', goto: 4 },
+          { text: '눈에 보이는 무언가를 만든다', goto: 5 }
+        ]
+      }
+    },
+    {
+      caption: '기다린다고 했다면', keep: true,
+      lines: [
+        '옳은 대답입니다. 그런데 사십 일은 생각보다 깁니다.',
+        '백성은 하나님을 버린 것이 아니라, **보이는 하나님**을 원했습니다.',
+        '그것이 더 위험한 길이었습니다.'
+      ]
+    },
+    {
+      caption: '아론이 만든 것', sky: 'day', bg: 'mountains', map: CAMP, fx: null,
+      objects: [
+        { s: 'cow', x: 16, label: '금송아지', pal: GOLD, scale: 2 },
+        { s: 'man', x: 10, label: '아론', beard: '#3b2414', shirt: '#b89a6a' },
+        { s: 'man', x: 6, shirt: '#9a7b52', anim: 'jump' },
+        { s: 'woman', x: 22, hood: '#8a6b4a', anim: 'jump', flip: true },
+        { s: 'boy', x: 26, shirt: '#a98a5e', anim: 'jump', flip: true },
+        ['jar', 29]
+      ],
+      lines: [
+        '아론은 막지 않았습니다. 오히려 금귀고리를 모으라고 했습니다.',
+        '그 금을 부어 **송아지**를 만들었습니다.',
+        '백성은 그 앞에서 먹고 마시고 춤추며 뛰놀았습니다.'
+      ]
+    },
+    {
+      caption: '이것이 네 신이라', keep: true,
+      find: {
+        q: '백성이 "너를 이집트에서 데리고 올라온 네 신"이라고 부른 것을 클릭하십시오.',
+        target: '금송아지',
+        hint: '금으로 부어 만든 것입니다.',
+        explain: '금송아지입니다. 바다를 가르신 분의 자리에 어제 만든 금덩이를 앉혔습니다. (출 32:4)'
+      },
+      verse: {
+        text: '오 이스라엘아, 이것들이 너를 이집트 땅에서 데리고 올라온 네 신들이니라',
+        ref: '출애굽기 32:4'
+      }
+    },
+    {
+      caption: '판들을 깨뜨리다', keep: true, sky: 'dusk', fx: 'dark',
+      add: [
+        { s: 'man', x: 2, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'tablets', x: 4, y: 13 }
+      ],
+      lines: [
+        '그때 모세가 두 돌판을 들고 산에서 내려왔습니다.',
+        '송아지와 춤추는 것을 보고 맹렬히 분노하여, 그 판들을 던져 깨뜨렸습니다.',
+        '하나님께서 친히 쓰신 언약이 산 밑에서 부서졌습니다.'
+      ],
+      verse: {
+        text: '맹렬히 분노하여 자기 손에서 그 판들을 던져 산 밑에서 그것들을 깨뜨린 뒤',
+        ref: '출애굽기 32:19'
+      }
+    },
+    {
+      caption: '누가 주의 편에 속하느냐', keep: true, sky: 'dusk', fx: null,
+      remove: ['금송아지', '모세', 'tablets'],
+      add: [{ s: 'man', x: 26, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a', flip: true }],
+      lines: [
+        '모세가 진영 문에 서서 온 백성에게 외쳤습니다.',
+        { who: '모세', text: '누가 **주의 편에 속하느냐**? 그는 내게로 오라.' },
+        '편을 정하라는 것이었습니다. 가운데는 없었습니다.'
+      ],
+      verse: {
+        text: '누가 주의 편에 속하느냐? 그는 내게로 오라',
+        ref: '출애굽기 32:26'
+      }
+    },
+    {
+      caption: '내게로 오라', keep: true,
+      remove: ['아론'],
+      walk: {
+        player: 'man', name: '나', shirt: '#9a7b52',
+        from: 3, goal: 24, tol: 1.5,
+        q: '방금까지 함께 춤추던 사람들 사이를 지나, 모세에게로 가십시오.',
+        say: '모세 앞에 섰습니다. 이제 어느 편인지 모두가 압니다.'
+      }
+    },
+    {
+      caption: '레위의 아들들', keep: true,
+      add: [
+        { s: 'man', x: 23, label: '레위 사람', shirt: '#9a7b52' },
+        { s: 'man', x: 20.5, shirt: '#8a6b45' },
+        { s: 'man', x: 18, shirt: '#a08a6a' }
+      ],
+      lines: [
+        '레위의 모든 아들들이 모세에게로 모였습니다.',
+        '나머지는 그 자리에 그대로 있었습니다.',
+        '같은 광야, 같은 기적을 본 사람들이 그날 둘로 갈렸습니다.'
+      ],
+      quiz: {
+        q: '모세가 진영 문에서 백성에게 요구한 것은 무엇이었습니까?',
+        options: [
+          '금을 다시 모으라는 것',
+          '주의 편에 설 사람은 나오라는 것',
+          '산으로 올라가라는 것',
+          '아론을 벌하라는 것'
+        ],
+        answer: 1,
+        explain: '"누가 주의 편에 속하느냐? 그는 내게로 오라." 가운데는 없었습니다. (출 32:26)'
+      }
+    },
+    {
+      caption: '내 이름을 지워 주십시오', keep: true, sky: 'night', fx: 'dark',
+      lines: [
+        '이튿날 모세가 다시 산에 올라가 하나님께 아뢰었습니다.',
+        { who: '모세', text: '이제 그들의 죄를 **용서하옵소서**.' },
+        { who: '모세', text: '그러지 아니하시려면 주의 책에서 **나를 지워 버리소서**.' }
+      ],
+      verse: {
+        text: '그러나 이제 주께서 그들의 죄를 용서하옵소서. 그러지 아니하시려면 원하건대 주께서 기록하신 주의 책에서 나를 지워 버리소서',
+        ref: '출애굽기 32:32'
+      },
+      quiz: {
+        q: '모세가 하나님께 드린 기도의 내용은 무엇이었습니까?',
+        options: [
+          '백성을 벌해 달라는 것',
+          '용서하지 않으시려면 자기 이름을 지워 달라는 것',
+          '새 백성을 달라는 것',
+          '아론을 대신 벌해 달라는 것'
+        ],
+        answer: 1,
+        explain: '자기 자리를 걸고 백성을 위해 섰습니다. 이것이 중보입니다. (출 32:32)'
+      }
+    },
+    {
+      caption: '암송', keep: true, sky: 'glory', fx: 'sparkle',
+      blank: {
+        text: '누가 주의 편에 ___? 그는 내게로 ___',
+        answers: ['속하느냐', '오라'],
+        extra: ['있느냐', '가라'],
+        ref: '출애굽기 32:26'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '보이지 않으면 못 견디는 마음이 나에게도 있습니까?' },
+        { who: '생각해 보기', text: '"주의 편에 서라"는 말이 오늘 나에게는 무엇을 뜻합니까?' },
+        '백성은 하나님을 버린 것이 아니라, 보이는 하나님을 원했습니다.'
+      ]
+    }
+  ]
+});
+</script>

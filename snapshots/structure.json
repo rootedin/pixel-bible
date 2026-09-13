@@ -4662,5 +4662,255 @@
     ]
    }
   ]
+ },
+ "lessons/50-golden-calf.html": {
+  "title": "이스라엘이 금송아지를 섬기다",
+  "week": 50,
+  "scenes": 13,
+  "hash": "bdb140c48236",
+  "detail": [
+   {
+    "caption": "사십 일째",
+    "sky": "storm",
+    "bg": "mountains",
+    "fx": "dark",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|....................SSSSSSSSSSSS|..................SSSSSSSSSSSSSS|................SSSSSSSSSSSSSSSS|ssssssssssssssSSSSSSSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@4,14",
+     "woman@7,14",
+     "man@10,14#아론",
+     "jar@2,14"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "우리 앞에 갈 신들을",
+    "sky": "storm",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|....................SSSSSSSSSSSS|..................SSSSSSSSSSSSSS|................SSSSSSSSSSSSSSSS|ssssssssssssssSSSSSSSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@4,14",
+     "woman@7,14",
+     "man@10,14#아론",
+     "jar@2,14"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "당신이라면",
+    "sky": "storm",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|....................SSSSSSSSSSSS|..................SSSSSSSSSSSSSS|................SSSSSSSSSSSSSSSS|ssssssssssssssSSSSSSSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@4,14",
+     "woman@7,14",
+     "man@10,14#아론",
+     "jar@2,14"
+    ],
+    "steps": [
+     "choose"
+    ]
+   },
+   {
+    "caption": "기다린다고 했다면",
+    "sky": "storm",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|....................SSSSSSSSSSSS|..................SSSSSSSSSSSSSS|................SSSSSSSSSSSSSSSS|ssssssssssssssSSSSSSSSSSSSSSSSSS|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@4,14",
+     "woman@7,14",
+     "man@10,14#아론",
+     "jar@2,14"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "아론이 만든 것",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "cow@16,13#금송아지",
+     "man@10,13#아론",
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "이것이 네 신이라",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "cow@16,13#금송아지",
+     "man@10,13#아론",
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13"
+    ],
+    "steps": [
+     "find",
+     "verse"
+    ]
+   },
+   {
+    "caption": "판들을 깨뜨리다",
+    "sky": "dusk",
+    "bg": "mountains",
+    "fx": "dark",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "cow@16,13#금송아지",
+     "man@10,13#아론",
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@2,13#모세",
+     "tablets@4,13"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "누가 주의 편에 속하느냐",
+    "sky": "dusk",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@10,13#아론",
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "내게로 오라",
+    "sky": "dusk",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세"
+    ],
+    "steps": [
+     "walk"
+    ]
+   },
+   {
+    "caption": "레위의 아들들",
+    "sky": "dusk",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세",
+     "man@23,13#레위 사람",
+     "man@20.5,13",
+     "man@18,13"
+    ],
+    "steps": [
+     "lines",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "내 이름을 지워 주십시오",
+    "sky": "night",
+    "bg": "mountains",
+    "fx": "dark",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세",
+     "man@23,13#레위 사람",
+     "man@20.5,13",
+     "man@18,13"
+    ],
+    "steps": [
+     "lines",
+     "verse",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "암송",
+    "sky": "glory",
+    "bg": "mountains",
+    "fx": "sparkle",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세",
+     "man@23,13#레위 사람",
+     "man@20.5,13",
+     "man@18,13"
+    ],
+    "steps": [
+     "blank"
+    ]
+   },
+   {
+    "caption": "나눔",
+    "sky": "day",
+    "bg": "mountains",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|ssssssssssssssssssssssssssssssss|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "man@6,13:jump",
+     "woman@22,13:jump",
+     "boy@26,13:jump",
+     "jar@29,13",
+     "man@26,13#모세",
+     "man@23,13#레위 사람",
+     "man@20.5,13",
+     "man@18,13"
+    ],
+    "steps": [
+     "lines"
+    ]
+   }
+  ]
  }
 }
