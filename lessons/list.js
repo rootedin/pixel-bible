@@ -196,6 +196,14 @@ window.PB_LESSONS = [
   },
   {
     week: 80, file: "lessons/80-ark-taken.html", title: "블레셋이 하나님의 법궤를 빼앗다", ref: "사무엘상 2-4장",
-    cover: {"sky":"glory","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":15,"label":"사무엘","shirt":"#e0d8c0"},{"s":"elder","x":20,"label":"엘리","flip":true},{"s":"torch","x":12,"scale":2,"label":"하나님의 등불"},{"s":"ark","x":18,"y":14,"scale":2,"label":"언약궤"}],"bg":"hills"}
+    cover: {"sky":"glory","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":15,"label":"사무엘","shirt":"#e0d8c0"},{"s":"elder","x":19,"label":"엘리","flip":true},{"s":"torch","x":12.5,"scale":3,"label":"하나님의 등불"},{"s":"ark","x":22,"scale":2,"label":"언약궤"}],"bg":"hills"}
+  },
+  {
+    week: 81, file: "lessons/81-ark-returns.html", title: "블레셋이 하나님의 법궤를 돌려보내다", ref: "사무엘상 5:1-6:12",
+    cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"ark","x":17,"scale":2,"label":"언약궤"},{"s":"man","x":21,"label":"아스돗 사람","shirt":"#5a7a8a","flip":true},{"s":"torch","x":9,"scale":2},{"s":"stone","x":11,"scale":2,"label":"남은 몸뚱이"},{"s":"stone","x":8}],"bg":"city"}
+  },
+  {
+    week: 82, file: "lessons/82-mizpah.html", title: "이스라엘이 미스바에 모여 회개하다", ref: "사무엘상 6:13-7:12",
+    cover: {"sky":"storm","map":["G{32}","D{32}","S{32}","S{32}"],"objects":[{"s":"man","x":14,"label":"사무엘","shirt":"#e0d8c0"},{"s":"jar","x":17,"scale":2,"label":"물"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"woman","x":21,"hood":"#8a6b4a","flip":true},{"s":"man","x":25,"shirt":"#8a7a5a","flip":true}],"bg":"mountains"}
   }
 ];
