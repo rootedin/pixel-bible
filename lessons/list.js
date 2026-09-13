@@ -161,5 +161,9 @@ window.PB_LESSONS = [
   {
     week: 71, file: "lessons/71-gideon-called.html", title: "하나님께서 기드온을 부르시다", ref: "사사기 6장",
     cover: {"sky":"glory","map":[".{5}L{5}.{22}",".{6}LTL.{23}",".{7}T.{24}",".{7}T.{13}S{3}.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":22,"label":"기드온","shirt":"#7a8a5a","flip":true},{"s":"tuft","x":28},{"s":"angel","x":12,"label":"주의 천사"}],"bg":"hills"}
+  },
+  {
+    week: 72, file: "lessons/72-gideon-300.html", title: "기드온이 믿음으로 승리하다", ref: "사사기 7장",
+    cover: {"sky":"night","map":[".{18}T{6}.{8}",".{18}T.{4}T.{8}",".{18}T.{4}T.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"기드온","shirt":"#7a8a5a"},{"s":"horn","x":9,"y":13,"scale":2,"label":"나팔"},{"s":"jar","x":11.5,"scale":2,"label":"빈 항아리"},{"s":"torch","x":14,"scale":2,"label":"등불"}],"bg":"hills"}
   }
 ];
