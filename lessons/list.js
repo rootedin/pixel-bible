@@ -232,6 +232,10 @@ window.PB_LESSONS = [
   },
   {
     week: 89, file: "lessons/89-david-goliath.html", title: "다윗이 골리앗을 쓰러뜨리다", ref: "사무엘상 17장",
-    cover: {"sky":"day","map":["S{6}.{26}","S{9}.{23}","S{12}.{20}","S{12}G{14}S{6}","D{32}","S{32}"],"objects":[{"s":"giant","x":24,"label":"골리앗","flip":true},{"s":"soldier","x":3,"shirt":"#9a7b52"},{"s":"king","x":1,"label":"사울"},{"s":"boy","x":18,"label":"다윗","shirt":"#b8724a"}],"bg":"mountains"}
+    cover: {"sky":"day","map":["S{6}.{26}","S{9}.{23}","S{12}.{20}","S{12}G{14}S{6}","D{32}","S{32}"],"objects":[{"s":"giant","x":24,"scale":2,"label":"골리앗","flip":true},{"s":"soldier","x":3,"shirt":"#9a7b52"},{"s":"king","x":1,"label":"사울"},{"s":"boy","x":18,"label":"다윗","shirt":"#b8724a"}],"bg":"mountains"}
+  },
+  {
+    week: 90, file: "lessons/90-david-jonathan.html", title: "다윗과 요나단이 친구가 되다", ref: "사무엘상 18장",
+    cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":10,"label":"사울"},{"s":"boy","x":15,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":19,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"torch","x":21.5,"scale":2},{"s":"sword","x":17,"y":14,"scale":2,"label":"요나단의 칼"}],"bg":"city"}
   }
 ];
