@@ -69,5 +69,9 @@ window.PB_LESSONS = [
   {
     week: 48, file: "lessons/48-water-from-rock.html", title: "하나님께서 바위에서 물이 나게 하시다", ref: "출애굽기 17장",
     cover: {"sky":"day","map":[".{24}S{8}",".{22}S{10}","s{22}S{10}","s{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7},{"s":"soldier","x":10},{"s":"soldier","x":16,"label":"아말렉","shirt":"#7a5a4a","flip":true},{"s":"soldier","x":19,"shirt":"#6a4a3a","flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 49, file: "lessons/49-mount-sinai.html", title: "이스라엘이 시내 산에 이르다", ref: "출애굽기 19-20장",
+    cover: {"sky":"storm","map":[".{20}S{12}",".{18}S{14}",".{16}S{16}","s{14}S{18}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":7,"shirt":"#9a7b52"},{"s":"woman","x":9.5,"hood":"#8a6b4a"},{"s":"boy","x":12,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":2},{"s":"fire","x":24,"y":11,"scale":2},{"s":"man","x":12,"label":"이스라엘 사람","shirt":"#9a7b52"}],"bg":"mountains"}
   }
 ];
