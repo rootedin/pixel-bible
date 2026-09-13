@@ -101,5 +101,9 @@ window.PB_LESSONS = [
   {
     week: 56, file: "lessons/56-korah.html", title: "고라와 다단과 아비람이 반역하다", ref: "민수기 16장",
     cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"고라","beard":"#3b2414","shirt":"#7b5a8e"},{"s":"man","x":9,"label":"다단","shirt":"#8a6b45"},{"s":"man","x":12,"label":"아비람","shirt":"#6a5a4a"},{"s":"elder","x":15,"shirt":"#8a7b6a"},{"s":"man","x":24,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a","flip":true},{"s":"man","x":27,"label":"아론","beard":"#3b2414","shirt":"#b89a6a","flip":true}],"bg":"desert"}
+  },
+  {
+    week: 57, file: "lessons/57-moses-sins.html", title: "모세가 죄를 짓다", ref: "민수기 20:1-13",
+    cover: {"sky":"day","map":[".{22}S{10}",".{20}S{12}",".{20}S{12}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":8,"label":"아론","beard":"#c8c8c8","hair":"#d0d0d0","shirt":"#b89a6a"},{"s":"tuft","x":14},{"s":"stone","x":16,"scale":2},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":13.5,"hood":"#8a6b4a"},{"s":"man","x":16.5,"shirt":"#8a6b45"}],"bg":"mountains"}
   }
 ];
