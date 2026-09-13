@@ -221,5 +221,9 @@ window.PB_LESSONS = [
   {
     week: 86, file: "lessons/86-jonathan.html", title: "요나단이 이스라엘을 구하다", ref: "사무엘상 14장",
     cover: {"sky":"dawn","map":[".{20}S{12}",".{16}S{16}",".{12}S{20}","G{12}S{20}","D{32}","S{32}"],"objects":[{"s":"soldier","x":24,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":28,"shirt":"#5a7a8a","flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 87, file: "lessons/87-saul-disobeys.html", title: "사울이 하나님께 불순종하다", ref: "사무엘상 15장",
+    cover: {"sky":"day","map":[".{22}S{4}.{6}","G{22}S{4}G{6}","D{32}","S{32}"],"objects":[{"s":"king","x":15,"label":"사울"},{"s":"elder","x":11,"label":"사무엘","shirt":"#e0d8c0"},{"s":"sheep","x":19,"scale":2,"label":"양"},{"s":"sheep","x":27,"scale":2},{"s":"fire","x":23.5,"y":15,"scale":2,"anim":"bob"}],"bg":"hills"}
   }
 ];
