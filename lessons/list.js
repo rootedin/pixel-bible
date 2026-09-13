@@ -245,5 +245,9 @@ window.PB_LESSONS = [
   {
     week: 92, file: "lessons/92-david-jonathan-part.html", title: "다윗이 요나단과 헤어지다", ref: "사무엘상 20장",
     cover: {"sky":"dawn","map":["S{4}.{28}","S{5}.{27}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":22,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"boy","x":27,"label":"아이","shirt":"#a98a5e","flip":true},{"s":"arrow","x":16,"y":13,"scale":2,"label":"화살"}],"bg":"hills"}
+  },
+  {
+    week: 93, file: "lessons/93-saul-pursues.html", title: "사울이 다윗을 뒤쫓다", ref: "사무엘상 23-24장",
+    cover: {"sky":"cave","map":["S{7}.{18}S{7}","S{6}.{20}S{6}","S{5}.{22}S{5}","S{5}.{22}S{5}","S{32}","S{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"사울","flip":true},{"s":"man","x":11,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":8,"shirt":"#9a7b52"},{"s":"sword","x":13.5,"y":14,"scale":2,"label":"다윗의 칼"}]}
   }
 ];
