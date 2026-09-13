@@ -125,5 +125,9 @@ window.PB_LESSONS = [
   {
     week: 62, file: "lessons/62-jordan.html", title: "이스라엘이 요르단 강을 건너다", ref: "여호수아 3-4장",
     cover: {"sky":"day","map":["G{11}s{10}G{11}","D{11}s{10}D{11}","D{11}s{10}D{11}","S{11}s{10}S{11}","S{32}"],"objects":[{"s":"priest","x":15,"label":"제사장"},{"s":"ark","x":15,"y":11,"scale":2,"label":"언약궤"},{"s":"soldier","x":8,"label":"여호수아","shirt":"#b8a06a"},{"s":"man","x":5,"shirt":"#9a7b52"}],"bg":"hills"}
+  },
+  {
+    week: 63, file: "lessons/63-jericho.html", title: "여리고 성벽이 무너지다", ref: "여호수아 6장",
+    cover: {"sky":"glory","map":[".{18}C{12}.{2}",".{18}C{12}.{2}",".{18}C{12}.{2}",".{18}C{12}.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7,"label":"전사"},{"s":"soldier","x":10,"label":"전사"},{"s":"tuft","x":14}],"bg":"desert"}
   }
 ];
