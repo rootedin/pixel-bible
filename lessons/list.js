@@ -177,5 +177,9 @@ window.PB_LESSONS = [
   {
     week: 75, file: "lessons/75-samson-judge.html", title: "삼손이 사사가 되다", ref: "사사기 15장",
     cover: {"sky":"day","map":[".{24}S{8}",".{20}S{12}",".{16}S{16}","G{16}S{16}","D{32}","S{32}"],"objects":[{"s":"man","x":26,"label":"삼손","shirt":"#a98a5e","flip":true},{"s":"man","x":18,"label":"유다 사람","shirt":"#9a7b52"},{"s":"man","x":15,"shirt":"#8a7a5a"}],"bg":"mountains"}
+  },
+  {
+    week: 76, file: "lessons/76-samson-dies.html", title: "삼손이 용감하게 죽다", ref: "사사기 16장",
+    cover: {"sky":"day","map":["T{32}",".{18}m{2}.{4}m{2}.{6}",".{18}m{2}.{4}m{2}.{6}",".{18}m{2}.{4}m{2}.{6}","m{32}","S{32}"],"objects":[{"s":"boy","x":26,"label":"소년","shirt":"#a98a5e","flip":true},{"s":"man","x":10,"y":12,"shirt":"#5a7a8a"},{"s":"man","x":16,"y":12,"shirt":"#5a7a8a"},{"s":"woman","x":22,"y":12,"hood":"#7a8aa0"}],"bg":"city"}
   }
 ];
