@@ -1,0 +1,205 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 44강 — 하나님께서 애굽에 일곱째·여덟째·아홉째 재앙을 보내시다 (출애굽기 9:13 - 10:29) */
+const DIVIDE = [              // 왼쪽 고센(0-15, 풀밭) · 오른쪽 이집트(16-31, 모래)
+  'G{16}s{16}',
+  'D{16}s{16}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+const FIELD = [               // 이집트의 밭 — 보리와 삼이 자라던 들
+  '.{16}LLL.{5}LLL.{5}',
+  '.{17}T.{7}T.{6}',
+  'G{32}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+
+PB.start({
+  week: 44,
+  title: '하나님께서 애굽에 일곱째·여덟째·아홉째 재앙을 보내시다',
+  ref: '출애굽기 9:13 - 10:29',
+  cover: 8,
+  splash: '이스라엘 거처에는 빛이 있었더라',
+  intro: '아홉 번째 재앙까지 왔습니다. 이제 어둠이 내립니다.',
+  memory: {
+    text: '이스라엘 모든 자손에게는 그들의 거처에 빛이 있었더라.',
+    ref: '출애굽기 10:23'
+  },
+  achievement: { title: '어둠 속의 빛', icon: 'torch' },
+  scenes: [
+    {
+      caption: '일곱째 재앙 예고 · 우박', sky: 'storm', bg: 'desert', map: FIELD,
+      objects: [
+        { s: 'man', x: 6, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 24, label: '이집트 사람', shirt: '#c9b48a', flip: true },
+        { s: 'cow', x: 12, anim: 'bob' },
+        { s: 'sheep', x: 28, anim: 'bob' }
+      ],
+      lines: [
+        '일곱 번째 재앙은 미리 예고되었습니다.',
+        '이집트가 세워진 이래 없던 **우박**이 내일 내린다는 것이었습니다.',
+        '그리고 하나님께서 피할 길까지 알려 주셨습니다. 들에 있는 것을 집으로 들이라고요.'
+      ],
+      verse: {
+        text: '내일 이맘때에 내가 매우 심한 우박을 내릴 터인데 그와 같은 것은 이집트가 창건된 이래로 지금까지 거기에 있지 아니하였느니라.',
+        ref: '출애굽기 9:18'
+      }
+    },
+    {
+      caption: '당신이라면', keep: true,
+      choose: {
+        q: '당신이 이집트 사람이라면, 히브리 사람의 하나님이 하신 이 경고를 믿겠습니까?',
+        options: [
+          { text: '일단 가축을 집으로 들인다', goto: 3 },
+          { text: '남의 나라 신의 말은 무시한다', goto: 4 }
+        ]
+      }
+    },
+    {
+      caption: '들인 쪽을 골랐다면', keep: true,
+      lines: [
+        '실제로 그런 이집트 사람들이 있었습니다.',
+        '주의 말씀을 두려워한 자들은 종과 가축을 집으로 피신시켰습니다.',
+        '재앙 한가운데서도 듣는 사람에게는 길이 있었습니다.'
+      ]
+    },
+    {
+      caption: '우박이 쏟아지다', keep: true, sky: 'storm', fx: ['snow', 'lightning'],
+      remove: ['이집트 사람'],
+      lines: [
+        '다음 날, 우박이 불과 섞여 쏟아졌습니다.',
+        '들에 남아 있던 것은 사람이든 짐승이든 밭의 채소든 모두 상했습니다.',
+        '경고를 흘려들은 사람은 가진 것을 그대로 잃었습니다.'
+      ]
+    },
+    {
+      caption: '여덟째 재앙 · 메뚜기', keep: true, sky: 'dusk', fx: 'dark',
+      remove: ['cow', 'sheep'],
+      add: [
+        { s: 'locust', x: 17, y: 8, anim: 'float', scale: 2 },
+        { s: 'locust', x: 19.5, y: 12, anim: 'float', scale: 2 },
+        { s: 'locust', x: 22, y: 6, anim: 'float', scale: 2 },
+        { s: 'locust', x: 24.5, y: 10, anim: 'float', scale: 2 },
+        { s: 'locust', x: 27, y: 13, anim: 'float', scale: 2 },
+        { s: 'locust', x: 29.5, y: 7, anim: 'float', scale: 2 }
+      ],
+      lines: [
+        '우박에서 살아남은 것이 조금 남아 있었습니다.',
+        '여덟 번째로 **메뚜기**가 몰려와 그 남은 것까지 먹어 치웠습니다.',
+        '땅이 보이지 않을 만큼 덮였습니다.'
+      ],
+      verse: {
+        text: '메뚜기들이 우박을 피해 너희에게 남아 있는 것 즉 모면하여 남은 것을 먹고',
+        ref: '출애굽기 10:5'
+      }
+    },
+    {
+      caption: '남은 것까지', keep: true,
+      lines: [
+        '재앙이 겹칠수록 빠져나갈 틈이 줄어듭니다.',
+        '파라오는 또 사람을 불러 용서를 구했습니다. 그리고 또 마음을 바꿨습니다.',
+        '이제 아홉 번째가 남았습니다.'
+      ]
+    },
+    {
+      /* fx:'dark' 는 쓰지 않는다 — 횃불까지 덮어 버려서
+         "이스라엘 거처에는 빛이 있었더라"가 화면에서 사라진다.
+         sky:'dark' 만으로 충분히 어둡고, 횃불이 살아난다. */
+      caption: '아홉째 재앙 · 흑암', sky: 'dark', bg: 'none', map: DIVIDE, fx: null,
+      objects: [
+        { s: 'torch', x: 6, label: '이스라엘의 거처', scale: 2 },
+        { s: 'torch', x: 11, scale: 2 },
+        { s: 'man', x: 8, label: '이스라엘 사람', shirt: '#9a7b52' },
+        { s: 'man', x: 22, label: '이집트 사람', shirt: '#6a6a6a', flip: true },
+        { s: 'man', x: 28, shirt: '#5a5a5a', flip: true }
+      ],
+      lines: [
+        '모세가 하늘을 향해 손을 내밀자 짙은 어둠이 내렸습니다.',
+        '**감촉으로 느낄 수 있는** 어둠이라고 성경은 말합니다.',
+        '사흘 동안 서로를 보지 못했고, 아무도 자기 자리에서 일어나지 못했습니다.'
+      ],
+      verse: {
+        text: '모세가 하늘을 향해 자기 손을 내밀매 짙은 어둠이 사흘 동안 이집트 온 땅에 있었으므로',
+        ref: '출애굽기 10:22'
+      }
+    },
+    {
+      caption: '한 곳만 달랐다', keep: true,
+      find: {
+        q: '온 땅이 캄캄했습니다. 그런데 한 곳에는 빛이 있었습니다. 클릭하십시오.',
+        target: 'torch',
+        hint: '왼쪽, 하나님의 백성이 사는 쪽입니다.',
+        explain: '이스라엘의 거처입니다. 사흘 내내 그곳에는 빛이 있었습니다. (출 10:23)'
+      }
+    },
+    {
+      caption: '그들의 거처에 빛이', keep: true, sky: 'night', fx: null,
+      lines: [
+        '이집트가 섬기던 신 가운데 가장 큰 것이 태양이었습니다.',
+        '그 태양이 사흘 동안 지워졌습니다.',
+        '그런데 하나님의 백성이 있는 곳에는 빛이 남아 있었습니다.'
+      ],
+      verse: {
+        text: '이스라엘 모든 자손에게는 그들의 거처에 빛이 있었더라.',
+        ref: '출애굽기 10:23'
+      },
+      quiz: {
+        q: '아홉째 재앙이 특별히 이집트에 아팠던 까닭은 무엇이겠습니까?',
+        options: [
+          '밤에 일할 수 없어서',
+          '그들이 가장 크게 섬기던 태양이 지워졌기 때문에',
+          '추워졌기 때문에',
+          '길을 잃었기 때문에'
+        ],
+        answer: 1,
+        explain: '재앙은 그들이 섬기던 것을 하나씩 겨냥했습니다. 강도, 가축도, 해도 그러했습니다.'
+      }
+    },
+    {
+      caption: '다시 내 얼굴을 보지 말라', keep: true, sky: 'dusk', fx: 'dark',
+      lines: [
+        '파라오는 이번에도 조건을 붙여 흥정하려 했습니다.',
+        '그러다 결국 모세를 내쫓으며, 다시는 자기 얼굴을 보지 말라고 했습니다.',
+        '아홉 번의 기회가 모두 지나갔습니다.'
+      ],
+      quiz: {
+        q: '아홉 재앙을 지나오며 파라오가 보여 준 모습은 무엇입니까?',
+        options: [
+          '몰라서 못 믿었다',
+          '알면서도 그때그때만 넘기고 마음을 바꾸지 않았다',
+          '처음부터 보내 주려 했다',
+          '신하들이 막아서 못 보냈다'
+        ],
+        answer: 1,
+        explain: '급하면 부르고 편해지면 잊기를 아홉 번 되풀이했습니다.'
+      }
+    },
+    {
+      caption: '암송', keep: true, sky: 'glory', fx: 'sparkle',
+      blank: {
+        text: '이스라엘 모든 자손에게는 그들의 ___에 ___이 있었더라.',
+        answers: ['거처', '빛'],
+        extra: ['집', '불'],
+        ref: '출애굽기 10:23'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'dawn', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '주위가 온통 어두울 때 **내 거처에는** 무엇이 있습니까?' },
+        { who: '생각해 보기', text: '하나님께서 미리 알려 주신 경고를 흘려듣고 있지는 않습니까?' }
+      ]
+    }
+  ]
+});
+</script>
