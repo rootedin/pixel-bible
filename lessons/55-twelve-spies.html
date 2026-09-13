@@ -1,0 +1,221 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 55강 — 모세가 열두 정탐꾼을 보내다 (민수기 13-14장) */
+const CAMP = [
+  's{32}',
+  's{32}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+const CANAAN = [              // 가나안 — 왼쪽은 들, 오른쪽(22-31)은 성벽 도시
+  '.{22}C{10}',
+  '.{22}C.{3}C.{4}',
+  '.{22}C{10}',
+  'G{22}C{10}',
+  'D{32}',
+  'D{32}',
+  'S{32}'
+];
+
+PB.start({
+  week: 55,
+  title: '모세가 열두 정탐꾼을 보내다',
+  ref: '민수기 13-14장',
+  cover: 4,
+  splash: '주께서는 우리와 함께 계시느니라',
+  intro: '약속의 땅이 바로 앞입니다. 먼저 열두 사람이 들어가 살펴보기로 했습니다.',
+  memory: {
+    text: '주께서는 우리와 함께 계시느니라. 그들을 두려워하지 말라',
+    ref: '민수기 14:9'
+  },
+  achievement: { title: '같은 것을 다르게 본 사람', icon: 'fruit' },
+  scenes: [
+    {
+      caption: '열두 사람', sky: 'day', bg: 'hills', map: CAMP,
+      objects: [
+        { s: 'man', x: 5, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 9, label: '갈렙', shirt: '#9a7b52' },
+        { s: 'soldier', x: 12, label: '여호수아', shirt: '#b8a06a' },
+        { s: 'man', x: 15, shirt: '#8a6b45' },
+        { s: 'man', x: 18, shirt: '#a08a6a' },
+        ['tuft', 27]
+      ],
+      lines: [
+        '이집트를 나온 지 이 년째. 약속의 땅이 눈앞에 있습니다.',
+        '각 지파에서 한 사람씩, 열두 명을 뽑아 정탐하러 보냈습니다.',
+        '그중에 여호수아와 갈렙이 있었습니다.'
+      ]
+    },
+    {
+      caption: '사십 일 뒤', sky: 'day', bg: 'hills', map: CANAAN,
+      objects: [
+        { s: 'man', x: 4, label: '정탐꾼', shirt: '#8a6b45' },
+        { s: 'man', x: 7, shirt: '#a08a6a' },
+        { s: 'fruit', x: 10, scale: 3, label: '그 땅의 열매' },
+        ['tuft', 14], ['tuft', 19]
+      ],
+      lines: [
+        '사십 일 동안 땅을 살피고 돌아왔습니다.',
+        '들고 온 포도송이는 둘이서 막대에 꿰어 메야 할 만큼 컸습니다.',
+        { who: '정탐꾼', text: '참으로 그 땅에는 **젖과 꿀**이 흐르고 있습니다.' }
+      ],
+      verse: {
+        text: '참으로 그 땅에는 젖과 꿀이 흐르고 있으며 이것은 그 땅의 열매이니이다.',
+        ref: '민수기 13:27'
+      }
+    },
+    {
+      caption: '그렇지만', keep: true, sky: 'dusk', fx: 'dark',
+      lines: [
+        '여기까지는 열두 사람의 보고가 같았습니다.',
+        '그런데 열 사람은 한 마디를 덧붙였습니다. **"그렇지만."**',
+        '백성은 강하고, 도시는 성벽으로 둘러싸였고, 거기 거인들이 있다는 것이었습니다.'
+      ],
+      verse: {
+        text: '그렇지만 그 땅에 거하는 백성은 강하며 도시들은 성벽으로 둘러싸여 있고 심히 클 뿐만 아니라',
+        ref: '민수기 13:28'
+      }
+    },
+    {
+      caption: '우리는 메뚜기 같았다', keep: true,
+      /* x22 부터는 성벽(C)이라 그 위에 서 버린다. 성벽 앞 풀밭에 세운다 */
+      add: [{ s: 'giant', x: 19, label: '아낙 자손', scale: 2, flip: true }],
+      lines: [
+        '열 사람의 결론은 이것이었습니다.',
+        { who: '정탐꾼', text: '우리 스스로 보기에도 우리가 **메뚜기** 같았습니다.' },
+        '그리고 한 마디를 더 붙였습니다. "그들이 보기에도 그러했을 것입니다."'
+      ],
+      verse: {
+        text: '우리 스스로 보기에도 우리가 메뚜기 같았으니 그들이 보기에도 그와 같았을 것이니라',
+        ref: '민수기 13:33'
+      }
+    },
+    {
+      caption: '무엇을 보았습니까', keep: true,
+      find: {
+        q: '열 사람이 "우리는 메뚜기 같다"고 한 것은 무엇을 보고 한 말입니까? 클릭하십시오.',
+        target: '아낙 자손',
+        hint: '성벽 앞에 서 있는 큰 사람입니다.',
+        explain: '아낙 자손입니다. 같은 것을 본 갈렙은 전혀 다른 말을 합니다. (민 13:33)'
+      }
+    },
+    {
+      caption: '갈렙이 나서다', sky: 'dusk', bg: 'hills', map: CAMP, fx: null,
+      objects: [
+        { s: 'man', x: 24, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a', flip: true },
+        { s: 'man', x: 14, shirt: '#8a6b45', flip: true },
+        { s: 'woman', x: 17, hood: '#8a6b4a', flip: true },
+        { s: 'man', x: 20, shirt: '#a08a6a', flip: true }
+      ],
+      lines: [
+        '진영이 술렁였습니다. 열 사람의 말이 이미 퍼졌습니다.',
+        '갈렙은 그 웅성거림 한가운데를 지나 모세 앞으로 나아가야 했습니다.'
+      ],
+      walk: {
+        player: 'man', name: '갈렙', shirt: '#9a7b52',
+        from: 3, goal: 22, tol: 1.5,
+        q: '갈렙이 되어, 반대하는 사람들 사이를 지나 모세 앞까지 나아가십시오.',
+        say: '모세 앞에 섰습니다. 이제 열 사람과 다른 말을 해야 합니다.'
+      }
+    },
+    {
+      caption: '우리가 충분히 할 수 있다', keep: true,
+      add: [{ s: 'man', x: 22, label: '갈렙', shirt: '#9a7b52' }],
+      lines: [
+        { who: '갈렙', text: '우리가 당장 올라가 그 땅을 소유합시다.' },
+        { who: '갈렙', text: '우리가 **충분히** 그곳을 정복할 수 있습니다.' },
+        '같은 성벽, 같은 거인을 본 사람의 말이었습니다.'
+      ],
+      verse: {
+        text: '우리가 당장 올라가 그 땅을 소유하자. 우리가 충분히 그곳을 정복할 수 있느니라',
+        ref: '민수기 13:30'
+      }
+    },
+    {
+      caption: '어느 쪽입니까', keep: true,
+      choose: {
+        q: '열 사람과 두 사람이 같은 땅을 보고 정반대로 말합니다. 당신은 어느 쪽을 따르겠습니까?',
+        options: [
+          { text: '숫자가 많은 열 사람 쪽', goto: 9 },
+          { text: '소수인 두 사람 쪽', goto: 10 }
+        ]
+      }
+    },
+    {
+      caption: '열 사람 쪽이라면', keep: true, sky: 'night', fx: 'dark',
+      lines: [
+        '백성도 그렇게 했습니다. 열 사람의 말이 더 현실적으로 들렸습니다.',
+        '그날 밤 온 회중이 소리 높여 울었습니다.',
+        '"차라리 이집트에서 죽었더라면" 하는 말이 또 나왔습니다.'
+      ]
+    },
+    {
+      caption: '주께서 우리와 함께', keep: true, sky: 'glory', fx: 'light',
+      lines: [
+        '여호수아와 갈렙이 옷을 찢으며 말했습니다.',
+        { who: '갈렙', text: '그 땅 백성을 **두려워하지 말라**. 그들의 방어자는 떠났습니다.' },
+        { who: '갈렙', text: '주께서는 **우리와 함께** 계십니다.' }
+      ],
+      verse: {
+        text: '오직 너희는 주께 반역하지 말고 그 땅 백성을 두려워하지도 말라.',
+        ref: '민수기 14:9'
+      },
+      quiz: {
+        q: '열 사람과 두 사람의 보고는 무엇이 달랐습니까?',
+        options: [
+          '본 것이 달랐다',
+          '같은 것을 보았지만, 누구와 함께 있는지를 계산에 넣었느냐가 달랐다',
+          '두 사람은 땅에 들어가지 않았다',
+          '열 사람이 거짓말을 했다'
+        ],
+        answer: 1,
+        explain: '성벽도 거인도 사실이었습니다. 열 사람의 계산에는 하나님이 빠져 있었습니다.'
+      }
+    },
+    {
+      caption: '사십 년', keep: true, sky: 'dusk', fx: 'dark',
+      lines: [
+        '백성은 두 사람을 돌로 치려 했습니다.',
+        '그날의 선택으로 이스라엘은 사십 년을 광야에서 더 지내게 됩니다.',
+        '정탐한 사십 일, 하루를 일 년으로 쳐서 사십 년이었습니다.'
+      ],
+      quiz: {
+        q: '"우리는 메뚜기 같았다"는 말에서 문제는 무엇이었습니까?',
+        options: [
+          '거인이 실제로는 없었다는 것',
+          '자기를 재는 기준에 하나님이 빠져 있었다는 것',
+          '정탐을 제대로 안 했다는 것',
+          '메뚜기가 작다는 것'
+        ],
+        answer: 1,
+        explain: '상대와 나만 재면 늘 메뚜기입니다. 갈렙은 한 분을 더 계산에 넣었습니다.'
+      }
+    },
+    {
+      caption: '암송', keep: true, sky: 'glory', fx: 'sparkle',
+      blank: {
+        text: '오직 너희는 주께 ___하지 말고 그 땅 백성을 ___하지도 말라.',
+        answers: ['반역', '두려워'],
+        extra: ['불평', '걱정'],
+        ref: '민수기 14:9'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '지금 내 앞의 "성벽"은 무엇입니까?' },
+        { who: '생각해 보기', text: '나를 잴 때 나는 무엇과 견주고 있습니까?' },
+        '상대와 나만 재면 언제나 메뚜기입니다.'
+      ]
+    }
+  ]
+});
+</script>
