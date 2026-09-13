@@ -193,5 +193,9 @@ window.PB_LESSONS = [
   {
     week: 79, file: "lessons/79-samuel-born.html", title: "사무엘이 태어나다", ref: "사무엘상 1장",
     cover: {"sky":"day","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":15,"label":"한나","hood":"#8a6b4a"},{"s":"priest","x":21,"label":"엘리","flip":true},{"s":"torch","x":12,"scale":2}],"bg":"hills"}
+  },
+  {
+    week: 80, file: "lessons/80-ark-taken.html", title: "블레셋이 하나님의 법궤를 빼앗다", ref: "사무엘상 2-4장",
+    cover: {"sky":"glory","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":15,"label":"사무엘","shirt":"#e0d8c0"},{"s":"elder","x":20,"label":"엘리","flip":true},{"s":"torch","x":12,"scale":2,"label":"하나님의 등불"},{"s":"ark","x":18,"y":14,"scale":2,"label":"언약궤"}],"bg":"hills"}
   }
 ];
