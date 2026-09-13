@@ -1,0 +1,171 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 4강 — 하나님께서 물고기와 새와 동물을 만드시다 (창세기 1:20-25) */
+const FOREST = [
+  '.{15}LLL.{10}LLL.',
+  '.{14}L{5}.{8}L{5}',
+  '.{14}L{5}.{8}L{5}',
+  '.{16}T.{12}T..',
+  '.{16}T.{12}T..',
+  '.{16}T.{5}G{5}..T..',
+  '.{13}G{9}D{5}G{5}',
+  'W{10}s{3}D{19}',
+  'W{10}s{3}D{19}',
+  'W{10}s{3}D{6}S{13}',
+  's{11}S{21}',
+  'S{32}'
+];
+
+PB.start({
+  week: 4,
+  title: '하나님께서 물고기와 새와 동물을 만드시다',
+  ref: '창세기 1:20-25',
+  cover: 8,
+  splash: '풍성히 내라!',
+  intro: '무대는 다 준비되었습니다. 이제 배우가 등장할 차례입니다.',
+  memory: {
+    text: '하나님께서 그것들에게 복을 주시며 이르시되, 다산하고 번성하여 바다들의 물들을 채우고 날짐승은 땅에서 번성하라, 하시니라.',
+    ref: '창세기 1:22'
+  },
+  achievement: { title: '생명을 센 사람', icon: 'fish' },
+  scenes: [
+    {
+      caption: '다섯째 날', sky: 'day', map: FOREST, clouds: true,
+      objects: [
+        { s: 'sun', x: 24, y: 4, anim: 'float' },
+        ['flower', 14], ['flower2', 19], ['tuft', 20], ['flower', 24], ['tuft', 31]
+      ],
+      lines: [
+        '빛이 있고, 하늘이 있고, 땅과 바다와 풀이 있습니다.',
+        '해와 달과 별도 제자리에 걸렸습니다.',
+        '그런데 아직 **아무도 살지 않습니다**. 움직이는 것이 하나도 없습니다.'
+      ]
+    },
+    {
+      caption: '물이 생명을 내다', keep: true,
+      add: [
+        { s: 'fish', x: 3, y: 14, anim: 'swim' },
+        { s: 'fish', x: 6, y: 15, anim: 'swim', range: 2.5, speed: 0.8 },
+        { s: 'fish', x: 5, y: 13, anim: 'swim', pal: { o: '#3aa0e0', y: '#9fe0ff' } }
+      ],
+      lines: [
+        { who: '하나님', text: '**물들은 생명이 있어 움직이는 창조물을 풍성히 내라.**' },
+        '조용하던 바다가 갑자기 북적이기 시작했습니다.'
+      ],
+      verse: {
+        text: '물들은 생명이 있어 움직이는 창조물과 땅 위 하늘의 열린 궁창에서 날아다니는 날짐승을 풍성히 내라',
+        ref: '창세기 1:20'
+      }
+    },
+    {
+      caption: '날개 달린 것들', keep: true,
+      add: [
+        { s: 'bird', x: 4, y: 4, anim: 'fly' },
+        { s: 'bird', x: 20, y: 3, anim: 'fly', speed: 1.3 }
+      ],
+      lines: [
+        '같은 날, 하늘에도 날개 달린 것들이 가득해졌습니다.',
+        '본문을 자세히 보십시오. 새는 **물고기와 같은 날** 지어집니다.'
+      ],
+      verse: { text: '날개 달린 모든 날짐승을 그것의 종류대로 창조하시니라.', ref: '창세기 1:21' }
+    },
+    {
+      caption: '복을 주시다', keep: true, sky: 'glory', fx: 'sparkle',
+      lines: [
+        '여기서 처음으로 하나님께서 **복**을 주십니다.',
+        '그 복의 내용은 "많아지고 퍼져 나가라"였습니다.',
+        '생명은 처음부터 갇혀 있으라고 지어지지 않았습니다.'
+      ],
+      verse: {
+        text: '다산하고 번성하여 바다들의 물들을 채우고 날짐승은 땅에서 번성하라',
+        ref: '창세기 1:22'
+      }
+    },
+    {
+      caption: '다섯째 날', keep: true, sky: 'dusk',
+      lines: [
+        '저녁이 되고 아침이 되니, 다섯째 날이었습니다.',
+        '바다와 하늘이 채워졌습니다. 이제 땅이 남았습니다.'
+      ],
+      verse: { text: '그 저녁과 아침이 다섯째 날이니라.', ref: '창세기 1:23' }
+    },
+    {
+      caption: 'DAY 6 · 땅의 짐승', keep: true, sky: 'day',
+      add: [
+        { s: 'sheep', x: 19, anim: 'walk', range: 1 },
+        { s: 'cow', x: 29, anim: 'bob' },
+        { s: 'lion', x: 24, anim: 'bob' }
+      ],
+      lines: [
+        { who: '하나님', text: '**땅은 살아 있는 창조물을 그것의 종류대로 내라.**' },
+        '땅 위에 짐승들이 올라왔습니다. 가축도, 기는 것도, 들짐승도.'
+      ],
+      verse: {
+        text: '땅은 살아 있는 창조물을 그것의 종류대로 내되 가축과 기는 것과 땅의 짐승을 그것의 종류대로 내라',
+        ref: '창세기 1:24'
+      }
+    },
+    {
+      caption: '그것의 종류대로', keep: true,
+      lines: [
+        '본문에 "종류대로"라는 말이 계속 반복됩니다.',
+        '뒤죽박죽이 아니라 **질서**가 있다는 뜻입니다.',
+        '그리고 하나님께서 보시기에 좋았습니다.'
+      ],
+      verse: { text: '하나님께서 보시기에 좋았더라.', ref: '창세기 1:25' },
+      quiz: {
+        q: '본문이 "그것의 종류대로"를 거듭 말하는 까닭은 무엇이겠습니까?',
+        options: [
+          '종류를 세어 보려고',
+          '지어진 세상에 질서가 있음을 보이려고',
+          '동물이 많다는 것을 강조하려고',
+          '사람이 정한 분류라서'
+        ],
+        answer: 1,
+        explain: '생명은 아무렇게나 뒤섞여 생기지 않았습니다. 지으신 분의 질서가 있습니다.'
+      }
+    },
+    {
+      caption: '언제 지어졌습니까', keep: true,
+      find: {
+        q: '이 가운데 **다섯째 날**에 지어진 것을 클릭하십시오.',
+        target: ['fish', 'bird'],
+        hint: '땅의 짐승은 여섯째 날입니다. 그날이 아닌 것을 찾으십시오.',
+        explain: '물고기와 새입니다. 새는 땅 짐승과 함께가 아니라, 물고기와 같은 다섯째 날에 지어졌습니다. (창 1:20-21)'
+      }
+    },
+    {
+      keep: true,
+      quiz: {
+        q: '새는 며칠째에 지어졌습니까?',
+        options: ['넷째 날', '다섯째 날', '여섯째 날', '일곱째 날'],
+        answer: 1,
+        explain: '새는 물고기와 같은 다섯째 날입니다. 땅의 짐승만 여섯째 날입니다.'
+      }
+    },
+    {
+      caption: '암송', keep: true, sky: 'glory', fx: 'sparkle',
+      blank: {
+        text: '하나님께서 그것들에게 ___을 주시며 이르시되, 다산하고 ___하여',
+        answers: ['복', '번성'],
+        extra: ['말씀', '창조'],
+        ref: '창세기 1:22'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day',
+      lines: [
+        { who: '생각해 보기', text: '"번성하라"는 복을 나에게 주신다면, 무엇이 자라야 합니까?' },
+        { who: '생각해 보기', text: '내가 아무렇게나 대하고 있는 생명은 없습니까?' }
+      ]
+    }
+  ]
+});
+</script>
