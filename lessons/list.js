@@ -165,5 +165,9 @@ window.PB_LESSONS = [
   {
     week: 72, file: "lessons/72-gideon-300.html", title: "기드온이 믿음으로 승리하다", ref: "사사기 7장",
     cover: {"sky":"night","map":[".{18}T{6}.{8}",".{18}T.{4}T.{8}",".{18}T.{4}T.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"기드온","shirt":"#7a8a5a"},{"s":"horn","x":9,"y":13,"scale":2,"label":"나팔"},{"s":"jar","x":11.5,"scale":2,"label":"빈 항아리"},{"s":"torch","x":14,"scale":2,"label":"등불"}],"bg":"hills"}
+  },
+  {
+    week: 73, file: "lessons/73-jephthah.html", title: "입다가 약속을 지키다", ref: "사사기 11장",
+    cover: {"sky":"dusk","map":[".{22}T{8}.{2}",".{22}P.{6}P.{2}",".{22}P.{6}P.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":8}],"bg":"hills"}
   }
 ];
