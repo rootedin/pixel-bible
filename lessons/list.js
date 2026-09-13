@@ -25,5 +25,9 @@ window.PB_LESSONS = [
   {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
+  },
+  {
+    week: 38, file: "lessons/38-moses-flees.html", title: "모세가 광야로 도망치다", ref: "출애굽기 2:11-22",
+    cover: {"sky":"day","map":[".{20}C..C.{8}",".{20}CWWC.{8}","s{20}CCCCs{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"jar","x":17},{"s":"man","x":15,"label":"모세","shirt":"#c9b48a"},{"s":"girl","x":26,"label":"미디안의 딸","shirt":"#c98a6a","flip":true},{"s":"girl","x":28,"shirt":"#9ab8c9","flip":true},{"s":"sheep","x":30,"anim":"bob"}],"bg":"desert"}
   }
 ];
