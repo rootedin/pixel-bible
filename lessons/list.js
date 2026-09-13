@@ -257,5 +257,9 @@ window.PB_LESSONS = [
   {
     week: 95, file: "lessons/95-david-spares-saul.html", title: "다윗이 사울의 생명을 살리다", ref: "사무엘상 26장",
     cover: {"sky":"night","map":[".{6}T{8}.{18}",".{6}T.{6}T.{18}",".{6}T.{6}T.{18}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":24,"shirt":"#8a7a9a"},{"s":"torch","x":27,"scale":2},{"s":"king","x":18,"label":"사울"},{"s":"man","x":14,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":11,"label":"아비새","shirt":"#9a7b52"},{"s":"spear","x":20.5,"y":13,"scale":2,"label":"창"},{"s":"jar","x":22.5,"label":"물병"}],"bg":"mountains"}
+  },
+  {
+    week: 96, file: "lessons/96-endor.html", title: "사울이 엔돌의 무당을 찾아가다", ref: "사무엘상 28장",
+    cover: {"sky":"night","map":[".{20}S{12}",".{16}S{16}","G{14}S{18}","D{32}","S{32}"],"objects":[{"s":"king","x":6,"label":"사울"},{"s":"soldier","x":9,"shirt":"#8a7a9a"},{"s":"stone","x":2,"scale":2,"label":"사무엘의 무덤"},{"s":"soldier","x":24,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":28,"shirt":"#5a7a8a","flip":true},{"s":"chariot","x":21,"scale":2,"flip":true}],"bg":"mountains"}
   }
 ];
