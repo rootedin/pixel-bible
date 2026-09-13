@@ -169,5 +169,9 @@ window.PB_LESSONS = [
   {
     week: 73, file: "lessons/73-jephthah.html", title: "입다가 약속을 지키다", ref: "사사기 11장",
     cover: {"sky":"dusk","map":[".{22}T{8}.{2}",".{22}P.{6}P.{2}",".{22}P.{6}P.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":8}],"bg":"hills"}
+  },
+  {
+    week: 74, file: "lessons/74-samson-born.html", title: "삼손이 태어나 나실인이 되다", ref: "사사기 13-14장",
+    cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":16,"label":"삼손","shirt":"#a98a5e"},{"s":"man","x":10,"label":"마노아","shirt":"#8a7a5a"},{"s":"woman","x":13,"label":"어머니","hood":"#8a6b4a"}],"bg":"hills"}
   }
 ];
