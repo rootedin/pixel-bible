@@ -145,5 +145,9 @@ window.PB_LESSONS = [
   {
     week: 67, file: "lessons/67-sun-stands-still.html", title: "태양이 멈추다", ref: "여호수아 10장",
     cover: {"sky":"day","map":["S{8}.{24}","S{12}.{20}","S{16}.{16}","S{20}G{12}","D{32}","S{32}"],"objects":[{"s":"soldier","x":2,"label":"이스라엘 군사","shirt":"#b8a06a"},{"s":"soldier","x":5,"shirt":"#b8a06a"},{"s":"soldier","x":14,"label":"아모리 군사","shirt":"#6a5a7a"},{"s":"soldier","x":19,"shirt":"#6a5a7a"},{"s":"soldier","x":24,"shirt":"#6a5a7a"},{"s":"sun","x":15,"y":6,"scale":3,"label":"해"},{"s":"moon","x":26,"y":7,"scale":2,"label":"달"}],"bg":"mountains"}
+  },
+  {
+    week: 68, file: "lessons/68-joshua-dies.html", title: "여호수아가 죽다", ref: "여호수아 24장, 사사기 1:1-15",
+    cover: {"sky":"glory","map":[".{6}L{3}.{23}",".{5}L{5}.{22}",".{6}LTL.{23}",".{7}T.{24}",".{7}T.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":11,"label":"여호수아","shirt":"#b8a06a"},{"s":"man","x":17,"shirt":"#9a7b52","flip":true},{"s":"woman","x":20,"hood":"#8a6b4a","flip":true},{"s":"boy","x":22.5,"shirt":"#a98a5e","anim":"bob","flip":true},{"s":"tuft","x":27}],"bg":"hills"}
   }
 ];
