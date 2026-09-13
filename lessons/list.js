@@ -85,5 +85,9 @@ window.PB_LESSONS = [
   {
     week: 52, file: "lessons/52-two-sins.html", title: "이스라엘이 시내 산에서 두 가지 죄를 짓다", ref: "레위기 10:1-7, 24:10-16",
     cover: {"sky":"day","map":[".{20}P{8}.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}","s{32}","D{32}","S{32}"],"objects":[{"s":"stone","x":11,"scale":2},{"s":"fire","x":11,"y":14},{"s":"priest","x":15,"label":"아론"},{"s":"man","x":5,"shirt":"#9a7b52"},{"s":"woman","x":7.5,"hood":"#8a6b4a"},{"s":"priest","x":17.5,"label":"나답","beard":false,"hood":"#f2f2f2"},{"s":"priest","x":19.5,"label":"아비후","beard":false,"hood":"#f2f2f2"},{"s":"censer","x":17.5,"y":12,"scale":2},{"s":"censer","x":19.5,"y":12,"scale":2}],"bg":"desert"}
+  },
+  {
+    week: 53, file: "lessons/53-complaining.html", title: "이스라엘이 광야에서 불평하다", ref: "민수기 11장",
+    cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"},{"s":"bird","x":12,"y":6,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":16,"y":9,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":20,"y":5,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":24,"y":11,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":28,"y":7,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"}],"bg":"desert"}
   }
 ];
