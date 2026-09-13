@@ -133,5 +133,9 @@ window.PB_LESSONS = [
   {
     week: 64, file: "lessons/64-achan.html", title: "아간이 죄를 짓다", ref: "여호수아 7장",
     cover: {"sky":"dusk","map":[".{24}C{8}",".{22}S{10}",".{20}S{12}","G{20}S{12}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":8,"label":"정탐꾼"},{"s":"tuft","x":14}],"bg":"hills"}
+  },
+  {
+    week: 65, file: "lessons/65-ai.html", title: "이스라엘이 아이 성에서 승리하다", ref: "여호수아 8장",
+    cover: {"sky":"dusk","map":[".{24}C{4}..C{2}",".{22}S{10}",".{20}S{12}","G{20}S{12}","D{32}","S{32}"],"objects":[{"s":"tuft","x":15},{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7,"label":"전사"},{"s":"soldier","x":10,"label":"전사"},{"s":"soldier","x":22,"flip":true},{"s":"soldier","x":20.5,"flip":true},{"s":"spear","x":6,"y":12,"scale":2,"label":"창"},{"s":"smoke","x":24,"y":10,"scale":2,"anim":"float"},{"s":"smoke","x":27,"y":9,"scale":2,"anim":"float"},{"s":"smoke","x":30,"y":11,"scale":2,"anim":"float"}],"bg":"hills"}
   }
 ];
