@@ -253,5 +253,9 @@ window.PB_LESSONS = [
   {
     week: 94, file: "lessons/94-nabal.html", title: "어리석은 나발이 죽다", ref: "사무엘상 25장",
     cover: {"sky":"dusk","map":["s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":12,"shirt":"#9a7b52"},{"s":"soldier","x":15,"shirt":"#9a7b52"},{"s":"sword","x":19,"y":13,"scale":2,"label":"칼"}],"bg":"desert"}
+  },
+  {
+    week: 95, file: "lessons/95-david-spares-saul.html", title: "다윗이 사울의 생명을 살리다", ref: "사무엘상 26장",
+    cover: {"sky":"night","map":[".{6}T{8}.{18}",".{6}T.{6}T.{18}",".{6}T.{6}T.{18}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":24,"shirt":"#8a7a9a"},{"s":"torch","x":27,"scale":2},{"s":"king","x":18,"label":"사울"},{"s":"man","x":14,"label":"다윗","shirt":"#b8724a"},{"s":"soldier","x":11,"label":"아비새","shirt":"#9a7b52"},{"s":"spear","x":20.5,"y":13,"scale":2,"label":"창"},{"s":"jar","x":22.5,"label":"물병"}],"bg":"mountains"}
   }
 ];
