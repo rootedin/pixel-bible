@@ -136,6 +136,10 @@ window.PB_LESSONS = [
   },
   {
     week: 65, file: "lessons/65-ai.html", title: "이스라엘이 아이 성에서 승리하다", ref: "여호수아 8장",
-    cover: {"sky":"dusk","map":[".{24}C{4}..C{2}",".{22}S{10}",".{20}S{12}","G{20}S{12}","D{32}","S{32}"],"objects":[{"s":"tuft","x":15},{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7,"label":"전사"},{"s":"soldier","x":10,"label":"전사"},{"s":"soldier","x":22,"flip":true},{"s":"soldier","x":20.5,"flip":true},{"s":"spear","x":6,"y":12,"scale":2,"label":"창"},{"s":"smoke","x":24,"y":10,"scale":2,"anim":"float"},{"s":"smoke","x":27,"y":9,"scale":2,"anim":"float"},{"s":"smoke","x":30,"y":11,"scale":2,"anim":"float"}],"bg":"hills"}
+    cover: {"sky":"dusk","map":[".{24}C{8}",".{24}C{4}KKC{2}",".{22}S{10}",".{20}S{12}","G{20}S{12}","D{32}","S{32}"],"objects":[{"s":"tuft","x":15},{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":8,"label":"전사"},{"s":"soldier","x":11,"label":"전사"},{"s":"spear","x":5.5,"y":13,"scale":2,"label":"창"},{"s":"fire","x":26.5,"y":11,"scale":2,"anim":"bob"},{"s":"smoke","x":26.5,"y":10,"scale":3,"anim":"float"},{"s":"smoke","x":28.5,"y":8.5,"scale":3,"anim":"float"},{"s":"smoke","x":25,"y":7,"scale":2,"anim":"float"}],"bg":"hills"}
+  },
+  {
+    week: 66, file: "lessons/66-gibeon.html", title: "기브온 사람들이 이스라엘을 속이다", ref: "여호수아 9장",
+    cover: {"sky":"dusk","map":[".{26}C{6}",".{24}S{8}","G{24}S{8}","D{32}","S{32}"],"objects":[{"s":"man","x":18,"label":"기브온 사람","shirt":"#7a8a5a"},{"s":"man","x":21,"shirt":"#8a7a5a"},{"s":"tuft","x":10},{"s":"donkey","x":14},{"s":"jar","x":16},{"s":"bread","x":12},{"s":"basket","x":23}],"bg":"hills"}
   }
 ];
