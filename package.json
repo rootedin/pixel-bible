@@ -10,6 +10,11 @@
     "serve": "node serve.js",
     "build": "node build.js",
     "lint": "node lint.js",
+    "list": "node genlist.js",
+    "sprites": "node gensprites.js",
+    "snap": "node snap.js",
+    "snap:update": "node snap.js --update",
+    "snap:pixel": "node snap.js --pixel",
     "verse": "node verse.js"
   }
 }

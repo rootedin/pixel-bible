@@ -15,6 +15,9 @@
   .pb-tagx { float: right; font-size: 11px; padding: 1px 6px; border: 2px solid #000; }
   .pb-tagx.open { background: #4f9530; color: #fff; }
   .pb-tagx.soon { background: #5a5a5a; color: #ddd; }
+  .pb-search { font-family: var(--font); font-size: 14px; color: #fff; background: #1b1b1b;
+    border: 3px solid #000; box-shadow: inset 2px 2px 0 #444; padding: 7px 10px; width: 240px; }
+  .pb-search::placeholder { color: #888; }
 </style>
 <div class="pb-app">
   <div class="pb-titlescreen" style="position:relative;padding:30px 0 10px;background:none">
@@ -27,6 +30,7 @@
     <button class="pb-btn sm" data-f="open">열린 강의만</button>
     <button class="pb-btn sm" data-f="ot">구약</button>
     <button class="pb-btn sm" data-f="nt">신약</button>
+    <input id="q" class="pb-search" type="search" placeholder="제목 · 본문 검색 (예: 창세기 3)" autocomplete="off">
     <span class="pb-sub" id="count" style="margin-left:10px"></span>
   </div>
   <div id="list"></div>
@@ -55,11 +59,41 @@
     `공개 ${Object.keys(made).length}강 / 전체 ${all.length}강 (구약 ${OT} · 신약 ${all.length - OT})`;
 
   const listEl = document.getElementById('list');
+
+  /* 표지 렌더링 — 198강이면 캔버스를 한꺼번에 그리다 멈춘다
+   * (캔버스 1장 = 256x144x4B ≈ 147KB, 타일 drawImage 약 600회)
+   * 그래서 앞쪽 EAGER 장만 즉시 그리고, 나머지는 화면에 들어올 때 그린다.
+   * IntersectionObserver 가 없거나 동작하지 않는 환경에서도 최소한 첫 화면은 보이게 하는 안전장치이기도 하다. */
+  const EAGER = 12;
+  const covers = new WeakMap();
+  let io = null;
+  function paint(c) {
+    const sc = covers.get(c);
+    if (!sc || c.dataset.done) return;
+    c.dataset.done = '1';
+    PB.renderStill(c, sc);
+  }
+  function newObserver() {
+    if (io) { io.disconnect(); io = null; }
+    if (typeof IntersectionObserver !== 'function') return;
+    io = new IntersectionObserver(entries => {
+      for (const en of entries) {
+        if (!en.isIntersecting) continue;
+        io.unobserve(en.target);
+        paint(en.target);
+      }
+    }, { rootMargin: '400px' });
+  }
   function card(L) {
     const el = document.createElement(L.file ? 'a' : 'div');
     el.className = 'pb-card' + (L.file ? '' : ' locked');
     if (L.file) el.href = L.file;
-    if (L.cover) { const c = document.createElement('canvas'); PB.renderStill(c, L.cover); el.appendChild(c); }
+    if (L.cover) {
+      const c = document.createElement('canvas');
+      c.width = PB.W; c.height = PB.H;          // 자리를 먼저 잡아 레이아웃이 튀지 않게
+      covers.set(c, L.cover);                   // 실제 그리기는 draw() 끝에서 관찰 시작
+      el.appendChild(c);
+    }
     else el.insertAdjacentHTML('beforeend', '<div class="pb-thumb">오픈 예정</div>');
     el.insertAdjacentHTML('beforeend',
       `<div class="n">${L.ot ? '구약' : '신약'} ${String(L.n).padStart(3, '0')}강` +
@@ -76,19 +110,35 @@
     rows.forEach(L => grid.appendChild(card(L)));
     listEl.appendChild(grid);
   }
-  function draw(filter) {
+  let filter = 'all', query = '';
+  function draw() {
+    newObserver();
     listEl.innerHTML = '';
-    const rows = all.filter(L => (filter === 'open' ? L.file : filter === 'ot' ? L.ot : filter === 'nt' ? !L.ot : true));
+    const q = query.trim().toLowerCase();
+    const rows = all
+      .filter(L => (filter === 'open' ? L.file : filter === 'ot' ? L.ot : filter === 'nt' ? !L.ot : true))
+      .filter(L => !q || (L.title + ' ' + (L.ref || '') + ' ' + L.n + '강').toLowerCase().includes(q));
     const ot = rows.filter(L => L.ot), nt = rows.filter(L => !L.ot);
     section('구약', `${ot.length}강 · 공개 ${ot.filter(L => L.file).length}강`, ot);
     section('신약', `${nt.length}강 · 공개 ${nt.filter(L => L.file).length}강`, nt);
+    if (!rows.length) listEl.insertAdjacentHTML('beforeend', '<div class="pb-sec">검색 결과가 없습니다.</div>');
+    /* DOM 에 다 붙인 뒤에: 앞쪽은 바로 그리고, 나머지는 관찰만 건다 */
+    const cvs = [...listEl.querySelectorAll('.pb-card canvas')];
+    cvs.slice(0, EAGER).forEach(paint);
+    if (io) cvs.slice(EAGER).forEach(c => io.observe(c));
+    else cvs.slice(EAGER).forEach(paint);   // 옵저버가 없으면 전부 그린다
   }
   document.querySelectorAll('[data-f]').forEach(b => {
     b.onclick = () => {
       document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b));
-      draw(b.dataset.f);
+      filter = b.dataset.f; draw();
     };
   });
-  draw('all');
+  let t = null;
+  document.getElementById('q').addEventListener('input', e => {
+    query = e.target.value;
+    clearTimeout(t); t = setTimeout(draw, 150);
+  });
+  draw();
 })();
 </script>
