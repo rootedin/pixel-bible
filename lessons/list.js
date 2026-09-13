@@ -37,5 +37,9 @@ window.PB_LESSONS = [
   {
     week: 40, file: "lessons/40-moses-answers.html", title: "모세가 하나님께 대답하다", ref: "출애굽기 4장",
     cover: {"sky":"glory","map":[".{26}S{6}",".{24}S{8}",".{22}S{10}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"fire","x":23,"label":"떨기나무"},{"s":"tuft","x":22},{"s":"tuft","x":24.5},{"s":"stone","x":11},{"s":"shepherd","x":16,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a"},{"s":"snake","x":13,"label":"뱀","anim":"bob"}],"bg":"mountains"}
+  },
+  {
+    week: 41, file: "lessons/41-before-pharaoh.html", title: "모세와 아론이 바로 앞에 서다", ref: "출애굽기 5:1 - 7:13",
+    cover: {"sky":"day","map":[".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}","X{32}","m{32}","C{32}","S{32}"],"objects":[{"s":"torch","x":3},{"s":"torch","x":29},{"s":"man","x":9,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"},{"s":"man","x":11,"label":"아론","beard":"#3b2414","shirt":"#b89a6a"},{"s":"king","x":24,"label":"파라오","flip":true},{"s":"man","x":21,"label":"마술사","robe":true,"shirt":"#6b5a8e","flip":true},{"s":"man","x":27,"label":"마술사","robe":true,"shirt":"#5a4a7e","flip":true},{"s":"snake","x":15,"label":"아론의 막대기","scale":2,"anim":"bob"},{"s":"snake","x":20,"anim":"bob"},{"s":"snake","x":28,"anim":"bob"}]}
   }
 ];
