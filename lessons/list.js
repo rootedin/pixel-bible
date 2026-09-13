@@ -129,5 +129,9 @@ window.PB_LESSONS = [
   {
     week: 63, file: "lessons/63-jericho.html", title: "여리고 성벽이 무너지다", ref: "여호수아 6장",
     cover: {"sky":"glory","map":[".{18}C{12}.{2}",".{18}C{12}.{2}",".{18}C{12}.{2}",".{18}C{12}.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":7,"label":"전사"},{"s":"soldier","x":10,"label":"전사"},{"s":"tuft","x":14}],"bg":"desert"}
+  },
+  {
+    week: 64, file: "lessons/64-achan.html", title: "아간이 죄를 짓다", ref: "여호수아 7장",
+    cover: {"sky":"dusk","map":[".{24}C{8}",".{22}S{10}",".{20}S{12}","G{20}S{12}","D{32}","S{32}"],"objects":[{"s":"soldier","x":4,"label":"여호수아","shirt":"#b8a06a"},{"s":"soldier","x":8,"label":"정탐꾼"},{"s":"tuft","x":14}],"bg":"hills"}
   }
 ];
