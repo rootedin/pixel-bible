@@ -192,6 +192,17 @@ window.PB = window.PB || {};
         'dyyyyyyyyyyd',
         '.dd......dd.']
     },
+    /* 향로 — 레위기 10장, 민수기 16장에서 쓴다 */
+    censer: {
+      pal: { y: '#f7d34a', o: '#c8961a', s: '#c9c9d4' }, px: [
+        '..s..s..',
+        '...ss...',
+        '.oooooo.',
+        'oyyyyyyo',
+        '.oyyyyo.',
+        '..oooo..',
+        '...oo...']
+    },
     /* 벽돌 한 장 — 국고 도시 공사 장면용 */
     brick: {
       pal: { b: '#a4452f', l: '#c05a40', d: '#7a3222' }, px: [
