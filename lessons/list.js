@@ -189,5 +189,9 @@ window.PB_LESSONS = [
   {
     week: 78, file: "lessons/78-ruth-boaz.html", title: "룻과 보아스가 결혼하다", ref: "룻기 3-4장",
     cover: {"sky":"night","map":["y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"룻","hood":"#b9765a"},{"s":"man","x":16,"label":"보아스","shirt":"#8a7a5a","flip":true},{"s":"sheaf","x":21,"scale":3,"label":"곡식 더미"},{"s":"sheaf","x":26,"scale":2}],"bg":"hills"}
+  },
+  {
+    week: 79, file: "lessons/79-samuel-born.html", title: "사무엘이 태어나다", ref: "사무엘상 1장",
+    cover: {"sky":"day","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":15,"label":"한나","hood":"#8a6b4a"},{"s":"priest","x":21,"label":"엘리","flip":true},{"s":"torch","x":12,"scale":2}],"bg":"hills"}
   }
 ];
