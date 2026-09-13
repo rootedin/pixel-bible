@@ -121,5 +121,9 @@ window.PB_LESSONS = [
   {
     week: 61, file: "lessons/61-two-spies.html", title: "두 정탐꾼이 여리고에 들어가다", ref: "여호수아 1-2장",
     cover: {"sky":"night","map":[".{12}C{20}",".{12}C{4}ggC{14}",".{12}C{20}",".{12}C{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"정탐꾼","shirt":"#8a6b45"},{"s":"man","x":7,"shirt":"#a08a6a"},{"s":"woman","x":10,"label":"라합","hood":"#b9765a","flip":true}],"bg":"desert"}
+  },
+  {
+    week: 62, file: "lessons/62-jordan.html", title: "이스라엘이 요르단 강을 건너다", ref: "여호수아 3-4장",
+    cover: {"sky":"day","map":["G{11}s{10}G{11}","D{11}s{10}D{11}","D{11}s{10}D{11}","S{11}s{10}S{11}","S{32}"],"objects":[{"s":"priest","x":15,"label":"제사장"},{"s":"ark","x":15,"y":11,"scale":2,"label":"언약궤"},{"s":"soldier","x":8,"label":"여호수아","shirt":"#b8a06a"},{"s":"man","x":5,"shirt":"#9a7b52"}],"bg":"hills"}
   }
 ];
