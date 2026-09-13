@@ -258,6 +258,16 @@ window.PB = window.PB || {};
         'hhhgsssssssl',
         'hhhgssssssl.',
         '...g........']
+    },
+    /* 양털 한 뭉치 — 기드온의 표징(삿 6장) */
+    fleece: {
+      pal: { w: '#f4f2ea', g: '#d6d2c4', d: '#a49c8a' }, px: [
+        '..wwww..',
+        '.wwgwww.',
+        'wwgggwww',
+        'wwgwwggw',
+        '.wwgwww.',
+        '..dddd..']
     }
   });
 })(window.PB);

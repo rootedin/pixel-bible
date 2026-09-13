@@ -157,5 +157,9 @@ window.PB_LESSONS = [
   {
     week: 70, file: "lessons/70-deborah.html", title: "드보라와 바락이 이스라엘을 다스리다", ref: "사사기 4-5장",
     cover: {"sky":"storm","map":["S{8}.{24}","S{12}.{20}","S{16}.{16}","S{18}G{4}W{4}G{6}","D{22}W{4}D{6}","S{32}"],"objects":[{"s":"woman","x":5,"label":"드보라","hood":"#c2a24a","robe":"#7a5a9a"},{"s":"chariot","x":27,"scale":2,"flip":true},{"s":"chariot","x":30.5,"scale":2,"flip":true},{"s":"chariot","x":20,"scale":2,"label":"철 병거","flip":true},{"s":"soldier","x":30,"label":"시스라","shirt":"#6a5a7a","flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 71, file: "lessons/71-gideon-called.html", title: "하나님께서 기드온을 부르시다", ref: "사사기 6장",
+    cover: {"sky":"glory","map":[".{5}L{5}.{22}",".{6}LTL.{23}",".{7}T.{24}",".{7}T.{13}S{3}.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":22,"label":"기드온","shirt":"#7a8a5a","flip":true},{"s":"tuft","x":28},{"s":"angel","x":12,"label":"주의 천사"}],"bg":"hills"}
   }
 ];
