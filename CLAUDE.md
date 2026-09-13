@@ -103,7 +103,7 @@ light(빛 번짐), rain, snow, sparkle, rainbow, flash(장면 시작 번쩍), li
   옵션으로 덮어쓰기: skin hair shirt pants sash beard long robe hood crown halo wings staff
   예) `{ s: 'shepherd', x: 8, label: '다윗', beard: false, hair: '#8a4b1c' }`
 - 동물/사물: sheep cow lion snake fish bird dove sun moon star heart cross fire tablets
-  scroll bread fruit flower flower2 tuft torch stone jar coin basket reed frog brick fly locust chariot manna basket(갈대 궤+아기) reed(부들/갈대)
+  scroll bread fruit flower flower2 tuft torch stone jar coin basket reed frog brick fly locust chariot manna ark basket(갈대 궤+아기) reed(부들/갈대)
   - `pal: { 글자: '#색' }` 으로 색 변경 (예: 물고기 색)
 
 ## 새 스프라이트/블록 추가

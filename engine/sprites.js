@@ -180,6 +180,18 @@ window.PB = window.PB || {};
     },
     /* 만나 — 광야 표면에 깔린 작고 둥근 것 */
     manna: { pal: { w: '#f6f9ff', g: '#d4dceb' }, px: ['.ww.', 'wwgw', 'wggw', '.ww.'] },
+    /* 증언궤 — 성막·여호수아·사무엘상·다윗 장면에서 반복해서 쓴다 */
+    ark: {
+      pal: { y: '#f7d34a', o: '#c8961a', w: '#fff3a0', d: '#8a6a12' }, px: [
+        '..w......w..',
+        '..ww....ww..',
+        '...ww..ww...',
+        'oyyyyyyyyyyo',
+        'oyyyyyyyyyyo',
+        'dyyyyyyyyyyd',
+        'dyyyyyyyyyyd',
+        '.dd......dd.']
+    },
     /* 벽돌 한 장 — 국고 도시 공사 장면용 */
     brick: {
       pal: { b: '#a4452f', l: '#c05a40', d: '#7a3222' }, px: [

@@ -77,5 +77,9 @@ window.PB_LESSONS = [
   {
     week: 50, file: "lessons/50-golden-calf.html", title: "이스라엘이 금송아지를 섬기다", ref: "출애굽기 32장",
     cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"cow","x":16,"label":"금송아지","pal":{"w":"#ffe25a","k":"#c8961a","p":"#f5b82e","h":"#e0b030","e":"#6a4a10"},"scale":2},{"s":"man","x":10,"label":"아론","beard":"#3b2414","shirt":"#b89a6a"},{"s":"man","x":6,"shirt":"#9a7b52","anim":"jump"},{"s":"woman","x":22,"hood":"#8a6b4a","anim":"jump","flip":true},{"s":"boy","x":26,"shirt":"#a98a5e","anim":"jump","flip":true},{"s":"jar","x":29}],"bg":"mountains"}
+  },
+  {
+    week: 51, file: "lessons/51-tabernacle.html", title: "이스라엘이 성막을 세우다", ref: "출애굽기 25-30장",
+    cover: {"sky":"day","map":[".{20}P{8}.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}","s{32}","D{32}","S{32}"],"objects":[{"s":"stone","x":11,"scale":2},{"s":"fire","x":11,"y":14},{"s":"jar","x":16,"scale":2},{"s":"priest","x":18,"label":"제사장"},{"s":"man","x":10,"label":"예배하러 온 사람","shirt":"#9a7b52"}],"bg":"desert"}
   }
 ];
