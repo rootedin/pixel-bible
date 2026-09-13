@@ -212,6 +212,10 @@ window.PB_LESSONS = [
   },
   {
     week: 84, file: "lessons/84-saul-made-king.html", title: "하나님께서 이스라엘에게 왕을 주시다", ref: "사무엘상 10장",
-    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":7,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":14,"hood":"#8a6b4a"},{"s":"jar","x":22},{"s":"basket","x":24},{"s":"sheaf","x":26,"scale":2},{"s":"man","x":25,"label":"사울","shirt":"#8a7a9a"}],"bg":"hills"}
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":7,"label":"사무엘","shirt":"#e0d8c0"},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":14,"hood":"#8a6b4a"},{"s":"jar","x":22},{"s":"basket","x":24},{"s":"sheaf","x":26,"scale":2,"label":"물건들"}],"bg":"hills"}
+  },
+  {
+    week: 85, file: "lessons/85-saul-jabesh.html", title: "사울이 길르앗 야베스를 돕다", ref: "사무엘상 11장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":14},{"s":"flower","x":20},{"s":"soldier","x":10,"shirt":"#9a7b52"},{"s":"soldier","x":13,"shirt":"#9a7b52"},{"s":"soldier","x":16,"shirt":"#9a7b52"},{"s":"man","x":6,"label":"사울","shirt":"#8a7a9a"}],"bg":"hills"}
   }
 ];
