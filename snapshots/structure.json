@@ -150,6 +150,190 @@
    }
   ]
  },
+ "lessons/02-sky-and-plants.html": {
+  "title": "하나님께서 하늘과 식물을 만드시다",
+  "week": 2,
+  "scenes": 11,
+  "hash": "ca150879bb76",
+  "detail": [
+   {
+    "caption": "둘째 날",
+    "sky": "dawn",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "궁창",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "하늘이라 부르시다",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "DAY 3 · 마른 육지",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "땅과 바다",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "땅이 풀을 내다",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "씨앗",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "fruit@15,9",
+     "fruit@27,9"
+    ],
+    "steps": [
+     "lines",
+     "find",
+     "verse"
+    ]
+   },
+   {
+    "caption": "스스로 이어지는 세상",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "fruit@15,9",
+     "fruit@27,9"
+    ],
+    "steps": [
+     "lines",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "셋째 날",
+    "sky": "dusk",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "fruit@15,9",
+     "fruit@27,9"
+    ],
+    "steps": [
+     "lines",
+     "verse",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "암송",
+    "sky": "glory",
+    "bg": "none",
+    "fx": "sparkle",
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "fruit@15,9",
+     "fruit@27,9"
+    ],
+    "steps": [
+     "blank"
+    ]
+   },
+   {
+    "caption": "나눔",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "fruit@15,9",
+     "fruit@27,9"
+    ],
+    "steps": [
+     "lines"
+    ]
+   }
+  ]
+ },
  "lessons/37-moses-born.html": {
   "title": "모세가 태어났어요",
   "week": 37,

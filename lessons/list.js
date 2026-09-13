@@ -7,6 +7,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["W{32}","W{32}","W{32}","W{32}","W{32}","W{32}","s{32}"],"objects":[],"clouds":false}
   },
   {
+    week: 2, file: "lessons/02-sky-and-plants.html", title: "하나님께서 하늘과 식물을 만드시다", ref: "창세기 1:6-13",
+    cover: {"sky":"day","map":[".{15}LLL.{10}LLL.",".{14}L{5}.{8}L{5}",".{14}L{5}.{8}L{5}",".{16}T.{12}T..",".{16}T.{12}T..",".{16}T.{5}G{5}..T..",".{13}G{9}D{5}G{5}","W{10}s{3}D{19}","W{10}s{3}D{19}","W{10}s{3}D{6}S{13}","s{11}S{21}","S{32}"],"objects":[{"s":"flower","x":14},{"s":"flower2","x":19},{"s":"tuft","x":20},{"s":"flower","x":24},{"s":"tuft","x":31},{"s":"fruit","x":15,"y":9},{"s":"fruit","x":27,"y":9}]}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어났어요", ref: "출애굽기 2:1-10",
     cover: {"sky":"day","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"fish","x":13,"y":15,"anim":"swim"},{"s":"fish","x":16,"y":16,"anim":"swim","range":2,"speed":0.8},{"s":"girl","x":25,"label":"파라오의 딸","crown":true,"shirt":"#e8d48a","sash":"#2fa3b0","flip":true},{"s":"woman","x":28.5,"hood":"#b9a06a","flip":true},{"s":"woman","x":30.5,"hood":"#7a9ab8","flip":true},{"s":"girl","x":22.5,"label":"미리암"},{"s":"woman","x":27,"label":"요게벳"},{"s":"coin","x":31}],"bg":"desert"}
   }
