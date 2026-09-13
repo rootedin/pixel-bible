@@ -180,6 +180,10 @@ window.PB_LESSONS = [
   },
   {
     week: 76, file: "lessons/76-samson-dies.html", title: "삼손이 용감하게 죽다", ref: "사사기 16장",
-    cover: {"sky":"day","map":["T{32}",".{18}m{2}.{4}m{2}.{6}",".{18}m{2}.{4}m{2}.{6}",".{18}m{2}.{4}m{2}.{6}","m{32}","S{32}"],"objects":[{"s":"boy","x":26,"label":"소년","shirt":"#a98a5e","flip":true},{"s":"man","x":10,"y":12,"shirt":"#5a7a8a"},{"s":"man","x":16,"y":12,"shirt":"#5a7a8a"},{"s":"woman","x":22,"y":12,"hood":"#7a8aa0"}],"bg":"city"}
+    cover: {"sky":"day","map":["T{32}",".{18}C{2}.{4}C{2}.{6}",".{18}C{2}.{4}C{2}.{6}",".{18}C{2}.{4}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"boy","x":26,"label":"소년","shirt":"#a98a5e","flip":true},{"s":"man","x":10,"y":12,"shirt":"#5a7a8a"},{"s":"man","x":16,"y":12,"shirt":"#5a7a8a"},{"s":"woman","x":22,"y":12,"hood":"#7a8aa0"}]}
+  },
+  {
+    week: 77, file: "lessons/77-ruth-returns.html", title: "나오미와 룻이 베들레헴으로 돌아오다", ref: "룻기 1-2장",
+    cover: {"sky":"day","map":[".{26}S{6}",".{22}S{10}","G{18}S{14}","D{32}","S{32}"],"objects":[{"s":"woman","x":26,"label":"나오미","hood":"#8a6b4a","flip":true},{"s":"tuft","x":10}],"bg":"mountains"}
   }
 ];
