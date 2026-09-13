@@ -268,6 +268,16 @@ window.PB = window.PB || {};
         'wwgwwggw',
         '.wwgwww.',
         '..dddd..']
+    },
+    /* 여우 — 삼손의 여우 삼백 마리(삿 15장) */
+    fox: {
+      pal: { o: '#c8702a', d: '#8a4718', k: '#2a1a10' }, px: [
+        'oo.....o.o',
+        '.oo...oooo',
+        '..oooooook',
+        '.oooooooo.',
+        '.dd....dd.',
+        '.dd....dd.']
     }
   });
 })(window.PB);

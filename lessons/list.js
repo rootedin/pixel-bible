@@ -173,5 +173,9 @@ window.PB_LESSONS = [
   {
     week: 74, file: "lessons/74-samson-born.html", title: "삼손이 태어나 나실인이 되다", ref: "사사기 13-14장",
     cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":16,"label":"삼손","shirt":"#a98a5e"},{"s":"man","x":10,"label":"마노아","shirt":"#8a7a5a"},{"s":"woman","x":13,"label":"어머니","hood":"#8a6b4a"}],"bg":"hills"}
+  },
+  {
+    week: 75, file: "lessons/75-samson-judge.html", title: "삼손이 사사가 되다", ref: "사사기 15장",
+    cover: {"sky":"day","map":[".{24}S{8}",".{20}S{12}",".{16}S{16}","G{16}S{16}","D{32}","S{32}"],"objects":[{"s":"man","x":26,"label":"삼손","shirt":"#a98a5e","flip":true},{"s":"man","x":18,"label":"유다 사람","shirt":"#9a7b52"},{"s":"man","x":15,"shirt":"#8a7a5a"}],"bg":"mountains"}
   }
 ];
