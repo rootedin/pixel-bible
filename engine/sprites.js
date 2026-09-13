@@ -315,6 +315,15 @@ window.PB = window.PB || {};
         'w.sss.w',
         'dd...dd',
         '.ddddd.']
+    },
+    /* 화살 — 요나단의 신호(삼상 20장) 등 */
+    arrow: {
+      pal: { w: '#8a6a3a', s: '#b9c0cc', f: '#c0392b' }, px: [
+        '.......s..',
+        'f.......ss',
+        'fwwwwwwwss',
+        'f.......ss',
+        '.......s..']
     }
   });
 })(window.PB);

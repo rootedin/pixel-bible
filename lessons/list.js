@@ -241,5 +241,9 @@ window.PB_LESSONS = [
   {
     week: 91, file: "lessons/91-saul-hunts-david.html", title: "사울이 다윗을 죽이려 하다", ref: "사무엘상 19장",
     cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"사울"},{"s":"soldier","x":16,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"man","x":20,"label":"신하","shirt":"#9a7b52","flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 92, file: "lessons/92-david-jonathan-part.html", title: "다윗이 요나단과 헤어지다", ref: "사무엘상 20장",
+    cover: {"sky":"dawn","map":["S{4}.{28}","S{5}.{27}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":22,"label":"요나단","shirt":"#8a9a6a","flip":true},{"s":"boy","x":27,"label":"아이","shirt":"#a98a5e","flip":true},{"s":"arrow","x":16,"y":13,"scale":2,"label":"화살"}],"bg":"hills"}
   }
 ];
