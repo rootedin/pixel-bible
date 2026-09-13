@@ -217,5 +217,9 @@ window.PB_LESSONS = [
   {
     week: 85, file: "lessons/85-saul-jabesh.html", title: "사울이 길르앗 야베스를 돕다", ref: "사무엘상 11장",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":14},{"s":"flower","x":20},{"s":"soldier","x":10,"shirt":"#9a7b52"},{"s":"soldier","x":13,"shirt":"#9a7b52"},{"s":"soldier","x":16,"shirt":"#9a7b52"},{"s":"man","x":6,"label":"사울","shirt":"#8a7a9a"}],"bg":"hills"}
+  },
+  {
+    week: 86, file: "lessons/86-jonathan.html", title: "요나단이 이스라엘을 구하다", ref: "사무엘상 14장",
+    cover: {"sky":"dawn","map":[".{20}S{12}",".{16}S{16}",".{12}S{20}","G{12}S{20}","D{32}","S{32}"],"objects":[{"s":"soldier","x":24,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":28,"shirt":"#5a7a8a","flip":true}],"bg":"mountains"}
   }
 ];

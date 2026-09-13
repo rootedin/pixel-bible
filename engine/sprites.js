@@ -295,6 +295,16 @@ window.PB = window.PB || {};
         'dddddddd',
         'yyyyyyyy',
         '.yy..yy.']
+    },
+    /* 벌집 — 삼손의 사자 주검, 요나단의 수풀(삼상 14장) */
+    honeycomb: {
+      pal: { y: '#e8b93a', d: '#a87c10', l: '#f7dc7a' }, px: [
+        '.lylyl.',
+        'yyyyyyy',
+        'ydydydy',
+        'yyyyyyy',
+        'ydydydy',
+        '.yyyyy.']
     }
   });
 })(window.PB);
