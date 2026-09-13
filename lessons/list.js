@@ -33,5 +33,9 @@ window.PB_LESSONS = [
   {
     week: 39, file: "lessons/39-burning-bush.html", title: "하나님께서 불타는 떨기나무에서 모세를 찾아오시다", ref: "출애굽기 3장",
     cover: {"sky":"day","map":[".{26}S{6}",".{24}S{8}",".{22}S{10}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"shepherd","x":4,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a"},{"s":"sheep","x":9,"anim":"bob"},{"s":"sheep","x":13,"anim":"walk","range":1},{"s":"tuft","x":17},{"s":"stone","x":11},{"s":"tuft","x":21},{"s":"fire","x":23,"label":"떨기나무"},{"s":"tuft","x":22},{"s":"tuft","x":24.5}],"bg":"mountains"}
+  },
+  {
+    week: 40, file: "lessons/40-moses-answers.html", title: "모세가 하나님께 대답하다", ref: "출애굽기 4장",
+    cover: {"sky":"glory","map":[".{26}S{6}",".{24}S{8}",".{22}S{10}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"fire","x":23,"label":"떨기나무"},{"s":"tuft","x":22},{"s":"tuft","x":24.5},{"s":"stone","x":11},{"s":"shepherd","x":16,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a"},{"s":"snake","x":13,"label":"뱀","anim":"bob"}],"bg":"mountains"}
   }
 ];
