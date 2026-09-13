@@ -105,5 +105,9 @@ window.PB_LESSONS = [
   {
     week: 57, file: "lessons/57-moses-sins.html", title: "모세가 죄를 짓다", ref: "민수기 20:1-13",
     cover: {"sky":"day","map":[".{22}S{10}",".{20}S{12}",".{20}S{12}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":8,"label":"아론","beard":"#c8c8c8","hair":"#d0d0d0","shirt":"#b89a6a"},{"s":"tuft","x":14},{"s":"stone","x":16,"scale":2},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":13.5,"hood":"#8a6b4a"},{"s":"man","x":16.5,"shirt":"#8a6b45"}],"bg":"mountains"}
+  },
+  {
+    week: 58, file: "lessons/58-bronze-serpent.html", title: "하나님께서 불뱀을 보내시다", ref: "민수기 20:14 - 21:9",
+    cover: {"sky":"dusk","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"woman","x":12,"hood":"#8a6b4a"},{"s":"boy","x":15,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":27},{"s":"snake","x":7,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":13,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":19,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":25,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"}],"bg":"desert"}
   }
 ];
