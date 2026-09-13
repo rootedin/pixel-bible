@@ -1,0 +1,257 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>픽셀 성경</title>
+<link rel="stylesheet" href="../engine/style.css">
+<div id="app"></div>
+<script src="../engine/world.js"></script>
+<script src="../engine/sprites.js"></script>
+<script src="../engine/engine.js"></script>
+<script>
+/* 42강 — 하나님께서 애굽에 첫째·둘째·셋째 재앙을 보내시다 (출애굽기 7:14 - 8:19) */
+const NILE = [                // 왼쪽 둑(0-7) · 강(8-21) · 오른쪽 모래톱(22-31)
+  'G{8}W{14}s{10}',
+  'D{8}W{14}s{10}',
+  'D{8}W{14}s{10}',
+  'D{8}W{14}s{10}',
+  'S{8}W{14}s{10}',
+  'S{8}W{14}s{10}',
+  'S{22}s{10}',
+  'S{32}'
+];
+const NILE_BLOOD = [          // 같은 강, 물이 피로 바뀐 상태
+  'G{8}R{14}s{10}',
+  'D{8}R{14}s{10}',
+  'D{8}R{14}s{10}',
+  'D{8}R{14}s{10}',
+  'S{8}R{14}s{10}',
+  'S{8}R{14}s{10}',
+  'S{22}s{10}',
+  'S{32}'
+];
+const PALACE = [              // 기둥 5·12·19·26
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  '.{5}m.{6}m.{6}m.{6}m.{5}',
+  'X{32}',
+  'm{32}',
+  'C{32}',
+  'S{32}'
+];
+
+PB.start({
+  week: 42,
+  title: '하나님께서 애굽에 첫째·둘째·셋째 재앙을 보내시다',
+  ref: '출애굽기 7:14 - 8:19',
+  cover: 3,
+  splash: '내가 주인 줄을 알리라!',
+  intro: '파라오는 "주가 누구냐"고 물었습니다. 이제 그 대답이 시작됩니다.',
+  memory: {
+    text: '네가 이 일로 인해 내가 주인 줄을 알리라.',
+    ref: '출애굽기 7:17'
+  },
+  achievement: { title: '하나님의 손가락을 본 사람', icon: 'frog' },
+  scenes: [
+    {
+      caption: '강가에서', sky: 'day', bg: 'desert', map: NILE,
+      objects: [
+        { s: 'man', x: 24, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a', flip: true },
+        { s: 'man', x: 26, label: '아론', beard: '#3b2414', shirt: '#b89a6a', flip: true },
+        { s: 'king', x: 30, label: '파라오', flip: true },
+        { s: 'fish', x: 13, y: 13, anim: 'swim' },
+        { s: 'fish', x: 17, y: 15, anim: 'swim', range: 2, speed: 0.8 }
+      ],
+      lines: [
+        '나일 강은 이집트의 생명줄이었습니다. 그들은 이 강을 신으로 섬겼습니다.',
+        '하나님께서 모세를 그 강가로 보내셨습니다.',
+        '"주가 누구냐"고 물었던 파라오에게 대답하실 차례였습니다.'
+      ],
+      verse: {
+        text: '네가 이 일로 인해 내가 주인 줄을 알리라.',
+        ref: '출애굽기 7:17'
+      }
+    },
+    {
+      caption: '첫째 재앙 · 피', sky: 'dusk', bg: 'desert', map: NILE_BLOOD, fx: 'flash',
+      objects: [
+        { s: 'man', x: 24, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a', flip: true },
+        { s: 'man', x: 26, label: '아론', beard: '#3b2414', shirt: '#b89a6a', flip: true },
+        { s: 'king', x: 30, label: '파라오', flip: true }
+      ],
+      lines: [
+        '아론이 막대기로 강을 치자 물이 **피로 변했습니다**.',
+        '이집트가 신으로 섬기던 강이, 마실 수도 없는 것이 되었습니다.',
+        '재앙은 아무 데나 떨어진 것이 아니라 그들이 섬기던 것을 겨냥했습니다.'
+      ]
+    },
+    {
+      caption: '강이 악취를 내다', keep: true, fx: null,
+      add: [
+        { s: 'fish', x: 12, y: 12, pal: { o: '#6a6a6a', y: '#8a8a8a' } },
+        { s: 'fish', x: 16, y: 12, pal: { o: '#6a6a6a', y: '#8a8a8a' }, flip: true },
+        { s: 'fish', x: 19, y: 12, pal: { o: '#6a6a6a', y: '#8a8a8a' } }
+      ],
+      lines: [
+        '강이 죽기 시작했습니다.',
+        '본문은 무엇이 죽었는지 분명히 말합니다.'
+      ],
+      find: {
+        q: '강물이 피가 되자 무엇이 죽었습니까? 찾아서 클릭하십시오.',
+        target: 'fish',
+        hint: '물속을 보십시오. 색이 변해 떠 있습니다.',
+        explain: '물고기입니다. 강의 물고기가 죽고 강이 악취를 냈습니다. (출 7:18)'
+      },
+      verse: {
+        text: '강의 물고기가 죽고 강이 악취를 내리니 이집트 사람들이 그 강물 마시기를 심히 싫어하리라',
+        ref: '출애굽기 7:18'
+      }
+    },
+    {
+      caption: '그런데도', keep: true, sky: 'dusk',
+      lines: [
+        '이집트 마술사들도 자기들의 마술로 같은 일을 해 보였습니다.',
+        '그래서 파라오는 마음을 바꾸지 않았습니다.',
+        '이상합니다. 물을 피로 만들 줄 알았다면, **되돌리는** 것부터 했어야 합니다.'
+      ]
+    },
+    {
+      caption: '둘째 재앙 · 개구리', sky: 'day', bg: 'none', map: PALACE, fx: null,
+      objects: [
+        ['torch', 3], ['torch', 29],
+        { s: 'king', x: 24, label: '파라오', flip: true },
+        { s: 'frog', x: 8, anim: 'jump' },
+        { s: 'frog', x: 10.5, anim: 'bob' },
+        { s: 'frog', x: 14, anim: 'jump', speed: 1.3 },
+        { s: 'frog', x: 16.5, anim: 'bob' },
+        { s: 'frog', x: 20, anim: 'jump' },
+        { s: 'frog', x: 28, anim: 'bob' }
+      ],
+      lines: [
+        '두 번째로 강이 **개구리**를 쏟아 냈습니다.',
+        '집 안, 침실, 침대 위, 화덕, 빵 반죽 그릇까지 들어갔습니다.',
+        '왕궁도 예외가 아니었습니다. 파라오의 침대 위에도 올라왔습니다.'
+      ],
+      verse: {
+        text: '강이 개구리들을 풍성히 내리니 그것들이 올라와 네 집과 네 침실과 네 침상 위와 네 신하들의 집과 네 백성과 네 화덕과 네 빵 반죽 그릇에 들어가고',
+        ref: '출애굽기 8:3'
+      }
+    },
+    {
+      caption: '기도해 달라', keep: true,
+      add: [
+        { s: 'man', x: 9, label: '모세', beard: '#5a4a3a', hair: '#6a5a4a', shirt: '#c9b48a' },
+        { s: 'man', x: 11, label: '아론', beard: '#3b2414', shirt: '#b89a6a' }
+      ],
+      lines: [
+        '견디다 못한 파라오가 처음으로 고개를 숙였습니다.',
+        { who: '파라오', text: '주께 간구하여 개구리들을 옮기게 하라. **내가 백성을 가게 하리라.**' },
+        '드디어 약속을 받아 냈습니다.'
+      ],
+      verse: {
+        text: '주께 간구하여 그분께서 개구리들을 나와 내 백성에게서 옮기시게 하라. 내가 백성을 가게 하리니',
+        ref: '출애굽기 8:8'
+      }
+    },
+    {
+      caption: '개구리가 사라진 뒤', keep: true,
+      remove: ['frog'],
+      lines: [
+        '모세가 기도하자 개구리들이 죽어 없어졌습니다.',
+        '왕궁이 조용해졌습니다. 이제 숨을 돌릴 수 있게 되었습니다.'
+      ],
+      choose: {
+        q: '당신이 파라오라면 이제 어떻게 하겠습니까?',
+        options: [
+          { text: '약속한 대로 보내 준다', goto: 8 },
+          { text: '급한 불이 꺼졌으니 말을 바꾼다', goto: 9 }
+        ]
+      }
+    },
+    {
+      caption: '보내 주겠다고 했다면', keep: true,
+      lines: [
+        '그것이 당연합니다. 약속은 지키라고 하는 것입니다.',
+        '그런데 파라오는 그러지 않았습니다.'
+      ]
+    },
+    {
+      caption: '일이 연기된 것을 보고', keep: true, sky: 'dusk', fx: 'dark',
+      lines: [
+        '성경은 파라오가 마음을 바꾼 이유를 딱 한마디로 적습니다.',
+        '**일이 연기된 것**을 보았기 때문입니다.',
+        '급할 때는 부르고, 숨 돌리면 잊습니다.'
+      ],
+      verse: {
+        text: '일이 연기된 것을 파라오가 보고는 주께서 이미 말씀하신 대로 그가 자기 마음을 강퍅하게 하여',
+        ref: '출애굽기 8:15'
+      },
+      quiz: {
+        q: '파라오가 약속을 뒤집은 때는 언제였습니까?',
+        options: [
+          '개구리가 더 많아졌을 때',
+          '숨 돌릴 틈이 생겼을 때',
+          '모세가 떠난 뒤',
+          '신하들이 반대했을 때'
+        ],
+        answer: 1,
+        explain: '"일이 연기된 것을 보고" 마음을 강퍅하게 했습니다. 편해지자 잊은 것입니다. (출 8:15)'
+      }
+    },
+    {
+      caption: '셋째 재앙 · 이', keep: true, sky: 'day', fx: null,
+      add: [
+        { s: 'man', x: 21, label: '마술사', robe: true, shirt: '#6b5a8e', flip: true },
+        { s: 'man', x: 27, label: '마술사', robe: true, shirt: '#5a4a7e', flip: true }
+      ],
+      lines: [
+        '아론이 막대기로 땅의 티끌을 치자 티끌이 **이**가 되었습니다.',
+        '사람에게도, 짐승에게도 들러붙었습니다.',
+        '마술사들이 같은 일을 해 보려 했습니다. 그런데 이번에는 할 수 없었습니다.'
+      ],
+      verse: {
+        text: '마술사들이 자기들의 마술로 그와 같이 행하여 이를 내려 하였으나 할 수 없었더라.',
+        ref: '출애굽기 8:18'
+      }
+    },
+    {
+      caption: '하나님의 손가락', keep: true, sky: 'glory', fx: 'light',
+      lines: [
+        '흉내조차 낼 수 없게 되자 마술사들이 먼저 항복했습니다.',
+        { who: '마술사', text: '이것은 **하나님의 손가락**이니이다.' },
+        '손도 아니고 팔도 아닌 손가락입니다. 이만큼만 쓰셨다는 뜻입니다.'
+      ],
+      verse: {
+        text: '마술사들이 파라오에게 이르되, 이것은 하나님의 손가락이니이다',
+        ref: '출애굽기 8:19'
+      },
+      quiz: {
+        q: '마술사들이 "하나님의 손가락"이라고 한 뒤 파라오는 어떻게 했습니까?',
+        options: [
+          '곧바로 백성을 보내 주었다',
+          '마술사들의 말에 귀를 기울이지 않았다',
+          '마술사들을 내쫓았다',
+          '모세를 불러 사과했다'
+        ],
+        answer: 1,
+        explain: '자기 사람들이 인정했는데도 듣지 않았습니다. 증거가 부족한 것이 아니었습니다. (출 8:19)'
+      }
+    },
+    {
+      caption: '암송', keep: true, fx: 'sparkle',
+      blank: {
+        text: '마술사들이 파라오에게 이르되, 이것은 ___의 ___이니이다',
+        answers: ['하나님', '손가락'],
+        extra: ['주', '능력'],
+        ref: '출애굽기 8:19'
+      }
+    },
+    {
+      caption: '나눔', keep: true, sky: 'day', fx: null,
+      lines: [
+        { who: '생각해 보기', text: '힘들 때만 하나님을 찾고, 편해지면 잊은 적이 있습니까?' },
+        { who: '생각해 보기', text: '파라오는 증거가 없어서 안 믿은 것이 아닙니다. 무엇이 문제였습니까?' }
+      ]
+    }
+  ]
+});
+</script>
