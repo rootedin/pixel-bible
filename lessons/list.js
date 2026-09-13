@@ -89,5 +89,9 @@ window.PB_LESSONS = [
   {
     week: 53, file: "lessons/53-complaining.html", title: "이스라엘이 광야에서 불평하다", ref: "민수기 11장",
     cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"},{"s":"bird","x":12,"y":6,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":16,"y":9,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":20,"y":5,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":24,"y":11,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"},{"s":"bird","x":28,"y":7,"pal":{"b":"#8a6a3a","o":"#d8a850"},"scale":2,"anim":"float"}],"bg":"desert"}
+  },
+  {
+    week: 54, file: "lessons/54-miriam.html", title: "미리암이 죄를 짓다", ref: "민수기 12장",
+    cover: {"sky":"dusk","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"아론","beard":"#3b2414","shirt":"#b89a6a"},{"s":"woman","x":11,"label":"미리암","hood":"#b9765a"},{"s":"man","x":20,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a","flip":true},{"s":"jar","x":4},{"s":"tuft","x":28}],"bg":"desert"}
   }
 ];
