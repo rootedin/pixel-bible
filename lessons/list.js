@@ -28,7 +28,7 @@ window.PB_LESSONS = [
   },
   {
     week: 38, file: "lessons/38-moses-flees.html", title: "모세가 광야로 도망치다", ref: "출애굽기 2:11-22",
-    cover: {"sky":"day","map":[".{20}C..C.{8}",".{20}CWWC.{8}","s{20}CCCCs{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"jar","x":17},{"s":"man","x":15,"label":"모세","shirt":"#c9b48a"},{"s":"girl","x":26,"label":"미디안의 딸","shirt":"#c98a6a","flip":true},{"s":"girl","x":28,"shirt":"#9ab8c9","flip":true},{"s":"sheep","x":30,"anim":"bob"}],"bg":"desert"}
+    cover: {"sky":"day","map":[".{14}C..C.{14}",".{14}CWWC.{14}","s{14}CCCCs{14}","s{32}","D{32}","S{32}"],"objects":[{"s":"jar","x":9},{"s":"man","x":11,"label":"모세","shirt":"#c9b48a"},{"s":"girl","x":25,"label":"미디안의 딸","shirt":"#c98a6a","flip":true},{"s":"girl","x":27,"shirt":"#9ab8c9","flip":true},{"s":"sheep","x":30,"anim":"bob"}],"bg":"desert"}
   },
   {
     week: 39, file: "lessons/39-burning-bush.html", title: "하나님께서 불타는 떨기나무에서 모세를 찾아오시다", ref: "출애굽기 3장",
@@ -57,5 +57,9 @@ window.PB_LESSONS = [
   {
     week: 45, file: "lessons/45-passover.html", title: "하나님께서 애굽에 마지막 열째 재앙을 보내시다", ref: "출애굽기 11-12장",
     cover: {"sky":"night","map":[".{22}TTTTTTT...",".{22}R.....R...",".{22}R.....R...",".{22}R.....R...","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":19,"label":"이스라엘 사람","shirt":"#9a7b52"},{"s":"torch","x":16}],"bg":"desert"}
+  },
+  {
+    week: 46, file: "lessons/46-red-sea.html", title: "이스라엘이 홍해를 건너다", ref: "출애굽기 13:17 - 14:31",
+    cover: {"sky":"night","map":["W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"}],"bg":"sea"}
   }
 ];
