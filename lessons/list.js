@@ -97,5 +97,9 @@ window.PB_LESSONS = [
   {
     week: 55, file: "lessons/55-twelve-spies.html", title: "모세가 열두 정탐꾼을 보내다", ref: "민수기 13-14장",
     cover: {"sky":"dusk","map":[".{22}C{10}",".{22}C.{3}C.{4}",".{22}C{10}","G{22}C{10}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"정탐꾼","shirt":"#8a6b45"},{"s":"man","x":7,"shirt":"#a08a6a"},{"s":"fruit","x":10,"scale":3,"label":"그 땅의 열매"},{"s":"tuft","x":14},{"s":"tuft","x":19},{"s":"giant","x":19,"label":"아낙 자손","scale":2,"flip":true}],"bg":"hills"}
+  },
+  {
+    week: 56, file: "lessons/56-korah.html", title: "고라와 다단과 아비람이 반역하다", ref: "민수기 16장",
+    cover: {"sky":"day","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"고라","beard":"#3b2414","shirt":"#7b5a8e"},{"s":"man","x":9,"label":"다단","shirt":"#8a6b45"},{"s":"man","x":12,"label":"아비람","shirt":"#6a5a4a"},{"s":"elder","x":15,"shirt":"#8a7b6a"},{"s":"man","x":24,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a","flip":true},{"s":"man","x":27,"label":"아론","beard":"#3b2414","shirt":"#b89a6a","flip":true}],"bg":"desert"}
   }
 ];
