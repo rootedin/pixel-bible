@@ -139,6 +139,24 @@ function checkLesson(PB, L, add) {
         add('W', at, `'${o.label || o.s}' 가 ${ch === 'W' ? '물' : '용암'} 위에 서 있습니다 (x=${o.x})`);
     });
 
+    /* 지붕·성벽 위에 얹혀 버린 인물 잡기.
+       y 를 생략하면 그 열의 맨 위 단단한 블록 위에 서므로, 건물이 있는 열에서는
+       사람이 지붕으로 올라가 공중에 뜬 것처럼 보인다.
+       대부분의 열이 잡는 바닥(중앙값)보다 3칸 이상 높으면 의심한다. */
+    {
+      const floors = [];
+      for (let x = 0; x < COLS; x++) { const gy = PB.groundY(w.grid, x); if (gy < ROWS) floors.push(gy); }
+      if (floors.length) {
+        const median = floors.slice().sort((a, b) => a - b)[floors.length >> 1];
+        (w.objects || []).forEach(o => {
+          if (o.y != null || !LAND_ONLY.has(o.s)) return;
+          const gy = PB.groundY(w.grid, o.x);
+          if (gy < ROWS && median - gy >= 3)
+            add('W', at, `'${o.label || o.s}' 가 바닥보다 ${median - gy}칸 높습니다 (x=${o.x}). 지붕·성벽 위에 서 있지 않은지 확인하십시오`);
+        });
+      }
+    }
+
     /* remove 대상이 실제로 있는가 — 오타가 조용히 통과하던 지점 */
     const prev = i > 0 ? worlds[i - 1] : null;
     (sc.remove || []).forEach(name => {
