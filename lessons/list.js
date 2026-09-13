@@ -141,5 +141,9 @@ window.PB_LESSONS = [
   {
     week: 66, file: "lessons/66-gibeon.html", title: "기브온 사람들이 이스라엘을 속이다", ref: "여호수아 9장",
     cover: {"sky":"dusk","map":[".{26}C{6}",".{24}S{8}","G{24}S{8}","D{32}","S{32}"],"objects":[{"s":"man","x":18,"label":"기브온 사람","shirt":"#7a8a5a"},{"s":"man","x":21,"shirt":"#8a7a5a"},{"s":"tuft","x":10},{"s":"donkey","x":14},{"s":"jar","x":16},{"s":"bread","x":12},{"s":"basket","x":23}],"bg":"hills"}
+  },
+  {
+    week: 67, file: "lessons/67-sun-stands-still.html", title: "태양이 멈추다", ref: "여호수아 10장",
+    cover: {"sky":"day","map":["S{8}.{24}","S{12}.{20}","S{16}.{16}","S{20}G{12}","D{32}","S{32}"],"objects":[{"s":"soldier","x":2,"label":"이스라엘 군사","shirt":"#b8a06a"},{"s":"soldier","x":5,"shirt":"#b8a06a"},{"s":"soldier","x":14,"label":"아모리 군사","shirt":"#6a5a7a"},{"s":"soldier","x":19,"shirt":"#6a5a7a"},{"s":"soldier","x":24,"shirt":"#6a5a7a"},{"s":"sun","x":15,"y":6,"scale":3,"label":"해"},{"s":"moon","x":26,"y":7,"scale":2,"label":"달"}],"bg":"mountains"}
   }
 ];
