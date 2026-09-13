@@ -109,5 +109,9 @@ window.PB_LESSONS = [
   {
     week: 58, file: "lessons/58-bronze-serpent.html", title: "하나님께서 불뱀을 보내시다", ref: "민수기 20:14 - 21:9",
     cover: {"sky":"dusk","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"woman","x":12,"hood":"#8a6b4a"},{"s":"boy","x":15,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":27},{"s":"snake","x":7,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":13,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":19,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":25,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"}],"bg":"desert"}
+  },
+  {
+    week: 59, file: "lessons/59-balak.html", title: "모압 왕 발락이 이스라엘을 저주하려 하다", ref: "민수기 21:21 - 22:21",
+    cover: {"sky":"dusk","map":[".{22}G{10}",".{22}D{10}","G{10}.{12}D{10}","D{10}.{12}D{10}","D{10}.{12}S{10}","S{32}","S{32}"],"objects":[{"s":"soldier","x":3,"label":"이스라엘","shirt":"#b8a06a"},{"s":"soldier","x":6},{"s":"man","x":26,"label":"발락","beard":"#3b2414","shirt":"#7b2fbe","crown":true,"flip":true},{"s":"soldier","x":29,"flip":true}],"bg":"hills"}
   }
 ];

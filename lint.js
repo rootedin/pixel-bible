@@ -163,6 +163,12 @@ function checkLesson(PB, L, add) {
       const pool = prev ? prev.objects : [];
       if (!pool.some(o => o.s === name || o.label === name))
         add('E', at, `remove: '${name}' 가 이전 장면에 없습니다 (오타?)`);
+      /* 스프라이트 이름으로 지우면 같은 종류가 통째로 사라진다.
+         이름표가 붙은 인물까지 휩쓸려 나가면 대개 의도한 것이 아니다
+         (대사는 남아 있는데 말하는 사람만 사라진다). */
+      const named = pool.filter(o => o.s === name && o.label && o.label !== name);
+      if (named.length)
+        add('W', at, `remove: '${name}' 로 지우면 ${named.map(o => `'${o.label}'`).join(', ')} 까지 사라집니다. 라벨로 지정하십시오`);
     });
 
     /* 대사 */
