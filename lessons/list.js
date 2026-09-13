@@ -53,5 +53,9 @@ window.PB_LESSONS = [
   {
     week: 44, file: "lessons/44-plagues-7-9.html", title: "하나님께서 애굽에 일곱째·여덟째·아홉째 재앙을 보내시다", ref: "출애굽기 9:13 - 10:29",
     cover: {"sky":"dark","map":["G{16}s{16}","D{16}s{16}","D{32}","D{32}","S{32}"],"objects":[{"s":"torch","x":6,"label":"이스라엘의 거처","scale":2},{"s":"torch","x":11,"scale":2},{"s":"man","x":8,"label":"이스라엘 사람","shirt":"#9a7b52"},{"s":"man","x":22,"label":"이집트 사람","shirt":"#6a6a6a","flip":true},{"s":"man","x":28,"shirt":"#5a5a5a","flip":true}]}
+  },
+  {
+    week: 45, file: "lessons/45-passover.html", title: "하나님께서 애굽에 마지막 열째 재앙을 보내시다", ref: "출애굽기 11-12장",
+    cover: {"sky":"night","map":[".{22}TTTTTTT...",".{22}R.....R...",".{22}R.....R...",".{22}R.....R...","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":19,"label":"이스라엘 사람","shirt":"#9a7b52"},{"s":"torch","x":16}],"bg":"desert"}
   }
 ];
