@@ -334,6 +334,222 @@
    }
   ]
  },
+ "lessons/03-sun-moon-stars.html": {
+  "title": "하나님께서 해와 달과 별을 만드시다",
+  "week": 3,
+  "scenes": 10,
+  "hash": "6a50322c925f",
+  "detail": [
+   {
+    "caption": "넷째 날",
+    "sky": "dark",
+    "bg": "none",
+    "fx": "dark",
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "광체들이 있으라",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "sun@24,4:float"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "시간이 시작되다",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "sun@24,4:float"
+    ],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "커다란 두 광체",
+    "sky": "dusk",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "sun@24,4:float",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "어느 것입니까",
+    "sky": "dusk",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "sun@24,4:float",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "find"
+    ]
+   },
+   {
+    "caption": "다스리게 하시다",
+    "sky": "night",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "섬길 대상이 아닙니다",
+    "sky": "night",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "lines",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "넷째 날",
+    "sky": "night",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "lines",
+     "verse",
+     "quiz"
+    ]
+   },
+   {
+    "caption": "암송",
+    "sky": "glory",
+    "bg": "none",
+    "fx": "sparkle",
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "blank"
+    ]
+   },
+   {
+    "caption": "나눔",
+    "sky": "night",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "objects": [
+     "flower@14,12",
+     "flower2@19,12",
+     "tuft@20,12",
+     "flower@24,11",
+     "tuft@31,12",
+     "moon@6,4:float",
+     "star@11,3",
+     "star@16,2",
+     "star@29,3"
+    ],
+    "steps": [
+     "lines"
+    ]
+   }
+  ]
+ },
  "lessons/37-moses-born.html": {
   "title": "모세가 태어났어요",
   "week": 37,
