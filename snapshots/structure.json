@@ -1,12 +1,12 @@
 {
- "lessons/01-creation.html": {
-  "title": "처음에",
+ "lessons/01-light.html": {
+  "title": "하나님께서 빛을 만드시다",
   "week": 1,
-  "scenes": 15,
-  "hash": "83f8eb582004",
+  "scenes": 12,
+  "hash": "a36e059c2a88",
   "detail": [
    {
-    "caption": "처음에…",
+    "caption": "처음에",
     "sky": "dark",
     "bg": "none",
     "fx": null,
@@ -18,69 +18,62 @@
     ]
    },
    {
-    "caption": "혼돈과 공허",
+    "caption": "형태가 없고 비어 있었다",
     "sky": "dark",
     "bg": "none",
     "fx": "dark",
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
     "objects": [],
     "steps": [
-     "lines"
+     "lines",
+     "verse"
     ]
    },
    {
-    "caption": "DAY 1 · 빛",
+    "caption": "DAY 1 · 빛이 있으라",
+    "sky": "glory",
+    "bg": "none",
+    "fx": [
+     "flash",
+     "light"
+    ],
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines",
+     "verse"
+    ]
+   },
+   {
+    "caption": "보시니 좋았더라",
     "sky": "glory",
     "bg": "none",
     "fx": "light",
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
     "objects": [],
     "steps": [
-     "lines"
+     "lines",
+     "verse"
     ]
    },
    {
-    "caption": "DAY 2 · 하늘과 바다",
-    "sky": "day",
+    "caption": "질문",
+    "sky": "glory",
     "bg": "none",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
     "objects": [],
     "steps": [
-     "lines"
+     "choose"
     ]
    },
    {
-    "caption": "DAY 3 · 땅과 식물",
+    "caption": "해는 아직 없었습니다",
     "sky": "day",
     "bg": "none",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
     "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12"
-    ],
-    "steps": [
-     "lines"
-    ]
-   },
-   {
-    "caption": "DAY 4 · 해와 달과 별",
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
      "sun@24,5:float"
     ],
     "steps": [
@@ -88,246 +81,69 @@
     ]
    },
    {
-    "caption": "DAY 4 · 밤",
+    "caption": "빛이 해보다 먼저",
+    "sky": "glory",
+    "bg": "none",
+    "fx": "light",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "낮과 밤",
+    "sky": "day",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "lines"
+    ]
+   },
+   {
+    "caption": "첫째 날",
     "sky": "night",
     "bg": "none",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "moon@6,5:float"
-    ],
-    "steps": [
-     "lines"
-    ]
-   },
-   {
-    "caption": "DAY 5 · 새와 물고기",
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "sun@24,5:float",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly"
-    ],
-    "steps": [
-     "lines"
-    ]
-   },
-   {
-    "caption": "DAY 6 · 동물",
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "sun@24,5:float",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob"
-    ],
-    "steps": [
-     "lines"
-    ]
-   },
-   {
-    "caption": "DAY 6 · 사람",
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "sun@24,5:float",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와"
-    ],
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
     "steps": [
      "lines",
-     "verse"
+     "verse",
+     "quiz"
     ]
    },
    {
-    "caption": "매우 좋았더라",
-    "sky": "day",
+    "caption": null,
+    "sky": "dawn",
+    "bg": "none",
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
+    "steps": [
+     "quiz"
+    ]
+   },
+   {
+    "caption": "암송",
+    "sky": "glory",
     "bg": "none",
     "fx": "sparkle",
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "sun@24,5:float",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와"
-    ],
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
     "steps": [
-     "lines",
-     "verse"
-    ]
-   },
-   {
-    "caption": "DAY 7 · 쉼",
-    "sky": "dusk",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와"
-    ],
-    "steps": [
-     "lines"
-    ]
-   },
-   {
-    "caption": null,
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와",
-     "sun@24,5:float"
-    ],
-    "steps": [
-     "quiz"
-    ]
-   },
-   {
-    "caption": null,
-    "sky": "day",
-    "bg": "none",
-    "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와",
-     "sun@24,5:float"
-    ],
-    "steps": [
-     "quiz"
+     "blank"
     ]
    },
    {
     "caption": "나눔",
     "sky": "day",
     "bg": "none",
-    "fx": "sparkle",
-    "grid": "................................|................................|................................|................................|................................|................................|...............LLL..........LLL.|..............LLLLL........LLLLL|..............LLLLL........LLLLL|................T............T..|................T............T..|................T.....GGGGG..T..|.............GGGGGGGGGDDDDDGGGGG|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDDDDDDDDDDDDDD|WWWWWWWWWWsssDDDDDDSSSSSSSSSSSSS|sssssssssssSSSSSSSSSSSSSSSSSSSSS|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
-    "objects": [
-     "flower@14,12",
-     "flower2@19,12",
-     "tuft@20,12",
-     "flower@24,11",
-     "flower2@27,12",
-     "tuft@31,12",
-     "fish@3,15:swim",
-     "fish@6,16:swim",
-     "fish@4,17:swim",
-     "bird@4,4:fly",
-     "bird@20,3:fly",
-     "sheep@19,12:walk",
-     "cow@29,12:bob",
-     "lion@24,11:bob",
-     "man@15,12#아담",
-     "girl@17,12#하와",
-     "sun@24,5:float"
-    ],
+    "fx": null,
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW|ssssssssssssssssssssssssssssssss",
+    "objects": [],
     "steps": [
      "lines"
     ]
@@ -338,7 +154,7 @@
   "title": "모세가 태어났어요",
   "week": 37,
   "scenes": 14,
-  "hash": "d080f8e32d9e",
+  "hash": "85b8e8b2da2f",
   "detail": [
    {
     "caption": "400년 뒤, 이집트",
@@ -382,12 +198,12 @@
     "sky": "night",
     "bg": "none",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......TTTTTTTTTTTTT.............|.......B.........B..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.......PPPPPPPPPPP..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,15",
-     "man@10,15#아므람",
-     "woman@12.8,15#요게벳",
-     "girl@15.3,15#미리암"
+     "torch@8,10",
+     "man@10,10#아므람",
+     "woman@12.8,10#요게벳",
+     "girl@15.3,10#미리암"
     ],
     "steps": [
      "lines"
@@ -398,12 +214,12 @@
     "sky": "dawn",
     "bg": "none",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......TTTTTTTTTTTTT.............|.......B.........B..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.......PPPPPPPPPPP..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|.......B.........B..............|ssssssssssssssssssssssssssssssss|DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "man@10,15#아므람",
-     "woman@12.8,15#요게벳",
-     "girl@15.3,15#미리암",
-     "basket@11,15:bob"
+     "man@10,10#아므람",
+     "woman@12.8,10#요게벳",
+     "girl@15.3,10#미리암",
+     "basket@11,10:bob"
     ],
     "steps": [
      "lines",
@@ -415,18 +231,18 @@
     "sky": "dawn",
     "bg": "desert",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "reed@9.5,10",
-     "reed@10.5,10",
-     "reed@18.5,10",
-     "reed@19.5,10",
-     "reed@21,10",
-     "reed@21.8,10",
-     "basket@20,10#아기 모세:float",
-     "woman@24,10#요게벳",
-     "fish@13,13:swim",
-     "fish@16,15:swim"
+     "reed@9.5,13",
+     "reed@10.5,13",
+     "reed@18.5,13",
+     "reed@19.5,13",
+     "reed@21,13",
+     "reed@21.8,13",
+     "basket@20,13#아기 모세:float",
+     "woman@24,13#요게벳",
+     "fish@13,15:swim",
+     "fish@16,16:swim"
     ],
     "steps": [
      "lines"
@@ -437,18 +253,18 @@
     "sky": "dawn",
     "bg": "desert",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "reed@9.5,10",
-     "reed@10.5,10",
-     "reed@18.5,10",
-     "reed@19.5,10",
-     "reed@21,10",
-     "reed@21.8,10",
-     "basket@20,10#아기 모세:float",
-     "fish@13,13:swim",
-     "fish@16,15:swim",
-     "girl@2,10#미리암"
+     "reed@9.5,13",
+     "reed@10.5,13",
+     "reed@18.5,13",
+     "reed@19.5,13",
+     "reed@21,13",
+     "reed@21.8,13",
+     "basket@20,13#아기 모세:float",
+     "fish@13,15:swim",
+     "fish@16,16:swim",
+     "girl@2,13#미리암"
     ],
     "steps": [
      "lines"
@@ -459,21 +275,21 @@
     "sky": "day",
     "bg": "desert",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "reed@9.5,10",
-     "reed@10.5,10",
-     "reed@18.5,10",
-     "reed@19.5,10",
-     "reed@21,10",
-     "reed@21.8,10",
-     "basket@20,10#아기 모세:float",
-     "fish@13,13:swim",
-     "fish@16,15:swim",
-     "girl@2,10#미리암",
-     "girl@25,10#파라오의 딸",
-     "woman@28.5,10",
-     "woman@30.5,10"
+     "reed@9.5,13",
+     "reed@10.5,13",
+     "reed@18.5,13",
+     "reed@19.5,13",
+     "reed@21,13",
+     "reed@21.8,13",
+     "basket@20,13#아기 모세:float",
+     "fish@13,15:swim",
+     "fish@16,16:swim",
+     "girl@2,13#미리암",
+     "girl@25,13#파라오의 딸",
+     "woman@28.5,13",
+     "woman@30.5,13"
     ],
     "steps": [
      "lines"
@@ -484,21 +300,21 @@
     "sky": "day",
     "bg": "desert",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "reed@9.5,10",
-     "reed@10.5,10",
-     "reed@18.5,10",
-     "reed@19.5,10",
-     "reed@21,10",
-     "reed@21.8,10",
-     "basket@20,10#아기 모세:float",
-     "fish@13,13:swim",
-     "fish@16,15:swim",
-     "girl@2,10#미리암",
-     "girl@25,10#파라오의 딸",
-     "woman@28.5,10",
-     "woman@30.5,10"
+     "reed@9.5,13",
+     "reed@10.5,13",
+     "reed@18.5,13",
+     "reed@19.5,13",
+     "reed@21,13",
+     "reed@21.8,13",
+     "basket@20,13#아기 모세:float",
+     "fish@13,15:swim",
+     "fish@16,16:swim",
+     "girl@2,13#미리암",
+     "girl@25,13#파라오의 딸",
+     "woman@28.5,13",
+     "woman@30.5,13"
     ],
     "steps": [
      "lines"
@@ -509,21 +325,23 @@
     "sky": "day",
     "bg": "desert",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|GGGGGGGGWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|DDDDDDDDWWWWWWWWWWWWWWssssssssss|SSSSSSSSWWWWWWWWWWWWWWssssssssss|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "reed@9.5,10",
-     "reed@10.5,10",
-     "reed@18.5,10",
-     "reed@19.5,10",
-     "reed@21,10",
-     "reed@21.8,10",
-     "basket@20,10#아기 모세:float",
-     "fish@13,13:swim",
-     "fish@16,15:swim",
-     "girl@22.5,10#미리암",
-     "girl@26,10",
-     "woman@29,10",
-     "coin@31,10"
+     "reed@9.5,13",
+     "reed@10.5,13",
+     "reed@18.5,13",
+     "reed@19.5,13",
+     "reed@21,13",
+     "reed@21.8,13",
+     "basket@20,13#아기 모세:float",
+     "fish@13,15:swim",
+     "fish@16,16:swim",
+     "girl@25,13#파라오의 딸",
+     "woman@28.5,13",
+     "woman@30.5,13",
+     "girl@22.5,13#미리암",
+     "woman@27,13#요게벳",
+     "coin@31,13"
     ],
     "steps": [
      "lines"
@@ -532,14 +350,14 @@
    {
     "caption": "이름은 모세",
     "sky": "day",
-    "bg": "none",
+    "bg": "city",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......mmmmmmmmmmmmmmmmmmmm......|......mXXXXXXXXXXXXXXXXXXm......|......m..................m......|......m..................m......|......m..................m......|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,14",
-     "torch@23,14",
-     "girl@14.5,14#파라오의 딸",
-     "boy@17,14#모세:bob"
+     "torch@7,10",
+     "torch@24,10",
+     "girl@13,10#파라오의 딸",
+     "boy@16,10#모세:bob"
     ],
     "steps": [
      "lines",
@@ -549,14 +367,14 @@
    {
     "caption": "믿음으로",
     "sky": "day",
-    "bg": "none",
+    "bg": "city",
     "fx": "sparkle",
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......mmmmmmmmmmmmmmmmmmmm......|......mXXXXXXXXXXXXXXXXXXm......|......m..................m......|......m..................m......|......m..................m......|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,14",
-     "torch@23,14",
-     "girl@14.5,14#파라오의 딸",
-     "boy@17,14#모세:bob"
+     "torch@7,10",
+     "torch@24,10",
+     "girl@13,10#파라오의 딸",
+     "boy@16,10#모세:bob"
     ],
     "steps": [
      "lines",
@@ -566,14 +384,14 @@
    {
     "caption": null,
     "sky": "day",
-    "bg": "none",
+    "bg": "city",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......mmmmmmmmmmmmmmmmmmmm......|......mXXXXXXXXXXXXXXXXXXm......|......m..................m......|......m..................m......|......m..................m......|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,14",
-     "torch@23,14",
-     "girl@14.5,14#파라오의 딸",
-     "boy@17,14#모세:bob"
+     "torch@7,10",
+     "torch@24,10",
+     "girl@13,10#파라오의 딸",
+     "boy@16,10#모세:bob"
     ],
     "steps": [
      "quiz"
@@ -582,14 +400,14 @@
    {
     "caption": null,
     "sky": "day",
-    "bg": "none",
+    "bg": "city",
     "fx": null,
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......mmmmmmmmmmmmmmmmmmmm......|......mXXXXXXXXXXXXXXXXXXm......|......m..................m......|......m..................m......|......m..................m......|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,14",
-     "torch@23,14",
-     "girl@14.5,14#파라오의 딸",
-     "boy@17,14#모세:bob"
+     "torch@7,10",
+     "torch@24,10",
+     "girl@13,10#파라오의 딸",
+     "boy@16,10#모세:bob"
     ],
     "steps": [
      "quiz"
@@ -598,14 +416,14 @@
    {
     "caption": "나눔",
     "sky": "day",
-    "bg": "none",
+    "bg": "city",
     "fx": "sparkle",
-    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|.....m......m......m......m.....|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+    "grid": "................................|................................|................................|................................|................................|................................|................................|................................|................................|................................|......mmmmmmmmmmmmmmmmmmmm......|......mXXXXXXXXXXXXXXXXXXm......|......m..................m......|......m..................m......|......m..................m......|mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm|CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC|SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
     "objects": [
-     "torch@8,14",
-     "torch@23,14",
-     "girl@14.5,14#파라오의 딸",
-     "boy@17,14#모세:bob"
+     "torch@7,10",
+     "torch@24,10",
+     "girl@13,10#파라오의 딸",
+     "boy@16,10#모세:bob"
     ],
     "steps": [
      "lines"
