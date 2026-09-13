@@ -47,7 +47,7 @@ window.PB = window.PB || {};
   PB.buildWorlds = scenes => { let prev = null; return scenes.map(sc => (prev = buildWorld(sc, prev))); };
 
   /* ---------- 그리기 ---------- */
-  function drawObjects(g, w, t, tags) {
+  function drawObjects(g, w, t, tags, hits) {
     w.objects.forEach((o, i) => {
       const sp = spriteFor(o); if (!sp) return;
       const sc = o.scale || 1, spd = o.speed || 1;
@@ -68,6 +68,7 @@ window.PB = window.PB || {};
       else g.drawImage(sp.frames[fi], dx, dy, dw, dh);
       g.restore();
       if (tags && o.label) tags.push({ label: o.label, x: (dx + dw / 2) / W * 100, y: (dy + (sp.head !== sp.frames[0] ? 2 * sc : 0)) / H * 100 });
+      if (hits) hits.push({ o, x: dx, y: dy, w: dw, h: dh });
     });
   }
   function pixelCircle(g, cx, cy, r, step = 2) {
@@ -112,11 +113,11 @@ window.PB = window.PB || {};
       }
     });
   }
-  PB.drawWorld = function (g, w, t, age, tags) {
+  PB.drawWorld = function (g, w, t, age, tags, hits) {
     PB.drawSky(g, w.sky, t, { clouds: w.clouds, stars: w.stars });
     PB.drawBg(g, w.bg, w.sky, t);
     PB.drawMap(g, w.grid, t);
-    drawObjects(g, w, t, tags);
+    drawObjects(g, w, t, tags, hits);
     drawFx(g, w.fx, t, age);
   };
   /* 목록 페이지 썸네일용: 장면 하나를 정지화면으로 */
@@ -157,8 +158,12 @@ window.PB = window.PB || {};
       const n0 = steps.length;
       const lines = sc.lines || (sc.text ? [{ who: sc.who, text: sc.text }] : []);
       lines.forEach(l => steps.push(typeof l === 'string' ? { si, kind: 'say', who: '', text: l } : Object.assign({ si, kind: 'say' }, l)));
+      if (sc.walk) steps.push(Object.assign({ si, kind: 'walk' }, sc.walk));
+      if (sc.find) steps.push(Object.assign({ si, kind: 'find' }, sc.find));
+      if (sc.choose) steps.push(Object.assign({ si, kind: 'choose' }, sc.choose));
       if (sc.verse) steps.push(Object.assign({ si, kind: 'verse' }, sc.verse));
       if (sc.quiz) steps.push(Object.assign({ si, kind: 'quiz' }, sc.quiz));
+      if (sc.blank) steps.push(Object.assign({ si, kind: 'blank' }, sc.blank));
       if (steps.length === n0) steps.push({ si, kind: 'say', who: '', text: '' });
     });
 
@@ -172,7 +177,8 @@ window.PB = window.PB || {};
         ${L.home !== false ? `<a class="pb-btn sm" href="${esc(L.home || '../index.html')}" style="text-decoration:none">☰ 목록</a>` : ''}
         <button class="pb-btn sm" data-a="snd"></button><button class="pb-btn sm" data-a="full">⛶ 전체화면</button>
       </div>
-      <div class="pb-stage"><canvas width="${W}" height="${H}"></canvas><div class="pb-overlay"></div><div class="pb-tags pb-overlay"></div><div class="pb-fade"></div></div>
+      <div class="pb-stage"><canvas width="${W}" height="${H}"></canvas><div class="pb-overlay"></div><div class="pb-tags pb-overlay"></div><div class="pb-fade"></div>
+        <div class="pb-dpad" hidden><button class="pb-btn" data-w="left">◀</button><button class="pb-btn" data-w="right">▶</button></div></div>
       <div class="pb-dialog"><div class="pb-avatar"><canvas width="6" height="6"></canvas></div><div class="pb-say"><div class="pb-who"></div><div class="pb-text"></div><div class="pb-extra"></div></div><div class="pb-more">▼</div></div>
       <div class="pb-bottom"><button class="pb-btn" data-a="prev">◀ 이전</button>
         <div class="pb-xpwrap"><div class="pb-level">0</div><div class="pb-xp"><div class="pb-xpfill" style="width:0"></div></div></div>
@@ -187,14 +193,47 @@ window.PB = window.PB || {};
     const setSnd = () => { sndBtn.textContent = Snd.on ? '♪ 소리 켬' : '♪ 소리 끔'; };
     setSnd();
 
-    const st = { mode: 'title', step: 0, si: 0, sceneT0: performance.now(), typing: null, shown: 0 };
+    const dpad = q('.pb-dpad');
+    const st = { mode: 'title', step: 0, si: 0, sceneT0: performance.now(), typing: null, shown: 0,
+      find: null, blank: null, walk: null, miss: null, hits: [], keys: { left: false, right: false } };
     let world = worlds[0];
     let tagEls = [];
 
     /* 렌더 루프 */
+    function walkTick(now) {
+      const wk = st.walk; if (!wk) return;
+      const dt = Math.min(60, now - (wk.last || now)); wk.last = now;
+      if (!wk.done) {
+        const dir = (st.keys.right ? 1 : 0) - (st.keys.left ? 1 : 0);
+        if (dir) {
+          wk.o.x = Math.max(0, Math.min(PB.COLS - 1, wk.o.x + dir * dt / 1000 * (wk.speed || 5)));
+          wk.o.flip = dir < 0; wk.o.anim = 'walk'; wk.o.range = 0;
+          if (Math.abs(wk.o.x - wk.goal) <= (wk.tol == null ? 1 : wk.tol)) wk.finish();
+        } else wk.o.anim = null;
+      }
+    }
+    /* 목표 지점 표시 (노란 화살표) */
+    function drawGoal(gc, gx, t) {
+      const gy = PB.groundY(world.grid, gx);
+      const x = Math.round((gx + 0.5) * S);
+      const y = Math.max(2, gy * S - 28) + Math.round(Math.sin(t / 300) * 2);
+      gc.fillStyle = '#ffff55';
+      gc.fillRect(x - 4, y, 9, 2); gc.fillRect(x - 3, y + 2, 7, 2);
+      gc.fillRect(x - 2, y + 4, 5, 2); gc.fillRect(x - 1, y + 6, 3, 2);
+    }
+    /* 오답 클릭 위치에 X 표시 */
+    function drawMiss(gc, m, t) {
+      const age = t - m.t0; if (age > 600) { st.miss = null; return; }
+      gc.fillStyle = '#ff5555';
+      for (let i = -4; i <= 4; i++) { gc.fillRect(m.x + i, m.y + i, 2, 2); gc.fillRect(m.x + i, m.y - i, 2, 2); }
+    }
     (function loop(now) {
       const tags = [];
-      PB.drawWorld(g, world, now, now - st.sceneT0, tags);
+      st.hits = [];
+      walkTick(now);
+      PB.drawWorld(g, world, now, now - st.sceneT0, tags, st.hits);
+      if (st.walk && !st.walk.done) drawGoal(g, st.walk.goal, now);
+      if (st.miss) drawMiss(g, st.miss, now);
       tagLayer.hidden = st.mode !== 'play'; // 타이틀/엔딩 화면에선 이름표 숨김
       if (tagEls.length !== tags.length) {
         tagLayer.innerHTML = ''; tagEls = tags.map(() => tagLayer.appendChild($('div', 'pb-tag')));
@@ -238,12 +277,27 @@ window.PB = window.PB || {};
       st.finishTyping = finish;
     }
 
+    /* 장면/단계가 바뀔 때 진행 중이던 상호작용을 되돌린다 */
+    function clearInteractive() {
+      if (st.walk) {
+        const arr = worlds[st.walk.si].objects, i = arr.indexOf(st.walk.o);
+        if (i >= 0) arr.splice(i, 1);
+        st.walk = null;
+      }
+      st.find = null; st.blank = null; st.miss = null;
+      st.keys.left = st.keys.right = false;
+      q('.pb-stage').classList.remove('finding');
+      dpad.hidden = true;
+    }
+
     function render() {
       const s = steps[st.step];
+      clearInteractive();
       setScene(s.si);
-      dlg.classList.toggle('verse', s.kind === 'verse');
+      const paper = s.kind === 'verse' || s.kind === 'blank';
+      dlg.classList.toggle('verse', paper);
       extraEl.innerHTML = '';
-      avatar.hidden = s.kind === 'verse';
+      avatar.hidden = paper;
       if (s.kind === 'say') { whoEl.textContent = s.who || ''; setAvatar(s); type(s.text); }
       else if (s.kind === 'verse') {
         whoEl.textContent = s.label || '오늘의 말씀';
@@ -265,6 +319,76 @@ window.PB = window.PB || {};
           box.appendChild(b);
         });
         extraEl.appendChild(box);
+      } else if (s.kind === 'find') {
+        clearInterval(st.typing); st.typing = null; setAvatar(s);
+        whoEl.textContent = s.label || '찾아보십시오';
+        textEl.innerHTML = segHtml(segs(s.q), 1e9); moreEl.hidden = true;
+        st.find = { targets: [].concat(s.target), misses: 0, done: false, step: s };
+        q('.pb-stage').classList.add('finding');
+        extraEl.innerHTML = '<div class="pb-hint">화면에서 직접 클릭하십시오.</div>';
+      } else if (s.kind === 'choose') {
+        clearInterval(st.typing); st.typing = null; setAvatar(s);
+        whoEl.textContent = s.label || '선택하십시오';
+        textEl.innerHTML = segHtml(segs(s.q), 1e9); moreEl.hidden = true;
+        const cbox = $('div', 'pb-quiz');
+        (s.options || []).forEach(opt => {
+          const b = $('button', 'pb-btn', esc(opt.text));
+          b.onclick = e => {
+            e.stopPropagation(); Snd.click(); b.classList.add('ok');
+            cbox.querySelectorAll('button').forEach(x => (x.disabled = true));
+            const to = Math.max(1, Math.min(L.scenes.length, opt.goto || s.si + 2)) - 1;
+            const idx = steps.findIndex(x => x.si === to);
+            setTimeout(() => { if (idx >= 0) { st.step = idx; render(); } else next(); }, 420);
+          };
+          cbox.appendChild(b);
+        });
+        extraEl.appendChild(cbox);
+      } else if (s.kind === 'blank') {
+        clearInterval(st.typing); st.typing = null;
+        whoEl.textContent = s.label || '빈칸을 채우십시오'; moreEl.hidden = true;
+        const answers = (s.answers || []).slice();
+        st.blank = { answers: answers, filled: 0 };
+        const parts = String(s.text || '').split('___');
+        textEl.innerHTML = parts.map((p, i) =>
+          esc(p) + (i < parts.length - 1 ? '<span class="pb-slot" data-i="' + i + '">____</span>' : '')).join('');
+        const chips = $('div', 'pb-chips');
+        answers.concat(s.extra || []).map(w => [Math.random(), w]).sort((a, b) => a[0] - b[0])
+          .forEach(pair => {
+            const word = pair[1], b = $('button', 'pb-chip', esc(word));
+            b.onclick = e => {
+              e.stopPropagation();
+              const bl = st.blank; if (!bl) return;
+              if (word === bl.answers[bl.filled]) {
+                const slot = textEl.querySelector('.pb-slot[data-i="' + bl.filled + '"]');
+                if (slot) { slot.textContent = word; slot.classList.add('on'); }
+                bl.filled++; b.disabled = true; Snd.click();
+                if (bl.filled >= bl.answers.length) {
+                  Snd.ok(); moreEl.hidden = false;
+                  extraEl.insertAdjacentHTML('beforeend', '<div class="pb-vref">— ' + esc(s.ref || '') + '</div>');
+                }
+              } else { b.classList.remove('no'); void b.offsetWidth; b.classList.add('no'); Snd.no(); }
+            };
+            chips.appendChild(b);
+          });
+        extraEl.appendChild(chips);
+      } else if (s.kind === 'walk') {
+        clearInterval(st.typing); st.typing = null; setAvatar(s);
+        whoEl.textContent = s.label || '직접 이동하십시오'; moreEl.hidden = true;
+        const o = { s: s.player || 'boy', x: s.from == null ? 2 : s.from, label: s.name };
+        ['skin', 'hair', 'shirt', 'pants', 'sash', 'beard', 'long', 'robe', 'hood', 'crown', 'halo', 'wings', 'staff', 'scale', 'pal', 'preset']
+          .forEach(k => { if (s[k] !== undefined) o[k] = s[k]; });
+        worlds[s.si].objects.push(o);
+        st.walk = {
+          o: o, si: s.si, goal: s.goal, tol: s.tol, speed: s.speed,
+          done: false, last: performance.now(),
+          finish: function () {
+            this.done = true; this.o.anim = null; dpad.hidden = true; Snd.ok(); moreEl.hidden = false;
+            extraEl.innerHTML = '';
+            if (s.say) type(s.say); else textEl.innerHTML = segHtml(segs('목표 지점에 도착했습니다.'), 1e9);
+          }
+        };
+        dpad.hidden = false;
+        textEl.innerHTML = segHtml(segs(s.q || '방향키 또는 화면의 ◀ ▶ 버튼으로 이동하십시오.'), 1e9);
       }
       const pct = (st.step + 1) / steps.length * 100;
       q('.pb-xpfill').style.width = pct + '%';
@@ -291,6 +415,7 @@ window.PB = window.PB || {};
       overlay.querySelectorAll('.pb-titlescreen').forEach(e => e.remove());
       st.mode = 'play';
       st.step = atScene ? Math.max(0, steps.findIndex(s => s.si === atScene)) : 0;
+      showCaption(L.scenes[steps[st.step].si].caption);
       Snd.level(); render();
     }
     function titleScreen() {
@@ -326,8 +451,40 @@ window.PB = window.PB || {};
     }
 
     /* 입력 */
-    dlg.addEventListener('click', next);
-    q('.pb-stage').addEventListener('click', () => { if (st.mode === 'play') next(); });
+    /* 상호작용이 끝나지 않았으면 클릭으로 건너뛰지 않는다 (다음 ▶ 버튼은 항상 동작) */
+    function interactionPending() {
+      return (st.find && !st.find.done) || (st.walk && !st.walk.done) ||
+        (st.blank && st.blank.filled < st.blank.answers.length);
+    }
+    function stageClick(e) {
+      const fd = st.find; if (!fd || fd.done) return;
+      const r = cv.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width * W, py = (e.clientY - r.top) / r.height * H;
+      const hit = st.hits.slice().reverse().find(h => px >= h.x && px <= h.x + h.w && py >= h.y && py <= h.y + h.h);
+      if (hit && fd.targets.some(t => t === hit.o.s || t === hit.o.label)) {
+        fd.done = true; Snd.ok(); moreEl.hidden = false;
+        extraEl.innerHTML = '<div class="pb-text" style="margin-top:10px">' +
+          segHtml(segs('✔ ' + (fd.step.explain || '맞았습니다.')), 1e9) + '</div>';
+      } else {
+        fd.misses++; Snd.no(); st.miss = { x: px | 0, y: py | 0, t0: performance.now() };
+        if (fd.misses >= 2 && fd.step.hint) extraEl.innerHTML = '<div class="pb-hint">힌트: ' + esc(fd.step.hint) + '</div>';
+      }
+    }
+    dlg.addEventListener('click', () => { if (!interactionPending()) next(); });
+    q('.pb-stage').addEventListener('click', e => {
+      if (st.mode !== 'play') return;
+      if (st.find && !st.find.done) return stageClick(e);
+      if (interactionPending()) return;
+      next();
+    });
+    dpad.querySelectorAll('[data-w]').forEach(b => {
+      const k = b.dataset.w;
+      const on = e => { e.preventDefault(); e.stopPropagation(); st.keys[k] = true; };
+      const off = e => { e.stopPropagation(); st.keys[k] = false; };
+      b.addEventListener('pointerdown', on);
+      ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => b.addEventListener(ev, off));
+      b.addEventListener('click', e => e.stopPropagation());
+    });
     q('[data-a="next"]').onclick = next;
     q('[data-a="prev"]').onclick = prev;
     sndBtn.onclick = () => { Snd.on = !Snd.on; store.set('pb-mute', Snd.on ? '0' : '1'); setSnd(); };
@@ -335,9 +492,16 @@ window.PB = window.PB || {};
     q('[data-a="full"]').onclick = full;
     document.addEventListener('keydown', e => {
       if (e.target.closest && e.target.closest('input,textarea')) return;
+      if (st.walk && !st.walk.done && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+        e.preventDefault(); st.keys[e.key === 'ArrowLeft' ? 'left' : 'right'] = true; return;
+      }
       if (['ArrowRight', ' ', 'Enter', 'PageDown'].includes(e.key)) { e.preventDefault(); next(); }
       else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
       else if (e.key === 'f' || e.key === 'F') full();
+    });
+    document.addEventListener('keyup', e => {
+      if (e.key === 'ArrowLeft') st.keys.left = false;
+      if (e.key === 'ArrowRight') st.keys.right = false;
     });
 
     showCaption(null);
