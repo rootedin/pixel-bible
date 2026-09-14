@@ -285,5 +285,9 @@ window.PB_LESSONS = [
   {
     week: 102, file: "lessons/102-absalom-rebels.html", title: "압살롬이 반역하다", ref: "사무엘하 15:1-17:24",
     cover: {"sky":"glory","map":[".{22}C{10}",".{22}C{10}",".{22}C{10}","G{32}","D{32}","S{32}"],"objects":[{"s":"king","x":8,"label":"다윗"},{"s":"soldier","x":12,"shirt":"#9a7b52"},{"s":"woman","x":15,"hood":"#8a6b4a"},{"s":"boy","x":17.5,"shirt":"#a98a5e"},{"s":"priest","x":21,"label":"사독","flip":true},{"s":"ark","x":21,"y":13,"scale":2,"label":"언약궤"}],"bg":"city"}
+  },
+  {
+    week: 103, file: "lessons/103-absalom-dies.html", title: "압살롬이 나뭇가지에 걸려 죽다", ref: "사무엘하 17:27-19:8",
+    cover: {"sky":"dusk","map":[".{3}L{5}.{3}L{5}.{3}L{5}.{8}",".{4}LTL.{5}LTL.{5}LTL.{4}",".{5}T.{7}T.{7}T.{9}",".{5}T.{7}T.{7}T.{9}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":14,"shirt":"#9a7b52"},{"s":"soldier","x":22,"shirt":"#8a6a9a","flip":true},{"s":"tuft","x":28},{"s":"man","x":12,"y":12,"label":"압살롬","shirt":"#8a6a9a","hair":"#3a2a18","long":true},{"s":"donkey","x":16,"flip":true}],"bg":"hills"}
   }
 ];
