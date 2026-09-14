@@ -385,5 +385,9 @@ window.PB_LESSONS = [
   {
     week: 127, file: "lessons/127-jonah-nineveh.html", title: "요나가 니느웨에서 복음을 전하다", ref: "요나 3-4장",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"요나","shirt":"#7a8a6a","robe":true},{"s":"man","x":16,"shirt":"#7a5a3a","flip":true},{"s":"woman","x":20,"hood":"#8a7a6a","flip":true},{"s":"boy","x":23,"shirt":"#6a7a8a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 128, file: "lessons/128-assyria-defeated.html", title: "하나님께서 앗수르 군대를 물리치시다", ref: "열왕기하 18-19장",
+    cover: {"sky":"day","map":[".{6}X{20}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":15,"y":16,"label":"히스기야","shirt":"#3a6a8a"},{"s":"scroll","x":18,"y":16,"scale":2,"label":"편지"}],"bg":"city"}
   }
 ];
