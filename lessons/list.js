@@ -273,5 +273,9 @@ window.PB_LESSONS = [
   {
     week: 99, file: "lessons/99-ark-to-jerusalem.html", title: "다윗이 법궤를 다시 찾아오다", ref: "사무엘하 6장",
     cover: {"sky":"dusk","map":["y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"chariot","x":14,"scale":2},{"s":"ark","x":14,"y":12,"scale":2,"label":"언약궤"},{"s":"cow","x":19,"scale":2},{"s":"man","x":11,"label":"웃사","shirt":"#9a7b52"},{"s":"king","x":5,"label":"다윗"}],"bg":"hills"}
+  },
+  {
+    week: 100, file: "lessons/100-house-and-kindness.html", title: "다윗이 하나님의 집을 짓고자 하다", ref: "사무엘하 7, 9장",
+    cover: {"sky":"night","map":[".{10}T{10}.{12}",".{10}T.{8}T.{12}",".{10}T.{8}T.{12}","G{32}","D{32}","S{32}"],"objects":[{"s":"ark","x":15,"scale":2,"label":"언약궤"},{"s":"priest","x":11,"label":"제사장"},{"s":"torch","x":19,"scale":2}],"bg":"hills"}
   }
 ];
