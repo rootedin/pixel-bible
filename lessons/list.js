@@ -289,5 +289,9 @@ window.PB_LESSONS = [
   {
     week: 103, file: "lessons/103-absalom-dies.html", title: "압살롬이 나뭇가지에 걸려 죽다", ref: "사무엘하 17:27-19:8",
     cover: {"sky":"dusk","map":[".{3}L{5}.{3}L{5}.{3}L{5}.{8}",".{4}LTL.{5}LTL.{5}LTL.{4}",".{5}T.{7}T.{7}T.{9}",".{5}T.{7}T.{7}T.{9}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":14,"shirt":"#9a7b52"},{"s":"soldier","x":22,"shirt":"#8a6a9a","flip":true},{"s":"tuft","x":28},{"s":"man","x":12,"y":12,"label":"압살롬","shirt":"#8a6a9a","hair":"#3a2a18","long":true},{"s":"donkey","x":16,"flip":true}],"bg":"hills"}
+  },
+  {
+    week: 104, file: "lessons/104-david-census.html", title: "다윗이 인구를 조사하는 죄를 짓다", ref: "사무엘하 24:1, 역대상 21장",
+    cover: {"sky":"dusk","map":[".{12}S{6}.{14}","y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":8,"label":"다윗"},{"s":"man","x":20,"label":"오르난","shirt":"#8a7a5a","flip":true},{"s":"sheaf","x":24,"scale":2},{"s":"coin","x":11,"scale":2,"label":"값"}],"bg":"hills"}
   }
 ];
