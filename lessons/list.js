@@ -321,5 +321,9 @@ window.PB_LESSONS = [
   {
     week: 111, file: "lessons/111-jeroboam-idols.html", title: "여로보암이 이스라엘에게 우상 숭배를 가르치다", ref: "열왕기상 12:25-13:32",
     cover: {"sky":"day","map":[".{13}S{6}.{13}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":9,"label":"여로보암","shirt":"#8a7a5a","crown":true},{"s":"cow","x":15.5,"scale":2,"label":"금송아지","pal":{"w":"#f7d34a","k":"#c8961a","h":"#e8c04a","p":"#f0d878"}},{"s":"man","x":24,"shirt":"#9a8a6a","flip":true}],"bg":"hills"}
+  },
+  {
+    week: 112, file: "lessons/112-elijah-flees.html", title: "엘리야가 아합 왕을 피해 도망치다", ref: "열왕기상 17장",
+    cover: {"sky":"day","map":[".{4}S{6}.{22}","G{10}W{8}G{14}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true},{"s":"bird","x":20,"y":6,"anim":"fly","label":"까마귀","pal":{"b":"#1a1a20","o":"#3a3a44"}},{"s":"bread","x":24,"scale":2}],"bg":"mountains"}
   }
 ];
