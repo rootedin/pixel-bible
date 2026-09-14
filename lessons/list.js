@@ -461,5 +461,9 @@ window.PB_LESSONS = [
   {
     week: 146, file: "lessons/146-jesus-born.html", title: "예수님께서 태어나시다", ref: "누가복음 2:1-20",
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"shepherd","x":10,"label":"목자","shirt":"#8a7a5a"},{"s":"shepherd","x":14,"shirt":"#7a6a4a","flip":true},{"s":"sheep","x":18},{"s":"sheep","x":21,"flip":true},{"s":"sheep","x":24},{"s":"fire","x":6},{"s":"angel","x":16,"y":8,"anim":"float","label":"주의 천사"}],"bg":"hills"}
+  },
+  {
+    week: 147, file: "lessons/147-wise-men.html", title: "동방 박사들이 예수님께 경배하다", ref: "마태복음 2:1-15",
+    cover: {"sky":"night","map":["T{32}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}","P{32}","S{32}"],"objects":[{"s":"woman","x":10,"label":"마리아","hood":"#5a7aa8"},{"s":"boy","x":12.5,"label":"어린아이","shirt":"#f0e8d8"},{"s":"coin","x":15.5,"scale":2,"label":"황금"},{"s":"jar","x":17.5,"scale":2,"label":"유향"},{"s":"jar","x":19.5,"scale":2,"label":"몰약","pal":{}},{"s":"man","x":22,"label":"지혜자","shirt":"#6a3a8a","robe":true,"crown":true,"flip":true},{"s":"star","x":15,"y":1,"anim":"bob"}],"bg":"city"}
   }
 ];
