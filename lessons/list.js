@@ -657,5 +657,9 @@ window.PB_LESSONS = [
   {
     week: 195, file: "lessons/195-eutychus.html", title: "바울이 죽은 사람을 살리다", ref: "사도행전 20-22장",
     cover: {"sky":"glory","map":[".{8}B{9}.{15}",".{8}B{4}g{2}B{3}.{15}",".{8}B{9}.{15}",".{8}B{4}g{2}B{3}.{15}",".{8}B{9}.{15}",".{8}B{4}P{2}B{3}.{15}","S{32}","D{32}"],"objects":[{"s":"torch","x":12,"y":13},{"s":"torch","x":13.5,"y":13},{"s":"man","x":22,"label":"누가","shirt":"#5a6a5a"},{"s":"woman","x":5,"hood":"#7a6a5a"},{"s":"boy","x":20,"label":"유두고","shirt":"#7a8a6a"},{"s":"man","x":18,"label":"바울","shirt":"#4a4a6a","sash":"#8a2a2a","beard":true},{"s":"man","x":24,"label":"성도들","shirt":"#6a7a5a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 196, file: "lessons/196-paul-on-trial.html", title: "바울이 재판을 받다", ref: "사도행전 23-26장",
+    cover: {"sky":"dusk","map":[".{3}m.{24}m.{3}",".{3}m.{24}m.{3}",".{3}m.{24}m.{3}","m{32}","S{32}"],"objects":[{"s":"man","x":11,"label":"바울","shirt":"#4a4a6a","sash":"#8a2a2a","beard":true},{"s":"cord","x":12.2,"y":15,"label":"사슬"},{"s":"king","x":19,"label":"아그립바","flip":true},{"s":"woman","x":21.5,"label":"버니게","hood":"#8a2a6a","crown":true,"flip":true},{"s":"king","x":24,"label":"베스도","crown":false,"flip":true},{"s":"soldier","x":7.5,"label":"로마 군사들"}],"bg":"city"}
   }
 ];
