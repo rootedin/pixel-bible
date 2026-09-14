@@ -301,5 +301,9 @@ window.PB_LESSONS = [
   {
     week: 106, file: "lessons/106-solomon-dream.html", title: "솔로몬이 꿈을 꾸다", ref: "열왕기상 3장, 역대하 1장",
     cover: {"sky":"night","map":[".{14}S{5}.{13}",".{14}S{5}.{13}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":10,"label":"솔로몬","shirt":"#c8b45a"},{"s":"fire","x":16.5,"y":13,"scale":2,"anim":"bob"},{"s":"sheep","x":24,"scale":2}],"bg":"mountains"}
+  },
+  {
+    week: 107, file: "lessons/107-solomon-temple.html", title: "솔로몬이 성전을 짓다", ref: "열왕기상 6-7장, 역대하 2장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":12,"label":"솔로몬"},{"s":"man","x":17,"shirt":"#9a7b52","flip":true},{"s":"stone","x":22,"scale":2}],"bg":"city"}
   }
 ];
