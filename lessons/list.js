@@ -353,5 +353,9 @@ window.PB_LESSONS = [
   {
     week: 119, file: "lessons/119-moab-war.html", title: "이스라엘이 모압과 싸우러 나가다", ref: "열왕기하 3장",
     cover: {"sky":"dusk","map":["D{6}.{2}D{2}.{2}D{2}.{2}D{2}.{2}D{2}.{2}D{8}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":3,"label":"엘리사","shirt":"#9a8a6a","robe":true},{"s":"soldier","x":26,"shirt":"#9a7b52","flip":true}],"bg":"desert"}
+  },
+  {
+    week: 120, file: "lessons/120-three-miracles.html", title: "세 가지 기적이 일어나다", ref: "열왕기하 4장",
+    cover: {"sky":"day","map":["T{32}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}","P{32}","S{32}"],"objects":[{"s":"woman","x":10,"label":"과부","hood":"#8a7a6a"},{"s":"man","x":18,"label":"엘리사","shirt":"#9a8a6a","robe":true,"flip":true},{"s":"jar","x":14,"scale":2,"label":"기름 한 항아리"},{"s":"boy","x":7.5,"shirt":"#7a8a6a"}],"bg":"city"}
   }
 ];
