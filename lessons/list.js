@@ -433,5 +433,9 @@ window.PB_LESSONS = [
   {
     week: 139, file: "lessons/139-esther-queen.html", title: "에스더가 왕비가 되다", ref: "에스더 1-2장",
     cover: {"sky":"glory","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":12,"label":"아하수에로","shirt":"#8a4a3a"},{"s":"woman","x":18,"label":"에스더","hood":"#8a6a9a","crown":true,"flip":true},{"s":"gem","x":15,"y":13,"scale":2,"label":"왕비의 관"}],"bg":"city"}
+  },
+  {
+    week: 140, file: "lessons/140-esther-crisis.html", title: "유대인들에게 큰 위기가 닥치다", ref: "에스더 3-4장",
+    cover: {"sky":"glory","map":["T{32}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}","m{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"에스더","hood":"#8a6a9a","crown":true},{"s":"man","x":18,"label":"하닥","shirt":"#6a5a8a","flip":true}],"bg":"city"}
   }
 ];
