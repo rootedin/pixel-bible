@@ -617,5 +617,9 @@ window.PB_LESSONS = [
   {
     week: 185, file: "lessons/185-ascension-pentecost.html", title: "예수님께서 하늘로 오르시고 성령께서 오시다", ref: "사도행전 1-2장",
     cover: {"sky":"glory","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","C{32}"],"objects":[{"s":"man","x":9,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":11.5,"label":"제자들","shirt":"#5a6a7a"},{"s":"woman","x":14,"label":"마리아","hood":"#4a5a8a"},{"s":"woman","x":16.5,"label":"여자들","hood":"#8a4a5a"},{"s":"man","x":19,"label":"제자들","shirt":"#4a6a5a","flip":true},{"s":"man","x":21.5,"label":"제자들","shirt":"#7a6a4a","flip":true},{"s":"man","x":24,"label":"제자들","shirt":"#8a7a5a","flip":true},{"s":"fire","x":9,"y":13.2,"label":"불의 혀"},{"s":"fire","x":11.5,"y":13.2,"label":"불의 혀"},{"s":"fire","x":14,"y":13.2,"label":"불의 혀"},{"s":"fire","x":16.5,"y":13.2,"label":"불의 혀"},{"s":"fire","x":19,"y":13.2,"label":"불의 혀"},{"s":"fire","x":21.5,"y":13.2,"label":"불의 혀"},{"s":"fire","x":24,"y":13.2,"label":"불의 혀"}],"bg":"city"}
+  },
+  {
+    week: 186, file: "lessons/186-peter-john-heal.html", title: "베드로와 요한이 걷지 못하는 사람을 일으키다", ref: "사도행전 3-4장",
+    cover: {"sky":"glory","map":[".{12}m.{6}m.{12}",".{12}m.{6}m.{12}",".{12}m.{6}m.{12}","m{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"요한","shirt":"#5a6a7a"},{"s":"man","x":15.5,"label":"걷지 못하는 사람","shirt":"#8a8478","flip":true},{"s":"jar","x":17},{"s":"man","x":23,"shirt":"#8a7a5a"},{"s":"woman","x":26,"hood":"#7a6a6a"}],"bg":"city"}
   }
 ];
