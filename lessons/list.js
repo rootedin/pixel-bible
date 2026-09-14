@@ -589,5 +589,9 @@ window.PB_LESSONS = [
   {
     week: 178, file: "lessons/178-arrested.html", title: "예수님께서 사로잡히시다", ref: "누가복음 22:47-54, 요한복음 18:1-14",
     cover: {"sky":"night","map":[".{3}L{3}.{8}L{3}.{10}L{3}.{2}",".{4}T.{10}T.{12}T.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":13,"label":"예수님"},{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"제자들","shirt":"#5a6a7a"},{"s":"man","x":6,"label":"제자들","shirt":"#7a6a4a"},{"s":"soldier","x":21,"label":"군대","flip":true},{"s":"torch","x":22.5,"label":"횃불"},{"s":"soldier","x":24,"label":"군대","flip":true},{"s":"priest","x":26.5,"label":"성전 경비대","flip":true},{"s":"soldier","x":28.5,"label":"군대","flip":true},{"s":"torch","x":30,"label":"횃불"},{"s":"man","x":15,"label":"유다","shirt":"#5a4a3a","beard":true,"flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 179, file: "lessons/179-trials.html", title: "예수님께서 재판을 받으시다", ref: "마태복음 26:57-27:30, 요한복음 18:28-19:12",
+    cover: {"sky":"day","map":[".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}","m{32}","S{32}"],"objects":[{"s":"man","x":17.5,"label":"빌라도","shirt":"#e8e4d8","sash":"#8a2a2a","flip":true},{"s":"soldier","x":11,"label":"로마 군인"},{"s":"soldier","x":20.5,"label":"로마 군인","flip":true},{"s":"jesus","x":14,"label":"예수님","shirt":"#6a2a6a"}],"bg":"city"}
   }
 ];
