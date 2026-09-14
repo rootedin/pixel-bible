@@ -649,5 +649,9 @@ window.PB_LESSONS = [
   {
     week: 193, file: "lessons/193-second-journey.html", title: "바울이 두 번째 선교 여행을 하다", ref: "사도행전 16-18장",
     cover: {"sky":"glory","map":["C{2}T{28}C{2}","C{2}.{28}C{2}","C{2}.{28}C{2}","S{32}","S{32}"],"objects":[{"s":"man","x":13,"label":"바울","shirt":"#4a4a6a","sash":"#8a2a2a","beard":true},{"s":"man","x":15.5,"label":"실라","shirt":"#6a4a3a"},{"s":"man","x":5,"label":"죄수들","shirt":"#6a6a5a"},{"s":"man","x":24,"label":"죄수들","shirt":"#5a5a4a","flip":true},{"s":"soldier","x":27.5,"label":"간수","flip":true},{"s":"torch","x":20}],"bg":"city"}
+  },
+  {
+    week: 194, file: "lessons/194-third-journey.html", title: "바울이 세 번째 선교 여행을 하다", ref: "사도행전 19장",
+    cover: {"sky":"dusk","map":[".{20}m.{3}m.{3}m.{3}",".{20}m.{3}m.{3}m.{3}",".{20}m.{3}m.{3}m.{3}","m{32}","S{32}"],"objects":[{"s":"fire","x":13,"scale":2,"label":"불"},{"s":"scroll","x":11.5,"label":"마술책"},{"s":"scroll","x":14.5,"label":"마술책"},{"s":"man","x":9,"label":"믿은 사람들","shirt":"#6a5a7a"},{"s":"woman","x":7,"label":"믿은 사람들","hood":"#7a4a4a"},{"s":"man","x":17,"label":"믿은 사람들","shirt":"#5a6a4a","flip":true}],"bg":"city"}
   }
 ];
