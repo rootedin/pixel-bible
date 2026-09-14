@@ -317,5 +317,9 @@ window.PB_LESSONS = [
   {
     week: 110, file: "lessons/110-rehoboam.html", title: "르호보암이 왕이 되다", ref: "열왕기상 12장, 역대하 10장",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":10,"label":"르호보암"},{"s":"man","x":18,"label":"여로보암","shirt":"#8a7a5a","flip":true},{"s":"man","x":22,"shirt":"#9a8a6a","flip":true},{"s":"man","x":25,"shirt":"#7a8a6a","flip":true}],"bg":"hills"}
+  },
+  {
+    week: 111, file: "lessons/111-jeroboam-idols.html", title: "여로보암이 이스라엘에게 우상 숭배를 가르치다", ref: "열왕기상 12:25-13:32",
+    cover: {"sky":"day","map":[".{13}S{6}.{13}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":9,"label":"여로보암","shirt":"#8a7a5a","crown":true},{"s":"cow","x":15.5,"scale":2,"label":"금송아지","pal":{"w":"#f7d34a","k":"#c8961a","h":"#e8c04a","p":"#f0d878"}},{"s":"man","x":24,"shirt":"#9a8a6a","flip":true}],"bg":"hills"}
   }
 ];
