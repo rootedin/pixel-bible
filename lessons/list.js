@@ -465,5 +465,9 @@ window.PB_LESSONS = [
   {
     week: 147, file: "lessons/147-wise-men.html", title: "동방 박사들이 예수님께 경배하다", ref: "마태복음 2:1-15",
     cover: {"sky":"night","map":["T{32}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}","P{32}","S{32}"],"objects":[{"s":"woman","x":10,"label":"마리아","hood":"#5a7aa8"},{"s":"boy","x":12.5,"label":"어린아이","shirt":"#f0e8d8"},{"s":"coin","x":15.5,"scale":2,"label":"황금"},{"s":"jar","x":17.5,"scale":2,"label":"유향"},{"s":"jar","x":19.5,"scale":2,"label":"몰약","pal":{}},{"s":"man","x":22,"label":"지혜자","shirt":"#6a3a8a","robe":true,"crown":true,"flip":true},{"s":"star","x":15,"y":1,"anim":"bob"}],"bg":"city"}
+  },
+  {
+    week: 148, file: "lessons/148-jesus-twelve.html", title: "예수님께서 열두 살에 성전에 오르시다", ref: "마태복음 2:16-23, 누가복음 2:40-52",
+    cover: {"sky":"day","map":[".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":9,"shirt":"#e0d8c0"},{"s":"elder","x":12,"shirt":"#d0c8b0"},{"s":"boy","x":15.5,"label":"예수님","shirt":"#e8e0d0"},{"s":"scroll","x":17.5,"scale":2,"label":"율법 두루마리"},{"s":"elder","x":20,"shirt":"#c8c0a8","flip":true},{"s":"priest","x":23,"flip":true}],"bg":"city"}
   }
 ];
