@@ -525,5 +525,9 @@ window.PB_LESSONS = [
   {
     week: 162, file: "lessons/162-sower.html", title: "예수님께서 네 종류의 땅을 비유로 가르치시다", ref: "마태복음 13:1-23, 마가복음 4:2-20",
     cover: {"sky":"glory","map":["D{8}S{8}G{16}","D{32}","S{32}"],"objects":[{"s":"tuft","x":18},{"s":"tuft","x":20.5},{"s":"tuft","x":23},{"s":"tuft","x":10,"pal":{"g":"#b8a04a","d":"#8a7020"}},{"s":"tuft","x":13,"pal":{"g":"#b8a04a","d":"#8a7020"}},{"s":"tuft","x":17,"scale":2,"pal":{"g":"#3a5a2a","d":"#2a3a1a"}},{"s":"tuft","x":21.5,"scale":2,"pal":{"g":"#3a5a2a","d":"#2a3a1a"}},{"s":"sheaf","x":26,"scale":2},{"s":"sheaf","x":29,"scale":2}],"bg":"hills"}
+  },
+  {
+    week: 163, file: "lessons/163-calms-storm.html", title: "예수님께서 폭풍을 잔잔하게 하시다", ref: "마가복음 4:35-5:20, 누가복음 8:22-40",
+    cover: {"sky":"day","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"man","x":12,"y":11,"label":"제자들","shirt":"#6a5a4a","beard":true},{"s":"man","x":16,"y":11,"shirt":"#7a8a6a","flip":true},{"s":"jesus","x":18.5,"y":12,"label":"예수님","flip":true}],"bg":"sea"}
   }
 ];
