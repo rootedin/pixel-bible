@@ -513,5 +513,9 @@ window.PB_LESSONS = [
   {
     week: 159, file: "lessons/159-sabbath.html", title: "예수님께서 안식일을 가르치시다", ref: "마태복음 12:1-13, 누가복음 6:1-16",
     cover: {"sky":"glory","map":["T{32}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}","m{32}","S{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"man","x":15,"label":"손 마른 사람","shirt":"#8a7a5a"},{"s":"priest","x":20,"label":"바리새인","shirt":"#6a6a4a","flip":true},{"s":"priest","x":23,"shirt":"#5a5a3a","flip":true},{"s":"elder","x":7,"shirt":"#8a8a7a"}],"bg":"city"}
+  },
+  {
+    week: 160, file: "lessons/160-centurion-widow.html", title: "예수님께서 백부장의 종과 과부의 아들을 살리시다", ref: "누가복음 7:1-17, 마태복음 8:5-13",
+    cover: {"sky":"glory","map":[".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":13,"label":"과부","hood":"#3a3a3a"},{"s":"fleece","x":16.5,"scale":2,"label":"관"},{"s":"woman","x":10.5,"hood":"#4a4a4a"},{"s":"jesus","x":23.5,"label":"예수님","flip":true}],"bg":"city"}
   }
 ];
