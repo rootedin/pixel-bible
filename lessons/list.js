@@ -593,5 +593,9 @@ window.PB_LESSONS = [
   {
     week: 179, file: "lessons/179-trials.html", title: "예수님께서 재판을 받으시다", ref: "마태복음 26:57-27:30, 요한복음 18:28-19:12",
     cover: {"sky":"day","map":[".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}","m{32}","S{32}"],"objects":[{"s":"man","x":17.5,"label":"빌라도","shirt":"#e8e4d8","sash":"#8a2a2a","flip":true},{"s":"soldier","x":11,"label":"로마 군인"},{"s":"soldier","x":20.5,"label":"로마 군인","flip":true},{"s":"jesus","x":14,"label":"예수님","shirt":"#6a2a6a"}],"bg":"city"}
+  },
+  {
+    week: 180, file: "lessons/180-crucified.html", title: "예수님께서 십자가에 달리시다", ref: "마가복음 15:21-32, 누가복음 23:26-38",
+    cover: {"sky":"dusk","map":[".{12}S{8}.{12}",".{8}S{16}.{8}","G{4}S{24}G{4}","D{32}","S{32}"],"objects":[{"s":"cross","x":13,"scale":3,"label":"십자가"},{"s":"cross","x":16,"scale":3,"label":"십자가"},{"s":"cross","x":19,"scale":3,"label":"십자가"},{"s":"soldier","x":7,"label":"로마 군인"},{"s":"soldier","x":24,"label":"로마 군인","flip":true},{"s":"jesus","x":16,"y":12,"label":"예수님","shirt":"#b8a898"},{"s":"man","x":13,"y":12,"label":"범죄자들","shirt":"#6a5a4a","beard":true},{"s":"man","x":19,"y":12,"label":"범죄자들","shirt":"#5a4a3a","beard":true}],"bg":"city"}
   }
 ];
