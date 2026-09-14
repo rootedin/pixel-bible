@@ -569,5 +569,9 @@ window.PB_LESSONS = [
   {
     week: 173, file: "lessons/173-lazarus.html", title: "예수님께서 나사로를 살리시다", ref: "요한복음 11장",
     cover: {"sky":"dusk","map":[".{22}S{10}",".{22}S{10}",".{22}K{2}S{8}",".{22}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"jesus","x":14,"label":"예수님"},{"s":"woman","x":11.5,"label":"마르다","hood":"#9a6a3a"},{"s":"woman","x":9,"label":"마리아","hood":"#5a6a9a"},{"s":"man","x":5,"label":"유대인들","shirt":"#7a6a5a","beard":true},{"s":"woman","x":3,"hood":"#6a6a7a"},{"s":"stone","x":18.5,"scale":2}],"bg":"hills"}
+  },
+  {
+    week: 174, file: "lessons/174-zacchaeus.html", title: "예수님께서 아이들을 축복하시고 삭개오를 만나시다", ref: "마가복음 10:13-31, 누가복음 19:1-10",
+    cover: {"sky":"day","map":[".{18}L{5}.{9}",".{18}L{5}.{9}",".{20}T.{11}",".{20}T.{11}",".{20}T.{11}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":20.5,"y":11,"label":"삭개오","shirt":"#7a3a8a","sash":"#d9b24a","beard":true},{"s":"jesus","x":18,"label":"예수님"},{"s":"man","x":14,"label":"무리","shirt":"#8a7a5a"},{"s":"woman","x":12.5,"hood":"#7a8a6a"},{"s":"man","x":11,"shirt":"#6a5a4a"}],"bg":"desert"}
   }
 ];
