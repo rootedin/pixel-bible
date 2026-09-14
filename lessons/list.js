@@ -373,5 +373,9 @@ window.PB_LESSONS = [
   {
     week: 124, file: "lessons/124-jehu.html", title: "예후가 왕이 되다", ref: "열왕기하 9장",
     cover: {"sky":"day","map":["G{32}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":20},{"s":"flower","x":26}],"bg":"hills"}
+  },
+  {
+    week: 125, file: "lessons/125-israel-falls.html", title: "이스라엘 왕국이 앗수르에게 멸망하다", ref: "열왕기하 13, 17장",
+    cover: {"sky":"dusk","map":[".{6}S{2}.{5}S{2}.{9}S{2}.{6}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"stone","x":20},{"s":"tuft","x":28}],"bg":"hills"}
   }
 ];
