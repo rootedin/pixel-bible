@@ -332,6 +332,18 @@ window.PB = window.PB || {};
 /* 열왕기 팩 — 왕들의 시대 본문에 필요한 그림 */
 (function (PB) {
   PB.addSprites({
+    /* 배 — 다시스로 가는 배(욘 1장), 갈릴리의 배 */
+    ship: {
+      pal: { w: '#8a6a3a', d: '#5e4522', s: '#f2ecdc', m: '#6a4a22' }, px: [
+        '......m.....',
+        '....sssm....',
+        '...ssssm....',
+        '..sssssm....',
+        '.......m....',
+        'wwwwwwwwwwww',
+        'dwwwwwwwwwwd',
+        '.dddddddddd.']
+    },
     /* 도끼 — 빌려 온 도끼머리가 물에 빠진 일(왕하 6장) */
     axe: {
       pal: { w: '#8a6a3a', s: '#7a828f', l: '#d6dde9' }, px: [

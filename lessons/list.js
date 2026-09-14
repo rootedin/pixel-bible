@@ -377,5 +377,9 @@ window.PB_LESSONS = [
   {
     week: 125, file: "lessons/125-israel-falls.html", title: "이스라엘 왕국이 앗수르에게 멸망하다", ref: "열왕기하 13, 17장",
     cover: {"sky":"dusk","map":[".{6}S{2}.{5}S{2}.{9}S{2}.{6}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"stone","x":20},{"s":"tuft","x":28}],"bg":"hills"}
+  },
+  {
+    week: 126, file: "lessons/126-jonah-called.html", title: "하나님께서 요나를 부르시다", ref: "요나 1-2장",
+    cover: {"sky":"storm","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"man","x":12,"y":12,"label":"선장","shirt":"#5a6a8a"}],"bg":"sea"}
   }
 ];
