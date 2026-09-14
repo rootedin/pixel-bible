@@ -493,5 +493,9 @@ window.PB_LESSONS = [
   {
     week: 154, file: "lessons/154-rejected-nazareth.html", title: "예수님께서 갈릴리에서 배척당하시다", ref: "요한복음 4:43-54, 누가복음 4:14-30",
     cover: {"sky":"glory","map":["T{32}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}","m{32}","S{32}"],"objects":[{"s":"jesus","x":15,"label":"예수님"},{"s":"scroll","x":17.5,"y":15,"scale":2,"label":"이사야의 책"},{"s":"elder","x":9,"shirt":"#8a8a7a"},{"s":"man","x":11.5,"shirt":"#7a6a5a"},{"s":"man","x":21,"shirt":"#8a7a5a","flip":true},{"s":"elder","x":24,"shirt":"#9a9a8a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 155, file: "lessons/155-great-catch.html", title: "예수님께서 많은 물고기를 잡게 하시다", ref: "누가복음 5:1-11, 마가복음 1:16-20",
+    cover: {"sky":"glory","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"jesus","x":12,"y":11,"label":"예수님"},{"s":"man","x":17,"y":11,"label":"시몬","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"fish","x":9,"y":16,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":13,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":17,"y":16,"scale":2,"anim":"swim","label":"물고기 떼","pal":{"o":"#8aa0b8","y":"#c8d8e8"}},{"s":"fish","x":21,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"ship","x":26,"y":13,"scale":2,"flip":true}],"bg":"sea"}
   }
 ];
