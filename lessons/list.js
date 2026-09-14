@@ -565,5 +565,9 @@ window.PB_LESSONS = [
   {
     week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니에 가시고 나면서부터 맹인 된 사람을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
     cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"woman","x":13,"label":"마리아","hood":"#5a6a9a","flip":true},{"s":"woman","x":23,"label":"마르다","hood":"#9a6a3a"},{"s":"fire","x":26},{"s":"jar","x":20.5},{"s":"bread","x":18}],"bg":"hills"}
+  },
+  {
+    week: 173, file: "lessons/173-lazarus.html", title: "예수님께서 나사로를 살리시다", ref: "요한복음 11장",
+    cover: {"sky":"dusk","map":[".{22}S{10}",".{22}S{10}",".{22}K{2}S{8}",".{22}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"jesus","x":14,"label":"예수님"},{"s":"woman","x":11.5,"label":"마르다","hood":"#9a6a3a"},{"s":"woman","x":9,"label":"마리아","hood":"#5a6a9a"},{"s":"man","x":5,"label":"유대인들","shirt":"#7a6a5a","beard":true},{"s":"woman","x":3,"hood":"#6a6a7a"},{"s":"stone","x":18.5,"scale":2}],"bg":"hills"}
   }
 ];
