@@ -601,5 +601,9 @@ window.PB_LESSONS = [
   {
     week: 181, file: "lessons/181-jesus-dies.html", title: "예수님께서 죽으시다", ref: "누가복음 23:39-56, 요한복음 19:25-42",
     cover: {"sky":"dark","map":[".{12}S{8}.{12}",".{8}S{16}.{8}","G{4}S{24}G{4}","D{32}","S{32}"],"objects":[{"s":"cross","x":13,"scale":3,"label":"십자가"},{"s":"cross","x":16,"scale":3,"label":"십자가"},{"s":"cross","x":19,"scale":3,"label":"십자가"},{"s":"jesus","x":16,"y":12,"label":"예수님","shirt":"#b8a898"},{"s":"man","x":13,"y":12,"label":"욕하는 범죄자","shirt":"#5a4a3a","beard":true},{"s":"man","x":19,"y":12,"label":"회개한 범죄자","shirt":"#6a5a4a","beard":true},{"s":"soldier","x":7,"label":"로마 군인"},{"s":"woman","x":22.5,"label":"마리아","hood":"#4a5a8a","flip":true},{"s":"man","x":24.5,"label":"요한","shirt":"#5a6a7a","flip":true},{"s":"woman","x":27,"label":"막달라 마리아","hood":"#8a4a5a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 182, file: "lessons/182-resurrection.html", title: "예수님께서 부활하시다", ref: "마태복음 28:1-15, 요한복음 20:1-10",
+    cover: {"sky":"dawn","map":[".{22}S{10}",".{3}L{3}.{16}S{10}",".{4}T.{17}K{2}S{8}",".{4}T.{17}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"stone","x":19.5,"scale":2,"label":"무덤 돌"},{"s":"angel","x":19.5,"y":14.5,"label":"천사"},{"s":"woman","x":11,"label":"막달라 마리아","hood":"#8a4a5a"},{"s":"woman","x":9.5,"label":"다른 마리아","hood":"#6a6a7a"},{"s":"fleece","x":22.5,"y":16,"label":"아마포","pal":{"w":"#f0ece0"}}],"bg":"hills"}
   }
 ];
