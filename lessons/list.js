@@ -625,5 +625,9 @@ window.PB_LESSONS = [
   {
     week: 187, file: "lessons/187-ananias-sapphira.html", title: "아나니아와 삽비라가 죄를 짓다", ref: "사도행전 5:1-11",
     cover: {"sky":"dusk","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"man","x":13,"label":"아나니아","shirt":"#7a5a3a","sash":"#c8a040","beard":true},{"s":"woman","x":16,"label":"삽비라","hood":"#7a3a5a","flip":true},{"s":"coin","x":10.5,"label":"가져갈 돈"},{"s":"jar","x":22},{"s":"coin","x":23.2,"label":"감춘 돈"},{"s":"torch","x":6}],"bg":"city"}
+  },
+  {
+    week: 188, file: "lessons/188-stephen.html", title: "스데반이 순교하다", ref: "사도행전 5-7장",
+    cover: {"sky":"glory","map":[".{2}m.{26}m.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"man","x":12,"label":"스데반","shirt":"#c8b890","sash":"#7a3a3a"},{"s":"priest","x":20,"label":"대제사장","flip":true},{"s":"priest","x":22.5,"label":"공회","flip":true},{"s":"elder","x":25,"label":"공회","flip":true},{"s":"jesus","x":16,"y":9,"label":"예수님","anim":"float"}],"bg":"city"}
   }
 ];
