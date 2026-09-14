@@ -445,5 +445,9 @@ window.PB_LESSONS = [
   {
     week: 142, file: "lessons/142-jews-saved.html", title: "유대인들이 구원을 받다", ref: "에스더 7-10장",
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":7,"shirt":"#9a8a6a"},{"s":"woman","x":10,"hood":"#8a7a6a"},{"s":"boy","x":13,"shirt":"#7a8a6a","anim":"jump"},{"s":"man","x":20,"label":"모르드개","shirt":"#7a3a8a","beard":true,"crown":true,"flip":true},{"s":"girl","x":25,"shirt":"#8a6a9a","anim":"jump","flip":true},{"s":"bread","x":16,"scale":2,"label":"나누는 음식"}],"bg":"city"}
+  },
+  {
+    week: 143, file: "lessons/143-ezra-nehemiah.html", title: "에스라와 느헤미야가 무너진 이스라엘을 다시 세우다", ref: "에스라 7-8장, 느헤미야 1-2장",
+    cover: {"sky":"day","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"아닥사스다","shirt":"#8a4a3a"},{"s":"man","x":17,"label":"느헤미야","shirt":"#5a6a8a","flip":true},{"s":"jar","x":14,"scale":2},{"s":"scroll","x":20.5,"scale":2,"label":"왕의 편지"}],"bg":"city"}
   }
 ];
