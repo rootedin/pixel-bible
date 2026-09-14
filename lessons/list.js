@@ -329,5 +329,9 @@ window.PB_LESSONS = [
   {
     week: 113, file: "lessons/113-carmel.html", title: "엘리야가 갈멜 산에서 아합과 맞서다", ref: "열왕기상 18장",
     cover: {"sky":"glory","map":[".{6}S{4}.{6}S{4}.{12}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true},{"s":"stone","x":8,"scale":2,"label":"열두 돌"},{"s":"jar","x":12,"scale":2,"label":"물통"},{"s":"man","x":14,"shirt":"#9a8a6a","flip":true},{"s":"fire","x":8,"y":14,"scale":2,"anim":"bob"}],"bg":"mountains"}
+  },
+  {
+    week: 114, file: "lessons/114-elijah-horeb.html", title: "엘리야가 광야로 숨다", ref: "열왕기상 19장",
+    cover: {"sky":"cave","map":["S{7}.{18}S{7}","S{6}.{20}S{6}","S{5}.{22}S{5}","S{5}.{22}S{5}","S{32}","S{32}","S{32}"],"objects":[{"s":"man","x":14,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true},{"s":"torch","x":20,"scale":2}]}
   }
 ];
