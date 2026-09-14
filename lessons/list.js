@@ -529,5 +529,9 @@ window.PB_LESSONS = [
   {
     week: 163, file: "lessons/163-calms-storm.html", title: "예수님께서 폭풍을 잔잔하게 하시다", ref: "마가복음 4:35-5:20, 누가복음 8:22-40",
     cover: {"sky":"day","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"man","x":12,"y":11,"label":"제자들","shirt":"#6a5a4a","beard":true},{"s":"man","x":16,"y":11,"shirt":"#7a8a6a","flip":true},{"s":"jesus","x":18.5,"y":12,"label":"예수님","flip":true}],"bg":"sea"}
+  },
+  {
+    week: 164, file: "lessons/164-jairus-daughter.html", title: "예수님께서 야이로의 딸을 살리시다", ref: "마가복음 5:21-43, 누가복음 8:41-56",
+    cover: {"sky":"glory","map":["T{32}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}","P{32}","S{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"priest","x":13,"label":"야이로","shirt":"#5a5a7a"},{"s":"girl","x":17,"label":"소녀","shirt":"#e8e0d0"},{"s":"woman","x":20,"label":"어머니","hood":"#5a5a5a","flip":true},{"s":"torch","x":23,"scale":2}],"bg":"city"}
   }
 ];
