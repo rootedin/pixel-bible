@@ -453,5 +453,9 @@ window.PB_LESSONS = [
   {
     week: 144, file: "lessons/144-zechariah.html", title: "천사가 사가랴를 찾아오다", ref: "누가복음 1:5-23",
     cover: {"sky":"glory","map":["X{7}.{18}X{7}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{32}","S{32}"],"objects":[{"s":"priest","x":14,"label":"사가랴"},{"s":"censer","x":18,"scale":2,"label":"분향 제단"},{"s":"angel","x":21,"label":"천사","flip":true}],"bg":"city"}
+  },
+  {
+    week: 145, file: "lessons/145-john-born.html", title: "세례 요한이 태어나다", ref: "누가복음 1:24-80",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"엘리사벳","hood":"#9a8a7a"},{"s":"basket","x":15,"scale":2},{"s":"man","x":20,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":23,"hood":"#8a7a6a","flip":true},{"s":"elder","x":7,"label":"사가랴","shirt":"#e0d8c0"},{"s":"scroll","x":9.5,"y":14,"scale":2,"label":"글 쓰는 판"}],"bg":"hills"}
   }
 ];
