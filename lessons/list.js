@@ -481,5 +481,9 @@ window.PB_LESSONS = [
   {
     week: 151, file: "lessons/151-first-miracle.html", title: "예수님께서 첫 기적을 행하시다", ref: "요한복음 1:35-2:11",
     cover: {"sky":"day","map":["T{32}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}","P{32}","S{32}"],"objects":[{"s":"jesus","x":16,"label":"예수님"},{"s":"woman","x":19,"label":"마리아","hood":"#5a7aa8","flip":true},{"s":"jar","x":6,"scale":2,"label":"돌 항아리"},{"s":"jar","x":8.5,"scale":2},{"s":"jar","x":11,"scale":2},{"s":"man","x":23,"label":"종","shirt":"#8a7a5a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 152, file: "lessons/152-temple-nicodemus.html", title: "예수님께서 유월절에 예루살렘에 오르시다", ref: "요한복음 2:12-3:21",
+    cover: {"sky":"glory","map":[".{22}P{6}.{4}",".{22}P.{4}P.{4}",".{22}P.{4}P.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":12,"label":"예수님"},{"s":"elder","x":17,"label":"니고데모","shirt":"#4a4a6a","robe":true,"flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
   }
 ];
