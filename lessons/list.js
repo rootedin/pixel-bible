@@ -577,5 +577,9 @@ window.PB_LESSONS = [
   {
     week: 175, file: "lessons/175-triumphal-entry.html", title: "예수님께서 예루살렘에 들어가시다", ref: "마가복음 11:1-11, 요한복음 12:1-19",
     cover: {"sky":"glory","map":[".{29}C{3}",".{29}C{3}",".{29}C{3}","G{4}r{2}G{3}b{2}G{3}p{2}G{3}r{2}G{3}w{2}G{3}S{3}","D{32}"],"objects":[{"s":"donkey","x":10,"label":"어린 수나귀"},{"s":"jesus","x":10,"y":15.4,"label":"예수님"},{"s":"man","x":7,"label":"제자들","shirt":"#6a5a4a","beard":true},{"s":"man","x":5,"shirt":"#7a8a6a"},{"s":"man","x":16,"label":"무리","shirt":"#8a7a5a","flip":true},{"s":"reed","x":17,"label":"종려나무 가지"},{"s":"woman","x":19,"hood":"#7a8a6a","flip":true},{"s":"boy","x":21,"shirt":"#9a6a4a","flip":true},{"s":"reed","x":22},{"s":"man","x":24,"shirt":"#6a5a4a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 176, file: "lessons/176-judas-betrays.html", title: "예수님께서 유다에게 배신당하시다", ref: "마태복음 26:17-35, 요한복음 13:1-30",
+    cover: {"sky":"night","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","C{32}"],"objects":[{"s":"man","x":11,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":13,"label":"요한","shirt":"#5a6a7a"},{"s":"man","x":18,"label":"유다","shirt":"#5a4a3a","beard":true,"flip":true},{"s":"man","x":20.5,"label":"제자들","shirt":"#7a6a4a","flip":true},{"s":"man","x":8,"shirt":"#8a7a5a"},{"s":"bread","x":16.5},{"s":"torch","x":5},{"s":"torch","x":26},{"s":"jesus","x":10,"label":"예수님","sash":"#f0ece0"},{"s":"jar","x":9,"label":"대야"}],"bg":"city"}
   }
 ];
