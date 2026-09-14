@@ -457,5 +457,9 @@ window.PB_LESSONS = [
   {
     week: 145, file: "lessons/145-john-born.html", title: "세례 요한이 태어나다", ref: "누가복음 1:24-80",
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"엘리사벳","hood":"#9a8a7a"},{"s":"basket","x":15,"scale":2},{"s":"man","x":20,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":23,"hood":"#8a7a6a","flip":true},{"s":"elder","x":7,"label":"사가랴","shirt":"#e0d8c0"},{"s":"scroll","x":9.5,"y":14,"scale":2,"label":"글 쓰는 판"}],"bg":"hills"}
+  },
+  {
+    week: 146, file: "lessons/146-jesus-born.html", title: "예수님께서 태어나시다", ref: "누가복음 2:1-20",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"shepherd","x":10,"label":"목자","shirt":"#8a7a5a"},{"s":"shepherd","x":14,"shirt":"#7a6a4a","flip":true},{"s":"sheep","x":18},{"s":"sheep","x":21,"flip":true},{"s":"sheep","x":24},{"s":"fire","x":6},{"s":"angel","x":16,"y":8,"anim":"float","label":"주의 천사"}],"bg":"hills"}
   }
 ];
