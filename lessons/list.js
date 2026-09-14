@@ -389,5 +389,9 @@ window.PB_LESSONS = [
   {
     week: 128, file: "lessons/128-assyria-defeated.html", title: "하나님께서 앗수르 군대를 물리치시다", ref: "열왕기하 18-19장",
     cover: {"sky":"day","map":[".{6}X{20}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":15,"y":16,"label":"히스기야","shirt":"#3a6a8a"},{"s":"scroll","x":18,"y":16,"scale":2,"label":"편지"}],"bg":"city"}
+  },
+  {
+    week: 129, file: "lessons/129-hezekiah-healed.html", title: "히스기야의 병이 낫다", ref: "열왕기하 20장",
+    cover: {"sky":"glory","map":["T{32}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"히스기야","shirt":"#3a6a8a"},{"s":"torch","x":22,"scale":2}],"bg":"city"}
   }
 ];
