@@ -533,5 +533,9 @@ window.PB_LESSONS = [
   {
     week: 164, file: "lessons/164-jairus-daughter.html", title: "예수님께서 야이로의 딸을 살리시다", ref: "마가복음 5:21-43, 누가복음 8:41-56",
     cover: {"sky":"glory","map":["T{32}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}","P{32}","S{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"priest","x":13,"label":"야이로","shirt":"#5a5a7a"},{"s":"girl","x":17,"label":"소녀","shirt":"#e8e0d0"},{"s":"woman","x":20,"label":"어머니","hood":"#5a5a5a","flip":true},{"s":"torch","x":23,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 165, file: "lessons/165-twelve-sent.html", title: "예수님께서 두 맹인을 고치시고 제자들을 보내시다", ref: "마태복음 9:27-10:22, 누가복음 9:1-6",
+    cover: {"sky":"day","map":["G{10}D{12}G{10}","D{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":15.5,"label":"예수님"},{"s":"man","x":5,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"shirt":"#7a8a6a"},{"s":"man","x":11,"shirt":"#5a4a7a"},{"s":"man","x":20,"shirt":"#8a7a5a","flip":true},{"s":"man","x":23,"shirt":"#5a6a8a","flip":true},{"s":"man","x":26,"shirt":"#8a6a4a","flip":true}],"bg":"hills"}
   }
 ];
