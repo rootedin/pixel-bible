@@ -277,5 +277,9 @@ window.PB_LESSONS = [
   {
     week: 100, file: "lessons/100-house-and-kindness.html", title: "다윗이 하나님의 집을 짓고자 하다", ref: "사무엘하 7, 9장",
     cover: {"sky":"night","map":[".{10}T{10}.{12}",".{10}T.{8}T.{12}",".{10}T.{8}T.{12}","G{32}","D{32}","S{32}"],"objects":[{"s":"ark","x":15,"scale":2,"label":"언약궤"},{"s":"priest","x":11,"label":"제사장"},{"s":"torch","x":19,"scale":2}],"bg":"hills"}
+  },
+  {
+    week: 101, file: "lessons/101-david-sins.html", title: "다윗이 큰 죄를 저지르다", ref: "사무엘하 11-12장",
+    cover: {"sky":"day","map":["T{32}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"다윗"},{"s":"man","x":16,"label":"나단","shirt":"#e0d8c0","flip":true},{"s":"sheep","x":20,"scale":2,"label":"어린양"}],"bg":"city"}
   }
 ];
