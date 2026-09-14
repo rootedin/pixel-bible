@@ -653,5 +653,9 @@ window.PB_LESSONS = [
   {
     week: 194, file: "lessons/194-third-journey.html", title: "바울이 세 번째 선교 여행을 하다", ref: "사도행전 19장",
     cover: {"sky":"dusk","map":[".{20}m.{3}m.{3}m.{3}",".{20}m.{3}m.{3}m.{3}",".{20}m.{3}m.{3}m.{3}","m{32}","S{32}"],"objects":[{"s":"fire","x":13,"scale":2,"label":"불"},{"s":"scroll","x":11.5,"label":"마술책"},{"s":"scroll","x":14.5,"label":"마술책"},{"s":"man","x":9,"label":"믿은 사람들","shirt":"#6a5a7a"},{"s":"woman","x":7,"label":"믿은 사람들","hood":"#7a4a4a"},{"s":"man","x":17,"label":"믿은 사람들","shirt":"#5a6a4a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 195, file: "lessons/195-eutychus.html", title: "바울이 죽은 사람을 살리다", ref: "사도행전 20-22장",
+    cover: {"sky":"glory","map":[".{8}B{9}.{15}",".{8}B{4}g{2}B{3}.{15}",".{8}B{9}.{15}",".{8}B{4}g{2}B{3}.{15}",".{8}B{9}.{15}",".{8}B{4}P{2}B{3}.{15}","S{32}","D{32}"],"objects":[{"s":"torch","x":12,"y":13},{"s":"torch","x":13.5,"y":13},{"s":"man","x":22,"label":"누가","shirt":"#5a6a5a"},{"s":"woman","x":5,"hood":"#7a6a5a"},{"s":"boy","x":20,"label":"유두고","shirt":"#7a8a6a"},{"s":"man","x":18,"label":"바울","shirt":"#4a4a6a","sash":"#8a2a2a","beard":true},{"s":"man","x":24,"label":"성도들","shirt":"#6a7a5a","flip":true}],"bg":"city"}
   }
 ];
