@@ -281,5 +281,9 @@ window.PB_LESSONS = [
   {
     week: 101, file: "lessons/101-david-sins.html", title: "다윗이 큰 죄를 저지르다", ref: "사무엘하 11-12장",
     cover: {"sky":"day","map":["T{32}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"다윗"},{"s":"man","x":16,"label":"나단","shirt":"#e0d8c0","flip":true},{"s":"sheep","x":20,"scale":2,"label":"어린양"}],"bg":"city"}
+  },
+  {
+    week: 102, file: "lessons/102-absalom-rebels.html", title: "압살롬이 반역하다", ref: "사무엘하 15:1-17:24",
+    cover: {"sky":"glory","map":[".{22}C{10}",".{22}C{10}",".{22}C{10}","G{32}","D{32}","S{32}"],"objects":[{"s":"king","x":8,"label":"다윗"},{"s":"soldier","x":12,"shirt":"#9a7b52"},{"s":"woman","x":15,"hood":"#8a6b4a"},{"s":"boy","x":17.5,"shirt":"#a98a5e"},{"s":"priest","x":21,"label":"사독","flip":true},{"s":"ark","x":21,"y":13,"scale":2,"label":"언약궤"}],"bg":"city"}
   }
 ];
