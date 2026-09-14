@@ -541,5 +541,9 @@ window.PB_LESSONS = [
   {
     week: 166, file: "lessons/166-john-beheaded.html", title: "세례 요한이 죽임을 당하다", ref: "마태복음 14:1-13, 마가복음 6:14-32",
     cover: {"sky":"night","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"헤롯","shirt":"#6a2a4a"},{"s":"woman","x":17,"label":"헤로디아","hood":"#8a2a4a","flip":true},{"s":"torch","x":22,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 167, file: "lessons/167-feeding-5000.html", title: "예수님께서 오천 명을 먹이시고 물 위를 걸으시다", ref: "마태복음 14:13-33, 요한복음 6:1-21",
+    cover: {"sky":"night","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":6,"y":13,"scale":3,"label":"배"},{"s":"man","x":8,"y":11,"shirt":"#7a8a6a","flip":true},{"s":"jesus","x":24,"y":14,"label":"예수님","flip":true},{"s":"man","x":15,"y":14,"label":"베드로","shirt":"#6a5a4a","beard":true}],"bg":"sea"}
   }
 ];
