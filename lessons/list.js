@@ -629,5 +629,9 @@ window.PB_LESSONS = [
   {
     week: 188, file: "lessons/188-stephen.html", title: "스데반이 순교하다", ref: "사도행전 5-7장",
     cover: {"sky":"glory","map":[".{2}m.{26}m.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"man","x":12,"label":"스데반","shirt":"#c8b890","sash":"#7a3a3a"},{"s":"priest","x":20,"label":"대제사장","flip":true},{"s":"priest","x":22.5,"label":"공회","flip":true},{"s":"elder","x":25,"label":"공회","flip":true},{"s":"jesus","x":16,"y":9,"label":"예수님","anim":"float"}],"bg":"city"}
+  },
+  {
+    week: 189, file: "lessons/189-philip.html", title: "빌립이 복음을 전하다", ref: "사도행전 8장",
+    cover: {"sky":"day","map":[".{24}S{3}.{5}","s{32}","S{32}"],"objects":[{"s":"chariot","x":18,"scale":2,"label":"병거"},{"s":"man","x":18.5,"y":14,"label":"내시","skin":"#7a5238","shirt":"#6a3a7a","sash":"#d9b24a"},{"s":"scroll","x":20,"y":13.5,"label":"이사야의 글"},{"s":"man","x":22.5,"label":"종","skin":"#7a5238","shirt":"#c8b890","flip":true}],"bg":"desert"}
   }
 ];
