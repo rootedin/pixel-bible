@@ -309,5 +309,9 @@ window.PB_LESSONS = [
   {
     week: 108, file: "lessons/108-queen-of-sheba.html", title: "스바 여왕이 솔로몬을 찾아오다", ref: "열왕기상 9-10장",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":7,"label":"세바의 여왕","crown":true,"robe":true,"shirt":"#8a3a7a"},{"s":"camel","x":13,"scale":2},{"s":"jar","x":19,"scale":2,"label":"향료"},{"s":"gem","x":22,"scale":2,"label":"보석"},{"s":"coin","x":25,"scale":2,"label":"금"}],"bg":"city"}
+  },
+  {
+    week: 109, file: "lessons/109-solomon-dies.html", title: "솔로몬이 슬프게 죽다", ref: "열왕기상 11장",
+    cover: {"sky":"day","map":["G{32}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":24,"label":"아히야","shirt":"#e0d8c0","robe":true,"beard":true,"flip":true},{"s":"tuft","x":14},{"s":"flower","x":19}],"bg":"hills"}
   }
 ];
