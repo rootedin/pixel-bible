@@ -269,5 +269,9 @@ window.PB_LESSONS = [
   {
     week: 98, file: "lessons/98-david-laments.html", title: "다윗이 사울과 요나단의 죽음을 슬퍼하다", ref: "사무엘하 1장",
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"다윗","shirt":"#b8724a"},{"s":"harp","x":12.5,"y":14,"scale":3,"label":"하프"},{"s":"boy","x":17,"shirt":"#a98a5e","flip":true},{"s":"man","x":20,"shirt":"#9a7b52","flip":true},{"s":"arrow","x":25,"y":13,"scale":2,"label":"활"}],"bg":"hills"}
+  },
+  {
+    week: 99, file: "lessons/99-ark-to-jerusalem.html", title: "다윗이 법궤를 다시 찾아오다", ref: "사무엘하 6장",
+    cover: {"sky":"dusk","map":["y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"chariot","x":14,"scale":2},{"s":"ark","x":14,"y":12,"scale":2,"label":"언약궤"},{"s":"cow","x":19,"scale":2},{"s":"man","x":11,"label":"웃사","shirt":"#9a7b52"},{"s":"king","x":5,"label":"다윗"}],"bg":"hills"}
   }
 ];
