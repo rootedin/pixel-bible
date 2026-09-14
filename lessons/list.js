@@ -305,5 +305,9 @@ window.PB_LESSONS = [
   {
     week: 107, file: "lessons/107-solomon-temple.html", title: "솔로몬이 성전을 짓다", ref: "열왕기상 6-7장, 역대하 2장",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":12,"label":"솔로몬"},{"s":"man","x":17,"shirt":"#9a7b52","flip":true},{"s":"stone","x":22,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 108, file: "lessons/108-queen-of-sheba.html", title: "스바 여왕이 솔로몬을 찾아오다", ref: "열왕기상 9-10장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":7,"label":"세바의 여왕","crown":true,"robe":true,"shirt":"#8a3a7a"},{"s":"camel","x":13,"scale":2},{"s":"jar","x":19,"scale":2,"label":"향료"},{"s":"gem","x":22,"scale":2,"label":"보석"},{"s":"coin","x":25,"scale":2,"label":"금"}],"bg":"city"}
   }
 ];

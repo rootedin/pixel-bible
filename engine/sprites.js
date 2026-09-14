@@ -327,3 +327,35 @@ window.PB = window.PB || {};
     }
   });
 })(window.PB);
+
+/* ===== engine/sprites/60-kings.js ===== */
+/* 열왕기 팩 — 왕들의 시대 본문에 필요한 그림 */
+(function (PB) {
+  PB.addSprites({
+    /* 낙타 — 세바의 여왕이 타고 온 행렬(왕상 10장) */
+    camel: {
+      pal: { h: '#a87244', d: '#6e4620', k: '#2e1e12' }, px: [
+        '...........kkk',
+        '..........khhk',
+        '..........hh..',
+        '.....hhh..hh..',
+        'd.hhhhhhhhhh..',
+        '.hhhhhhhhhhh..',
+        '.hhhhhhhhhhh..',
+        '..hh.....hh...',
+        '..h.h....h.h..',
+        '..d.d....d.d..']
+    },
+    /* 보석 — 낙타에 실려 온 예물(왕상 10:2) */
+    gem: {
+      pal: { b: '#4aa8d8', l: '#a8e0f5', d: '#1a5a8a' }, px: [
+        '..llll..',
+        '.lbbbbl.',
+        'lbbbbbbl',
+        'lbbbbbbd',
+        '.dbbbbd.',
+        '..dbbd..',
+        '...dd...']
+    }
+  });
+})(window.PB);
