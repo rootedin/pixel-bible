@@ -621,5 +621,9 @@ window.PB_LESSONS = [
   {
     week: 186, file: "lessons/186-peter-john-heal.html", title: "베드로와 요한이 걷지 못하는 사람을 일으키다", ref: "사도행전 3-4장",
     cover: {"sky":"glory","map":[".{12}m.{6}m.{12}",".{12}m.{6}m.{12}",".{12}m.{6}m.{12}","m{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"요한","shirt":"#5a6a7a"},{"s":"man","x":15.5,"label":"걷지 못하는 사람","shirt":"#8a8478","flip":true},{"s":"jar","x":17},{"s":"man","x":23,"shirt":"#8a7a5a"},{"s":"woman","x":26,"hood":"#7a6a6a"}],"bg":"city"}
+  },
+  {
+    week: 187, file: "lessons/187-ananias-sapphira.html", title: "아나니아와 삽비라가 죄를 짓다", ref: "사도행전 5:1-11",
+    cover: {"sky":"dusk","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"man","x":13,"label":"아나니아","shirt":"#7a5a3a","sash":"#c8a040","beard":true},{"s":"woman","x":16,"label":"삽비라","hood":"#7a3a5a","flip":true},{"s":"coin","x":10.5,"label":"가져갈 돈"},{"s":"jar","x":22},{"s":"coin","x":23.2,"label":"감춘 돈"},{"s":"torch","x":6}],"bg":"city"}
   }
 ];
