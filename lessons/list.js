@@ -469,5 +469,9 @@ window.PB_LESSONS = [
   {
     week: 148, file: "lessons/148-jesus-twelve.html", title: "예수님께서 열두 살에 성전에 오르시다", ref: "마태복음 2:16-23, 누가복음 2:40-52",
     cover: {"sky":"day","map":[".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":9,"shirt":"#e0d8c0"},{"s":"elder","x":12,"shirt":"#d0c8b0"},{"s":"boy","x":15.5,"label":"예수님","shirt":"#e8e0d0"},{"s":"scroll","x":17.5,"scale":2,"label":"율법 두루마리"},{"s":"elder","x":20,"shirt":"#c8c0a8","flip":true},{"s":"priest","x":23,"flip":true}],"bg":"city"}
+  },
+  {
+    week: 149, file: "lessons/149-jesus-baptized.html", title: "예수님께서 요한에게 세례를 받으시다", ref: "마태복음 3:13-17, 요한복음 1:19-34",
+    cover: {"sky":"glory","map":["G{10}W{12}G{10}","D{10}W{12}D{10}","D{32}","S{32}"],"objects":[{"s":"man","x":25,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":28,"hood":"#8a7a6a","flip":true},{"s":"man","x":10,"y":15,"label":"요한","shirt":"#8a6a3a","hair":"#3a2a1a","beard":"#3a2a1a","long":true},{"s":"jesus","x":13,"y":15,"label":"예수님"},{"s":"dove","x":13,"y":7,"scale":2,"anim":"float","label":"비둘기"}],"bg":"desert"}
   }
 ];
