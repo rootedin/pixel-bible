@@ -333,5 +333,9 @@ window.PB_LESSONS = [
   {
     week: 114, file: "lessons/114-elijah-horeb.html", title: "엘리야가 광야로 숨다", ref: "열왕기상 19장",
     cover: {"sky":"cave","map":["S{7}.{18}S{7}","S{6}.{20}S{6}","S{5}.{22}S{5}","S{5}.{22}S{5}","S{32}","S{32}","S{32}"],"objects":[{"s":"man","x":14,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true},{"s":"torch","x":20,"scale":2}]}
+  },
+  {
+    week: 115, file: "lessons/115-naboth.html", title: "아합이 나봇의 포도원을 빼앗다", ref: "열왕기상 21장",
+    cover: {"sky":"day","map":[".{4}L{3}.{3}L{3}.{3}L{3}.{10}",".{5}T.{5}T.{5}T.{14}","G{32}","D{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"아합","shirt":"#6a3a6a","flip":true},{"s":"man","x":14,"label":"나봇","shirt":"#7a8a6a"},{"s":"grapes","x":8,"scale":2,"label":"포도원"}],"bg":"hills"}
   }
 ];
