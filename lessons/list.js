@@ -501,5 +501,9 @@ window.PB_LESSONS = [
   {
     week: 156, file: "lessons/156-capernaum-healing.html", title: "예수님께서 귀신 들린 사람을 고치시다", ref: "마가복음 1:21-35, 누가복음 4:33-41",
     cover: {"sky":"dusk","map":[".{20}P{8}.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":18,"label":"예수님","flip":true},{"s":"man","x":14,"label":"앓는 사람","shirt":"#7a6a5a"},{"s":"woman","x":11,"label":"앓는 사람","hood":"#8a7a6a"},{"s":"boy","x":8,"label":"앓는 사람","shirt":"#9a8a6a"},{"s":"elder","x":5,"shirt":"#8a8a7a"},{"s":"torch","x":2,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 157, file: "lessons/157-leper-paralytic.html", title: "예수님께서 나병과 중풍병을 고치시다", ref: "마가복음 1:40-45, 누가복음 5:12-26",
+    cover: {"sky":"day","map":[".{8}S{6}.{3}S{7}.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":12,"y":15,"label":"예수님"},{"s":"priest","x":19,"y":15,"label":"율법 박사","flip":true},{"s":"man","x":10.5,"label":"친구","shirt":"#8a7a5a"},{"s":"man","x":19.5,"shirt":"#7a6a5a","flip":true},{"s":"fleece","x":15.5,"y":13,"scale":2,"label":"자리"},{"s":"man","x":3,"shirt":"#8a7a5a"},{"s":"man","x":28,"shirt":"#6a5a4a","flip":true}],"bg":"city"}
   }
 ];
