@@ -473,5 +473,9 @@ window.PB_LESSONS = [
   {
     week: 149, file: "lessons/149-jesus-baptized.html", title: "예수님께서 요한에게 세례를 받으시다", ref: "마태복음 3:13-17, 요한복음 1:19-34",
     cover: {"sky":"glory","map":["G{10}W{12}G{10}","D{10}W{12}D{10}","D{32}","S{32}"],"objects":[{"s":"man","x":25,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":28,"hood":"#8a7a6a","flip":true},{"s":"man","x":10,"y":15,"label":"요한","shirt":"#8a6a3a","hair":"#3a2a1a","beard":"#3a2a1a","long":true},{"s":"jesus","x":13,"y":15,"label":"예수님"},{"s":"dove","x":13,"y":7,"scale":2,"anim":"float","label":"비둘기"}],"bg":"desert"}
+  },
+  {
+    week: 150, file: "lessons/150-temptation.html", title: "예수님께서 마귀에게 시험을 받으시다", ref: "마태복음 4:1-11, 누가복음 4:1-13",
+    cover: {"sky":"dusk","map":[".{20}S{3}.{9}","s{32}","s{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":15,"label":"예수님"},{"s":"stone","x":11,"scale":2,"label":"돌들"},{"s":"man","x":24,"label":"시험하는 자","shirt":"#2a2a2e","hood":"#1a1a1e","skin":"#7a7a80","flip":true}],"bg":"desert"}
   }
 ];
