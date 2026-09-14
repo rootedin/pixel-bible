@@ -545,5 +545,9 @@ window.PB_LESSONS = [
   {
     week: 167, file: "lessons/167-feeding-5000.html", title: "예수님께서 오천 명을 먹이시고 물 위를 걸으시다", ref: "마태복음 14:13-33, 요한복음 6:1-21",
     cover: {"sky":"night","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":6,"y":13,"scale":3,"label":"배"},{"s":"man","x":8,"y":11,"shirt":"#7a8a6a","flip":true},{"s":"jesus","x":24,"y":14,"label":"예수님","flip":true},{"s":"man","x":15,"y":14,"label":"베드로","shirt":"#6a5a4a","beard":true}],"bg":"sea"}
+  },
+  {
+    week: 168, file: "lessons/168-canaanite-woman.html", title: "예수님께서 이방 여자의 믿음을 칭찬하시다", ref: "마태복음 15:21-31, 마가복음 7:24-37",
+    cover: {"sky":"dusk","map":[".{3}C{4}.{18}C{4}.{3}",".{3}C{4}.{18}C{4}.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":18,"label":"예수님","flip":true},{"s":"man","x":21,"label":"제자들","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"man","x":23.5,"shirt":"#7a8a6a","flip":true},{"s":"woman","x":10,"label":"가나안 여자","hood":"#8a4a6a"},{"s":"bread","x":13,"label":"빵 부스러기"}],"bg":"city"}
   }
 ];
