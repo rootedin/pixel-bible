@@ -369,5 +369,9 @@ window.PB_LESSONS = [
   {
     week: 123, file: "lessons/123-siege-of-samaria.html", title: "아람 군대가 사마리아를 포위하다", ref: "열왕기하 6:24-7:20",
     cover: {"sky":"night","map":["s{32}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":6,"label":"네 사람","shirt":"#8a8070"},{"s":"coin","x":12,"scale":2,"label":"은과 금"},{"s":"bread","x":17,"scale":2},{"s":"jar","x":21,"scale":2},{"s":"chariot","x":26,"scale":2,"flip":true}],"bg":"desert"}
+  },
+  {
+    week: 124, file: "lessons/124-jehu.html", title: "예후가 왕이 되다", ref: "열왕기하 9장",
+    cover: {"sky":"day","map":["G{32}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":20},{"s":"flower","x":26}],"bg":"hills"}
   }
 ];
