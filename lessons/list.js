@@ -609,5 +609,9 @@ window.PB_LESSONS = [
   {
     week: 183, file: "lessons/183-first-appearances.html", title: "예수님께서 부활하신 뒤 처음 나타나시다", ref: "요한복음 20:11-18, 누가복음 24:13-35",
     cover: {"sky":"glory","map":[".{22}S{10}",".{3}L{3}.{16}S{10}",".{4}T.{17}K{2}S{8}",".{4}T.{17}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"stone","x":19.5,"scale":2,"label":"무덤 돌"},{"s":"woman","x":16,"label":"마리아","hood":"#8a4a5a","flip":true},{"s":"jesus","x":12,"label":"예수님"}],"bg":"hills"}
+  },
+  {
+    week: 184, file: "lessons/184-appears-to-disciples.html", title: "예수님께서 제자들에게 나타나시다", ref: "누가복음 24:36-53, 요한복음 20:24-29, 21장",
+    cover: {"sky":"glory","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","C{32}"],"objects":[{"s":"man","x":16,"label":"도마","shirt":"#4a6a5a","flip":true},{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":12,"label":"제자들","shirt":"#5a6a7a"},{"s":"man","x":20.5,"label":"제자들","shirt":"#8a7a5a","flip":true},{"s":"torch","x":5},{"s":"torch","x":26},{"s":"jesus","x":13.5,"label":"예수님"}],"bg":"city"}
   }
 ];
