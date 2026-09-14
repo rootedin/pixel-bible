@@ -337,5 +337,9 @@ window.PB_LESSONS = [
   {
     week: 115, file: "lessons/115-naboth.html", title: "아합이 나봇의 포도원을 빼앗다", ref: "열왕기상 21장",
     cover: {"sky":"day","map":[".{4}L{3}.{3}L{3}.{3}L{3}.{10}",".{5}T.{5}T.{5}T.{14}","G{32}","D{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"아합","shirt":"#6a3a6a","flip":true},{"s":"man","x":14,"label":"나봇","shirt":"#7a8a6a"},{"s":"grapes","x":8,"scale":2,"label":"포도원"}],"bg":"hills"}
+  },
+  {
+    week: 116, file: "lessons/116-ahab-dies.html", title: "악한 아합 왕이 죽다", ref: "열왕기상 22:1-40",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":9,"label":"아합","shirt":"#6a3a6a"},{"s":"king","x":14,"label":"여호사밧","shirt":"#3a6a8a"},{"s":"man","x":22,"label":"미가야","shirt":"#e0d8c0","robe":true,"beard":true,"flip":true}],"bg":"city"}
   }
 ];
