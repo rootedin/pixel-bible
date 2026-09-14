@@ -393,5 +393,9 @@ window.PB_LESSONS = [
   {
     week: 129, file: "lessons/129-hezekiah-healed.html", title: "히스기야의 병이 낫다", ref: "열왕기하 20장",
     cover: {"sky":"glory","map":["T{32}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}",".{5}C{2}.{18}C{2}.{5}","m{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"히스기야","shirt":"#3a6a8a"},{"s":"torch","x":22,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 130, file: "lessons/130-manasseh.html", title: "악한 왕 므낫세가 유다를 다스리다", ref: "열왕기하 21장",
+    cover: {"sky":"cave","map":["S{8}.{16}S{8}","S{7}.{18}S{7}","S{7}.{18}S{7}","S{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"므낫세","shirt":"#5a5a5a"}]}
   }
 ];
