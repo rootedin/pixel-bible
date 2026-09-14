@@ -585,5 +585,9 @@ window.PB_LESSONS = [
   {
     week: 177, file: "lessons/177-gethsemane.html", title: "예수님께서 겟세마네에서 기도하시다", ref: "마가복음 14:22-41, 누가복음 22:5-46",
     cover: {"sky":"night","map":[".{3}L{3}.{8}L{3}.{10}L{3}.{2}",".{4}T.{10}T.{12}T.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"야고보","shirt":"#7a6a4a"},{"s":"man","x":12,"label":"요한","shirt":"#5a6a7a"},{"s":"stone","x":23,"scale":2},{"s":"jesus","x":21.5,"label":"예수님"}],"bg":"mountains"}
+  },
+  {
+    week: 178, file: "lessons/178-arrested.html", title: "예수님께서 사로잡히시다", ref: "누가복음 22:47-54, 요한복음 18:1-14",
+    cover: {"sky":"night","map":[".{3}L{3}.{8}L{3}.{10}L{3}.{2}",".{4}T.{10}T.{12}T.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":13,"label":"예수님"},{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"제자들","shirt":"#5a6a7a"},{"s":"man","x":6,"label":"제자들","shirt":"#7a6a4a"},{"s":"soldier","x":21,"label":"군대","flip":true},{"s":"torch","x":22.5,"label":"횃불"},{"s":"soldier","x":24,"label":"군대","flip":true},{"s":"priest","x":26.5,"label":"성전 경비대","flip":true},{"s":"soldier","x":28.5,"label":"군대","flip":true},{"s":"torch","x":30,"label":"횃불"},{"s":"man","x":15,"label":"유다","shirt":"#5a4a3a","beard":true,"flip":true}],"bg":"mountains"}
   }
 ];
