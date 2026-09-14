@@ -297,5 +297,9 @@ window.PB_LESSONS = [
   {
     week: 105, file: "lessons/105-solomon-king.html", title: "솔로몬이 왕이 되다", ref: "열왕기상 1장",
     cover: {"sky":"glory","map":["G{26}W{6}","D{26}W{6}","D{32}","S{32}"],"objects":[{"s":"priest","x":22,"label":"사독","flip":true},{"s":"man","x":19,"label":"나단","shirt":"#e0d8c0","flip":true},{"s":"tuft","x":10},{"s":"boy","x":15,"label":"솔로몬","shirt":"#c8b45a"},{"s":"horn","x":17.5,"y":13,"scale":2,"label":"기름 뿔"}],"bg":"city"}
+  },
+  {
+    week: 106, file: "lessons/106-solomon-dream.html", title: "솔로몬이 꿈을 꾸다", ref: "열왕기상 3장, 역대하 1장",
+    cover: {"sky":"night","map":[".{14}S{5}.{13}",".{14}S{5}.{13}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":10,"label":"솔로몬","shirt":"#c8b45a"},{"s":"fire","x":16.5,"y":13,"scale":2,"anim":"bob"},{"s":"sheep","x":24,"scale":2}],"bg":"mountains"}
   }
 ];
