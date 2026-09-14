@@ -517,5 +517,9 @@ window.PB_LESSONS = [
   {
     week: 160, file: "lessons/160-centurion-widow.html", title: "예수님께서 백부장의 종과 과부의 아들을 살리시다", ref: "누가복음 7:1-17, 마태복음 8:5-13",
     cover: {"sky":"glory","map":[".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":13,"label":"과부","hood":"#3a3a3a"},{"s":"fleece","x":16.5,"scale":2,"label":"관"},{"s":"woman","x":10.5,"hood":"#4a4a4a"},{"s":"jesus","x":23.5,"label":"예수님","flip":true}],"bg":"city"}
+  },
+  {
+    week: 161, file: "lessons/161-perfume-woman.html", title: "한 여자가 예수님께 향유를 붓다", ref: "누가복음 7:36-50, 마태복음 12:22-31",
+    cover: {"sky":"dusk","map":["T{32}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":20,"label":"시몬","shirt":"#6a6a4a","flip":true},{"s":"jesus","x":15,"label":"예수님"},{"s":"woman","x":11,"label":"한 여자","hood":"#9a5a6a"},{"s":"jar","x":13,"scale":2,"label":"향유 옥합"},{"s":"elder","x":23,"shirt":"#8a8a7a","flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
   }
 ];
