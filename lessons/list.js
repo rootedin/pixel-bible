@@ -633,5 +633,9 @@ window.PB_LESSONS = [
   {
     week: 189, file: "lessons/189-philip.html", title: "빌립이 복음을 전하다", ref: "사도행전 8장",
     cover: {"sky":"day","map":[".{24}S{3}.{5}","s{32}","S{32}"],"objects":[{"s":"chariot","x":18,"scale":2,"label":"병거"},{"s":"man","x":18.5,"y":14,"label":"내시","skin":"#7a5238","shirt":"#6a3a7a","sash":"#d9b24a"},{"s":"scroll","x":20,"y":13.5,"label":"이사야의 글"},{"s":"man","x":22.5,"label":"종","skin":"#7a5238","shirt":"#c8b890","flip":true}],"bg":"desert"}
+  },
+  {
+    week: 190, file: "lessons/190-saul-converted.html", title: "하나님께서 사울을 변화시키시다", ref: "사도행전 9:1-31",
+    cover: {"sky":"glory","map":[".{27}C{5}",".{27}C{5}","G{27}S{5}","D{32}"],"objects":[{"s":"boy","x":20,"label":"사울","shirt":"#4a4a6a","sash":"#8a2a2a"},{"s":"soldier","x":16,"label":"동행자들"},{"s":"man","x":14,"label":"동행자들","shirt":"#6a5a4a"}],"bg":"desert"}
   }
 ];
