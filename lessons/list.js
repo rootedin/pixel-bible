@@ -417,5 +417,9 @@ window.PB_LESSONS = [
   {
     week: 135, file: "lessons/135-nebuchadnezzar-humbled.html", title: "느부갓네살이 또 다른 꿈을 꾸다", ref: "다니엘 4장",
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":12,"label":"느부갓네살","shirt":"#6a6a5a","long":true,"hair":"#5a4a3a","beard":"#5a4a3a"},{"s":"cow","x":18,"label":"들짐승"},{"s":"cow","x":23,"flip":true},{"s":"tuft","x":7}],"bg":"hills"}
+  },
+  {
+    week: 136, file: "lessons/136-babylon-falls.html", title: "바벨론이 무너지다", ref: "다니엘 5장",
+    cover: {"sky":"night","map":["T{32}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}","X{32}","S{32}"],"objects":[{"s":"king","x":15,"label":"벨사살","shirt":"#6a5a8a"},{"s":"man","x":9,"shirt":"#8a6a9a"},{"s":"woman","x":11.5,"hood":"#9a6a7a"},{"s":"man","x":20,"shirt":"#7a6a9a","flip":true},{"s":"woman","x":23,"hood":"#8a7a9a","flip":true},{"s":"torch","x":7,"scale":2},{"s":"torch","x":25,"scale":2},{"s":"jar","x":17.5,"scale":2,"label":"성전의 금 그릇"},{"s":"scroll","x":16,"y":9,"scale":2,"label":"벽에 쓴 글"}],"bg":"city"}
   }
 ];
