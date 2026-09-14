@@ -477,5 +477,9 @@ window.PB_LESSONS = [
   {
     week: 150, file: "lessons/150-temptation.html", title: "예수님께서 마귀에게 시험을 받으시다", ref: "마태복음 4:1-11, 누가복음 4:1-13",
     cover: {"sky":"dusk","map":[".{20}S{3}.{9}","s{32}","s{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":15,"label":"예수님"},{"s":"stone","x":11,"scale":2,"label":"돌들"},{"s":"man","x":24,"label":"시험하는 자","shirt":"#2a2a2e","hood":"#1a1a1e","skin":"#7a7a80","flip":true}],"bg":"desert"}
+  },
+  {
+    week: 151, file: "lessons/151-first-miracle.html", title: "예수님께서 첫 기적을 행하시다", ref: "요한복음 1:35-2:11",
+    cover: {"sky":"day","map":["T{32}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}","P{32}","S{32}"],"objects":[{"s":"jesus","x":16,"label":"예수님"},{"s":"woman","x":19,"label":"마리아","hood":"#5a7aa8","flip":true},{"s":"jar","x":6,"scale":2,"label":"돌 항아리"},{"s":"jar","x":8.5,"scale":2},{"s":"jar","x":11,"scale":2},{"s":"man","x":23,"label":"종","shirt":"#8a7a5a","flip":true}],"bg":"city"}
   }
 ];
