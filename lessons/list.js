@@ -381,5 +381,9 @@ window.PB_LESSONS = [
   {
     week: 126, file: "lessons/126-jonah-called.html", title: "하나님께서 요나를 부르시다", ref: "요나 1-2장",
     cover: {"sky":"storm","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"man","x":12,"y":12,"label":"선장","shirt":"#5a6a8a"}],"bg":"sea"}
+  },
+  {
+    week: 127, file: "lessons/127-jonah-nineveh.html", title: "요나가 니느웨에서 복음을 전하다", ref: "요나 3-4장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"요나","shirt":"#7a8a6a","robe":true},{"s":"man","x":16,"shirt":"#7a5a3a","flip":true},{"s":"woman","x":20,"hood":"#8a7a6a","flip":true},{"s":"boy","x":23,"shirt":"#6a7a8a","flip":true}],"bg":"city"}
   }
 ];
