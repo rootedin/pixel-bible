@@ -497,5 +497,9 @@ window.PB_LESSONS = [
   {
     week: 155, file: "lessons/155-great-catch.html", title: "예수님께서 많은 물고기를 잡게 하시다", ref: "누가복음 5:1-11, 마가복음 1:16-20",
     cover: {"sky":"glory","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"jesus","x":12,"y":11,"label":"예수님"},{"s":"man","x":17,"y":11,"label":"시몬","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"fish","x":9,"y":16,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":13,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":17,"y":16,"scale":2,"anim":"swim","label":"물고기 떼","pal":{"o":"#8aa0b8","y":"#c8d8e8"}},{"s":"fish","x":21,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"ship","x":26,"y":13,"scale":2,"flip":true}],"bg":"sea"}
+  },
+  {
+    week: 156, file: "lessons/156-capernaum-healing.html", title: "예수님께서 귀신 들린 사람을 고치시다", ref: "마가복음 1:21-35, 누가복음 4:33-41",
+    cover: {"sky":"dusk","map":[".{20}P{8}.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":18,"label":"예수님","flip":true},{"s":"man","x":14,"label":"앓는 사람","shirt":"#7a6a5a"},{"s":"woman","x":11,"label":"앓는 사람","hood":"#8a7a6a"},{"s":"boy","x":8,"label":"앓는 사람","shirt":"#9a8a6a"},{"s":"elder","x":5,"shirt":"#8a8a7a"},{"s":"torch","x":2,"scale":2}],"bg":"city"}
   }
 ];
