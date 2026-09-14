@@ -413,5 +413,9 @@ window.PB_LESSONS = [
   {
     week: 134, file: "lessons/134-fiery-furnace.html", title: "다니엘의 세 친구가 풀무불에 던져지다", ref: "다니엘 3장",
     cover: {"sky":"fire","map":[".{10}B.{10}B.{10}",".{10}B.{10}B.{10}",".{10}B.{10}B.{10}",".{10}BA{10}B.{10}","G{10}B{12}G{10}","D{32}","S{32}"],"objects":[{"s":"king","x":4,"label":"느부갓네살","shirt":"#6a5a8a"},{"s":"fire","x":13,"y":14,"scale":2,"anim":"bob"},{"s":"fire","x":18,"y":14,"scale":2,"anim":"bob"},{"s":"man","x":12,"y":14,"shirt":"#8a7a5a"},{"s":"man","x":14.5,"y":14,"shirt":"#7a8a6a"},{"s":"man","x":17,"y":14,"shirt":"#8a8a6a"},{"s":"angel","x":19.5,"y":14,"label":"넷째 사람"}],"bg":"city"}
+  },
+  {
+    week: 135, file: "lessons/135-nebuchadnezzar-humbled.html", title: "느부갓네살이 또 다른 꿈을 꾸다", ref: "다니엘 4장",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":12,"label":"느부갓네살","shirt":"#6a6a5a","long":true,"hair":"#5a4a3a","beard":"#5a4a3a"},{"s":"cow","x":18,"label":"들짐승"},{"s":"cow","x":23,"flip":true},{"s":"tuft","x":7}],"bg":"hills"}
   }
 ];
