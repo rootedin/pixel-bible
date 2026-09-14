@@ -581,5 +581,9 @@ window.PB_LESSONS = [
   {
     week: 176, file: "lessons/176-judas-betrays.html", title: "예수님께서 유다에게 배신당하시다", ref: "마태복음 26:17-35, 요한복음 13:1-30",
     cover: {"sky":"night","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","C{32}"],"objects":[{"s":"man","x":11,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":13,"label":"요한","shirt":"#5a6a7a"},{"s":"man","x":18,"label":"유다","shirt":"#5a4a3a","beard":true,"flip":true},{"s":"man","x":20.5,"label":"제자들","shirt":"#7a6a4a","flip":true},{"s":"man","x":8,"shirt":"#8a7a5a"},{"s":"bread","x":16.5},{"s":"torch","x":5},{"s":"torch","x":26},{"s":"jesus","x":10,"label":"예수님","sash":"#f0ece0"},{"s":"jar","x":9,"label":"대야"}],"bg":"city"}
+  },
+  {
+    week: 177, file: "lessons/177-gethsemane.html", title: "예수님께서 겟세마네에서 기도하시다", ref: "마가복음 14:22-41, 누가복음 22:5-46",
+    cover: {"sky":"night","map":[".{3}L{3}.{8}L{3}.{10}L{3}.{2}",".{4}T.{10}T.{12}T.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"label":"야고보","shirt":"#7a6a4a"},{"s":"man","x":12,"label":"요한","shirt":"#5a6a7a"},{"s":"stone","x":23,"scale":2},{"s":"jesus","x":21.5,"label":"예수님"}],"bg":"mountains"}
   }
 ];
