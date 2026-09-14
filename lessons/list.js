@@ -397,5 +397,9 @@ window.PB_LESSONS = [
   {
     week: 130, file: "lessons/130-manasseh.html", title: "악한 왕 므낫세가 유다를 다스리다", ref: "열왕기하 21장",
     cover: {"sky":"cave","map":["S{8}.{16}S{8}","S{7}.{18}S{7}","S{7}.{18}S{7}","S{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"므낫세","shirt":"#5a5a5a"}]}
+  },
+  {
+    week: 131, file: "lessons/131-judah-falls.html", title: "유다 왕국이 바벨론에게 멸망하다", ref: "열왕기하 24-25장, 예레미야 38장",
+    cover: {"sky":"dusk","map":["G{12}.{8}G{12}","D{12}.{8}D{12}","S{12}.{8}S{12}","S{12}.{8}S{12}","S{12}D{8}S{12}","S{32}"],"objects":[{"s":"man","x":15.5,"label":"예레미야","shirt":"#e0d8c0","robe":true,"beard":true},{"s":"cord","x":15.5,"y":13,"scale":2,"label":"밧줄"},{"s":"soldier","x":6,"shirt":"#8a7a5a"},{"s":"soldier","x":25,"shirt":"#8a7a5a","flip":true}],"bg":"city"}
   }
 ];
