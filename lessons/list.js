@@ -441,5 +441,9 @@ window.PB_LESSONS = [
   {
     week: 141, file: "lessons/141-mordecai-honored.html", title: "왕이 모르드개를 높이다", ref: "에스더 5-6장",
     cover: {"sky":"night","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":13,"label":"아하수에로","shirt":"#8a4a3a"},{"s":"man","x":18,"label":"신하","shirt":"#6a5a8a","flip":true},{"s":"scroll","x":15.5,"scale":2,"label":"연대기 책"},{"s":"torch","x":9,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 142, file: "lessons/142-jews-saved.html", title: "유대인들이 구원을 받다", ref: "에스더 7-10장",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":7,"shirt":"#9a8a6a"},{"s":"woman","x":10,"hood":"#8a7a6a"},{"s":"boy","x":13,"shirt":"#7a8a6a","anim":"jump"},{"s":"man","x":20,"label":"모르드개","shirt":"#7a3a8a","beard":true,"crown":true,"flip":true},{"s":"girl","x":25,"shirt":"#8a6a9a","anim":"jump","flip":true},{"s":"bread","x":16,"scale":2,"label":"나누는 음식"}],"bg":"city"}
   }
 ];
