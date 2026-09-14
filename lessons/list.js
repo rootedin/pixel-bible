@@ -341,5 +341,9 @@ window.PB_LESSONS = [
   {
     week: 116, file: "lessons/116-ahab-dies.html", title: "악한 아합 왕이 죽다", ref: "열왕기상 22:1-40",
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":9,"label":"아합","shirt":"#6a3a6a"},{"s":"king","x":14,"label":"여호사밧","shirt":"#3a6a8a"},{"s":"man","x":22,"label":"미가야","shirt":"#e0d8c0","robe":true,"beard":true,"flip":true}],"bg":"city"}
+  },
+  {
+    week: 117, file: "lessons/117-fire-from-heaven.html", title: "하나님께서 하늘에서 불을 내리시다", ref: "열왕기하 1장",
+    cover: {"sky":"day","map":["G{18}D{14}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"사자","shirt":"#9a8a6a"},{"s":"man","x":16,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true,"flip":true},{"s":"cord","x":20,"scale":2,"label":"가죽띠"}],"bg":"hills"}
   }
 ];
