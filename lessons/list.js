@@ -401,5 +401,9 @@ window.PB_LESSONS = [
   {
     week: 131, file: "lessons/131-judah-falls.html", title: "유다 왕국이 바벨론에게 멸망하다", ref: "열왕기하 24-25장, 예레미야 38장",
     cover: {"sky":"dusk","map":["G{12}.{8}G{12}","D{12}.{8}D{12}","S{12}.{8}S{12}","S{12}.{8}S{12}","S{12}D{8}S{12}","S{32}"],"objects":[{"s":"man","x":15.5,"label":"예레미야","shirt":"#e0d8c0","robe":true,"beard":true},{"s":"cord","x":15.5,"y":13,"scale":2,"label":"밧줄"},{"s":"soldier","x":6,"shirt":"#8a7a5a"},{"s":"soldier","x":25,"shirt":"#8a7a5a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 132, file: "lessons/132-daniel-palace.html", title: "다니엘이 왕의 궁전에 서다", ref: "다니엘 1장",
+    cover: {"sky":"day","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"boy","x":9,"label":"벨드사살","shirt":"#9a8a6a"},{"s":"man","x":23,"label":"내시장","shirt":"#6a5a8a","flip":true},{"s":"bread","x":26,"scale":2,"label":"왕의 음식"},{"s":"jar","x":28.5,"scale":2}],"bg":"city"}
   }
 ];
