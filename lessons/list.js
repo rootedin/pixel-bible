@@ -605,5 +605,9 @@ window.PB_LESSONS = [
   {
     week: 182, file: "lessons/182-resurrection.html", title: "예수님께서 부활하시다", ref: "마태복음 28:1-15, 요한복음 20:1-10",
     cover: {"sky":"dawn","map":[".{22}S{10}",".{3}L{3}.{16}S{10}",".{4}T.{17}K{2}S{8}",".{4}T.{17}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"stone","x":19.5,"scale":2,"label":"무덤 돌"},{"s":"angel","x":19.5,"y":14.5,"label":"천사"},{"s":"woman","x":11,"label":"막달라 마리아","hood":"#8a4a5a"},{"s":"woman","x":9.5,"label":"다른 마리아","hood":"#6a6a7a"},{"s":"fleece","x":22.5,"y":16,"label":"아마포","pal":{"w":"#f0ece0"}}],"bg":"hills"}
+  },
+  {
+    week: 183, file: "lessons/183-first-appearances.html", title: "예수님께서 부활하신 뒤 처음 나타나시다", ref: "요한복음 20:11-18, 누가복음 24:13-35",
+    cover: {"sky":"glory","map":[".{22}S{10}",".{3}L{3}.{16}S{10}",".{4}T.{17}K{2}S{8}",".{4}T.{17}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"stone","x":19.5,"scale":2,"label":"무덤 돌"},{"s":"woman","x":16,"label":"마리아","hood":"#8a4a5a","flip":true},{"s":"jesus","x":12,"label":"예수님"}],"bg":"hills"}
   }
 ];
