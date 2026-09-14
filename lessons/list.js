@@ -437,5 +437,9 @@ window.PB_LESSONS = [
   {
     week: 140, file: "lessons/140-esther-crisis.html", title: "유대인들에게 큰 위기가 닥치다", ref: "에스더 3-4장",
     cover: {"sky":"glory","map":["T{32}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}",".{6}P{2}.{16}P{2}.{6}","m{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"에스더","hood":"#8a6a9a","crown":true},{"s":"man","x":18,"label":"하닥","shirt":"#6a5a8a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 141, file: "lessons/141-mordecai-honored.html", title: "왕이 모르드개를 높이다", ref: "에스더 5-6장",
+    cover: {"sky":"night","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":13,"label":"아하수에로","shirt":"#8a4a3a"},{"s":"man","x":18,"label":"신하","shirt":"#6a5a8a","flip":true},{"s":"scroll","x":15.5,"scale":2,"label":"연대기 책"},{"s":"torch","x":9,"scale":2}],"bg":"city"}
   }
 ];
