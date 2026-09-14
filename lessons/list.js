@@ -429,5 +429,9 @@ window.PB_LESSONS = [
   {
     week: 138, file: "lessons/138-return-to-jerusalem.html", title: "하나님의 백성이 이스라엘 땅으로 돌아오다", ref: "에스라 1-3장",
     cover: {"sky":"glory","map":[".{8}S{16}.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"priest","x":10,"y":14,"label":"제사장"},{"s":"man","x":14,"y":14,"shirt":"#8a7a5a"},{"s":"harp","x":18,"y":14,"scale":2},{"s":"man","x":22,"y":14,"shirt":"#9a8a6a","flip":true},{"s":"man","x":4,"shirt":"#7a8a6a"},{"s":"woman","x":27,"hood":"#8a7a6a","flip":true}],"bg":"hills"}
+  },
+  {
+    week: 139, file: "lessons/139-esther-queen.html", title: "에스더가 왕비가 되다", ref: "에스더 1-2장",
+    cover: {"sky":"glory","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":12,"label":"아하수에로","shirt":"#8a4a3a"},{"s":"woman","x":18,"label":"에스더","hood":"#8a6a9a","crown":true,"flip":true},{"s":"gem","x":15,"y":13,"scale":2,"label":"왕비의 관"}],"bg":"city"}
   }
 ];
