@@ -553,5 +553,9 @@ window.PB_LESSONS = [
   {
     week: 169, file: "lessons/169-feeding-4000.html", title: "예수님께서 사천 명을 먹이시고 맹인을 고치시다", ref: "마태복음 15:32-39, 마가복음 8장",
     cover: {"sky":"glory","map":["P{3}.{2}P{3}.{24}","P{3}.{2}P{3}.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":21,"label":"예수님"},{"s":"man","x":24,"label":"눈먼 사람","shirt":"#8a8478","flip":true},{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"woman","x":12.5,"hood":"#7a8a6a"}],"bg":"hills"}
+  },
+  {
+    week: 170, file: "lessons/170-transfiguration.html", title: "예수님께서 변화산에서 영광스럽게 변하시다", ref: "누가복음 9:28-42, 마가복음 9:1-29",
+    cover: {"sky":"glory","map":[".{24}S{8}",".{18}S{14}",".{12}S{20}",".{6}S{26}","G{32}","D{32}"],"objects":[{"s":"jesus","x":27.5,"label":"예수님","halo":true},{"s":"man","x":19,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":21,"label":"야고보","shirt":"#7a6a4a"},{"s":"man","x":14,"label":"요한","shirt":"#5a6a7a"}],"bg":"mountains"}
   }
 ];
