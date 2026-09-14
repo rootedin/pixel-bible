@@ -561,5 +561,9 @@ window.PB_LESSONS = [
   {
     week: 171, file: "lessons/171-ten-lepers.html", title: "예수님께서 성전세를 내시고 나병 환자 열 명을 고치시다", ref: "마태복음 17:24-27, 누가복음 17:11-19",
     cover: {"sky":"day","map":["G{18}s{6}W{8}","D{18}s{6}W{8}","D{24}W{8}","S{32}"],"objects":[{"s":"man","x":21,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"fish","x":23,"label":"물고기","scale":2},{"s":"coin","x":23.2,"y":11.5,"label":"돈 하나"},{"s":"reed","x":17}],"bg":"sea"}
+  },
+  {
+    week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니에 가시고 나면서부터 맹인 된 사람을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
+    cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"woman","x":13,"label":"마리아","hood":"#5a6a9a","flip":true},{"s":"woman","x":23,"label":"마르다","hood":"#9a6a3a"},{"s":"fire","x":26},{"s":"jar","x":20.5},{"s":"bread","x":18}],"bg":"hills"}
   }
 ];
