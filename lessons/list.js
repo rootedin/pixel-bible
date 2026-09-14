@@ -361,5 +361,9 @@ window.PB_LESSONS = [
   {
     week: 121, file: "lessons/121-naaman.html", title: "나아만이 낫다", ref: "열왕기하 5장",
     cover: {"sky":"day","map":["G{10}W{14}G{8}","D{10}W{14}D{8}","D{32}","S{32}"],"objects":[{"s":"soldier","x":6,"label":"나아만","shirt":"#5a6a8a","flip":true},{"s":"man","x":28,"label":"종","shirt":"#8a7a5a","flip":true}],"bg":"mountains"}
+  },
+  {
+    week: 122, file: "lessons/122-blinded-army.html", title: "하나님께서 아람 사람들의 눈을 멀게 하시다", ref: "열왕기하 6:1-23",
+    cover: {"sky":"dawn","map":[".{10}S{12}.{10}",".{8}S{16}.{8}","G{6}S{20}G{6}","D{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"엘리사","shirt":"#9a8a6a","robe":true},{"s":"boy","x":19,"label":"종","shirt":"#8a7a5a","flip":true},{"s":"soldier","x":3,"shirt":"#4a5a7a"},{"s":"soldier","x":28,"shirt":"#4a5a7a","flip":true},{"s":"chariot","x":25,"scale":2,"flip":true}],"bg":"mountains"}
   }
 ];

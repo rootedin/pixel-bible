@@ -332,6 +332,16 @@ window.PB = window.PB || {};
 /* 열왕기 팩 — 왕들의 시대 본문에 필요한 그림 */
 (function (PB) {
   PB.addSprites({
+    /* 도끼 — 빌려 온 도끼머리가 물에 빠진 일(왕하 6장) */
+    axe: {
+      pal: { w: '#8a6a3a', s: '#7a828f', l: '#d6dde9' }, px: [
+        '......ss..',
+        '.....slls.',
+        'wwwwwslls.',
+        'wwwwwslls.',
+        '.....slls.',
+        '......ss..']
+    },
     /* 포도송이 — 나봇의 포도원(왕상 21장) */
     grapes: {
       pal: { p: '#6a3a8a', d: '#3f2154', l: '#9a6ab4', g: '#4f9e2c' }, px: [
