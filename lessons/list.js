@@ -405,5 +405,9 @@ window.PB_LESSONS = [
   {
     week: 132, file: "lessons/132-daniel-palace.html", title: "다니엘이 왕의 궁전에 서다", ref: "다니엘 1장",
     cover: {"sky":"day","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"boy","x":9,"label":"벨드사살","shirt":"#9a8a6a"},{"s":"man","x":23,"label":"내시장","shirt":"#6a5a8a","flip":true},{"s":"bread","x":26,"scale":2,"label":"왕의 음식"},{"s":"jar","x":28.5,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 133, file: "lessons/133-nebuchadnezzar-dream.html", title: "느부갓네살이 꿈을 꾸다", ref: "다니엘 2장",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"giant","x":17,"label":"큰 형상","skin":"#e8c04a","hair":"#f7d34a","shirt":"#c8ccd4","pants":"#8a6a3a"},{"s":"stone","x":5,"y":8,"scale":2,"anim":"float","label":"잘려 나온 돌"}],"bg":"mountains"}
   }
 ];
