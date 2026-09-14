@@ -485,5 +485,9 @@ window.PB_LESSONS = [
   {
     week: 152, file: "lessons/152-temple-nicodemus.html", title: "예수님께서 유월절에 예루살렘에 오르시다", ref: "요한복음 2:12-3:21",
     cover: {"sky":"glory","map":[".{22}P{6}.{4}",".{22}P.{4}P.{4}",".{22}P.{4}P.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":12,"label":"예수님"},{"s":"elder","x":17,"label":"니고데모","shirt":"#4a4a6a","robe":true,"flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 153, file: "lessons/153-samaritan-woman.html", title: "예수님께서 사마리아 여자를 만나시다", ref: "요한복음 4:1-42",
+    cover: {"sky":"glory","map":[".{14}S{4}.{14}","G{14}SWWSG{14}","D{14}SWWSD{14}","S{32}"],"objects":[{"s":"jesus","x":12,"label":"예수님"},{"s":"tuft","x":24},{"s":"sun","x":16,"y":2,"scale":2},{"s":"woman","x":21,"label":"사마리아 여자","hood":"#9a6a5a","flip":true},{"s":"jar","x":19,"scale":2,"label":"물 항아리"}],"bg":"desert"}
   }
 ];
