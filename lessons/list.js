@@ -425,5 +425,9 @@ window.PB_LESSONS = [
   {
     week: 137, file: "lessons/137-lions-den.html", title: "다니엘이 사자 굴에 던져지다", ref: "다니엘 6장",
     cover: {"sky":"glory","map":["G{10}.{12}G{10}","D{10}.{12}D{10}","S{10}.{12}S{10}","S{10}.{12}S{10}","S{10}D{12}S{10}","S{32}"],"objects":[{"s":"elder","x":16,"label":"다니엘","shirt":"#9a8a6a"},{"s":"lion","x":12.5,"scale":2},{"s":"lion","x":19.5,"scale":2,"flip":true},{"s":"angel","x":14,"label":"천사"},{"s":"king","x":5,"label":"다리오","shirt":"#4a6a5a"}]}
+  },
+  {
+    week: 138, file: "lessons/138-return-to-jerusalem.html", title: "하나님의 백성이 이스라엘 땅으로 돌아오다", ref: "에스라 1-3장",
+    cover: {"sky":"glory","map":[".{8}S{16}.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"priest","x":10,"y":14,"label":"제사장"},{"s":"man","x":14,"y":14,"shirt":"#8a7a5a"},{"s":"harp","x":18,"y":14,"scale":2},{"s":"man","x":22,"y":14,"shirt":"#9a8a6a","flip":true},{"s":"man","x":4,"shirt":"#7a8a6a"},{"s":"woman","x":27,"hood":"#8a7a6a","flip":true}],"bg":"hills"}
   }
 ];
