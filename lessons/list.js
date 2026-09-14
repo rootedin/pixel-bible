@@ -489,5 +489,9 @@ window.PB_LESSONS = [
   {
     week: 153, file: "lessons/153-samaritan-woman.html", title: "예수님께서 사마리아 여자를 만나시다", ref: "요한복음 4:1-42",
     cover: {"sky":"glory","map":[".{14}S{4}.{14}","G{14}SWWSG{14}","D{14}SWWSD{14}","S{32}"],"objects":[{"s":"jesus","x":12,"label":"예수님"},{"s":"tuft","x":24},{"s":"sun","x":16,"y":2,"scale":2},{"s":"woman","x":21,"label":"사마리아 여자","hood":"#9a6a5a","flip":true},{"s":"jar","x":19,"scale":2,"label":"물 항아리"}],"bg":"desert"}
+  },
+  {
+    week: 154, file: "lessons/154-rejected-nazareth.html", title: "예수님께서 갈릴리에서 배척당하시다", ref: "요한복음 4:43-54, 누가복음 4:14-30",
+    cover: {"sky":"glory","map":["T{32}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}","m{32}","S{32}"],"objects":[{"s":"jesus","x":15,"label":"예수님"},{"s":"scroll","x":17.5,"y":15,"scale":2,"label":"이사야의 책"},{"s":"elder","x":9,"shirt":"#8a8a7a"},{"s":"man","x":11.5,"shirt":"#7a6a5a"},{"s":"man","x":21,"shirt":"#8a7a5a","flip":true},{"s":"elder","x":24,"shirt":"#9a9a8a","flip":true}],"bg":"city"}
   }
 ];
