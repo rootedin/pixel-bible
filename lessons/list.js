@@ -313,5 +313,9 @@ window.PB_LESSONS = [
   {
     week: 109, file: "lessons/109-solomon-dies.html", title: "솔로몬이 슬프게 죽다", ref: "열왕기상 11장",
     cover: {"sky":"day","map":["G{32}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":24,"label":"아히야","shirt":"#e0d8c0","robe":true,"beard":true,"flip":true},{"s":"tuft","x":14},{"s":"flower","x":19}],"bg":"hills"}
+  },
+  {
+    week: 110, file: "lessons/110-rehoboam.html", title: "르호보암이 왕이 되다", ref: "열왕기상 12장, 역대하 10장",
+    cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":10,"label":"르호보암"},{"s":"man","x":18,"label":"여로보암","shirt":"#8a7a5a","flip":true},{"s":"man","x":22,"shirt":"#9a8a6a","flip":true},{"s":"man","x":25,"shirt":"#7a8a6a","flip":true}],"bg":"hills"}
   }
 ];
