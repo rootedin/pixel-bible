@@ -505,5 +505,9 @@ window.PB_LESSONS = [
   {
     week: 157, file: "lessons/157-leper-paralytic.html", title: "예수님께서 나병과 중풍병을 고치시다", ref: "마가복음 1:40-45, 누가복음 5:12-26",
     cover: {"sky":"day","map":[".{8}S{6}.{3}S{7}.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":12,"y":15,"label":"예수님"},{"s":"priest","x":19,"y":15,"label":"율법 박사","flip":true},{"s":"man","x":10.5,"label":"친구","shirt":"#8a7a5a"},{"s":"man","x":19.5,"shirt":"#7a6a5a","flip":true},{"s":"fleece","x":15.5,"y":13,"scale":2,"label":"자리"},{"s":"man","x":3,"shirt":"#8a7a5a"},{"s":"man","x":28,"shirt":"#6a5a4a","flip":true}],"bg":"city"}
+  },
+  {
+    week: 158, file: "lessons/158-levi-bethesda.html", title: "예수님께서 레위를 부르시고 중풍병자를 고치시다", ref: "마가복음 2:13-17, 요한복음 5:1-20",
+    cover: {"sky":"glory","map":[".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}","m{10}W{12}m{10}","m{10}W{12}m{10}","S{32}"],"objects":[{"s":"man","x":12.5,"y":15,"shirt":"#7a6a5a"},{"s":"woman","x":24,"hood":"#8a7a6a","flip":true},{"s":"boy","x":30,"shirt":"#9a8a6a","flip":true},{"s":"elder","x":18,"y":15,"shirt":"#8a8a7a","flip":true},{"s":"jesus","x":5,"label":"예수님"},{"s":"man","x":7,"label":"일어난 사람","shirt":"#e0d8c0","anim":"jump"}],"bg":"city"}
   }
 ];
