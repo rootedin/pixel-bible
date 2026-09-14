@@ -555,7 +555,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["P{3}.{2}P{3}.{24}","P{3}.{2}P{3}.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":21,"label":"예수님"},{"s":"man","x":24,"label":"눈먼 사람","shirt":"#8a8478","flip":true},{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"woman","x":12.5,"hood":"#7a8a6a"}],"bg":"hills"}
   },
   {
-    week: 170, file: "lessons/170-transfiguration.html", title: "예수님께서 변화산에서 영광스럽게 변하시다", ref: "누가복음 9:28-42, 마가복음 9:1-29",
+    week: 170, file: "lessons/170-transfiguration.html", title: "예수님께서 산 위에서 변화되시다", ref: "누가복음 9:28-42, 마가복음 9:1-29",
     cover: {"sky":"glory","map":[".{24}S{8}",".{18}S{14}",".{12}S{20}",".{6}S{26}","G{32}","D{32}"],"objects":[{"s":"jesus","x":27.5,"label":"예수님","halo":true},{"s":"man","x":19,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":21,"label":"야고보","shirt":"#7a6a4a"},{"s":"man","x":14,"label":"요한","shirt":"#5a6a7a"}],"bg":"mountains"}
   },
   {
@@ -563,11 +563,11 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":["G{18}s{6}W{8}","D{18}s{6}W{8}","D{24}W{8}","S{32}"],"objects":[{"s":"man","x":21,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"fish","x":23,"label":"물고기","scale":2},{"s":"coin","x":23.2,"y":11.5,"label":"돈 하나"},{"s":"reed","x":17}],"bg":"sea"}
   },
   {
-    week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니에 가시고 나면서부터 맹인 된 사람을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
+    week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니를 찾으시고 맹인을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
     cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"woman","x":13,"label":"마리아","hood":"#5a6a9a","flip":true},{"s":"woman","x":23,"label":"마르다","hood":"#9a6a3a"},{"s":"fire","x":26},{"s":"jar","x":20.5},{"s":"bread","x":18}],"bg":"hills"}
   },
   {
-    week: 173, file: "lessons/173-lazarus.html", title: "예수님께서 나사로를 살리시다", ref: "요한복음 11장",
+    week: 173, file: "lessons/173-lazarus.html", title: "예수님께서 죽은 나사로를 살리시다", ref: "요한복음 11장",
     cover: {"sky":"dusk","map":[".{22}S{10}",".{22}S{10}",".{22}K{2}S{8}",".{22}K{2}S{8}","G{32}","D{32}"],"objects":[{"s":"jesus","x":14,"label":"예수님"},{"s":"woman","x":11.5,"label":"마르다","hood":"#9a6a3a"},{"s":"woman","x":9,"label":"마리아","hood":"#5a6a9a"},{"s":"man","x":5,"label":"유대인들","shirt":"#7a6a5a","beard":true},{"s":"woman","x":3,"hood":"#6a6a7a"},{"s":"stone","x":18.5,"scale":2}],"bg":"hills"}
   },
   {
