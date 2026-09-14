@@ -597,5 +597,9 @@ window.PB_LESSONS = [
   {
     week: 180, file: "lessons/180-crucified.html", title: "예수님께서 십자가에 달리시다", ref: "마가복음 15:21-32, 누가복음 23:26-38",
     cover: {"sky":"dusk","map":[".{12}S{8}.{12}",".{8}S{16}.{8}","G{4}S{24}G{4}","D{32}","S{32}"],"objects":[{"s":"cross","x":13,"scale":3,"label":"십자가"},{"s":"cross","x":16,"scale":3,"label":"십자가"},{"s":"cross","x":19,"scale":3,"label":"십자가"},{"s":"soldier","x":7,"label":"로마 군인"},{"s":"soldier","x":24,"label":"로마 군인","flip":true},{"s":"jesus","x":16,"y":12,"label":"예수님","shirt":"#b8a898"},{"s":"man","x":13,"y":12,"label":"범죄자들","shirt":"#6a5a4a","beard":true},{"s":"man","x":19,"y":12,"label":"범죄자들","shirt":"#5a4a3a","beard":true}],"bg":"city"}
+  },
+  {
+    week: 181, file: "lessons/181-jesus-dies.html", title: "예수님께서 죽으시다", ref: "누가복음 23:39-56, 요한복음 19:25-42",
+    cover: {"sky":"dark","map":[".{12}S{8}.{12}",".{8}S{16}.{8}","G{4}S{24}G{4}","D{32}","S{32}"],"objects":[{"s":"cross","x":13,"scale":3,"label":"십자가"},{"s":"cross","x":16,"scale":3,"label":"십자가"},{"s":"cross","x":19,"scale":3,"label":"십자가"},{"s":"jesus","x":16,"y":12,"label":"예수님","shirt":"#b8a898"},{"s":"man","x":13,"y":12,"label":"욕하는 범죄자","shirt":"#5a4a3a","beard":true},{"s":"man","x":19,"y":12,"label":"회개한 범죄자","shirt":"#6a5a4a","beard":true},{"s":"soldier","x":7,"label":"로마 군인"},{"s":"woman","x":22.5,"label":"마리아","hood":"#4a5a8a","flip":true},{"s":"man","x":24.5,"label":"요한","shirt":"#5a6a7a","flip":true},{"s":"woman","x":27,"label":"막달라 마리아","hood":"#8a4a5a","flip":true}],"bg":"city"}
   }
 ];
