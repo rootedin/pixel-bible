@@ -521,5 +521,9 @@ window.PB_LESSONS = [
   {
     week: 161, file: "lessons/161-perfume-woman.html", title: "한 여자가 예수님께 향유를 붓다", ref: "누가복음 7:36-50, 마태복음 12:22-31",
     cover: {"sky":"dusk","map":["T{32}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":20,"label":"시몬","shirt":"#6a6a4a","flip":true},{"s":"jesus","x":15,"label":"예수님"},{"s":"woman","x":11,"label":"한 여자","hood":"#9a5a6a"},{"s":"jar","x":13,"scale":2,"label":"향유 옥합"},{"s":"elder","x":23,"shirt":"#8a8a7a","flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
+  },
+  {
+    week: 162, file: "lessons/162-sower.html", title: "예수님께서 네 종류의 땅을 비유로 가르치시다", ref: "마태복음 13:1-23, 마가복음 4:2-20",
+    cover: {"sky":"glory","map":["D{8}S{8}G{16}","D{32}","S{32}"],"objects":[{"s":"tuft","x":18},{"s":"tuft","x":20.5},{"s":"tuft","x":23},{"s":"tuft","x":10,"pal":{"g":"#b8a04a","d":"#8a7020"}},{"s":"tuft","x":13,"pal":{"g":"#b8a04a","d":"#8a7020"}},{"s":"tuft","x":17,"scale":2,"pal":{"g":"#3a5a2a","d":"#2a3a1a"}},{"s":"tuft","x":21.5,"scale":2,"pal":{"g":"#3a5a2a","d":"#2a3a1a"}},{"s":"sheaf","x":26,"scale":2},{"s":"sheaf","x":29,"scale":2}],"bg":"hills"}
   }
 ];
