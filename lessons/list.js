@@ -641,5 +641,9 @@ window.PB_LESSONS = [
   {
     week: 191, file: "lessons/191-church-grows.html", title: "교회가 자라고 퍼져 나가다", ref: "사도행전 12장",
     cover: {"sky":"night","map":["C{2}T{28}C{2}","C{2}.{8}g.{9}g.{9}C{2}","C{2}.{8}g.{9}g.{9}C{2}","S{32}","S{32}"],"objects":[{"s":"soldier","x":4.5,"label":"군사들"},{"s":"man","x":6,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"soldier","x":7.5,"label":"군사들","flip":true},{"s":"cord","x":6,"y":15,"label":"사슬","pal":{}},{"s":"soldier","x":13,"label":"파수꾼들"},{"s":"soldier","x":23,"label":"파수꾼들"},{"s":"torch","x":15},{"s":"torch","x":25},{"s":"angel","x":8.5,"label":"주의 천사","flip":true}],"bg":"city"}
+  },
+  {
+    week: 192, file: "lessons/192-first-journey.html", title: "바울이 첫 번째 선교 여행을 하다", ref: "사도행전 13-14장",
+    cover: {"sky":"day","map":[".{24}m.{2}m.{4}",".{24}m.{2}m.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":11,"label":"바울","shirt":"#4a4a6a","sash":"#8a2a2a","beard":true},{"s":"man","x":9,"label":"바나바","shirt":"#3a5a7a","beard":true},{"s":"man","x":15,"label":"걷게 된 사람","shirt":"#8a8478","anim":"jump","flip":true},{"s":"man","x":19,"label":"루스드라 사람들","shirt":"#8a6a3a","flip":true},{"s":"woman","x":21,"label":"루스드라 사람들","hood":"#6a7a8a","flip":true},{"s":"priest","x":25.6,"label":"제우스 제사장","robe":"#e8e0d0","flip":true},{"s":"cow","x":22,"label":"황소","flip":true},{"s":"flower","x":22.5,"y":14.5}],"bg":"hills"}
   }
 ];
