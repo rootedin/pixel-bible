@@ -293,5 +293,9 @@ window.PB_LESSONS = [
   {
     week: 104, file: "lessons/104-david-census.html", title: "다윗이 인구를 조사하는 죄를 짓다", ref: "사무엘하 24:1, 역대상 21장",
     cover: {"sky":"dusk","map":[".{12}S{6}.{14}","y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"king","x":8,"label":"다윗"},{"s":"man","x":20,"label":"오르난","shirt":"#8a7a5a","flip":true},{"s":"sheaf","x":24,"scale":2},{"s":"coin","x":11,"scale":2,"label":"값"}],"bg":"hills"}
+  },
+  {
+    week: 105, file: "lessons/105-solomon-king.html", title: "솔로몬이 왕이 되다", ref: "열왕기상 1장",
+    cover: {"sky":"glory","map":["G{26}W{6}","D{26}W{6}","D{32}","S{32}"],"objects":[{"s":"priest","x":22,"label":"사독","flip":true},{"s":"man","x":19,"label":"나단","shirt":"#e0d8c0","flip":true},{"s":"tuft","x":10},{"s":"boy","x":15,"label":"솔로몬","shirt":"#c8b45a"},{"s":"horn","x":17.5,"y":13,"scale":2,"label":"기름 뿔"}],"bg":"city"}
   }
 ];
