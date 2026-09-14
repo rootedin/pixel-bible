@@ -265,5 +265,9 @@ window.PB_LESSONS = [
   {
     week: 97, file: "lessons/97-saul-dies.html", title: "사울이 블레셋 전투에서 전사하다", ref: "사무엘상 31장",
     cover: {"sky":"night","map":[".{14}C{18}",".{14}C{18}",".{14}C{18}","G{32}","D{32}","S{32}"],"objects":[{"s":"soldier","x":6,"shirt":"#5a7a8a","flip":true},{"s":"soldier","x":10,"shirt":"#5a7a8a","flip":true},{"s":"woman","x":2,"label":"아스다롯","skin":"#f0d264","hood":"#d8aa2c","robe":"#c2941c"}],"bg":"city"}
+  },
+  {
+    week: 98, file: "lessons/98-david-laments.html", title: "다윗이 사울과 요나단의 죽음을 슬퍼하다", ref: "사무엘하 1장",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"다윗","shirt":"#b8724a"},{"s":"harp","x":12.5,"y":14,"scale":3,"label":"하프"},{"s":"boy","x":17,"shirt":"#a98a5e","flip":true},{"s":"man","x":20,"shirt":"#9a7b52","flip":true},{"s":"arrow","x":25,"y":13,"scale":2,"label":"활"}],"bg":"hills"}
   }
 ];
