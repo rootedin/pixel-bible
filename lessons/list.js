@@ -421,5 +421,9 @@ window.PB_LESSONS = [
   {
     week: 136, file: "lessons/136-babylon-falls.html", title: "바벨론이 무너지다", ref: "다니엘 5장",
     cover: {"sky":"night","map":["T{32}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}","X{32}","S{32}"],"objects":[{"s":"king","x":15,"label":"벨사살","shirt":"#6a5a8a"},{"s":"man","x":9,"shirt":"#8a6a9a"},{"s":"woman","x":11.5,"hood":"#9a6a7a"},{"s":"man","x":20,"shirt":"#7a6a9a","flip":true},{"s":"woman","x":23,"hood":"#8a7a9a","flip":true},{"s":"torch","x":7,"scale":2},{"s":"torch","x":25,"scale":2},{"s":"jar","x":17.5,"scale":2,"label":"성전의 금 그릇"},{"s":"scroll","x":16,"y":9,"scale":2,"label":"벽에 쓴 글"}],"bg":"city"}
+  },
+  {
+    week: 137, file: "lessons/137-lions-den.html", title: "다니엘이 사자 굴에 던져지다", ref: "다니엘 6장",
+    cover: {"sky":"glory","map":["G{10}.{12}G{10}","D{10}.{12}D{10}","S{10}.{12}S{10}","S{10}.{12}S{10}","S{10}D{12}S{10}","S{32}"],"objects":[{"s":"elder","x":16,"label":"다니엘","shirt":"#9a8a6a"},{"s":"lion","x":12.5,"scale":2},{"s":"lion","x":19.5,"scale":2,"flip":true},{"s":"angel","x":14,"label":"천사"},{"s":"king","x":5,"label":"다리오","shirt":"#4a6a5a"}]}
   }
 ];
