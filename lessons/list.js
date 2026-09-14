@@ -537,5 +537,9 @@ window.PB_LESSONS = [
   {
     week: 165, file: "lessons/165-twelve-sent.html", title: "예수님께서 두 맹인을 고치시고 제자들을 보내시다", ref: "마태복음 9:27-10:22, 누가복음 9:1-6",
     cover: {"sky":"day","map":["G{10}D{12}G{10}","D{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":15.5,"label":"예수님"},{"s":"man","x":5,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"shirt":"#7a8a6a"},{"s":"man","x":11,"shirt":"#5a4a7a"},{"s":"man","x":20,"shirt":"#8a7a5a","flip":true},{"s":"man","x":23,"shirt":"#5a6a8a","flip":true},{"s":"man","x":26,"shirt":"#8a6a4a","flip":true}],"bg":"hills"}
+  },
+  {
+    week: 166, file: "lessons/166-john-beheaded.html", title: "세례 요한이 죽임을 당하다", ref: "마태복음 14:1-13, 마가복음 6:14-32",
+    cover: {"sky":"night","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"헤롯","shirt":"#6a2a4a"},{"s":"woman","x":17,"label":"헤로디아","hood":"#8a2a4a","flip":true},{"s":"torch","x":22,"scale":2}],"bg":"city"}
   }
 ];
