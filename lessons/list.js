@@ -345,5 +345,9 @@ window.PB_LESSONS = [
   {
     week: 117, file: "lessons/117-fire-from-heaven.html", title: "하나님께서 하늘에서 불을 내리시다", ref: "열왕기하 1장",
     cover: {"sky":"day","map":["G{18}D{14}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"사자","shirt":"#9a8a6a"},{"s":"man","x":16,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true,"flip":true},{"s":"cord","x":20,"scale":2,"label":"가죽띠"}],"bg":"hills"}
+  },
+  {
+    week: 118, file: "lessons/118-elijah-taken.html", title: "엘리야가 하늘로 올라가다", ref: "열왕기하 2장",
+    cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"엘리사","shirt":"#9a8a6a"},{"s":"chariot","x":18,"y":6,"scale":2,"label":"불 병거","pal":{"k":"#a02a10","y":"#ffd24a","d":"#6a1a08","s":"#f07020"}},{"s":"man","x":24,"label":"엘리야","shirt":"#8a7a5a","robe":true,"beard":true,"flip":true}],"bg":"mountains"}
   }
 ];
