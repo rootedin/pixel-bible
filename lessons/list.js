@@ -449,5 +449,9 @@ window.PB_LESSONS = [
   {
     week: 143, file: "lessons/143-ezra-nehemiah.html", title: "에스라와 느헤미야가 무너진 이스라엘을 다시 세우다", ref: "에스라 7-8장, 느헤미야 1-2장",
     cover: {"sky":"day","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"아닥사스다","shirt":"#8a4a3a"},{"s":"man","x":17,"label":"느헤미야","shirt":"#5a6a8a","flip":true},{"s":"jar","x":14,"scale":2},{"s":"scroll","x":20.5,"scale":2,"label":"왕의 편지"}],"bg":"city"}
+  },
+  {
+    week: 144, file: "lessons/144-zechariah.html", title: "천사가 사가랴를 찾아오다", ref: "누가복음 1:5-23",
+    cover: {"sky":"glory","map":["X{7}.{18}X{7}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{32}","S{32}"],"objects":[{"s":"priest","x":14,"label":"사가랴"},{"s":"censer","x":18,"scale":2,"label":"분향 제단"},{"s":"angel","x":21,"label":"천사","flip":true}],"bg":"city"}
   }
 ];
