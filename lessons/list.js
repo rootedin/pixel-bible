@@ -509,5 +509,9 @@ window.PB_LESSONS = [
   {
     week: 158, file: "lessons/158-levi-bethesda.html", title: "예수님께서 레위를 부르시고 중풍병자를 고치시다", ref: "마가복음 2:13-17, 요한복음 5:1-20",
     cover: {"sky":"glory","map":[".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}","m{10}W{12}m{10}","m{10}W{12}m{10}","S{32}"],"objects":[{"s":"man","x":12.5,"y":15,"shirt":"#7a6a5a"},{"s":"woman","x":24,"hood":"#8a7a6a","flip":true},{"s":"boy","x":30,"shirt":"#9a8a6a","flip":true},{"s":"elder","x":18,"y":15,"shirt":"#8a8a7a","flip":true},{"s":"jesus","x":5,"label":"예수님"},{"s":"man","x":7,"label":"일어난 사람","shirt":"#e0d8c0","anim":"jump"}],"bg":"city"}
+  },
+  {
+    week: 159, file: "lessons/159-sabbath.html", title: "예수님께서 안식일을 가르치시다", ref: "마태복음 12:1-13, 누가복음 6:1-16",
+    cover: {"sky":"glory","map":["T{32}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}",".{4}C{2}.{20}C{2}.{4}","m{32}","S{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"man","x":15,"label":"손 마른 사람","shirt":"#8a7a5a"},{"s":"priest","x":20,"label":"바리새인","shirt":"#6a6a4a","flip":true},{"s":"priest","x":23,"shirt":"#5a5a3a","flip":true},{"s":"elder","x":7,"shirt":"#8a8a7a"}],"bg":"city"}
   }
 ];
