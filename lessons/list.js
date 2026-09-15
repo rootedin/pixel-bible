@@ -59,6 +59,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{3}LLL.{20}LLL.{3}",".{4}T.{22}T.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":13,"label":"아브람","shirt":"#6a4a3a","beard":true},{"s":"stone","x":16.5,"scale":2,"label":"제단"},{"s":"fire","x":16.5,"y":13.5},{"s":"woman","x":10,"label":"사래","hood":"#8a3a5a"},{"s":"camel","x":22,"flip":true}],"bg":"hills"}
   },
   {
+    week: 15, file: "lessons/15-lot-leaves.html", title: "롯이 아브람을 떠나다", ref: "창세기 13장",
+    cover: {"sky":"dusk","map":[".{27}B{3}.{2}","S{8}.{19}B{3}.{2}","S{11}.{16}B{3}.{2}","S{14}G{4}W{3}G{11}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"아브람","shirt":"#6a4a3a","beard":true},{"s":"flower","x":15},{"s":"flower2","x":17},{"s":"tuft","x":25},{"s":"grapes","x":24},{"s":"sheep","x":22},{"s":"man","x":25.5,"label":"롯","shirt":"#5a6a4a"}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
