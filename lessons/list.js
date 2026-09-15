@@ -99,6 +99,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{15}T.{16}",".{6}S{2}.{7}T.{16}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":9,"label":"야곱","shirt":"#5a6a7a"},{"s":"angel","x":15,"y":13,"label":"천사들","anim":"float"},{"s":"angel","x":15,"y":9.5,"label":"천사들","anim":"float","flip":true},{"s":"angel","x":15,"y":6,"label":"천사들","anim":"float"},{"s":"star","x":5,"y":3},{"s":"star","x":27,"y":5}]}
   },
   {
+    week: 25, file: "lessons/25-jacob-with-laban.html", title: "야곱이 라반의 집에 머물다", ref: "창세기 29-30장",
+    cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"man","x":17,"label":"라반","shirt":"#7a3a3a","beard":true},{"s":"woman","x":11,"label":"레아","hood":"#8a6a4a"},{"s":"woman","x":13.5,"label":"라헬","hood":"#5a8a6a"},{"s":"man","x":21,"label":"야곱","shirt":"#5a6a7a","flip":true},{"s":"torch","x":6},{"s":"jar","x":25}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
