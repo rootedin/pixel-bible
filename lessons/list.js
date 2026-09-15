@@ -79,6 +79,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{3}LLL.{19}LLL.{4}",".{4}T.{21}T.{5}",".{8}w{4}.{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":15,"label":"아브라함"},{"s":"woman","x":17.5,"label":"사라","hood":"#8a3a5a","flip":true},{"s":"sheep","x":22},{"s":"flower","x":27},{"s":"basket","x":16.3,"label":"이삭"}],"bg":"hills"}
   },
   {
+    week: 20, file: "lessons/20-abraham-obeys.html", title: "아브라함이 하나님께 순종하다", ref: "창세기 22장",
+    cover: {"sky":"glory","map":[".{22}S{10}",".{16}S{16}",".{10}S{22}","G{10}S{22}","D{32}","S{32}"],"objects":[{"s":"stone","x":26,"scale":2,"label":"제단"},{"s":"boy","x":26,"y":10.5,"label":"이삭","shirt":"#9a8a5a"},{"s":"elder","x":23.5,"label":"아브라함"},{"s":"sword","x":24.8,"y":10.5},{"s":"reed","x":30},{"s":"angel","x":20,"y":8,"label":"주의 천사","anim":"float"}],"bg":"mountains"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
