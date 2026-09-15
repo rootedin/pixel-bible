@@ -83,6 +83,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{22}S{10}",".{16}S{16}",".{10}S{22}","G{10}S{22}","D{32}","S{32}"],"objects":[{"s":"stone","x":26,"scale":2,"label":"제단"},{"s":"boy","x":26,"y":10.5,"label":"이삭","shirt":"#9a8a5a"},{"s":"elder","x":23.5,"label":"아브라함"},{"s":"sword","x":24.8,"y":10.5},{"s":"reed","x":30},{"s":"angel","x":20,"y":8,"label":"주의 천사","anim":"float"}],"bg":"mountains"}
   },
   {
+    week: 21, file: "lessons/21-isaac-rebekah.html", title: "이삭이 아내를 얻다", ref: "창세기 24장",
+    cover: {"sky":"dusk","map":[".{20}B{4}.{2}B{4}.{2}",".{20}B{4}.{2}B{4}.{2}","G{13}W{2}G{17}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"늙은 종","shirt":"#6a5a4a","beard":true},{"s":"camel","x":4},{"s":"camel","x":7},{"s":"jar","x":15.5},{"s":"woman","x":18.5,"label":"리브가","hood":"#b04a5a","flip":true},{"s":"jar","x":19.7,"y":13}],"bg":"city"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
