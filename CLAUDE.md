@@ -122,5 +122,6 @@ light(빛 번짐), rain, snow, sparkle, rainbow, flash(장면 시작 번쩍), li
 - 걷기 인물은 제자리 발걸음(`anim: 'step'`)으로 그린다. `walk` 애니메이션은 좌우로 흔들려 위치가 튄다.
 - 전체화면(F)에서는 대화창·버튼 높이를 뺀 나머지에 맞춰 무대 크기가 자동으로 줄어든다.
 - 레슨 마지막 화면에 도달하면 업적이 브라우저(localStorage `pb-ach`)에 기록되고, 목록 화면 `업적` 버튼에서 모아 본다.
-- 파비콘은 engine.js 가 SVG 를 직접 심는다 (별도 파일 없음).
+- 파비콘: 각 HTML head 에서 `favicon.png`·`apple-touch-icon.png` 을 링크한다 (새 레슨은 기존 레슨을 복사하면 따라온다).
+  `node build.js` 는 dist 에 data URI 로 심는다. engine.js 의 SVG 주입은 링크가 없을 때만 쓰는 예비용.
 - `lessons/_smoke.html` = 상호작용 4종 점검용 픽스처. 엔진을 고쳤으면 여기부터 확인한다.

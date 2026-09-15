@@ -28,7 +28,10 @@ function inline(html, prefix) {
   const js = new RegExp(`<script src="${prefix}engine/(\\w+\\.js)"></script>`, 'g');
   return html
     .replace(css, (m, f) => `<style>\n${read('engine/' + f)}\n</style>`)
-    .replace(js, (m, f) => `<script>\n${read('engine/' + f)}\n</script>`);
+    .replace(js, (m, f) => `<script>\n${read('engine/' + f)}\n</script>`)
+    /* 파비콘 PNG 도 data URI 로 심는다 */
+    .replace(new RegExp(`(<link rel="(?:icon|apple-touch-icon)"[^>]*href=")${prefix}([\\w-]+\\.png)"`, 'g'),
+      (m, head, f) => `${head}data:image/png;base64,${fs.readFileSync(path.join(root, f)).toString('base64')}"`);
 }
 
 /* ---------- 3. 레슨 ---------- */
