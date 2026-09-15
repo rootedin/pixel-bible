@@ -43,6 +43,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{6}S{3}.{23}","G{32}","D{32}","S{32}"],"objects":[{"s":"fire","x":7},{"s":"man","x":11,"label":"노아","shirt":"#6a5a3a","beard":true},{"s":"woman","x":13,"label":"노아의 가족","hood":"#7a6a5a"},{"s":"man","x":15,"label":"노아의 가족","shirt":"#5a6a7a"},{"s":"ship","x":25,"scale":4},{"s":"sheep","x":19},{"s":"cow","x":21,"flip":true}],"bg":"mountains"}
   },
   {
+    week: 11, file: "lessons/11-tower-of-babel.html", title: "사람들이 바벨탑을 쌓다", ref: "창세기 9:18-29, 11:1-9",
+    cover: {"sky":"day","map":[".{14}B{4}.{14}",".{12}B{8}.{12}",".{10}B{12}.{10}",".{8}B{16}.{8}",".{6}B{20}.{6}","s{32}","S{32}"],"objects":[{"s":"man","x":27,"label":"일꾼들","shirt":"#7a5a3a","flip":true},{"s":"man","x":29,"label":"일꾼들","shirt":"#5a6a4a","flip":true},{"s":"brick","x":30.5},{"s":"woman","x":3,"label":"일꾼들","hood":"#6a5a7a"}],"bg":"desert"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
