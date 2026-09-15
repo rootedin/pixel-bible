@@ -143,6 +143,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dawn","map":["G{24}W{8}","D{24}W{8}","S{32}"],"objects":[{"s":"elder","x":11,"label":"야곱"},{"s":"king","x":13,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"chariot","x":18,"flip":true},{"s":"sheep","x":4},{"s":"sheep","x":6},{"s":"cow","x":21}],"bg":"desert"}
   },
   {
+    week: 36, file: "lessons/36-dark-years.html", title: "삼백 년의 어둠이 찾아오다", ref: "창세기 50:14-26, 출애굽기 1장",
+    cover: {"sky":"day","map":[".{24}B{6}.{2}",".{22}B{8}.{2}","s{32}","S{32}"],"objects":[{"s":"soldier","x":18,"label":"작업 감독","flip":true,"staff":true},{"s":"man","x":6,"label":"이스라엘 자손","shirt":"#8a8478"},{"s":"man","x":10,"shirt":"#7a7468"},{"s":"man","x":14,"shirt":"#8a7a68"},{"s":"brick","x":7.5,"label":"벽돌"},{"s":"brick","x":11.5,"label":"벽돌"},{"s":"brick","x":20},{"s":"brick","x":20.8}],"bg":"desert"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
