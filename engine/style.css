@@ -17,8 +17,9 @@ body {
 canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
 
 .pb-app { max-width: 1180px; margin: 0 auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-height: 100%; }
-.pb-app:fullscreen { max-width: none; padding: 1.2vh 2vw; background: inherit; justify-content: center; }
-.pb-app:fullscreen .pb-stage { width: min(100%, calc((100vh - 230px) * 16 / 9)); margin: 0 auto; }
+.pb-app:fullscreen { max-width: none; padding: 1.2vh 2vw; background: inherit; justify-content: center; overflow-y: auto; }
+.pb-app:fullscreen .pb-stage { width: min(100%, calc((100vh - 230px) * 16 / 9)); margin: 0 auto; flex: none; } /* 실제 너비는 engine.js fit() */
+.pb-app:fullscreen .pb-top, .pb-app:fullscreen .pb-dialog, .pb-app:fullscreen .pb-bottom { flex: none; }
 
 /* 상단 바 */
 .pb-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -45,6 +46,7 @@ canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: bloc
 .pb-who { color: var(--mc-yellow); font-size: clamp(14px, 1.6vw, 20px); margin-bottom: 6px; text-shadow: 2px 2px 0 #3f3f00; }
 .pb-text { font-size: clamp(17px, 2.1vw, 27px); line-height: 1.55; text-shadow: var(--txt-shadow); word-break: keep-all; }
 .pb-text b { color: var(--mc-yellow); font-weight: normal; }
+.pb-ghost { visibility: hidden; }
 .pb-more { position: absolute; right: 14px; bottom: 8px; color: var(--mc-yellow); animation: blink 1s steps(2) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 

@@ -18,18 +18,30 @@
   .pb-search { font-family: var(--font); font-size: 14px; color: #fff; background: #1b1b1b;
     border: 3px solid #000; box-shadow: inset 2px 2px 0 #444; padding: 7px 10px; width: 240px; }
   .pb-search::placeholder { color: #888; }
+  /* 업적 모아 보기 */
+  .pb-achgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .pb-ach { display: flex; gap: 12px; align-items: center; text-decoration: none; color: #fff; background: #212121;
+    border: 3px solid #000; box-shadow: inset 3px 3px 0 #3a3a3a, inset -3px -3px 0 #111; padding: 10px 12px; }
+  .pb-ach:hover { background: #4a4f78; }
+  .pb-ach canvas { width: 52px; height: 52px; flex: none; background: #8b8b8b; border: 3px solid #000;
+    box-shadow: inset 3px 3px 0 #c6c6c6, inset -3px -3px 0 #555; padding: 6px; }
+  .pb-ach .at { font-size: 16px; color: var(--mc-yellow); text-shadow: 2px 2px 0 #3f3f00; }
+  .pb-ach .al { font-size: 12px; color: #bbb; margin-top: 4px; }
+  .pb-ach:not(.got) { opacity: .7; }
+  .pb-ach:not(.got) canvas { filter: grayscale(1) brightness(.5); }
+  .pb-ach:not(.got) .at { color: #9a9a9a; text-shadow: none; }
 </style>
 <div class="pb-app">
   <div class="pb-titlescreen" style="position:relative;padding:30px 0 10px;background:none">
     <div class="pb-logo">픽셀 성경</div>
-    <div class="pb-sub">블록으로 만나는 말씀 · 중등부</div>
-    <div class="pb-splash" style="right:8%;top:40%">매주 업데이트!</div>
+    <div class="pb-sub">블록으로 만나는 말씀</div>
   </div>
   <div class="pb-bar">
     <button class="pb-btn sm on" data-f="all">전체</button>
     <button class="pb-btn sm" data-f="open">열린 강의만</button>
     <button class="pb-btn sm" data-f="ot">구약</button>
     <button class="pb-btn sm" data-f="nt">신약</button>
+    <button class="pb-btn sm" data-f="ach">업적</button>
     <input id="q" class="pb-search" type="search" placeholder="제목 · 본문 검색 (예: 창세기 3)" autocomplete="off">
     <span class="pb-sub" id="count" style="margin-left:10px"></span>
   </div>
@@ -53,7 +65,7 @@
   const made = {}; (window.PB_LESSONS || []).forEach(L => (made[L.week] = L));
   const all = (window.PB_CURRICULUM || []).map((c, i) => {
     const n = i + 1, L = made[n];
-    return { n, title: (L && L.title) || c[0], ref: (L && L.ref) || c[1], file: L && L.file, cover: L && L.cover, ot: n <= OT };
+    return { n, title: (L && L.title) || c[0], ref: (L && L.ref) || c[1], file: L && L.file, cover: L && L.cover, ach: L && L.achievement, ot: n <= OT };
   });
   document.getElementById('count').textContent =
     `공개 ${Object.keys(made).length}강 / 전체 ${all.length}강 (구약 ${OT} · 신약 ${all.length - OT})`;
@@ -115,9 +127,11 @@
     newObserver();
     listEl.innerHTML = '';
     const q = query.trim().toLowerCase();
+    const match = L => !q || (L.title + ' ' + (L.ref || '') + ' ' + L.n + '강' + (L.ach ? ' ' + L.ach.title : '')).toLowerCase().includes(q);
+    if (filter === 'ach') return drawAch(match);
     const rows = all
       .filter(L => (filter === 'open' ? L.file : filter === 'ot' ? L.ot : filter === 'nt' ? !L.ot : true))
-      .filter(L => !q || (L.title + ' ' + (L.ref || '') + ' ' + L.n + '강').toLowerCase().includes(q));
+      .filter(match);
     const ot = rows.filter(L => L.ot), nt = rows.filter(L => !L.ot);
     section('구약', `${ot.length}강 · 공개 ${ot.filter(L => L.file).length}강`, ot);
     section('신약', `${nt.length}강 · 공개 ${nt.filter(L => L.file).length}강`, nt);
@@ -127,6 +141,31 @@
     cvs.slice(0, EAGER).forEach(paint);
     if (io) cvs.slice(EAGER).forEach(c => io.observe(c));
     else cvs.slice(EAGER).forEach(paint);   // 옵저버가 없으면 전부 그린다
+  }
+  /* 업적 모아 보기 — 레슨 마지막 화면에 도달하면 이 브라우저에 기록된다 */
+  function drawAch(match) {
+    const got = PB.getAchievements ? PB.getAchievements() : {};
+    const withAch = all.filter(L => L.ach);
+    const done = withAch.filter(L => got[L.n]).length;
+    listEl.insertAdjacentHTML('beforeend',
+      `<div class="pb-sec">업적<small>달성 ${done} / ${withAch.length} · 레슨을 끝까지 마치면 열립니다 (이 기기에 저장)</small></div>`);
+    const rows = withAch.filter(match);
+    if (!rows.length) { listEl.insertAdjacentHTML('beforeend', '<div class="pb-sec">검색 결과가 없습니다.</div>'); return; }
+    const grid = document.createElement('div'); grid.className = 'pb-achgrid';
+    rows.forEach(L => {
+      const el = document.createElement('a');
+      el.className = 'pb-ach' + (got[L.n] ? ' got' : ''); el.href = L.file;
+      const sp = PB.getSprite(L.ach.icon) || PB.getSprite('heart'), f = sp.frames[0];
+      const c = document.createElement('canvas'); c.width = f.width; c.height = f.height;
+      c.getContext('2d').drawImage(f, 0, 0);
+      el.appendChild(c);
+      el.insertAdjacentHTML('beforeend', '<div><div class="at"></div><div class="al"></div></div>');
+      el.querySelector('.at').textContent = L.ach.title;
+      el.querySelector('.al').textContent = `${String(L.n).padStart(3, '0')}강 ${L.title}` +
+        (got[L.n] ? ` · ${new Date(got[L.n]).toLocaleDateString('ko-KR')} 달성` : ' · 아직 잠김');
+      grid.appendChild(el);
+    });
+    listEl.appendChild(grid);
   }
   document.querySelectorAll('[data-f]').forEach(b => {
     b.onclick = () => {

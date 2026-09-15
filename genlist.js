@@ -42,7 +42,7 @@ function main() {
     if (typeof L.week !== 'number') { console.error(`✘ ${rel}: week 가 없습니다`); process.exitCode = 1; continue; }
     const worlds = PB.buildWorlds(L.scenes);
     const ci = pickCover(L, worlds);
-    rows.push({ week: L.week, file: rel, title: L.title, ref: L.ref || '', cover: coverOf(worlds[ci]), coverScene: ci + 1 });
+    rows.push({ week: L.week, file: rel, title: L.title, ref: L.ref || '', achievement: L.achievement ? { title: L.achievement.title, icon: L.achievement.icon || 'heart' } : null, cover: coverOf(worlds[ci]), coverScene: ci + 1 });
   }
   rows.sort((a, b) => a.week - b.week);
 
@@ -52,6 +52,7 @@ function main() {
   const body = rows.map(r =>
     '  {\n' +
     `    week: ${r.week}, file: ${JSON.stringify(r.file)}, title: ${JSON.stringify(r.title)}, ref: ${JSON.stringify(r.ref)},\n` +
+    `    achievement: ${JSON.stringify(r.achievement)},\n` +
     `    cover: ${JSON.stringify(r.cover)}\n` +
     '  }'
   ).join(',\n');

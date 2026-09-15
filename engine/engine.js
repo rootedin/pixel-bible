@@ -7,6 +7,23 @@ window.PB = window.PB || {};
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
 
+  /* ---------- 파비콘 (파일 없이 SVG 를 직접 심는다 → dist 단일 파일에서도 보임) ---------- */
+  if (typeof document.querySelector === 'function' && document.head && !document.querySelector('link[rel~="icon"]')) { // node(lint) 환경에서는 건너뜀
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">' +
+      '<rect x="0" y="2" width="16" height="12" fill="#3b2414"/><rect x="1" y="3" width="6" height="10" fill="#f3e6c4"/>' +
+      '<rect x="9" y="3" width="6" height="10" fill="#f3e6c4"/><rect x="7" y="2" width="2" height="12" fill="#6b3f1f"/>' +
+      '<rect x="2" y="5" width="4" height="1" fill="#b08a5e"/><rect x="2" y="7" width="4" height="1" fill="#b08a5e"/>' +
+      '<rect x="2" y="9" width="3" height="1" fill="#b08a5e"/><rect x="11" y="4" width="2" height="7" fill="#d9a520"/>' +
+      '<rect x="10" y="6" width="4" height="2" fill="#d9a520"/><rect x="0" y="14" width="16" height="2" fill="#4f9530"/></svg>';
+    const link = document.createElement('link');
+    link.rel = 'icon'; link.type = 'image/svg+xml'; link.href = 'data:image/svg+xml,' + encodeURIComponent(svg);
+    document.head.appendChild(link);
+  }
+
+  /* ---------- 업적 기록 (브라우저에 저장, 목록 화면의 '업적' 에서 모아 봄) ---------- */
+  PB.getAchievements = () => { try { return JSON.parse(store.get('pb-ach') || '{}') || {}; } catch (e) { return {}; } };
+  PB.addAchievement = week => { const got = PB.getAchievements(); if (!got[week]) { got[week] = Date.now(); store.set('pb-ach', JSON.stringify(got)); } };
+
   /* ---------- 8비트 효과음 ---------- */
   const Snd = {
     on: store.get('pb-mute') !== '1', ctx: null,
@@ -59,7 +76,8 @@ window.PB = window.PB || {};
         const per = (o.anim === 'walk' ? 1400 : 900) / spd, ph = t / per + i;
         x += Math.sin(ph) * (o.range || 2) * S; if (Math.cos(ph) < 0) flip = !flip;
         if (o.anim === 'walk') y -= Math.floor(t / 150) % 2;
-      } else if (o.anim === 'bob') y -= Math.floor(t / 500 + i) % 2;
+      } else if (o.anim === 'step') y -= Math.floor(t / 150) % 2; // 직접 조종하는 인물: 좌우 흔들림 없이 발걸음만
+      else if (o.anim === 'bob') y -= Math.floor(t / 500 + i) % 2;
       else if (o.anim === 'float') y += Math.round(Math.sin(t / 400 + i) * 2);
       else if (o.anim === 'jump') y -= Math.max(0, Math.sin(t / 220 + i)) * 6 | 0;
       const dw = sp.w * sc, dh = sp.h * sc, dx = Math.round(x - dw / 2), dy = Math.round(y - dh);
@@ -137,12 +155,15 @@ window.PB = window.PB || {};
   /* ---------- 대사 텍스트: **강조** 지원 ---------- */
   const segs = text => String(text || '').split(/(\*\*[^*]+\*\*)/).filter(Boolean)
     .map(p => (p.startsWith('**') ? { t: p.slice(2, -2), b: true } : { t: p, b: false }));
-  function segHtml(ss, n) {
+  /* ghost: 아직 안 나온 글자를 보이지 않게 미리 깔아 둔다 → 타자 중에 줄 수·창 높이가 변하지 않음 */
+  function segHtml(ss, n, ghost) {
     let html = '', left = n;
+    const br = t => esc(t).replace(/\n/g, '<br>');
     for (const s of ss) {
-      if (left <= 0) break;
-      const part = s.t.slice(0, left); left -= part.length;
-      const e = esc(part).replace(/\n/g, '<br>');
+      if (left <= 0 && !ghost) break;
+      const part = s.t.slice(0, Math.max(0, left)), rest = ghost ? s.t.slice(part.length) : '';
+      left -= part.length;
+      const e = br(part) + (rest ? `<span class="pb-ghost">${br(rest)}</span>` : '');
       html += s.b ? `<b>${e}</b>` : e;
     }
     return html;
@@ -200,7 +221,7 @@ window.PB = window.PB || {};
       (e.key === 'ArrowLeft' || e.code === 'KeyA') ? 'left' :
       (e.key === 'ArrowRight' || e.code === 'KeyD') ? 'right' : null;
     const st = { mode: 'title', step: 0, si: 0, sceneT0: performance.now(), typing: null, shown: 0,
-      find: null, blank: null, walk: null, miss: null, hits: [], keys: { left: false, right: false } };
+      find: null, blank: null, walk: null, quiz: null, choose: null, miss: null, hits: [], keys: { left: false, right: false } };
     let world = worlds[0];
     let tagEls = [];
 
@@ -212,7 +233,7 @@ window.PB = window.PB || {};
         const dir = (st.keys.right ? 1 : 0) - (st.keys.left ? 1 : 0);
         if (dir) {
           wk.o.x = Math.max(0, Math.min(PB.COLS - 1, wk.o.x + dir * dt / 1000 * (wk.speed || 5)));
-          wk.o.flip = dir < 0; wk.o.anim = 'walk'; wk.o.range = 0;
+          wk.o.flip = dir < 0; wk.o.anim = 'step';
           if (Math.abs(wk.o.x - wk.goal) <= (wk.tol == null ? 1 : wk.tol)) wk.finish();
         } else wk.o.anim = null;
       }
@@ -271,10 +292,10 @@ window.PB = window.PB || {};
     function type(text, done) {
       clearInterval(st.typing);
       const ss = segs(text), total = ss.reduce((n, s) => n + s.t.length, 0);
-      st.shown = 0; textEl.innerHTML = ''; moreEl.hidden = true;
+      st.shown = 0; textEl.innerHTML = segHtml(ss, 0, true); moreEl.hidden = true;
       st.typing = setInterval(() => {
         st.shown += 1;
-        textEl.innerHTML = segHtml(ss, st.shown);
+        textEl.innerHTML = segHtml(ss, st.shown, true);
         if (st.shown % 3 === 0) Snd.blip();
         if (st.shown >= total) finish();
       }, 26);
@@ -289,7 +310,7 @@ window.PB = window.PB || {};
         if (i >= 0) arr.splice(i, 1);
         st.walk = null;
       }
-      st.find = null; st.blank = null; st.miss = null;
+      st.find = null; st.blank = null; st.quiz = null; st.choose = null; st.miss = null;
       st.keys.left = st.keys.right = false;
       q('.pb-stage').classList.remove('finding');
       dpad.hidden = true;
@@ -317,6 +338,7 @@ window.PB = window.PB || {};
             e.stopPropagation();
             if (i === s.answer) {
               b.classList.add('ok'); Snd.ok(); box.querySelectorAll('button').forEach(x => (x.disabled = x !== b));
+              if (st.quiz) st.quiz.done = true;
               if (s.explain) extraEl.insertAdjacentHTML('beforeend', `<div class="pb-text" style="margin-top:10px">${segHtml(segs('✔ ' + s.explain), 1e9)}</div>`);
               moreEl.hidden = false;
             } else { b.classList.remove('no'); void b.offsetWidth; b.classList.add('no'); Snd.no(); }
@@ -324,6 +346,7 @@ window.PB = window.PB || {};
           box.appendChild(b);
         });
         extraEl.appendChild(box);
+        st.quiz = { done: false };
       } else if (s.kind === 'find') {
         clearInterval(st.typing); st.typing = null; setAvatar(s);
         whoEl.textContent = s.label || '찾아보십시오';
@@ -340,6 +363,7 @@ window.PB = window.PB || {};
           const b = $('button', 'pb-btn', esc(opt.text));
           b.onclick = e => {
             e.stopPropagation(); Snd.click(); b.classList.add('ok');
+            if (st.choose) st.choose.done = true;
             cbox.querySelectorAll('button').forEach(x => (x.disabled = true));
             const to = Math.max(1, Math.min(L.scenes.length, opt.goto || s.si + 2)) - 1;
             const idx = steps.findIndex(x => x.si === to);
@@ -348,6 +372,7 @@ window.PB = window.PB || {};
           cbox.appendChild(b);
         });
         extraEl.appendChild(cbox);
+        st.choose = { done: false };
       } else if (s.kind === 'blank') {
         clearInterval(st.typing); st.typing = null;
         whoEl.textContent = s.label || '빈칸을 채우십시오'; moreEl.hidden = true;
@@ -437,6 +462,7 @@ window.PB = window.PB || {};
     function end() {
       st.mode = 'end'; Snd.level(); showCaption(null);
       const a = L.achievement || { title: '말씀 탐험 완료!' };
+      if (L.week) PB.addAchievement(L.week);
       const ts = $('div', 'pb-titlescreen');
       ts.innerHTML = `<div class="pb-sub" style="color:var(--mc-yellow)">업적 달성!</div><div class="pb-logo" style="font-size:clamp(26px,5vw,64px)">${esc(a.title)}</div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center"><button class="pb-btn" data-e="again">↺ 처음부터</button>${L.home !== false ? `<a class="pb-btn" style="text-decoration:none" href="${esc(L.home || '../index.html')}">☰ 목록으로</a>` : ''}</div>`;
@@ -459,7 +485,8 @@ window.PB = window.PB || {};
     /* 상호작용이 끝나지 않았으면 클릭으로 건너뛰지 않는다 (다음 ▶ 버튼은 항상 동작) */
     function interactionPending() {
       return (st.find && !st.find.done) || (st.walk && !st.walk.done) ||
-        (st.blank && st.blank.filled < st.blank.answers.length);
+        (st.blank && st.blank.filled < st.blank.answers.length) ||
+        (st.quiz && !st.quiz.done) || (st.choose && !st.choose.done);
     }
     function stageClick(e) {
       const fd = st.find; if (!fd || fd.done) return;
@@ -495,6 +522,20 @@ window.PB = window.PB || {};
     sndBtn.onclick = () => { Snd.on = !Snd.on; store.set('pb-mute', Snd.on ? '0' : '1'); setSnd(); };
     const full = () => (document.fullscreenElement ? document.exitFullscreen() : app.requestFullscreen && app.requestFullscreen());
     q('[data-a="full"]').onclick = full;
+    /* 전체화면에서는 대화창·버튼 높이를 뺀 나머지에 무대를 맞춘다 → 글씨가 화면 아래로 밀려 잘리지 않음 */
+    const stageEl = q('.pb-stage'), topEl = q('.pb-top'), bottomEl = q('.pb-bottom');
+    function fit() {
+      if (document.fullscreenElement !== app) { stageEl.style.width = ''; return; }
+      const cs = getComputedStyle(app), gap = parseFloat(cs.rowGap) || 0;
+      const padX = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight);
+      const padY = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+      const used = topEl.offsetHeight + dlg.offsetHeight + bottomEl.offsetHeight + gap * 3 + padY + 6;
+      const w = Math.min(app.clientWidth - padX, (app.clientHeight - used) * 16 / 9);
+      stageEl.style.width = Math.max(200, Math.floor(w)) + 'px';
+    }
+    document.addEventListener('fullscreenchange', fit);
+    window.addEventListener('resize', fit);
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(dlg);
     document.addEventListener('keydown', e => {
       if (e.target.closest && e.target.closest('input,textarea')) return;
       const mv = moveKey(e);
@@ -508,7 +549,13 @@ window.PB = window.PB || {};
       }
       /* 키를 누르고 있을 때 자동 반복으로 장면이 연달아 넘어가지 않게 한다 */
       if (e.repeat) return;
-      if (['ArrowRight', ' ', 'Enter', 'PageDown'].includes(e.key)) { e.preventDefault(); next(); }
+      if (['ArrowRight', ' ', 'Enter', 'PageDown'].includes(e.key)) {
+        e.preventDefault();
+        /* 풀지 않은 상호작용(걷기·찾기·빈칸·퀴즈·선택)은 Space·Enter·→ 로 건너뛰지 않는다.
+           막혔을 때 교사는 프레젠터 PageDown 또는 '다음 ▶' 버튼으로 넘긴다. */
+        if (e.key !== 'PageDown' && st.mode === 'play' && !st.typing && interactionPending()) { Snd.no(); return; }
+        next();
+      }
       else if (['ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); prev(); }
       else if (e.key === 'f' || e.key === 'F') full();
     });
