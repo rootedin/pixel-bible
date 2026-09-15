@@ -115,6 +115,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":["G{14}.{3}G{15}","D{14}.{3}D{15}","D{14}.{3}D{15}","D{32}","S{32}"],"objects":[{"s":"man","x":20,"label":"형들","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"man","x":22,"label":"형들","shirt":"#5a5a3a","flip":true},{"s":"man","x":24,"label":"형들","shirt":"#7a5a4a","beard":true,"flip":true},{"s":"man","x":26,"label":"르우벤","shirt":"#4a5a6a","beard":true,"flip":true},{"s":"sheep","x":29},{"s":"boy","x":15,"label":"요셉","shirt":"#b8a890"},{"s":"fleece","x":19,"label":"채색옷","pal":{"w":"#d8a03a"}}],"bg":"hills"}
   },
   {
+    week: 29, file: "lessons/29-joseph-potiphar.html", title: "요셉이 보디발 집의 종이 되다", ref: "창세기 39장",
+    cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"boy","x":12,"label":"요셉","shirt":"#c8b890"},{"s":"jar","x":14},{"s":"bread","x":9.5},{"s":"torch","x":6},{"s":"torch","x":25}],"bg":"city"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
