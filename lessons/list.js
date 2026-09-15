@@ -47,6 +47,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{14}B{4}.{14}",".{12}B{8}.{12}",".{10}B{12}.{10}",".{8}B{16}.{8}",".{6}B{20}.{6}","s{32}","S{32}"],"objects":[{"s":"man","x":27,"label":"일꾼들","shirt":"#7a5a3a","flip":true},{"s":"man","x":29,"label":"일꾼들","shirt":"#5a6a4a","flip":true},{"s":"brick","x":30.5},{"s":"woman","x":3,"label":"일꾼들","hood":"#6a5a7a"}],"bg":"desert"}
   },
   {
+    week: 12, file: "lessons/12-job-suffers.html", title: "욥이 큰 고난을 당하다", ref: "욥기 1장",
+    cover: {"sky":"dusk","map":[".{24}w{4}.{4}",".{23}w{6}.{3}","s{8}G{24}","D{32}","S{32}"],"objects":[{"s":"elder","x":22,"label":"욥","robe":"#6a4a7a","flip":true}],"bg":"desert"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
