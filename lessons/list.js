@@ -119,6 +119,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"boy","x":12,"label":"요셉","shirt":"#c8b890"},{"s":"jar","x":14},{"s":"bread","x":9.5},{"s":"torch","x":6},{"s":"torch","x":25}],"bg":"city"}
   },
   {
+    week: 30, file: "lessons/30-cupbearer-baker.html", title: "요셉이 두 관원장의 꿈을 풀다", ref: "창세기 40장",
+    cover: {"sky":"dawn","map":["C{2}T{28}C{2}","C{2}.{8}g.{9}g.{9}C{2}","C{2}.{8}g.{9}g.{9}C{2}","S{32}","S{32}"],"objects":[{"s":"man","x":13,"label":"잔 맡은 자","shirt":"#6a3a7a","sash":"#d9b24a"},{"s":"man","x":17,"label":"빵 굽는 자","shirt":"#c8b890","sash":"#8a6a3a"},{"s":"man","x":8,"label":"요셉","shirt":"#8a8478"},{"s":"torch","x":22},{"s":"grapes","x":11,"y":12,"label":"포도송이"},{"s":"grapes","x":12,"y":13,"label":"포도송이"},{"s":"grapes","x":10,"y":13,"label":"포도송이"},{"s":"jar","x":11,"label":"파라오의 잔"}],"bg":"city"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
