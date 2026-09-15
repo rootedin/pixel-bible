@@ -131,6 +131,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}","m{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"soldier","x":25,"label":"신하들","flip":true},{"s":"man","x":11,"label":"형들","shirt":"#6a5a4a","beard":true},{"s":"man","x":13,"label":"형들","shirt":"#5a5a3a"},{"s":"man","x":15,"label":"형들","shirt":"#7a5a4a","beard":true},{"s":"sheaf","x":17.5}],"bg":"city"}
   },
   {
+    week: 33, file: "lessons/33-brothers-return.html", title: "형제들이 애굽을 다시 찾다", ref: "창세기 43장",
+    cover: {"sky":"dusk","map":[".{6}w{4}.{22}","D{32}","S{32}"],"objects":[{"s":"elder","x":14,"label":"야곱"},{"s":"boy","x":12,"label":"베냐민","shirt":"#3a7ac8"},{"s":"man","x":18,"label":"유다","shirt":"#6a3a3a","beard":true,"flip":true},{"s":"man","x":20.5,"label":"형들","shirt":"#5a5a3a","flip":true},{"s":"man","x":23,"label":"형들","shirt":"#7a5a4a","beard":true,"flip":true},{"s":"jar","x":16}],"bg":"desert"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
