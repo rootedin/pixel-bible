@@ -107,6 +107,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dawn","map":[".{22}S{10}",".{16}S{16}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":3,"label":"라헬","hood":"#5a8a6a"},{"s":"camel","x":5.5,"label":"낙타"},{"s":"woman","x":8,"label":"레아","hood":"#8a6a4a"},{"s":"boy","x":10},{"s":"boy","x":11.5},{"s":"sheep","x":13.5}],"bg":"hills"}
   },
   {
+    week: 27, file: "lessons/27-jacob-returns.html", title: "야곱이 가나안으로 돌아오다", ref: "창세기 32-33장",
+    cover: {"sky":"dawn","map":[".{3}LLL.{26}",".{4}T.{27}","G{12}W{3}G{17}","D{12}W{3}D{17}","S{32}"],"objects":[{"s":"man","x":20,"label":"야곱","shirt":"#5a6a7a","beard":true},{"s":"angel","x":21.5,"label":"어떤 사람","wings":false,"flip":true},{"s":"star","x":8,"y":4},{"s":"star","x":27,"y":5}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
