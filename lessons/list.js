@@ -27,6 +27,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{5}LLL.{8}LLL.{6}LLL....",".{4}L{5}.{6}L{5}.{5}L{5}..",".{4}L{5}.{6}L{5}.{5}L{5}..",".{6}T.{10}T.{8}T.{5}",".{6}T.{10}T.{8}T.{5}",".{6}T.{10}T.{8}T.{5}","G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"flower","x":11},{"s":"tuft","x":14},{"s":"man","x":16,"label":"아담","shirt":"#5a8a3a"},{"s":"woman","x":17.8,"label":"하와","hood":"#5a8a3a"},{"s":"snake","x":24.5,"label":"뱀","flip":true}],"clouds":true}
   },
   {
+    week: 7, file: "lessons/07-cain-and-abel.html", title: "가인과 아벨이 제사를 드리다", ref: "창세기 4:1-15",
+    cover: {"sky":"glory","map":[".{8}S{2}.{12}S{2}.{8}","D{14}G{18}","D{32}","S{32}"],"objects":[{"s":"man","x":11,"label":"가인","shirt":"#8a5a3a","beard":true},{"s":"sheaf","x":8.5,"label":"가인의 헌물"},{"s":"fruit","x":9.5},{"s":"shepherd","x":20,"label":"아벨","beard":false},{"s":"tuft","x":27},{"s":"sheep","x":23,"label":"첫 새끼"},{"s":"fire","x":22.5,"y":13}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
