@@ -67,6 +67,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":["s{27}W{3}s{2}","S{32}","S{32}"],"objects":[{"s":"reed","x":25.5},{"s":"reed","x":31},{"s":"tuft","x":12},{"s":"woman","x":24,"label":"하갈","hood":"#6a5a3a","skin":"#8a6040"},{"s":"angel","x":28,"y":14,"label":"주의 천사","flip":true}],"bg":"desert"}
   },
   {
+    week: 17, file: "lessons/17-three-visitors.html", title: "세 천사가 아브라함을 찾아오다", ref: "창세기 18장",
+    cover: {"sky":"dusk","map":[".{3}LLL.{19}LLL.{4}",".{4}T.{21}T.{5}",".{8}w{4}.{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"angel","x":16,"label":"세 사람","wings":false},{"s":"angel","x":18,"label":"세 사람","wings":false},{"s":"angel","x":20,"label":"세 사람","wings":false},{"s":"bread","x":22.5,"label":"빵"},{"s":"cow","x":27,"label":"송아지","flip":true},{"s":"elder","x":24.5,"label":"아브라함","flip":true},{"s":"woman","x":12.5,"label":"사라","hood":"#8a3a5a"}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
