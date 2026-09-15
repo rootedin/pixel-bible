@@ -111,6 +111,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dawn","map":[".{3}LLL.{26}",".{4}T.{27}","G{12}W{3}G{17}","D{12}W{3}D{17}","S{32}"],"objects":[{"s":"man","x":20,"label":"야곱","shirt":"#5a6a7a","beard":true},{"s":"angel","x":21.5,"label":"어떤 사람","wings":false,"flip":true},{"s":"star","x":8,"y":4},{"s":"star","x":27,"y":5}],"bg":"hills"}
   },
   {
+    week: 28, file: "lessons/28-joseph-sold.html", title: "요셉이 팔리다", ref: "창세기 37장",
+    cover: {"sky":"dusk","map":["G{14}.{3}G{15}","D{14}.{3}D{15}","D{14}.{3}D{15}","D{32}","S{32}"],"objects":[{"s":"man","x":20,"label":"형들","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"man","x":22,"label":"형들","shirt":"#5a5a3a","flip":true},{"s":"man","x":24,"label":"형들","shirt":"#7a5a4a","beard":true,"flip":true},{"s":"man","x":26,"label":"르우벤","shirt":"#4a5a6a","beard":true,"flip":true},{"s":"sheep","x":29},{"s":"boy","x":15,"label":"요셉","shirt":"#b8a890"},{"s":"fleece","x":19,"label":"채색옷","pal":{"w":"#d8a03a"}}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
