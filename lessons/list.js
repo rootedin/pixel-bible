@@ -31,6 +31,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{8}S{2}.{12}S{2}.{8}","D{14}G{18}","D{32}","S{32}"],"objects":[{"s":"man","x":11,"label":"가인","shirt":"#8a5a3a","beard":true},{"s":"sheaf","x":8.5,"label":"가인의 헌물"},{"s":"fruit","x":9.5},{"s":"shepherd","x":20,"label":"아벨","beard":false},{"s":"tuft","x":27},{"s":"sheep","x":23,"label":"첫 새끼"},{"s":"fire","x":22.5,"y":13}],"bg":"hills"}
   },
   {
+    week: 8, file: "lessons/08-enoch.html", title: "에녹이 하나님과 동행하다", ref: "창세기 4:16-5:24",
+    cover: {"sky":"glory","map":[".{22}S{10}",".{16}G{16}",".{8}G{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":26,"y":9,"label":"에녹","shirt":"#4a6a8a","beard":true,"anim":"float"},{"s":"tuft","x":6},{"s":"flower","x":12},{"s":"tuft","x":19}],"bg":"mountains"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
