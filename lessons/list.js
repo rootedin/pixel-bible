@@ -51,6 +51,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{24}w{4}.{4}",".{23}w{6}.{3}","s{8}G{24}","D{32}","S{32}"],"objects":[{"s":"elder","x":22,"label":"욥","robe":"#6a4a7a","flip":true}],"bg":"desert"}
   },
   {
+    week: 13, file: "lessons/13-job-meets-god.html", title: "욥이 하나님을 만나다", ref: "욥기 2장과 다른 본문들",
+    cover: {"sky":"storm","map":[".{13}K{3}.{16}","s{32}","S{32}","S{32}"],"objects":[{"s":"elder","x":14.5,"label":"욥","robe":"#6a6a6a"},{"s":"man","x":8,"label":"세 친구","shirt":"#5a4a6a","beard":true},{"s":"man","x":10,"label":"세 친구","shirt":"#4a5a6a","beard":true},{"s":"elder","x":20.5,"label":"세 친구","flip":true}],"bg":"mountains"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
