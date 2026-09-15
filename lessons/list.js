@@ -55,6 +55,10 @@ window.PB_LESSONS = [
     cover: {"sky":"storm","map":[".{13}K{3}.{16}","s{32}","S{32}","S{32}"],"objects":[{"s":"elder","x":14.5,"label":"욥","robe":"#6a6a6a"},{"s":"man","x":8,"label":"세 친구","shirt":"#5a4a6a","beard":true},{"s":"man","x":10,"label":"세 친구","shirt":"#4a5a6a","beard":true},{"s":"elder","x":20.5,"label":"세 친구","flip":true}],"bg":"mountains"}
   },
   {
+    week: 14, file: "lessons/14-abram-called.html", title: "하나님께서 아브람을 부르시다", ref: "창세기 12장",
+    cover: {"sky":"day","map":[".{3}LLL.{20}LLL.{3}",".{4}T.{22}T.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":13,"label":"아브람","shirt":"#6a4a3a","beard":true},{"s":"stone","x":16.5,"scale":2,"label":"제단"},{"s":"fire","x":16.5,"y":13.5},{"s":"woman","x":10,"label":"사래","hood":"#8a3a5a"},{"s":"camel","x":22,"flip":true}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
