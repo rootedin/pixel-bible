@@ -103,6 +103,10 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"man","x":17,"label":"라반","shirt":"#7a3a3a","beard":true},{"s":"woman","x":11,"label":"레아","hood":"#8a6a4a"},{"s":"woman","x":13.5,"label":"라헬","hood":"#5a8a6a"},{"s":"man","x":21,"label":"야곱","shirt":"#5a6a7a","flip":true},{"s":"torch","x":6},{"s":"jar","x":25}],"bg":"hills"}
   },
   {
+    week: 26, file: "lessons/26-jacob-leaves-laban.html", title: "야곱이 라반의 집을 떠나다", ref: "창세기 31장",
+    cover: {"sky":"dawn","map":[".{22}S{10}",".{16}S{16}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":3,"label":"라헬","hood":"#5a8a6a"},{"s":"camel","x":5.5,"label":"낙타"},{"s":"woman","x":8,"label":"레아","hood":"#8a6a4a"},{"s":"boy","x":10},{"s":"boy","x":11.5},{"s":"sheep","x":13.5}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
