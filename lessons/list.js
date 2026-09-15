@@ -135,6 +135,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{6}w{4}.{22}","D{32}","S{32}"],"objects":[{"s":"elder","x":14,"label":"야곱"},{"s":"boy","x":12,"label":"베냐민","shirt":"#3a7ac8"},{"s":"man","x":18,"label":"유다","shirt":"#6a3a3a","beard":true,"flip":true},{"s":"man","x":20.5,"label":"형들","shirt":"#5a5a3a","flip":true},{"s":"man","x":23,"label":"형들","shirt":"#7a5a4a","beard":true,"flip":true},{"s":"jar","x":16}],"bg":"desert"}
   },
   {
+    week: 34, file: "lessons/34-joseph-reveals.html", title: "요셉이 형제들에게 자신을 밝히다", ref: "창세기 44:1-45:15",
+    cover: {"sky":"glory","map":[".{2}T{28}.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"king","x":22,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"boy","x":13.5,"label":"베냐민","shirt":"#3a7ac8"},{"s":"man","x":11,"label":"형들","shirt":"#5a5a3a"},{"s":"man","x":8.5,"label":"형들","shirt":"#7a5a4a","beard":true},{"s":"man","x":6,"label":"르우벤","shirt":"#4a5a6a","beard":true},{"s":"man","x":18.5,"label":"유다","shirt":"#6a3a3a","beard":true}],"bg":"city"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
