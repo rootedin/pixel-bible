@@ -91,6 +91,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{3}LLL.{19}LLL.{4}",".{4}T.{21}T.{5}",".{8}w{4}.{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"야곱","shirt":"#5a6a7a"},{"s":"fire","x":17},{"s":"jar","x":17,"y":13.8,"label":"붉은 죽","pal":{}},{"s":"man","x":21,"label":"에서","shirt":"#9a4a2a","beard":true,"flip":true}],"bg":"hills"}
   },
   {
+    week: 23, file: "lessons/23-jacob-blessed.html", title: "이삭이 야곱을 축복하다", ref: "창세기 27장",
+    cover: {"sky":"dusk","map":[".{2}T{28}.{2}",".{2}w.{26}w.{2}",".{2}w.{26}w.{2}","P{32}","D{32}"],"objects":[{"s":"elder","x":12,"label":"이삭"},{"s":"man","x":15,"label":"야곱","shirt":"#9a4a2a","flip":true},{"s":"bread","x":13.5},{"s":"torch","x":6}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
