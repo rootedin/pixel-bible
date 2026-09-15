@@ -35,6 +35,10 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{22}S{10}",".{16}G{16}",".{8}G{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":26,"y":9,"label":"에녹","shirt":"#4a6a8a","beard":true,"anim":"float"},{"s":"tuft","x":6},{"s":"flower","x":12},{"s":"tuft","x":19}],"bg":"mountains"}
   },
   {
+    week: 9, file: "lessons/09-noah-builds-ark.html", title: "노아가 방주를 짓다", ref: "창세기 6장",
+    cover: {"sky":"day","map":[".{3}LLL.{26}",".{4}T.{7}P.{6}P.{5}P.{6}",".{4}T.{6}P{18}.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":9,"label":"노아","shirt":"#6a5a3a","beard":true},{"s":"axe","x":7.5,"label":"도끼"},{"s":"jar","x":30,"label":"역청","pal":{}},{"s":"man","x":29,"label":"셈","shirt":"#5a6a7a","flip":true}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
