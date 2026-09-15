@@ -33458,7 +33458,7 @@
   ]
  },
  "lessons/36-dark-years.html": {
-  "title": "삼백 년의 어둠이 찾아오다",
+  "title": "사백 년의 어둠이 찾아오다",
   "week": 36,
   "scenes": 16,
   "hash": "8cde05e0a814",
@@ -33777,10 +33777,10 @@
   "title": "모세가 태어나다",
   "week": 37,
   "scenes": 16,
-  "hash": "d814f311b0b3",
+  "hash": "c580cb72cabe",
   "detail": [
    {
-    "caption": "400년 뒤, 이집트",
+    "caption": "수백 년 뒤, 이집트",
     "sky": "day",
     "bg": "desert",
     "fx": null,
