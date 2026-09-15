@@ -87,6 +87,10 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{20}B{4}.{2}B{4}.{2}",".{20}B{4}.{2}B{4}.{2}","G{13}W{2}G{17}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"늙은 종","shirt":"#6a5a4a","beard":true},{"s":"camel","x":4},{"s":"camel","x":7},{"s":"jar","x":15.5},{"s":"woman","x":18.5,"label":"리브가","hood":"#b04a5a","flip":true},{"s":"jar","x":19.7,"y":13}],"bg":"city"}
   },
   {
+    week: 22, file: "lessons/22-esau-birthright.html", title: "에서가 장자권을 팔다", ref: "창세기 25:27-34",
+    cover: {"sky":"dusk","map":[".{3}LLL.{19}LLL.{4}",".{4}T.{21}T.{5}",".{8}w{4}.{20}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"야곱","shirt":"#5a6a7a"},{"s":"fire","x":17},{"s":"jar","x":17,"y":13.8,"label":"붉은 죽","pal":{}},{"s":"man","x":21,"label":"에서","shirt":"#9a4a2a","beard":true,"flip":true}],"bg":"hills"}
+  },
+  {
     week: 37, file: "lessons/37-moses-born.html", title: "모세가 태어나다", ref: "출애굽기 2:1-10",
     cover: {"sky":"dawn","map":["G{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","D{8}W{14}s{10}","S{8}W{14}s{10}","S{8}W{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"reed","x":9.5},{"s":"reed","x":10.5},{"s":"reed","x":18.5},{"s":"reed","x":19.5},{"s":"reed","x":21},{"s":"reed","x":21.8},{"s":"basket","x":20,"anim":"float","label":"아기 모세"},{"s":"woman","x":24,"label":"요게벳","flip":true},{"s":"fish","x":13,"y":13,"anim":"swim"},{"s":"fish","x":16,"y":15,"anim":"swim","range":2,"speed":0.8}],"bg":"desert"}
   },
