@@ -21,6 +21,8 @@ require('./gensprites.js').build();
 execFileSync(process.execPath, [path.join(root, 'genlist.js')], { stdio: 'inherit' });
 
 fs.mkdirSync(out, { recursive: true });
+/* 이름을 바꾸거나 지운 레슨의 옛 배포본이 남지 않도록 HTML 은 비우고 다시 만든다 */
+for (const f of fs.readdirSync(out)) if (/\.html$/.test(f)) fs.unlinkSync(path.join(out, f));
 
 /* ---------- 2. 공통: 외부 참조를 본문에 심는다 ---------- */
 function inline(html, prefix) {

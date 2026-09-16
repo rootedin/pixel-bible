@@ -5,6 +5,7 @@ window.PB = window.PB || {};
   const { W, H, S } = PB;
   const $ = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const shuffled = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
 
   /* ---------- 파비콘 (파일 없이 SVG 를 직접 심는다 → dist 단일 파일에서도 보임) ---------- */
@@ -169,8 +170,62 @@ window.PB = window.PB || {};
     return html;
   }
 
+  /* ---------- 교안 · 활동지 (인쇄용): 레슨.html?guide · 레슨.html?sheet ----------
+   * 교안 = 교사용. 장면 그림·대사·말씀·정답·해설·교사 메모(notes)를 한 장에.
+   * 활동지 = 학생용. 퀴즈(정답 없음)·빈칸·생각해 보기·나눔·암송 말씀. */
+  const richText = t => segs(t).map(p => (p.b ? `<b>${esc(p.t)}</b>` : esc(p.t))).join('');
+  const lineOf = l => (typeof l === 'string' ? { text: l } : l || { text: '' });
+  function renderGuide(L, mode) {
+    const guide = mode === 'guide';
+    document.title = `${L.title} · ${guide ? '교안' : '활동지'} · 픽셀 성경`;
+    document.body.classList.add('pb-print');
+    const worlds = PB.buildWorlds(L.scenes);
+    const self = esc(location.pathname.split('/').pop() || '');
+    const quote = v => `<blockquote>${esc(v.text)}<cite>${esc(v.ref || '')}</cite></blockquote>`;
+    const notes = x => [].concat(x || []).map(n => `<div class="note">교사 메모 · ${richText(n)}</div>`).join('');
+    const out = [`<div class="pb-doc-tools"><a class="pb-btn sm" href="${self}">◀ 레슨으로</a>
+      <a class="pb-btn sm${guide ? ' on' : ''}" href="?guide">교안 (교사용)</a><a class="pb-btn sm${guide ? '' : ' on'}" href="?sheet">활동지 (학생용)</a>
+      <button class="pb-btn sm" type="button" data-print>인쇄</button></div>`,
+      `<header><div class="k">${L.week ? L.week + '강 · ' : ''}${esc(L.ref || '')}</div><h1>${esc(L.title)}</h1>` +
+      (guide ? (L.intro ? `<p class="intro">${esc(L.intro)}</p>` : '') : '<div class="name">이름 ____________________</div>') + '</header>'];
+    if (guide) {
+      out.push(notes(L.notes));
+      if (L.memory) out.push(`<section class="mem"><h2>암송 말씀</h2>${quote(L.memory)}</section>`);
+      L.scenes.forEach((sc, i) => {
+        const h = [`<h3><span>${i + 1}</span> ${esc(sc.caption || '')}</h3>`];
+        (sc.lines || []).map(lineOf).forEach(o => h.push(`<p>${o.who ? `<em>${esc(o.who)}</em> ` : ''}${richText(o.text)}</p>`));
+        if (sc.walk) h.push(`<div class="act">걷기 · ${richText(sc.walk.q || '')}</div>`);
+        if (sc.find) h.push(`<div class="act">찾기 · ${richText(sc.find.q)}<div class="ans">정답: ${esc([].concat(sc.find.target).join(', '))}${sc.find.explain ? ' — ' + richText(sc.find.explain) : ''}</div></div>`);
+        if (sc.choose) h.push(`<div class="act">선택 · ${richText(sc.choose.q)}<ul>${(sc.choose.options || []).map(o => `<li>${esc(o.text)}${o.goto ? ` <small>→ ${o.goto}번 장면</small>` : ''}</li>`).join('')}</ul></div>`);
+        if (sc.verse) h.push(quote(sc.verse));
+        if (sc.quiz) h.push(`<div class="act">퀴즈 · ${richText(sc.quiz.q)}<ol type="A">${sc.quiz.options.map((o, k) => (k === sc.quiz.answer ? `<li class="ok">${esc(o)} ✔</li>` : `<li>${esc(o)}</li>`)).join('')}</ol>${sc.quiz.explain ? `<div class="ans">${richText(sc.quiz.explain)}</div>` : ''}</div>`);
+        if (sc.blank) { let k = 0; h.push(`<div class="act">빈칸 · ${esc(sc.blank.text).replace(/___/g, () => `<u>${esc(sc.blank.answers[k++] || '')}</u>`)}<cite>${esc(sc.blank.ref || '')}</cite></div>`); }
+        h.push(notes(sc.notes));
+        out.push(`<section class="scene"><canvas width="${W}" height="${H}"></canvas><div>${h.join('')}</div></section>`);
+      });
+    } else {
+      const pick = k => L.scenes.filter(sc => sc[k]).map(sc => sc[k]);
+      const share = [];
+      L.scenes.forEach(sc => { if (sc.caption === '나눔') (sc.lines || []).map(lineOf).forEach(o => share.push(o.text.replace(/^생각해 보기:\s*/, ''))); });
+      const write = '<div class="lines"></div>';
+      let n = 0;
+      const sec = (title, body) => { if (body) out.push(`<section><h2>${++n}. ${title}</h2>${body}</section>`); };
+      sec('본문 확인', pick('quiz').map((q, i) => `<div class="q"><p>${i + 1}) ${richText(q.q)}</p><ol type="A">${q.options.map(o => `<li>${esc(o)}</li>`).join('')}</ol></div>`).join(''));
+      sec('말씀 빈칸 채우기', pick('blank').map(b => `<div class="q"><p>${esc(b.text).replace(/___/g, '<span class="slot"></span>')}</p><cite>${esc(b.ref || '')}</cite><div class="bank">${shuffled((b.answers || []).concat(b.extra || [])).map(w => `<span>${esc(w)}</span>`).join('')}</div></div>`).join(''));
+      sec('생각해 보기', pick('choose').map(c => `<div class="q"><p>${richText(c.q)}</p>${write}</div>`).join(''));
+      sec('나눔', share.map(t => `<div class="q"><p>${richText(t)}</p>${write}</div>`).join(''));
+      if (L.memory) sec('암송 말씀', quote(L.memory) + write);
+    }
+    const doc = $('div', 'pb-doc', out.join(''));
+    (document.getElementById('app') || document.body).appendChild(doc);
+    doc.querySelector('[data-print]').onclick = () => window.print();
+    doc.querySelectorAll('.scene canvas').forEach((c, i) => PB.drawWorld(c.getContext('2d'), worlds[i], 1000, 5000, null));
+  }
+
   /* ---------- 앱 ---------- */
   PB.start = function (L) {
+    const docMode = (/[?&](guide|sheet)\b/.exec(location.search) || [])[1];
+    if (docMode) return renderGuide(L, docMode);
     dirtBackground();
     document.title = `${L.title} · 픽셀 성경`;
     const worlds = PB.buildWorlds(L.scenes);
@@ -196,6 +251,7 @@ window.PB = window.PB || {};
         <span class="pb-title-text">${esc(L.title)}</span><span class="pb-ref">${esc(L.ref || '')}</span>
         <span class="pb-spacer"></span>
         ${L.home !== false ? `<a class="pb-btn sm" href="${esc(L.home || '../index.html')}" style="text-decoration:none">☰ 목록</a>` : ''}
+        <a class="pb-btn sm" href="?guide" style="text-decoration:none" title="교사용 교안 · 학생 활동지 (인쇄용)">▤ 교안</a>
         <button class="pb-btn sm" data-a="snd"></button><button class="pb-btn sm" data-a="full">⛶ 전체화면</button>
       </div>
       <div class="pb-stage"><canvas width="${W}" height="${H}"></canvas><div class="pb-overlay"></div><div class="pb-tags pb-overlay"></div><div class="pb-fade"></div>
@@ -220,7 +276,7 @@ window.PB = window.PB || {};
     const moveKey = e =>
       (e.key === 'ArrowLeft' || e.code === 'KeyA') ? 'left' :
       (e.key === 'ArrowRight' || e.code === 'KeyD') ? 'right' : null;
-    const st = { mode: 'title', step: 0, si: 0, sceneT0: performance.now(), typing: null, shown: 0,
+    const st = { mode: 'title', step: 0, hist: [], si: 0, sceneT0: performance.now(), typing: null, shown: 0,
       find: null, blank: null, walk: null, quiz: null, choose: null, miss: null, hits: [], keys: { left: false, right: false } };
     let world = worlds[0];
     let tagEls = [];
@@ -332,8 +388,12 @@ window.PB = window.PB || {};
         clearInterval(st.typing); st.typing = null; setAvatar(s);
         whoEl.textContent = s.label || '퀴즈!'; textEl.innerHTML = segHtml(segs(s.q), 1e9); moreEl.hidden = true;
         const box = $('div', 'pb-quiz');
-        s.options.forEach((opt, i) => {
-          const b = $('button', 'pb-btn', `${'ABCD'[i] || i + 1}. ${esc(opt)}`);
+        /* 보기 순서를 매번 섞는다 — 정답 위치를 외워서 맞히지 못하게.
+           "위의 모두" 처럼 순서에 기대는 보기가 있으면 quiz.shuffle: false */
+        const order = s.shuffle === false ? s.options.map((_, i) => i) : shuffled(s.options.map((_, i) => i));
+        order.forEach((i, k) => {
+          const opt = s.options[i];
+          const b = $('button', 'pb-btn', `${'ABCD'[k] || k + 1}. ${esc(opt)}`);
           b.onclick = e => {
             e.stopPropagation();
             if (i === s.answer) {
@@ -359,7 +419,7 @@ window.PB = window.PB || {};
         whoEl.textContent = s.label || '선택하십시오';
         textEl.innerHTML = segHtml(segs(s.q), 1e9); moreEl.hidden = true;
         const cbox = $('div', 'pb-quiz');
-        (s.options || []).forEach(opt => {
+        (s.shuffle === false ? (s.options || []) : shuffled(s.options || [])).forEach(opt => {
           const b = $('button', 'pb-btn', esc(opt.text));
           b.onclick = e => {
             e.stopPropagation(); Snd.click(); b.classList.add('ok');
@@ -367,7 +427,7 @@ window.PB = window.PB || {};
             cbox.querySelectorAll('button').forEach(x => (x.disabled = true));
             const to = Math.max(1, Math.min(L.scenes.length, opt.goto || s.si + 2)) - 1;
             const idx = steps.findIndex(x => x.si === to);
-            setTimeout(() => { if (idx >= 0) { st.step = idx; render(); } else next(); }, 420);
+            setTimeout(() => { if (idx >= 0) { st.hist.push(st.step); st.step = idx; render(); } else next(); }, 420);
           };
           cbox.appendChild(b);
         });
@@ -431,19 +491,20 @@ window.PB = window.PB || {};
       if (st.typing) return st.finishTyping();
       Snd.click();
       if (st.step < steps.length - 1) {
-        const prevSi = steps[st.step].si; st.step++;
+        const prevSi = steps[st.step].si; st.hist.push(st.step); st.step++;
         if (steps[st.step].si !== prevSi) Snd.level();
         render();
       } else end();
     }
     function prev() {
       if (st.mode === 'end') { st.mode = 'play'; overlay.querySelectorAll('.pb-titlescreen').forEach(e => e.remove()); render(); return; }
-      if (st.mode !== 'play' || st.step === 0) return;
-      Snd.click(); st.step--; render();
+      if (st.mode !== 'play' || (st.step === 0 && !st.hist.length)) return;
+      /* 선택 분기로 건너뛴 장면이 끼어들지 않도록, 번호가 아니라 지나온 경로를 되짚는다 */
+      Snd.click(); st.step = st.hist.length ? st.hist.pop() : st.step - 1; render();
     }
     function begin(atScene) {
       overlay.querySelectorAll('.pb-titlescreen').forEach(e => e.remove());
-      st.mode = 'play';
+      st.mode = 'play'; st.hist = [];
       st.step = atScene ? Math.max(0, steps.findIndex(s => s.si === atScene)) : 0;
       showCaption(L.scenes[steps[st.step].si].caption);
       Snd.level(); render();
