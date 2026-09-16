@@ -8,47 +8,10 @@
  */
 const fs = require('fs');
 const path = require('path');
-const vm = require('vm');
+/* 엔진·레슨 적재는 genlist.js / snap.js 와 같은 모듈을 쓴다 (따로 두면 어긋난다) */
+const { ROOT, loadEngine, loadLesson } = require('./lessonio.js');
 
-const ROOT = __dirname;
 const COLS = 32, ROWS = 18;
-
-/* ---------- 엔진 적재 (DOM 없이) ---------- */
-function loadEngine() {
-  const sandbox = {
-    window: {}, console,
-    /* 엔진은 모듈 최상위에서 document 를 쓰지 않는다. 혹시 쓰면 여기서 티가 난다. */
-    document: { createElement: () => { throw new Error('lint: 최상위에서 document 사용'); } },
-    performance: { now: () => 0 }
-  };
-  sandbox.globalThis = sandbox;
-  vm.createContext(sandbox);
-  for (const f of ['engine/world.js', 'engine/sprites.js', 'engine/engine.js']) {
-    vm.runInContext(fs.readFileSync(path.join(ROOT, f), 'utf8'), sandbox, { filename: f });
-  }
-  return sandbox.window.PB;
-}
-
-/* ---------- 레슨 파일에서 PB.start(...) 인자 뽑기 ---------- */
-function loadLesson(PB, file) {
-  const html = fs.readFileSync(file, 'utf8');
-  /* src= 가 없는 인라인 <script> 만 모은다 (엔진은 이미 적재돼 있으므로) */
-  const code = [...html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi)]
-    .map(m => m[1]).join('\n');
-  if (!code.trim()) throw new Error('인라인 <script> 가 없습니다');
-
-  let captured = null;
-  const sandbox = {
-    PB: Object.assign({}, PB, { start: L => { captured = L; } }),
-    console: { log() {}, warn() {}, error() {} },
-    window: {}, document: { createElement: () => ({ getContext: () => ({}) }) }
-  };
-  sandbox.globalThis = sandbox;
-  vm.createContext(sandbox);
-  vm.runInContext(code, sandbox, { filename: file, timeout: 5000 });
-  if (!captured) throw new Error('PB.start({...}) 호출을 찾지 못했습니다');
-  return captured;
-}
 
 /* ---------- 성경 대조 (DB 없으면 건너뜀) ---------- */
 let bible = null, bibleWhy = '';
@@ -57,6 +20,61 @@ try {
   if (!fs.existsSync(v.DB)) { bibleWhy = '성경 DB 파일 없음: ' + v.DB; }
   else { v.flat('창1:1'); bible = v; }
 } catch (e) { bibleWhy = '성경 DB 사용 불가: ' + e.message; }
+
+/* 대사 속 하나님·예수님 말씀 대조용: 킹흠정역 전체의 "두 낱말 연쇄" 집합.
+   축약 인용은 통과하지만, 어미·낱말을 바꿔 쓴 말씀은 연쇄가 끊겨 비율이 떨어진다. */
+const words = t => String(t).replace(/\*\*/g, '').replace(/[“”"'’‘…,.!?;:·()]/g, ' ').split(/\s+/).filter(Boolean);
+let bigrams = null;
+function bibleBigrams() {
+  if (bigrams) return bigrams;
+  const { DatabaseSync } = require('node:sqlite');
+  const db = new DatabaseSync(bible.DB, { readOnly: true });
+  bigrams = new Set();
+  for (const r of db.prepare('SELECT btext FROM Bible').all()) {
+    const w = words(bible.clean(r.btext));
+    for (let i = 1; i < w.length; i++) bigrams.add(w[i - 1] + ' ' + w[i]);
+  }
+  return bigrams;
+}
+const DIVINE = new Set(['하나님', '예수님', '주', '주의 천사']);
+
+/* 킹흠정역에 없는 표기 (대부분 개역 성경 표기). 화면에 나오는 모든 글에 적용한다.
+   성경 책 이름(출애굽기·사사기)과 ref 는 대상이 아니다. */
+const TERMS = [
+  [/(?<!출)애굽/, '이집트'],
+  [/(?<![가-힣])바로(?:가|의|에게|를|왕)(?![가-힣])/, '파라오'],
+  [/세례/, '침례 (세례 요한 → 침례자 요한)'],
+  [/요단/, '요르단'],
+  [/바벨론/, '바빌론'],
+  [/앗수르/, '아시리아'],
+  [/법궤/, '궤 (하나님의 궤 · 주의 궤 · 언약궤)'],
+  [/(?<![가-힣])사사(?!기|로|롭)/, '재판관'],
+  [/선지자/, '대언자'],
+  [/나실인/, '나사르 사람'],
+  [/귀신/, '마귀 · 부정한 영'],
+  [/맹인|소경/, '눈먼 사람'],
+  [/중풍/, '마비 병'],
+  [/문둥/, '나병'],
+  [/성전세/, '공세'],
+  [/천부장/, '천인 대장 · 총대장'],
+  [/방백/, '통치자'],
+  [/대궐/, '왕의 집 · 왕의 문'],
+  [/천국/, '하늘의 왕국'],
+  [/(?<![가-힣])떡/, '빵'],
+  [/베뢰아/, '베레아'],
+  [/거라사/, '가다라'],
+  [/이고니온/, '이고니움'],
+  [/여호와(?!이레)/, '주']
+];
+
+/* 목차: 레슨 제목·본문이 목차와 같아야 목록·검색이 어긋나지 않는다 */
+const CURRICULUM = (() => {
+  try {
+    const sb = { window: {} };
+    require('vm').runInNewContext(fs.readFileSync(path.join(ROOT, 'lessons/curriculum.js'), 'utf8'), sb);
+    return sb.window.PB_CURRICULUM || [];
+  } catch (e) { return []; }
+})();
 
 /* 인용 비교용 정규화: 공백·따옴표·말줄임표 차이는 무시 */
 const norm = s => String(s)
@@ -85,6 +103,34 @@ function checkLesson(PB, L, add) {
   if (!Array.isArray(L.scenes) || !L.scenes.length) { add('E', '', 'scenes 가 비어 있습니다'); return; }
   if (L.scenes.length < 6) add('W', '', `장면이 ${L.scenes.length}개입니다 (권장 8~14)`);
   if (L.scenes.length > 20) add('W', '', `장면이 ${L.scenes.length}개입니다 (너무 깁니다)`);
+
+  const cur = CURRICULUM[L.week - 1];
+  if (cur && cur[0] !== L.title) add('W', '', `title 이 목차(curriculum.js)와 다릅니다: "${cur[0]}"`);
+  if (cur && cur[1] !== L.ref) add('W', '', `ref 가 목차(curriculum.js)와 다릅니다: "${cur[1]}"`);
+
+  const verseCards = L.scenes.filter(sc => sc.verse).length;
+  if (verseCards > 5) add('W', '', `말씀 카드가 ${verseCards}장입니다 (핵심 구절 3~5장. 대사로 이미 읽은 구절은 카드로 또 띄우지 않기)`);
+
+  /* 표기: 화면에 나오는 글 전부 (성경 인용인 verse · memory · blank 는 본문 대조로 따로 검사) */
+  {
+    const shown = [];
+    const push = (at, t) => { if (t) shown.push([at, String(t)]); };
+    push('', L.title); push('', L.splash); push('', L.intro); if (L.achievement) push('', L.achievement.title);
+    L.scenes.forEach((sc, i) => {
+      const at = `장면 ${i + 1}`;
+      push(at, sc.caption);
+      (sc.lines || []).forEach(l => { push(at, typeof l === 'string' ? l : l && l.text); if (l && l.who) push(at, l.who); });
+      if (sc.quiz) [sc.quiz.q, sc.quiz.explain, ...(sc.quiz.options || [])].forEach(t => push(at, t));
+      if (sc.choose) [sc.choose.q, ...(sc.choose.options || []).map(o => o && o.text)].forEach(t => push(at, t));
+      if (sc.find) [sc.find.q, sc.find.hint, sc.find.explain].forEach(t => push(at, t));
+      if (sc.walk) [sc.walk.q, sc.walk.say, sc.walk.name].forEach(t => push(at, t));
+      [...(sc.objects || []), ...(sc.add || [])].forEach(o => o && o.label && push(at, o.label));
+    });
+    for (const [at, t] of shown) for (const [re, want] of TERMS) {
+      const m = re.exec(t);
+      if (m) add('W', at, `'${m[0]}' 는 킹흠정역 표기가 아닙니다 → ${want}: "${t.slice(0, 30)}"`);
+    }
+  }
 
   /* --- 월드를 실제 엔진 로직으로 재현 (keep/add/remove 반영) --- */
   let worlds;
@@ -176,6 +222,7 @@ function checkLesson(PB, L, add) {
     });
 
     /* 대사 */
+    if ((sc.lines || []).length > 3) add('W', at, `대사가 ${sc.lines.length}줄입니다 (장면당 2~3줄)`);
     (sc.lines || []).forEach(l => {
       const text = typeof l === 'string' ? l : (l && l.text) || '';
       const who = typeof l === 'object' && l ? l.who : '';
@@ -185,9 +232,29 @@ function checkLesson(PB, L, add) {
       if (bolds > 1) add('W', at, `한 대사에 **강조** 가 ${bolds}개입니다 (1개 이하 권장)`);
       if ((text.match(/\*\*/g) || []).length % 2) add('E', at, `** 짝이 맞지 않습니다: "${text.slice(0, 24)}…"`);
       if (who === '하나님' && typeof l === 'object') { /* 하나님은 대사만 — 정상 */ }
-      /* 말투: 어린이용 해요체 적발 */
-      if (/(어요|에요|예요|했죠|하죠|이죠|거예요)[.!?"”]?\s*$/.test(text.trim()))
-        add('W', at, `해요체로 보입니다 (중·고등부는 합니다체): "${text.slice(-22)}"`);
+      /* 말투: 해요체 적발. 문장마다 본다 — "…일어나 먹으라고요." 같은 간접 인용 꼬리도 해요체다 */
+      text.replace(/\*\*/g, '').split(/(?<=[.!?])\s+/).forEach(sen => {
+        const t = sen.replace(/["”’)\]]+$/, '').trim();
+        if (/(요|죠)[.!?]*$/.test(t) && !/(필요|중요|주요)[.!?]*$/.test(t))
+          add('W', at, `해요체로 보입니다 (중·고등부는 합니다체): "${t.slice(-24)}"`);
+      });
+      /* 하나님·예수님의 말씀은 킹흠정역 표현을 따른다 (줄여 인용하는 것은 괜찮다) */
+      if (DIVINE.has(who) && bible) {
+        const w = words(text);
+        if (w.length >= 4) {
+          const set = bibleBigrams();
+          let hit = 0;
+          for (let k = 1; k < w.length; k++) if (set.has(w[k - 1] + ' ' + w[k])) hit++;
+          const ratio = hit / (w.length - 1);
+          if (ratio < 0.5) add('W', at, `${who}의 말씀이 킹흠정역 표현과 다릅니다 (낱말 연쇄 일치 ${Math.round(ratio * 100)}%): "${text.slice(0, 30)}…"`);
+        }
+      }
+    });
+    /* 나눔은 열린 질문으로 — "…있지는 않습니까?" 는 예/아니요로 끝난다 */
+    if (sc.caption === '나눔') (sc.lines || []).forEach(l => {
+      const t = (typeof l === 'string' ? l : (l && l.text) || '').trim();
+      if (/(않습니까|없습니까|아닙니까|않았습니까)\?$/.test(t))
+        add('W', at, `나눔 질문이 예/아니요로 끝나는 수사의문문입니다: "${t.slice(-26)}"`);
     });
     /* 하나님을 스프라이트로 그리지 않는다 */
     (w.objects || []).forEach(o => {
@@ -207,6 +274,15 @@ function checkLesson(PB, L, add) {
         add('E', at, `quiz.answer=${q.answer} 가 options 범위(0~${q.options.length - 1}) 밖입니다`);
       if (q.options && q.options.length > 4) add('W', at, 'quiz.options 가 4개를 넘습니다 (A~D 까지만 표기됨)');
       if (!q.explain) add('W', at, 'quiz.explain 이 없습니다');
+      /* 보기는 엔진이 섞는다. 그래도 정답만 길면 읽지 않고 맞힌다 */
+      if (Array.isArray(q.options) && q.options.length > 1 && q.answer >= 0 && q.answer < q.options.length) {
+        const len = q.options.map(o => String(o).length), a = len[q.answer];
+        const other = Math.max(...len.filter((_, k) => k !== q.answer));
+        if (a >= other * 1.5 && a - other >= 5)
+          add('W', at, `quiz: 정답만 눈에 띄게 깁니다 (정답 ${a}자 / 오답 최대 ${other}자). 오답도 비슷한 길이로`);
+        if (q.shuffle !== false && q.options.some(o => /위의|모두 (맞|옳|틀)|둘 다|[A-D]와 [A-D]/.test(o)))
+          add('W', at, 'quiz: 순서에 기대는 보기가 있습니다 (보기가 섞임). quiz.shuffle: false 를 넣으십시오');
+      }
     }
 
     /* --- 상호작용 4종 --- */
