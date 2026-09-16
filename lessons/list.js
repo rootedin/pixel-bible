@@ -23,7 +23,7 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{15}LLL.{10}LLL.",".{14}L{5}.{8}L{5}",".{14}L{5}.{8}L{5}",".{16}T.{12}T..",".{16}T.{12}T..",".{16}T.{5}G{5}..T..",".{13}G{9}D{5}G{5}","W{10}s{3}D{19}","W{10}s{3}D{19}","W{10}s{3}D{6}S{13}","s{11}S{21}","S{32}"],"objects":[{"s":"sun","x":24,"y":4,"anim":"float"},{"s":"flower","x":14},{"s":"flower2","x":19},{"s":"tuft","x":20},{"s":"flower","x":24},{"s":"tuft","x":31},{"s":"fish","x":3,"y":14,"anim":"swim"},{"s":"fish","x":6,"y":15,"anim":"swim","range":2.5,"speed":0.8},{"s":"fish","x":5,"y":13,"anim":"swim","pal":{"o":"#3aa0e0","y":"#9fe0ff"}},{"s":"bird","x":4,"y":4,"anim":"fly"},{"s":"bird","x":20,"y":3,"anim":"fly","speed":1.3},{"s":"sheep","x":19,"anim":"walk","range":1},{"s":"cow","x":29,"anim":"bob"},{"s":"lion","x":24,"anim":"bob"}],"clouds":true}
   },
   {
-    week: 5, file: "lessons/05-adam-and-eve.html", title: "하나님께서 아담과 하와를 만드시다", ref: "창세기 1:26 - 2:25",
+    week: 5, file: "lessons/05-adam-and-eve.html", title: "하나님께서 아담과 하와를 만드시다", ref: "창세기 1:26-2:25",
     achievement: {"title":"하나님의 형상","icon":"heart"},
     cover: {"sky":"glory","map":[".{5}LLL.{8}LLL.{6}LLL....",".{4}L{5}.{6}L{5}.{5}L{5}..",".{4}L{5}.{6}L{5}.{5}L{5}..",".{6}T.{10}T.{8}T.{5}",".{6}T.{10}T.{8}T.{5}",".{6}T.{10}T.{8}T.{5}","G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"fruit","x":26,"y":11},{"s":"sheep","x":11,"anim":"walk","range":1},{"s":"flower","x":20},{"s":"tuft","x":9},{"s":"man","x":24,"label":"아담"},{"s":"girl","x":22,"label":"하와","hair":"#5a3212","shirt":"#c7b28a","flip":true}],"clouds":true}
   },
@@ -63,7 +63,7 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{24}w{4}.{4}",".{23}w{6}.{3}","s{8}G{24}","D{32}","S{32}"],"objects":[{"s":"elder","x":22,"label":"욥","robe":"#6a4a7a","flip":true}],"bg":"desert"}
   },
   {
-    week: 13, file: "lessons/13-job-meets-god.html", title: "욥이 하나님을 만나다", ref: "욥기 2장과 다른 본문들",
+    week: 13, file: "lessons/13-job-meets-god.html", title: "욥이 하나님을 만나다", ref: "욥기 2, 19, 23, 38, 42장",
     achievement: {"title":"금같이 나오리라","icon":"gem"},
     cover: {"sky":"storm","map":[".{13}K{3}.{16}","s{32}","S{32}","S{32}"],"objects":[{"s":"elder","x":14.5,"label":"욥","robe":"#6a6a6a"},{"s":"man","x":8,"label":"세 친구","shirt":"#5a4a6a","beard":true},{"s":"man","x":10,"label":"세 친구","shirt":"#4a5a6a","beard":true},{"s":"elder","x":20.5,"label":"세 친구","flip":true}],"bg":"mountains"}
   },
@@ -153,17 +153,17 @@ window.PB_LESSONS = [
     cover: {"sky":"dawn","map":["C{2}T{28}C{2}","C{2}.{8}g.{9}g.{9}C{2}","C{2}.{8}g.{9}g.{9}C{2}","S{32}","S{32}"],"objects":[{"s":"man","x":13,"label":"잔 맡은 자","shirt":"#6a3a7a","sash":"#d9b24a"},{"s":"man","x":17,"label":"빵 굽는 자","shirt":"#c8b890","sash":"#8a6a3a"},{"s":"man","x":8,"label":"요셉","shirt":"#8a8478"},{"s":"torch","x":22},{"s":"grapes","x":11,"y":12,"label":"포도송이"},{"s":"grapes","x":12,"y":13,"label":"포도송이"},{"s":"grapes","x":10,"y":13,"label":"포도송이"},{"s":"jar","x":11,"label":"파라오의 잔"}],"bg":"city"}
   },
   {
-    week: 31, file: "lessons/31-pharaoh-dreams.html", title: "바로가 두 가지 꿈을 꾸다", ref: "창세기 41장",
+    week: 31, file: "lessons/31-pharaoh-dreams.html", title: "파라오가 두 가지 꿈을 꾸다", ref: "창세기 41장",
     achievement: {"title":"서른 살의 총리","icon":"sheaf"},
     cover: {"sky":"day","map":[".{2}B{4}.{2}B{4}.{2}B{4}.{14}",".{2}B{4}.{2}B{4}.{2}B{4}.{14}","s{32}","S{32}"],"objects":[{"s":"king","x":21,"label":"요셉","shirt":"#e8e4d8","crown":false,"sash":"#d9b24a"},{"s":"woman","x":23.5,"label":"아스낫","hood":"#3a6a8a","flip":true},{"s":"boy","x":18.5,"label":"므낫세","shirt":"#c8b890"},{"s":"boy","x":26,"label":"에브라임","shirt":"#b8a880","flip":true},{"s":"sheaf","x":6.5},{"s":"sheaf","x":12.5}],"bg":"city"}
   },
   {
-    week: 32, file: "lessons/32-brothers-to-egypt.html", title: "요셉의 형제들이 애굽에 내려가다", ref: "창세기 42장",
+    week: 32, file: "lessons/32-brothers-to-egypt.html", title: "요셉의 형제들이 이집트에 내려가다", ref: "창세기 42장",
     achievement: {"title":"묻어 둔 죄","icon":"coin"},
     cover: {"sky":"day","map":[".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}",".{3}m.{5}m.{12}m.{5}m.{3}","m{32}","S{32}"],"objects":[{"s":"king","x":20,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"soldier","x":25,"label":"신하들","flip":true},{"s":"man","x":11,"label":"형들","shirt":"#6a5a4a","beard":true},{"s":"man","x":13,"label":"형들","shirt":"#5a5a3a"},{"s":"man","x":15,"label":"형들","shirt":"#7a5a4a","beard":true},{"s":"sheaf","x":17.5}],"bg":"city"}
   },
   {
-    week: 33, file: "lessons/33-brothers-return.html", title: "형제들이 애굽을 다시 찾다", ref: "창세기 43장",
+    week: 33, file: "lessons/33-brothers-return.html", title: "형제들이 이집트를 다시 찾다", ref: "창세기 43장",
     achievement: {"title":"보증인 유다","icon":"honeycomb"},
     cover: {"sky":"dusk","map":[".{6}w{4}.{22}","D{32}","S{32}"],"objects":[{"s":"elder","x":14,"label":"야곱"},{"s":"boy","x":12,"label":"베냐민","shirt":"#3a7ac8"},{"s":"man","x":18,"label":"유다","shirt":"#6a3a3a","beard":true,"flip":true},{"s":"man","x":20.5,"label":"형들","shirt":"#5a5a3a","flip":true},{"s":"man","x":23,"label":"형들","shirt":"#7a5a4a","beard":true,"flip":true},{"s":"jar","x":16}],"bg":"desert"}
   },
@@ -173,7 +173,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{2}T{28}.{2}",".{2}m.{26}m.{2}",".{2}m.{26}m.{2}","m{32}","S{32}"],"objects":[{"s":"king","x":22,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"boy","x":13.5,"label":"베냐민","shirt":"#3a7ac8"},{"s":"man","x":11,"label":"형들","shirt":"#5a5a3a"},{"s":"man","x":8.5,"label":"형들","shirt":"#7a5a4a","beard":true},{"s":"man","x":6,"label":"르우벤","shirt":"#4a5a6a","beard":true},{"s":"man","x":18.5,"label":"유다","shirt":"#6a3a3a","beard":true}],"bg":"city"}
   },
   {
-    week: 35, file: "lessons/35-jacob-to-egypt.html", title: "야곱의 가족이 애굽으로 떠나다", ref: "창세기 45:16-50:13",
+    week: 35, file: "lessons/35-jacob-to-egypt.html", title: "야곱의 가족이 이집트로 떠나다", ref: "창세기 45:16-50:13",
     achievement: {"title":"칠십 명의 여정","icon":"chariot"},
     cover: {"sky":"dawn","map":["G{24}W{8}","D{24}W{8}","S{32}"],"objects":[{"s":"elder","x":11,"label":"야곱"},{"s":"king","x":13,"label":"요셉","crown":false,"sash":"#d9b24a","flip":true},{"s":"chariot","x":18,"flip":true},{"s":"sheep","x":4},{"s":"sheep","x":6},{"s":"cow","x":21}],"bg":"desert"}
   },
@@ -203,32 +203,32 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{26}S{6}",".{24}S{8}",".{22}S{10}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"fire","x":23,"label":"떨기나무"},{"s":"tuft","x":22},{"s":"tuft","x":24.5},{"s":"stone","x":11},{"s":"shepherd","x":16,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a"},{"s":"snake","x":13,"label":"뱀","anim":"bob"}],"bg":"mountains"}
   },
   {
-    week: 41, file: "lessons/41-before-pharaoh.html", title: "모세와 아론이 바로 앞에 서다", ref: "출애굽기 5:1 - 7:13",
+    week: 41, file: "lessons/41-before-pharaoh.html", title: "모세와 아론이 파라오 앞에 서다", ref: "출애굽기 5:1-7:13",
     achievement: {"title":"더 나빠진 뒤에도 선 사람","icon":"snake"},
     cover: {"sky":"day","map":[".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}",".{5}m.{6}m.{6}m.{6}m.{5}","X{32}","m{32}","C{32}","S{32}"],"objects":[{"s":"torch","x":3},{"s":"torch","x":29},{"s":"man","x":9,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"},{"s":"man","x":11,"label":"아론","beard":"#3b2414","shirt":"#b89a6a"},{"s":"king","x":24,"label":"파라오","flip":true},{"s":"man","x":21,"label":"마술사","robe":true,"shirt":"#6b5a8e","flip":true},{"s":"man","x":27,"label":"마술사","robe":true,"shirt":"#5a4a7e","flip":true},{"s":"snake","x":15,"label":"아론의 막대기","scale":2,"anim":"bob"},{"s":"snake","x":20,"anim":"bob"},{"s":"snake","x":28,"anim":"bob"}]}
   },
   {
-    week: 42, file: "lessons/42-plagues-1-3.html", title: "하나님께서 애굽에 첫째·둘째·셋째 재앙을 보내시다", ref: "출애굽기 7:14 - 8:19",
+    week: 42, file: "lessons/42-plagues-1-3.html", title: "하나님께서 이집트에 첫째·둘째·셋째 재앙을 보내시다", ref: "출애굽기 7:14-8:19",
     achievement: {"title":"하나님의 손가락을 본 사람","icon":"frog"},
     cover: {"sky":"dusk","map":["G{8}R{14}s{10}","D{8}R{14}s{10}","D{8}R{14}s{10}","D{8}R{14}s{10}","S{8}R{14}s{10}","S{8}R{14}s{10}","S{22}s{10}","S{32}"],"objects":[{"s":"man","x":24,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a","flip":true},{"s":"man","x":26,"label":"아론","beard":"#3b2414","shirt":"#b89a6a","flip":true},{"s":"king","x":30,"label":"파라오","flip":true},{"s":"fish","x":12,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"}},{"s":"fish","x":16,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"},"flip":true},{"s":"fish","x":19,"y":12,"pal":{"o":"#6a6a6a","y":"#8a8a8a"}}],"bg":"desert"}
   },
   {
-    week: 43, file: "lessons/43-plagues-4-6.html", title: "하나님께서 애굽에 넷째·다섯째·여섯째 재앙을 보내시다", ref: "출애굽기 8:20 - 9:12",
+    week: 43, file: "lessons/43-plagues-4-6.html", title: "하나님께서 이집트에 넷째·다섯째·여섯째 재앙을 보내시다", ref: "출애굽기 8:20-9:12",
     achievement: {"title":"구분을 본 사람","icon":"cow"},
     cover: {"sky":"dusk","map":["G{16}s{16}","D{16}s{16}","D{32}","D{32}","S{32}"],"objects":[{"s":"cow","x":7,"label":"이스라엘의 가축","anim":"bob"},{"s":"sheep","x":11,"anim":"walk","range":1},{"s":"cow","x":20,"label":"이집트의 가축","pal":{"w":"#8a8a8a","k":"#4a4a4a","p":"#9a8a8a","h":"#7a7a7a"}},{"s":"cow","x":27,"pal":{"w":"#8a8a8a","k":"#4a4a4a","p":"#9a8a8a","h":"#7a7a7a"},"flip":true}],"bg":"desert"}
   },
   {
-    week: 44, file: "lessons/44-plagues-7-9.html", title: "하나님께서 애굽에 일곱째·여덟째·아홉째 재앙을 보내시다", ref: "출애굽기 9:13 - 10:29",
+    week: 44, file: "lessons/44-plagues-7-9.html", title: "하나님께서 이집트에 일곱째·여덟째·아홉째 재앙을 보내시다", ref: "출애굽기 9:13-10:29",
     achievement: {"title":"어둠 속의 빛","icon":"torch"},
     cover: {"sky":"dark","map":["G{16}s{16}","D{16}s{16}","D{32}","D{32}","S{32}"],"objects":[{"s":"torch","x":6,"label":"이스라엘의 거처","scale":2},{"s":"torch","x":11,"scale":2},{"s":"man","x":8,"label":"이스라엘 사람","shirt":"#9a7b52"},{"s":"man","x":22,"label":"이집트 사람","shirt":"#6a6a6a","flip":true},{"s":"man","x":28,"shirt":"#5a5a5a","flip":true}]}
   },
   {
-    week: 45, file: "lessons/45-passover.html", title: "하나님께서 애굽에 마지막 열째 재앙을 보내시다", ref: "출애굽기 11-12장",
+    week: 45, file: "lessons/45-passover.html", title: "하나님께서 이집트에 마지막 열째 재앙을 보내시다", ref: "출애굽기 11-12장",
     achievement: {"title":"넘어감을 받은 사람","icon":"sheep"},
     cover: {"sky":"night","map":[".{22}TTTTTTT...",".{22}R.....R...",".{22}R.....R...",".{22}R.....R...","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":19,"label":"이스라엘 사람","shirt":"#9a7b52"},{"s":"torch","x":16}],"bg":"desert"}
   },
   {
-    week: 46, file: "lessons/46-red-sea.html", title: "이스라엘이 홍해를 건너다", ref: "출애굽기 13:17 - 14:31",
+    week: 46, file: "lessons/46-red-sea.html", title: "이스라엘이 홍해를 건너다", ref: "출애굽기 13:17-14:31",
     achievement: {"title":"바다를 걸어서 건넌 사람","icon":"chariot"},
     cover: {"sky":"night","map":["W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","W{6}.{20}W{6}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"모세","beard":"#5a4a3a","hair":"#6a5a4a","shirt":"#c9b48a"}],"bg":"sea"}
   },
@@ -288,17 +288,17 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{22}S{10}",".{20}S{12}",".{20}S{12}","s{20}S{12}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":8,"label":"아론","beard":"#c8c8c8","hair":"#d0d0d0","shirt":"#b89a6a"},{"s":"tuft","x":14},{"s":"stone","x":16,"scale":2},{"s":"man","x":11,"shirt":"#9a7b52"},{"s":"woman","x":13.5,"hood":"#8a6b4a"},{"s":"man","x":16.5,"shirt":"#8a6b45"}],"bg":"mountains"}
   },
   {
-    week: 58, file: "lessons/58-bronze-serpent.html", title: "하나님께서 불뱀을 보내시다", ref: "민수기 20:14 - 21:9",
+    week: 58, file: "lessons/58-bronze-serpent.html", title: "하나님께서 불뱀을 보내시다", ref: "민수기 20:14-21:9",
     achievement: {"title":"쳐다본 사람","icon":"snake"},
     cover: {"sky":"dusk","map":["s{32}","s{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":5,"label":"모세","beard":"#c8c8c8","hair":"#d8d8d8","shirt":"#c9b48a"},{"s":"man","x":9,"shirt":"#9a7b52"},{"s":"woman","x":12,"hood":"#8a6b4a"},{"s":"boy","x":15,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":27},{"s":"snake","x":7,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":13,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":19,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"},{"s":"snake","x":25,"pal":{"g":"#d84a2a","d":"#8a2a12","e":"#ffd84a","t":"#ffb13b"},"anim":"bob"}],"bg":"desert"}
   },
   {
-    week: 59, file: "lessons/59-balak.html", title: "모압 왕 발락이 이스라엘을 저주하려 하다", ref: "민수기 21:21 - 22:21",
+    week: 59, file: "lessons/59-balak.html", title: "모압 왕 발락이 이스라엘을 저주하려 하다", ref: "민수기 21:21-22:21",
     achievement: {"title":"값을 매길 수 없는 것","icon":"coin"},
     cover: {"sky":"dusk","map":[".{22}G{10}",".{22}D{10}","G{10}.{12}D{10}","D{10}.{12}D{10}","D{10}.{12}S{10}","S{32}","S{32}"],"objects":[{"s":"soldier","x":3,"label":"이스라엘","shirt":"#b8a06a"},{"s":"soldier","x":6},{"s":"man","x":26,"label":"발락","beard":"#3b2414","shirt":"#7b2fbe","crown":true,"flip":true},{"s":"soldier","x":29,"flip":true}],"bg":"hills"}
   },
   {
-    week: 60, file: "lessons/60-balaam.html", title: "발람이 저주 대신 축복하다", ref: "민수기 22:22 - 24:25",
+    week: 60, file: "lessons/60-balaam.html", title: "발람이 저주 대신 축복하다", ref: "민수기 22:22-24:25",
     achievement: {"title":"입이 막힌 사람","icon":"donkey"},
     cover: {"sky":"dusk","map":[".{8}C.{14}C.{8}",".{8}C.{14}C.{8}","s{32}","D{32}","S{32}"],"objects":[{"s":"man","x":4,"label":"발람","beard":"#5a4a3a","robe":true,"shirt":"#6b5a8e"},{"s":"donkey","x":7,"label":"나귀"},{"s":"man","x":2,"label":"종","shirt":"#8a6b45"}],"bg":"hills"}
   },
@@ -343,7 +343,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{6}L{3}.{23}",".{5}L{5}.{22}",".{6}LTL.{23}",".{7}T.{24}",".{7}T.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"elder","x":11,"label":"여호수아","shirt":"#b8a06a"},{"s":"man","x":17,"shirt":"#9a7b52","flip":true},{"s":"woman","x":20,"hood":"#8a6b4a","flip":true},{"s":"boy","x":22.5,"shirt":"#a98a5e","anim":"bob","flip":true},{"s":"tuft","x":27}],"bg":"hills"}
   },
   {
-    week: 69, file: "lessons/69-ehud.html", title: "왼손잡이 에훗이 사사가 되다", ref: "사사기 3:12-30",
+    week: 69, file: "lessons/69-ehud.html", title: "왼손잡이 에훗이 재판관이 되다", ref: "사사기 3:12-30",
     achievement: {"title":"왼손의 사람","icon":"sword"},
     cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"shirt":"#9a7b52"},{"s":"woman","x":11,"hood":"#8a6b4a"},{"s":"boy","x":14,"shirt":"#a98a5e","anim":"bob"},{"s":"tuft","x":24},{"s":"man","x":20,"label":"에훗","shirt":"#7a6a8a","flip":true},{"s":"sword","x":16.5,"y":12,"scale":3,"label":"칼"}],"bg":"hills"}
   },
@@ -368,12 +368,12 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{22}T{8}.{2}",".{22}P.{6}P.{2}",".{22}P.{6}P.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":8}],"bg":"hills"}
   },
   {
-    week: 74, file: "lessons/74-samson-born.html", title: "삼손이 태어나 나실인이 되다", ref: "사사기 13-14장",
+    week: 74, file: "lessons/74-samson-born.html", title: "삼손이 태어나 나사르 사람이 되다", ref: "사사기 13-14장",
     achievement: {"title":"태에서부터","icon":"lion"},
     cover: {"sky":"dusk","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":16,"label":"삼손","shirt":"#a98a5e"},{"s":"man","x":10,"label":"마노아","shirt":"#8a7a5a"},{"s":"woman","x":13,"label":"어머니","hood":"#8a6b4a"}],"bg":"hills"}
   },
   {
-    week: 75, file: "lessons/75-samson-judge.html", title: "삼손이 사사가 되다", ref: "사사기 15장",
+    week: 75, file: "lessons/75-samson-judge.html", title: "삼손이 재판관이 되다", ref: "사사기 15장",
     achievement: {"title":"엔학고레","icon":"jar"},
     cover: {"sky":"day","map":[".{24}S{8}",".{20}S{12}",".{16}S{16}","G{16}S{16}","D{32}","S{32}"],"objects":[{"s":"man","x":26,"label":"삼손","shirt":"#a98a5e","flip":true},{"s":"man","x":18,"label":"유다 사람","shirt":"#9a7b52"},{"s":"man","x":15,"shirt":"#8a7a5a"}],"bg":"mountains"}
   },
@@ -398,12 +398,12 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":15,"label":"한나","hood":"#8a6b4a"},{"s":"priest","x":21,"label":"엘리","flip":true},{"s":"torch","x":12,"scale":2}],"bg":"hills"}
   },
   {
-    week: 80, file: "lessons/80-ark-taken.html", title: "블레셋이 하나님의 법궤를 빼앗다", ref: "사무엘상 2-4장",
+    week: 80, file: "lessons/80-ark-taken.html", title: "블레셋이 하나님의 궤를 빼앗다", ref: "사무엘상 2-4장",
     achievement: {"title":"주의 종이 듣나이다","icon":"ark"},
     cover: {"sky":"glory","map":[".{10}T{14}.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}",".{10}P.{12}P.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"boy","x":15,"label":"사무엘","shirt":"#e0d8c0"},{"s":"elder","x":19,"label":"엘리","flip":true},{"s":"torch","x":12.5,"scale":3,"label":"하나님의 등불"},{"s":"ark","x":22,"scale":2,"label":"언약궤"}],"bg":"hills"}
   },
   {
-    week: 81, file: "lessons/81-ark-returns.html", title: "블레셋이 하나님의 법궤를 돌려보내다", ref: "사무엘상 5:1-6:12",
+    week: 81, file: "lessons/81-ark-returns.html", title: "블레셋이 하나님의 궤를 돌려보내다", ref: "사무엘상 5:1-6:12",
     achievement: {"title":"곧은길로 간 암소","icon":"cow"},
     cover: {"sky":"day","map":["T{32}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}",".{6}C{2}.{16}C{2}.{6}","m{32}","S{32}"],"objects":[{"s":"ark","x":17,"scale":2,"label":"언약궤"},{"s":"man","x":21,"label":"아스돗 사람","shirt":"#5a7a8a","flip":true},{"s":"torch","x":9,"scale":2},{"s":"stone","x":11,"scale":2,"label":"남은 몸뚱이"},{"s":"stone","x":8}],"bg":"city"}
   },
@@ -493,7 +493,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"label":"다윗","shirt":"#b8724a"},{"s":"harp","x":12.5,"y":14,"scale":3,"label":"하프"},{"s":"boy","x":17,"shirt":"#a98a5e","flip":true},{"s":"man","x":20,"shirt":"#9a7b52","flip":true},{"s":"arrow","x":25,"y":13,"scale":2,"label":"활"}],"bg":"hills"}
   },
   {
-    week: 99, file: "lessons/99-ark-to-jerusalem.html", title: "다윗이 법궤를 다시 찾아오다", ref: "사무엘하 6장",
+    week: 99, file: "lessons/99-ark-to-jerusalem.html", title: "다윗이 하나님의 궤를 다시 찾아오다", ref: "사무엘하 6장",
     achievement: {"title":"주 앞에서","icon":"ark"},
     cover: {"sky":"dusk","map":["y{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"chariot","x":14,"scale":2},{"s":"ark","x":14,"y":12,"scale":2,"label":"언약궤"},{"s":"cow","x":19,"scale":2},{"s":"man","x":11,"label":"웃사","shirt":"#9a7b52"},{"s":"king","x":5,"label":"다윗"}],"bg":"hills"}
   },
@@ -623,7 +623,7 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":["G{32}","G{32}","D{32}","S{32}"],"objects":[{"s":"tuft","x":20},{"s":"flower","x":26}],"bg":"hills"}
   },
   {
-    week: 125, file: "lessons/125-israel-falls.html", title: "이스라엘 왕국이 앗수르에게 멸망하다", ref: "열왕기하 13, 17장",
+    week: 125, file: "lessons/125-israel-falls.html", title: "이스라엘 왕국이 아시리아에게 멸망하다", ref: "열왕기하 13, 17장",
     achievement: {"title":"멈추지 않은 손","icon":"arrow"},
     cover: {"sky":"dusk","map":[".{6}S{2}.{5}S{2}.{9}S{2}.{6}","G{32}","D{32}","S{32}"],"objects":[{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"stone","x":20},{"s":"tuft","x":28}],"bg":"hills"}
   },
@@ -638,7 +638,7 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":8,"label":"요나","shirt":"#7a8a6a","robe":true},{"s":"man","x":16,"shirt":"#7a5a3a","flip":true},{"s":"woman","x":20,"hood":"#8a7a6a","flip":true},{"s":"boy","x":23,"shirt":"#6a7a8a","flip":true}],"bg":"city"}
   },
   {
-    week: 128, file: "lessons/128-assyria-defeated.html", title: "하나님께서 앗수르 군대를 물리치시다", ref: "열왕기하 18-19장",
+    week: 128, file: "lessons/128-assyria-defeated.html", title: "하나님께서 아시리아 군대를 물리치시다", ref: "열왕기하 18-19장",
     achievement: {"title":"펴 놓은 편지","icon":"scroll"},
     cover: {"sky":"day","map":[".{6}X{20}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}",".{6}m{2}.{16}m{2}.{6}","m{32}","S{32}"],"objects":[{"s":"king","x":15,"y":16,"label":"히스기야","shirt":"#3a6a8a"},{"s":"scroll","x":18,"y":16,"scale":2,"label":"편지"}],"bg":"city"}
   },
@@ -653,7 +653,7 @@ window.PB_LESSONS = [
     cover: {"sky":"cave","map":["S{8}.{16}S{8}","S{7}.{18}S{7}","S{7}.{18}S{7}","S{32}","S{32}"],"objects":[{"s":"man","x":15,"label":"므낫세","shirt":"#5a5a5a"}]}
   },
   {
-    week: 131, file: "lessons/131-judah-falls.html", title: "유다 왕국이 바벨론에게 멸망하다", ref: "열왕기하 24-25장, 예레미야 38장",
+    week: 131, file: "lessons/131-judah-falls.html", title: "유다 왕국이 바빌론에게 멸망하다", ref: "열왕기하 24-25장, 예레미야 38장",
     achievement: {"title":"진창에서 올라온 사람","icon":"cord"},
     cover: {"sky":"dusk","map":["G{12}.{8}G{12}","D{12}.{8}D{12}","S{12}.{8}S{12}","S{12}.{8}S{12}","S{12}D{8}S{12}","S{32}"],"objects":[{"s":"man","x":15.5,"label":"예레미야","shirt":"#e0d8c0","robe":true,"beard":true},{"s":"cord","x":15.5,"y":13,"scale":2,"label":"밧줄"},{"s":"soldier","x":6,"shirt":"#8a7a5a"},{"s":"soldier","x":25,"shirt":"#8a7a5a","flip":true}],"bg":"city"}
   },
@@ -678,7 +678,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"man","x":12,"label":"느부갓네살","shirt":"#6a6a5a","long":true,"hair":"#5a4a3a","beard":"#5a4a3a"},{"s":"cow","x":18,"label":"들짐승"},{"s":"cow","x":23,"flip":true},{"s":"tuft","x":7}],"bg":"hills"}
   },
   {
-    week: 136, file: "lessons/136-babylon-falls.html", title: "바벨론이 무너지다", ref: "다니엘 5장",
+    week: 136, file: "lessons/136-babylon-falls.html", title: "바빌론이 무너지다", ref: "다니엘 5장",
     achievement: {"title":"저울","icon":"scroll"},
     cover: {"sky":"night","map":["T{32}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}",".{3}C{2}.{22}C{2}.{3}","X{32}","S{32}"],"objects":[{"s":"king","x":15,"label":"벨사살","shirt":"#6a5a8a"},{"s":"man","x":9,"shirt":"#8a6a9a"},{"s":"woman","x":11.5,"hood":"#9a6a7a"},{"s":"man","x":20,"shirt":"#7a6a9a","flip":true},{"s":"woman","x":23,"hood":"#8a7a9a","flip":true},{"s":"torch","x":7,"scale":2},{"s":"torch","x":25,"scale":2},{"s":"jar","x":17.5,"scale":2,"label":"성전의 금 그릇"},{"s":"scroll","x":16,"y":9,"scale":2,"label":"벽에 쓴 글"}],"bg":"city"}
   },
@@ -723,7 +723,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["X{7}.{18}X{7}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{6}.{20}X{6}","X{32}","S{32}"],"objects":[{"s":"priest","x":14,"label":"사가랴"},{"s":"censer","x":18,"scale":2,"label":"분향 제단"},{"s":"angel","x":21,"label":"천사","flip":true}],"bg":"city"}
   },
   {
-    week: 145, file: "lessons/145-john-born.html", title: "세례 요한이 태어나다", ref: "누가복음 1:24-80",
+    week: 145, file: "lessons/145-john-born.html", title: "침례자 요한이 태어나다", ref: "누가복음 1:24-80",
     achievement: {"title":"글 쓰는 판","icon":"scroll"},
     cover: {"sky":"glory","map":["G{32}","D{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":12,"label":"엘리사벳","hood":"#9a8a7a"},{"s":"basket","x":15,"scale":2},{"s":"man","x":20,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":23,"hood":"#8a7a6a","flip":true},{"s":"elder","x":7,"label":"사가랴","shirt":"#e0d8c0"},{"s":"scroll","x":9.5,"y":14,"scale":2,"label":"글 쓰는 판"}],"bg":"hills"}
   },
@@ -743,7 +743,7 @@ window.PB_LESSONS = [
     cover: {"sky":"day","map":[".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}",".{3}m{2}.{22}m{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":9,"shirt":"#e0d8c0"},{"s":"elder","x":12,"shirt":"#d0c8b0"},{"s":"boy","x":15.5,"label":"예수님","shirt":"#e8e0d0"},{"s":"scroll","x":17.5,"scale":2,"label":"율법 두루마리"},{"s":"elder","x":20,"shirt":"#c8c0a8","flip":true},{"s":"priest","x":23,"flip":true}],"bg":"city"}
   },
   {
-    week: 149, file: "lessons/149-jesus-baptized.html", title: "예수님께서 요한에게 세례를 받으시다", ref: "마태복음 3:13-17, 요한복음 1:19-34",
+    week: 149, file: "lessons/149-jesus-baptized.html", title: "예수님께서 요한에게 침례를 받으시다", ref: "마태복음 3:13-17, 요한복음 1:19-34",
     achievement: {"title":"열린 하늘","icon":"dove"},
     cover: {"sky":"glory","map":["G{10}W{12}G{10}","D{10}W{12}D{10}","D{32}","S{32}"],"objects":[{"s":"man","x":25,"shirt":"#9a8a6a","flip":true},{"s":"woman","x":28,"hood":"#8a7a6a","flip":true},{"s":"man","x":10,"y":15,"label":"요한","shirt":"#8a6a3a","hair":"#3a2a1a","beard":"#3a2a1a","long":true},{"s":"jesus","x":13,"y":15,"label":"예수님"},{"s":"dove","x":13,"y":7,"scale":2,"anim":"float","label":"비둘기"}],"bg":"desert"}
   },
@@ -778,17 +778,17 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["W{32}","W{32}","W{32}","W{32}"],"objects":[{"s":"ship","x":14,"y":13,"scale":3,"label":"배"},{"s":"jesus","x":12,"y":11,"label":"예수님"},{"s":"man","x":17,"y":11,"label":"시몬","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"fish","x":9,"y":16,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":13,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"fish","x":17,"y":16,"scale":2,"anim":"swim","label":"물고기 떼","pal":{"o":"#8aa0b8","y":"#c8d8e8"}},{"s":"fish","x":21,"y":17,"scale":2,"anim":"swim","label":"물고기 떼"},{"s":"ship","x":26,"y":13,"scale":2,"flip":true}],"bg":"sea"}
   },
   {
-    week: 156, file: "lessons/156-capernaum-healing.html", title: "예수님께서 귀신 들린 사람을 고치시다", ref: "마가복음 1:21-35, 누가복음 4:33-41",
+    week: 156, file: "lessons/156-capernaum-healing.html", title: "예수님께서 마귀 들린 사람을 고치시다", ref: "마가복음 1:21-35, 누가복음 4:33-41",
     achievement: {"title":"새벽의 기도","icon":"sun"},
     cover: {"sky":"dusk","map":[".{20}P{8}.{4}",".{20}P.{6}P.{4}",".{20}P.{6}P.{4}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":18,"label":"예수님","flip":true},{"s":"man","x":14,"label":"앓는 사람","shirt":"#7a6a5a"},{"s":"woman","x":11,"label":"앓는 사람","hood":"#8a7a6a"},{"s":"boy","x":8,"label":"앓는 사람","shirt":"#9a8a6a"},{"s":"elder","x":5,"shirt":"#8a8a7a"},{"s":"torch","x":2,"scale":2}],"bg":"city"}
   },
   {
-    week: 157, file: "lessons/157-leper-paralytic.html", title: "예수님께서 나병과 중풍병을 고치시다", ref: "마가복음 1:40-45, 누가복음 5:12-26",
+    week: 157, file: "lessons/157-leper-paralytic.html", title: "예수님께서 나병과 마비 병을 고치시다", ref: "마가복음 1:40-45, 누가복음 5:12-26",
     achievement: {"title":"뚫린 지붕","icon":"heart"},
     cover: {"sky":"day","map":[".{8}S{6}.{3}S{7}.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}",".{8}S.{14}S.{8}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":12,"y":15,"label":"예수님"},{"s":"priest","x":19,"y":15,"label":"율법 박사","flip":true},{"s":"man","x":10.5,"label":"친구","shirt":"#8a7a5a"},{"s":"man","x":19.5,"shirt":"#7a6a5a","flip":true},{"s":"fleece","x":15.5,"y":13,"scale":2,"label":"자리"},{"s":"man","x":3,"shirt":"#8a7a5a"},{"s":"man","x":28,"shirt":"#6a5a4a","flip":true}],"bg":"city"}
   },
   {
-    week: 158, file: "lessons/158-levi-bethesda.html", title: "예수님께서 레위를 부르시고 중풍병자를 고치시다", ref: "마가복음 2:13-17, 요한복음 5:1-20",
+    week: 158, file: "lessons/158-levi-bethesda.html", title: "예수님께서 레위를 부르시고 병약한 사람을 고치시다", ref: "마가복음 2:13-17, 요한복음 5:1-20",
     achievement: {"title":"일어난 사람들","icon":"coin"},
     cover: {"sky":"glory","map":[".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}",".{3}m.{5}m.{5}m.{5}m.{5}m.{4}","m{10}W{12}m{10}","m{10}W{12}m{10}","S{32}"],"objects":[{"s":"man","x":12.5,"y":15,"shirt":"#7a6a5a"},{"s":"woman","x":24,"hood":"#8a7a6a","flip":true},{"s":"boy","x":30,"shirt":"#9a8a6a","flip":true},{"s":"elder","x":18,"y":15,"shirt":"#8a8a7a","flip":true},{"s":"jesus","x":5,"label":"예수님"},{"s":"man","x":7,"label":"일어난 사람","shirt":"#e0d8c0","anim":"jump"}],"bg":"city"}
   },
@@ -803,7 +803,7 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}",".{2}C{6}.{16}C{6}.{2}","G{32}","D{32}","S{32}"],"objects":[{"s":"woman","x":13,"label":"과부","hood":"#3a3a3a"},{"s":"fleece","x":16.5,"scale":2,"label":"관"},{"s":"woman","x":10.5,"hood":"#4a4a4a"},{"s":"jesus","x":23.5,"label":"예수님","flip":true}],"bg":"city"}
   },
   {
-    week: 161, file: "lessons/161-perfume-woman.html", title: "한 여자가 예수님께 향유를 붓다", ref: "누가복음 7:36-50, 마태복음 12:22-31",
+    week: 161, file: "lessons/161-perfume-woman.html", title: "향유를 부은 여자와 예수님을 비방한 사람들", ref: "누가복음 7:36-50, 마태복음 12:22-31",
     achievement: {"title":"깨뜨린 옥합","icon":"jar"},
     cover: {"sky":"dusk","map":["T{32}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}",".{3}P{2}.{22}P{2}.{3}","m{32}","S{32}"],"objects":[{"s":"priest","x":20,"label":"시몬","shirt":"#6a6a4a","flip":true},{"s":"jesus","x":15,"label":"예수님"},{"s":"woman","x":11,"label":"한 여자","hood":"#9a5a6a"},{"s":"jar","x":13,"scale":2,"label":"향유 옥합"},{"s":"elder","x":23,"shirt":"#8a8a7a","flip":true},{"s":"torch","x":8,"scale":2}],"bg":"city"}
   },
@@ -823,12 +823,12 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":["T{32}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}",".{5}P{2}.{18}P{2}.{5}","P{32}","S{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"priest","x":13,"label":"야이로","shirt":"#5a5a7a"},{"s":"girl","x":17,"label":"소녀","shirt":"#e8e0d0"},{"s":"woman","x":20,"label":"어머니","hood":"#5a5a5a","flip":true},{"s":"torch","x":23,"scale":2}],"bg":"city"}
   },
   {
-    week: 165, file: "lessons/165-twelve-sent.html", title: "예수님께서 두 맹인을 고치시고 제자들을 보내시다", ref: "마태복음 9:27-10:22, 누가복음 9:1-6",
+    week: 165, file: "lessons/165-twelve-sent.html", title: "예수님께서 눈먼 두 사람을 고치시고 제자들을 보내시다", ref: "마태복음 9:27-10:22, 누가복음 9:1-6",
     achievement: {"title":"보냄받은 사람","icon":"scroll"},
     cover: {"sky":"day","map":["G{10}D{12}G{10}","D{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":15.5,"label":"예수님"},{"s":"man","x":5,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":8,"shirt":"#7a8a6a"},{"s":"man","x":11,"shirt":"#5a4a7a"},{"s":"man","x":20,"shirt":"#8a7a5a","flip":true},{"s":"man","x":23,"shirt":"#5a6a8a","flip":true},{"s":"man","x":26,"shirt":"#8a6a4a","flip":true}],"bg":"hills"}
   },
   {
-    week: 166, file: "lessons/166-john-beheaded.html", title: "세례 요한이 죽임을 당하다", ref: "마태복음 14:1-13, 마가복음 6:14-32",
+    week: 166, file: "lessons/166-john-beheaded.html", title: "침례자 요한이 죽임을 당하다", ref: "마태복음 14:1-13, 마가복음 6:14-32",
     achievement: {"title":"끝까지 외친 소리","icon":"heart"},
     cover: {"sky":"night","map":["T{32}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}",".{4}m{2}.{20}m{2}.{4}","X{32}","S{32}"],"objects":[{"s":"king","x":11,"label":"헤롯","shirt":"#6a2a4a"},{"s":"woman","x":17,"label":"헤로디아","hood":"#8a2a4a","flip":true},{"s":"torch","x":22,"scale":2}],"bg":"city"}
   },
@@ -843,7 +843,7 @@ window.PB_LESSONS = [
     cover: {"sky":"dusk","map":[".{3}C{4}.{18}C{4}.{3}",".{3}C{4}.{18}C{4}.{3}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":18,"label":"예수님","flip":true},{"s":"man","x":21,"label":"제자들","shirt":"#6a5a4a","beard":true,"flip":true},{"s":"man","x":23.5,"shirt":"#7a8a6a","flip":true},{"s":"woman","x":10,"label":"가나안 여자","hood":"#8a4a6a"},{"s":"bread","x":13,"label":"빵 부스러기"}],"bg":"city"}
   },
   {
-    week: 169, file: "lessons/169-feeding-4000.html", title: "예수님께서 사천 명을 먹이시고 맹인을 고치시다", ref: "마태복음 15:32-39, 마가복음 8장",
+    week: 169, file: "lessons/169-feeding-4000.html", title: "예수님께서 사천 명을 먹이시고 눈먼 사람을 고치시다", ref: "마태복음 15:32-39, 마가복음 8장",
     achievement: {"title":"또렷하게","icon":"basket"},
     cover: {"sky":"glory","map":["P{3}.{2}P{3}.{24}","P{3}.{2}P{3}.{24}","G{32}","D{32}","S{32}"],"objects":[{"s":"jesus","x":21,"label":"예수님"},{"s":"man","x":24,"label":"눈먼 사람","shirt":"#8a8478","flip":true},{"s":"man","x":10,"shirt":"#8a7a5a"},{"s":"woman","x":12.5,"hood":"#7a8a6a"}],"bg":"hills"}
   },
@@ -853,12 +853,12 @@ window.PB_LESSONS = [
     cover: {"sky":"glory","map":[".{24}S{8}",".{18}S{14}",".{12}S{20}",".{6}S{26}","G{32}","D{32}"],"objects":[{"s":"jesus","x":27.5,"label":"예수님","halo":true},{"s":"man","x":19,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"man","x":21,"label":"야고보","shirt":"#7a6a4a"},{"s":"man","x":14,"label":"요한","shirt":"#5a6a7a"}],"bg":"mountains"}
   },
   {
-    week: 171, file: "lessons/171-ten-lepers.html", title: "예수님께서 성전세를 내시고 나병 환자 열 명을 고치시다", ref: "마태복음 17:24-27, 누가복음 17:11-19",
+    week: 171, file: "lessons/171-ten-lepers.html", title: "예수님께서 공세를 내시고 나병 환자 열 명을 고치시다", ref: "마태복음 17:24-27, 누가복음 17:11-19",
     achievement: {"title":"돌아온 한 사람","icon":"coin"},
     cover: {"sky":"day","map":["G{18}s{6}W{8}","D{18}s{6}W{8}","D{24}W{8}","S{32}"],"objects":[{"s":"man","x":21,"label":"베드로","shirt":"#6a5a4a","beard":true},{"s":"fish","x":23,"label":"물고기","scale":2},{"s":"coin","x":23.2,"y":11.5,"label":"돈 하나"},{"s":"reed","x":17}],"bg":"sea"}
   },
   {
-    week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니를 찾으시고 맹인을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
+    week: 172, file: "lessons/172-mary-martha-blind.html", title: "예수님께서 베다니를 찾으시고 눈먼 사람을 고치시다", ref: "누가복음 10:38-42, 요한복음 9장",
     achievement: {"title":"좋은 부분","icon":"scroll"},
     cover: {"sky":"day","map":[".{2}T{28}.{2}",".{2}C.{26}C.{2}",".{2}C.{26}C.{2}","P{32}","D{32}"],"objects":[{"s":"jesus","x":10,"label":"예수님"},{"s":"woman","x":13,"label":"마리아","hood":"#5a6a9a","flip":true},{"s":"woman","x":23,"label":"마르다","hood":"#9a6a3a"},{"s":"fire","x":26},{"s":"jar","x":20.5},{"s":"bread","x":18}],"bg":"hills"}
   },
