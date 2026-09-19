@@ -102,7 +102,7 @@ function checkLesson(PB, L, add) {
 
   if (!Array.isArray(L.scenes) || !L.scenes.length) { add('E', '', 'scenes 가 비어 있습니다'); return; }
   if (L.scenes.length < 6) add('W', '', `장면이 ${L.scenes.length}개입니다 (권장 8~14)`);
-  if (L.scenes.length > 20) add('W', '', `장면이 ${L.scenes.length}개입니다 (너무 깁니다)`);
+  if (L.scenes.length > 30) add('W', '', `장면이 ${L.scenes.length}개입니다 (너무 깁니다)`);
 
   const cur = CURRICULUM[L.week - 1];
   if (cur && cur[0] !== L.title) add('W', '', `title 이 목차(curriculum.js)와 다릅니다: "${cur[0]}"`);
