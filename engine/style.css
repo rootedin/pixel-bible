@@ -129,38 +129,3 @@ canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: bloc
 /* 화면 한가운데(목표 화살표·인물)를 가리지 않도록 양쪽 끝에 붙인다 */
 .pb-dpad { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; justify-content: space-between; padding: 0 8px; pointer-events: none; }
 .pb-dpad .pb-btn { pointer-events: auto; font-size: clamp(15px, 2.2vw, 28px); padding: clamp(5px, 1vw, 11px) clamp(12px, 2.6vw, 28px); opacity: .9; touch-action: none; }
-
-/* ---------- 교안 · 활동지 (레슨.html?guide · ?sheet, 인쇄용) ---------- */
-body.pb-print { background: #fff; color: #222; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; image-rendering: auto; -webkit-font-smoothing: auto; }
-.pb-doc { max-width: 820px; margin: 0 auto; padding: 24px 20px 60px; font-size: 15px; line-height: 1.6; }
-.pb-doc-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-.pb-doc-tools .pb-btn { text-decoration: none; }
-.pb-doc-tools .pb-btn.on { background: #3c8527; color: #fff; }
-.pb-doc header { border-bottom: 3px solid #222; padding-bottom: 10px; margin-bottom: 16px; }
-.pb-doc header .k { color: #666; font-size: 13px; }
-.pb-doc h1 { font-size: 26px; margin: 4px 0; }
-.pb-doc .intro { color: #444; margin: 6px 0 0; }
-.pb-doc .name { text-align: right; margin-top: 8px; }
-.pb-doc h2 { font-size: 18px; margin: 22px 0 8px; padding-left: 8px; border-left: 6px solid #3c8527; }
-.pb-doc h3 { font-size: 16px; margin: 0 0 6px; }
-.pb-doc h3 span { display: inline-block; min-width: 1.8em; margin-right: 6px; text-align: center; background: #222; color: #fff; }
-.pb-doc p { margin: 2px 0; }
-.pb-doc em { font-style: normal; font-weight: bold; color: #3c6a22; }
-.pb-doc b { font-weight: normal; background: #fff3a0; }
-.pb-doc blockquote { margin: 8px 0; padding: 8px 12px; background: #f6efdc; border-left: 4px solid #8a5a2e; }
-.pb-doc cite { display: block; text-align: right; font-style: normal; font-size: 13px; color: #8a5a2e; }
-.pb-doc .scene { display: grid; grid-template-columns: 200px 1fr; gap: 14px; padding: 12px 0; border-bottom: 1px solid #ddd; break-inside: avoid; }
-.pb-doc .scene canvas { width: 100%; border: 1px solid #999; image-rendering: pixelated; }
-.pb-doc .act { margin: 8px 0; padding: 6px 10px; background: #eef4ea; border: 1px solid #cfe0c4; }
-.pb-doc ol, .pb-doc ul { margin: 4px 0; padding-left: 24px; }
-.pb-doc li.ok { font-weight: bold; color: #2f6a18; }
-.pb-doc .ans { margin-top: 4px; font-size: 14px; color: #555; }
-.pb-doc .note { margin: 8px 0; padding: 6px 10px; font-size: 14px; background: #fff7e0; border: 1px dashed #d9a520; }
-.pb-doc .mem blockquote { font-size: 17px; }
-.pb-doc .q { margin: 10px 0 16px; break-inside: avoid; }
-.pb-doc .slot { display: inline-block; min-width: 5em; border-bottom: 1px solid #222; }
-.pb-doc .bank { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-.pb-doc .bank span { padding: 1px 8px; border: 1px solid #999; }
-.pb-doc .lines { height: 64px; background: repeating-linear-gradient(transparent 0 30px, #bbb 30px 31px); }
-@media (max-width: 640px) { .pb-doc .scene { grid-template-columns: 1fr; } }
-@media print { .pb-doc-tools { display: none; } .pb-doc { max-width: none; padding: 0; } }

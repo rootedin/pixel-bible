@@ -170,62 +170,8 @@ window.PB = window.PB || {};
     return html;
   }
 
-  /* ---------- 교안 · 활동지 (인쇄용): 레슨.html?guide · 레슨.html?sheet ----------
-   * 교안 = 교사용. 장면 그림·대사·말씀·정답·해설·교사 메모(notes)를 한 장에.
-   * 활동지 = 학생용. 퀴즈(정답 없음)·빈칸·생각해 보기·나눔·암송 말씀. */
-  const richText = t => segs(t).map(p => (p.b ? `<b>${esc(p.t)}</b>` : esc(p.t))).join('');
-  const lineOf = l => (typeof l === 'string' ? { text: l } : l || { text: '' });
-  function renderGuide(L, mode) {
-    const guide = mode === 'guide';
-    document.title = `${L.title} · ${guide ? '교안' : '활동지'} · 픽셀 성경`;
-    document.body.classList.add('pb-print');
-    const worlds = PB.buildWorlds(L.scenes);
-    const self = esc(location.pathname.split('/').pop() || '');
-    const quote = v => `<blockquote>${esc(v.text)}<cite>${esc(v.ref || '')}</cite></blockquote>`;
-    const notes = x => [].concat(x || []).map(n => `<div class="note">교사 메모 · ${richText(n)}</div>`).join('');
-    const out = [`<div class="pb-doc-tools"><a class="pb-btn sm" href="${self}">◀ 레슨으로</a>
-      <a class="pb-btn sm${guide ? ' on' : ''}" href="?guide">교안 (교사용)</a><a class="pb-btn sm${guide ? '' : ' on'}" href="?sheet">활동지 (학생용)</a>
-      <button class="pb-btn sm" type="button" data-print>인쇄</button></div>`,
-      `<header><div class="k">${L.week ? L.week + '강 · ' : ''}${esc(L.ref || '')}</div><h1>${esc(L.title)}</h1>` +
-      (guide ? (L.intro ? `<p class="intro">${esc(L.intro)}</p>` : '') : '<div class="name">이름 ____________________</div>') + '</header>'];
-    if (guide) {
-      out.push(notes(L.notes));
-      if (L.memory) out.push(`<section class="mem"><h2>암송 말씀</h2>${quote(L.memory)}</section>`);
-      L.scenes.forEach((sc, i) => {
-        const h = [`<h3><span>${i + 1}</span> ${esc(sc.caption || '')}</h3>`];
-        (sc.lines || []).map(lineOf).forEach(o => h.push(`<p>${o.who ? `<em>${esc(o.who)}</em> ` : ''}${richText(o.text)}</p>`));
-        if (sc.walk) h.push(`<div class="act">걷기 · ${richText(sc.walk.q || '')}</div>`);
-        if (sc.find) h.push(`<div class="act">찾기 · ${richText(sc.find.q)}<div class="ans">정답: ${esc([].concat(sc.find.target).join(', '))}${sc.find.explain ? ' — ' + richText(sc.find.explain) : ''}</div></div>`);
-        if (sc.choose) h.push(`<div class="act">선택 · ${richText(sc.choose.q)}<ul>${(sc.choose.options || []).map(o => `<li>${esc(o.text)}${o.goto ? ` <small>→ ${o.goto}번 장면</small>` : ''}</li>`).join('')}</ul></div>`);
-        if (sc.verse) h.push(quote(sc.verse));
-        if (sc.quiz) h.push(`<div class="act">퀴즈 · ${richText(sc.quiz.q)}<ol type="A">${sc.quiz.options.map((o, k) => (k === sc.quiz.answer ? `<li class="ok">${esc(o)} ✔</li>` : `<li>${esc(o)}</li>`)).join('')}</ol>${sc.quiz.explain ? `<div class="ans">${richText(sc.quiz.explain)}</div>` : ''}</div>`);
-        if (sc.blank) { let k = 0; h.push(`<div class="act">빈칸 · ${esc(sc.blank.text).replace(/___/g, () => `<u>${esc(sc.blank.answers[k++] || '')}</u>`)}<cite>${esc(sc.blank.ref || '')}</cite></div>`); }
-        h.push(notes(sc.notes));
-        out.push(`<section class="scene"><canvas width="${W}" height="${H}"></canvas><div>${h.join('')}</div></section>`);
-      });
-    } else {
-      const pick = k => L.scenes.filter(sc => sc[k]).map(sc => sc[k]);
-      const share = [];
-      L.scenes.forEach(sc => { if (sc.caption === '나눔') (sc.lines || []).map(lineOf).forEach(o => share.push(o.text.replace(/^생각해 보기:\s*/, ''))); });
-      const write = '<div class="lines"></div>';
-      let n = 0;
-      const sec = (title, body) => { if (body) out.push(`<section><h2>${++n}. ${title}</h2>${body}</section>`); };
-      sec('본문 확인', pick('quiz').map((q, i) => `<div class="q"><p>${i + 1}) ${richText(q.q)}</p><ol type="A">${q.options.map(o => `<li>${esc(o)}</li>`).join('')}</ol></div>`).join(''));
-      sec('말씀 빈칸 채우기', pick('blank').map(b => `<div class="q"><p>${esc(b.text).replace(/___/g, '<span class="slot"></span>')}</p><cite>${esc(b.ref || '')}</cite><div class="bank">${shuffled((b.answers || []).concat(b.extra || [])).map(w => `<span>${esc(w)}</span>`).join('')}</div></div>`).join(''));
-      sec('생각해 보기', pick('choose').map(c => `<div class="q"><p>${richText(c.q)}</p>${write}</div>`).join(''));
-      sec('나눔', share.map(t => `<div class="q"><p>${richText(t)}</p>${write}</div>`).join(''));
-      if (L.memory) sec('암송 말씀', quote(L.memory) + write);
-    }
-    const doc = $('div', 'pb-doc', out.join(''));
-    (document.getElementById('app') || document.body).appendChild(doc);
-    doc.querySelector('[data-print]').onclick = () => window.print();
-    doc.querySelectorAll('.scene canvas').forEach((c, i) => PB.drawWorld(c.getContext('2d'), worlds[i], 1000, 5000, null));
-  }
-
   /* ---------- 앱 ---------- */
   PB.start = function (L) {
-    const docMode = (/[?&](guide|sheet)\b/.exec(location.search) || [])[1];
-    if (docMode) return renderGuide(L, docMode);
     dirtBackground();
     document.title = `${L.title} · 픽셀 성경`;
     const worlds = PB.buildWorlds(L.scenes);
@@ -251,7 +197,6 @@ window.PB = window.PB || {};
         <span class="pb-title-text">${esc(L.title)}</span><span class="pb-ref">${esc(L.ref || '')}</span>
         <span class="pb-spacer"></span>
         ${L.home !== false ? `<a class="pb-btn sm" href="${esc(L.home || '../index.html')}" style="text-decoration:none">☰ 목록</a>` : ''}
-        <a class="pb-btn sm" href="?guide" style="text-decoration:none" title="교사용 교안 · 학생 활동지 (인쇄용)">▤ 교안</a>
         <button class="pb-btn sm" data-a="snd"></button><button class="pb-btn sm" data-a="full">⛶ 전체화면</button>
       </div>
       <div class="pb-stage"><canvas width="${W}" height="${H}"></canvas><div class="pb-overlay"></div><div class="pb-tags pb-overlay"></div><div class="pb-fade"></div>
